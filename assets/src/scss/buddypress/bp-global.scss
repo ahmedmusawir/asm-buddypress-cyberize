@@ -1,0 +1,499 @@
+/**
+ * ITEM INDEX
+ * 1. ATHLETE SINGLE PROFILE
+ * 2. ATHLETE INDEX
+ * 3. BP GLOBAL SEARCH INDEX
+ */
+
+/**
+ * GENERAL
+ */
+.container-fluid {
+  padding: 0 !important;
+}
+body.buddypress {
+  .site-content {
+    padding-top: 0 !important;
+  }
+}
+/**
+ * 1. ATHLETE SINGLE PROFILE
+ */
+
+#buddypress {
+  position: relative;
+
+  #change-cover-image-personal-li {
+    display: none;
+  }
+
+  .top-page-navbar {
+    position: fixed;
+    top: 65px;
+    width: 100%;
+    z-index: 100;
+    .top-page-menu {
+      // border: 1px dotted blueviolet;
+      // padding-top: 1rem;
+      width: 100%;
+      background-color: $cg-secondary;
+      border-bottom: 2px solid lighten($color: gray, $amount: 35%);
+
+      .menu-title {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        font-weight: 600;
+        color: white;
+      }
+
+      .menu-box {
+        margin-top: 2rem;
+        margin-left: 2rem;
+
+        a {
+          padding: 0.5rem 2rem;
+          margin-left: 1rem;
+          border: 1px solid gray;
+          border-radius: 6px;
+          background-color: #e3e3e3;
+          color: lighten($color: $cg-primary, $amount: 10%);
+          font-size: 1.1rem;
+
+          i {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .bp-wrap {
+    margin-top: 120px;
+
+    #item-body {
+      margin-top: 70px;
+      position: relative;
+
+      //  LEFT COLUMN START
+
+      .athlete-info-box {
+        position: fixed;
+        top: 190px;
+        width: 23%;
+        @media (max-width: 1199px) {
+          width: 30%;
+        }
+        @media (max-width: 991px) {
+          position: relative;
+          width: 100%;
+        }
+      }
+
+      #item-header-avatar {
+        // border: 3px dotted greenyellow;
+        img.avatar {
+          border-radius: 50%;
+          width: 100px;
+        }
+        .athlete-title {
+          font-size: 1.8rem;
+        }
+      }
+
+      .athlete-meta {
+        // border: 3px dotted greenyellow;
+        font-weight: 600;
+        i.fa-eye {
+          font-size: 1.2rem;
+          color: deepskyblue;
+        }
+        i.fa-star {
+          font-size: 1.2rem;
+          color: orange;
+        }
+      }
+
+      .athlete-bio {
+        // border: 3px dotted greenyellow;
+
+        .list-group-item {
+          // border: 4px dotted red;
+          background-color: lighten($color: #e7e7e7, $amount: 8%);
+          border-bottom: 4px solid white;
+          border-top: 1px solid white;
+          border-right: 1px solid white;
+          border-left: 1px solid white;
+        }
+      }
+
+      .athlete-sports-info {
+        // border: 4px dotted blue;
+        h1 {
+          color: #024d80;
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        small {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+
+      //  LEFT COLUMN END
+
+      // CENTER COLUMN START
+
+      .bp-profile-loop {
+        display: none;
+      }
+
+      #top-video-section {
+        padding-bottom: 3.5rem;
+        border-bottom: 2px solid $cg-primary;
+
+        .block-header {
+          font-size: 2rem;
+          i.fa-youtube {
+            color: lighten($color: $cg-primary, $amount: 20%);
+          }
+        }
+      }
+
+      #about-section {
+        // border: 0.3rem dotted limegreen;
+        padding-bottom: 3.5rem;
+        border-bottom: 2px solid $cg-primary;
+        color: lighten($color: $cg-primary, $amount: 10%);
+
+        .block-header {
+          font-size: 2rem;
+          i.fa-user-circle {
+            color: lighten($color: $cg-primary, $amount: 20%);
+          }
+        }
+        .text-content {
+          color: lighten($color: $cg-primary, $amount: 10%);
+        }
+      }
+
+      #sports-stats-section {
+        // border: 0.3rem dotted sienna;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid $cg-primary;
+        color: lighten($color: $cg-primary, $amount: 10%);
+
+        .block-header {
+          font-size: 2rem;
+          i.fa-trophy {
+            color: lighten($color: $cg-primary, $amount: 20%);
+          }
+        }
+        .text-content {
+          color: lighten($color: $cg-primary, $amount: 10%) !important;
+        }
+      }
+
+      #academics-section {
+        // border: 0.3rem dotted cyan;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid $cg-primary;
+
+        .block-header {
+          font-size: 2rem;
+          i.fa-file-certificate {
+            color: lighten($color: $cg-primary, $amount: 20%);
+          }
+        }
+        .text-content {
+          color: lighten($color: $cg-primary, $amount: 10%);
+          font-weight: 600;
+        }
+        .school-box {
+          background-color: lighten($color: #e7e7e7, $amount: 5%);
+
+          .school-name {
+            font-weight: 700;
+          }
+        }
+        .test-score-box {
+          .test-score-title {
+            font-size: 1.7rem;
+          }
+        }
+      }
+
+      #instagram-section {
+        // border: 0.3rem dotted goldenrod;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid $cg-primary;
+
+        .block-header {
+          font-size: 2rem;
+          i.fa-instagram {
+            color: lighten($color: $cg-primary, $amount: 20%);
+          }
+        }
+        .text-content {
+          color: lighten($color: $cg-primary, $amount: 10%);
+        }
+      }
+
+      #interview-section {
+        // border: 0.3rem dotted steelblue;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid $cg-primary;
+        color: lighten($color: $cg-primary, $amount: 10%);
+
+        .block-header {
+          font-size: 2rem;
+          i.fa-comments {
+            color: lighten($color: $cg-primary, $amount: 20%);
+          }
+        }
+        .text-content {
+          color: lighten($color: $cg-primary, $amount: 10%);
+        }
+      }
+
+      // CENTER COLUMN END
+
+      // RIGHT COLUMN START
+
+      // RIGHT COLUMN END
+    }
+  }
+}
+
+/**
+ * 2. ATHLETE INDEX
+ */
+#athlete-index {
+  // border: 4px dotted pink;
+  position: relative;
+
+  .search-menu-container {
+    // border: 4px dotted pink;
+    position: fixed;
+    top: 65px;
+    background-color: $cg-secondary;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+
+    .subnav-search-asm,
+    .subnav-filter-asm {
+      .nav-title {
+        margin-top: 0.8rem;
+      }
+    }
+
+    .bp-dir-search-form {
+      // border: 1rem solid red;
+      margin-top: 0.7rem;
+      background-color: #e7e7e7;
+      #dir-members-search {
+        background-color: #e7e7e7;
+        outline: lighten($color: blue, $amount: 10%);
+      }
+    }
+
+    #members-order-select {
+      background-color: #e7e7e7;
+      margin-top: 0.5rem;
+    }
+  }
+
+  #athlete-index-container {
+    // border: 4px solid red;
+    .item-entry-asm {
+      box-shadow: 2px 2px 6px #e3e3e3;
+
+      .item-avatar-asm {
+        padding-left: 0.5rem;
+      }
+    }
+
+    .bp-pagination {
+      // border: 1rem dotted red;
+      padding-left: 1rem;
+    }
+
+    .item-asm {
+      .item-block-asm {
+        .member-name {
+          font-weight: 600;
+          a {
+            color: $cg-primary;
+          }
+        }
+
+        .info-bar {
+          // border: 3px dotted red;
+          .list-inline-item {
+            font-size: 1rem;
+            font-weight: 700;
+            color: lighten($color: $cg-primary, $amount: 10%);
+          }
+        }
+
+        .text-content {
+          padding-right: 2rem;
+          color: $cg-primary;
+
+          .readmore {
+            a {
+              color: lighten($color: $cg-primary, $amount: 20%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * 3. BP GLOBAL SEARCH INDEX
+ */
+#buddypress {
+  .bboss_search_page {
+    position: relative;
+
+    .search-menu-container {
+      // border: 4px dotted pink;
+      position: fixed;
+      top: 65px;
+      background-color: $cg-secondary;
+      width: 100%;
+      height: 80px;
+      z-index: 100;
+
+      .bboss_search_filters_wrapper {
+        // border: 3px dotted yellow;
+        .search_filters {
+          margin-top: 1.5rem;
+          margin-left: 1rem;
+        }
+
+        ul {
+          li {
+            a {
+              color: lighten($color: $cg-primary, $amount: 30%);
+            }
+          }
+
+          li.active {
+            a {
+              background: lighten($color: #e6e6e6, $amount: 0%);
+            }
+          }
+        }
+      }
+
+      .bboss_search_form_wrapper {
+        // width: 500px;
+        .search-form {
+          margin-top: -1.5rem;
+          margin-right: 1rem;
+          width: 350px !important;
+          .search-field {
+            // border: 5px dotted limegreen;
+            width: 350px !important;
+          }
+          .search-submit {
+            border: 5px dotted red;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  #athlete-index-container {
+    // border: 4px dotted hotpink;
+    margin-top: -2.5rem;
+  }
+
+  /**
+   * Global Search Member
+   */
+  .search_results {
+    #members-stream {
+      .item-entry-asm {
+        box-shadow: 2px 2px 6px #e7e7e7;
+
+        .item-avatar-asm {
+          margin-bottom: -1.5rem;
+          margin-left: 1rem;
+          img {
+            width: 100% !important;
+            height: auto !important;
+          }
+        }
+        .item-asm {
+          .item-block-asm {
+            .member-name {
+              font-weight: 600;
+              a {
+                color: $cg-primary;
+              }
+            }
+
+            .info-bar {
+              // border: 3px dotted red;
+              .list-inline-item {
+                font-size: 1rem;
+                font-weight: 700;
+                color: lighten($color: $cg-primary, $amount: 10%);
+              }
+            }
+
+            .text-content {
+              padding-right: 2rem;
+              color: $cg-primary;
+
+              .readmore {
+                a {
+                  color: lighten($color: $cg-primary, $amount: 20%);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /**
+   * Global Search Posts
+   */
+  .bboss_search_item.bboss_search_item_post {
+    // border: 1rem dotted red;
+    box-shadow: 2px 2px 6px #e7e7e7;
+    margin-left: 2rem;
+    margin-right: 1rem;
+
+    .entry-title {
+      padding: 0 2rem;
+
+      a {
+        color: $cg-primary;
+
+        &:hover {
+          color: lighten($color: $cg-primary, $amount: 10%);
+        }
+      }
+    }
+
+    .entry-content {
+      padding: 0 2rem;
+
+      a.moretag {
+        color: lighten($color: $cg-primary, $amount: 20%);
+
+        &:hover {
+          color: lighten($color: $cg-primary, $amount: 30%);
+        }
+      }
+    }
+  }
+}
