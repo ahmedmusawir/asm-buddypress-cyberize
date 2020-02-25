@@ -19,7 +19,7 @@ get_header(); ?>
   width: 100vw;
   height: 50px;
   background-color: black;
-  background-image: url('<?php the_field('general_page_header_image', 'option') ?>');
+  /* background-image: url('<?php the_field('general_page_header_image', 'option') ?>'); */
   background-size: cover;
   background-position: top center;
   margin-top: 50px;

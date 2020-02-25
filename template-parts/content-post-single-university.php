@@ -10,56 +10,195 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('post-single'); ?>>
-  <section class="post-bizmobile">
+  <section class="univ-single-asm">
 
+    <figure class="featured-img-holder">
+      <?php cyberize_post_thumbnail(); ?>
+    </figure>
 
-    <div class="entry-content container">
+    <div class="entry-content container-fluid">
 
       <div class="row">
 
-        <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="col-sm-12 col-md-12 col-lg-8">
 
-          <figure class="featured-img-holder">
-            <?php cyberize_post_thumbnail(); ?>
-          </figure>
+          <main class="main-content">
+            <!-- UNIVERSITY HEADER -->
+            <header class="univ-header row">
 
-          <main class="">
-            <!-- CATEGORY -->
-            <!-- <h5 class="post-category"><?php // cyberize_entry_footer(); ?></h5> -->
-            <?php
-						if ( is_singular() ) :
-							the_title( '<h1 class="entry-title mx-auto">', '</h1>' );
-							// the_title( '<h1 class="entry-title text-center">', '</h1>' );
-						else :
-							the_title( '<h2 class="entry-title mx-auto"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-						endif;
+              <div class="col-md-9">
+                <?php
+                if ( is_singular() ) :
+                  the_title( '<h1 class="entry-title">', '</h1>' );
+                else :
+                  the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+                endif;
+                ?>
 
-						if ( 'listing' === get_post_type() ) : ?>
-            <div class="entry-meta pl-2 mb-5 row">
-              <?php
-								cyberize_posted_by();
-								echo '<span class="divider p-2">/</span>';
-								cyberize_posted_on();
-								echo '<span class="divider p-2">/</span>';
-								// cyberize_entry_footer();
+                <h3 class="sub-title">
+                  Grade: <span class="text-info pl-3">B+</span>
+                </h3>
+              </div>
+              <div class="col-md-3">
+                <figure class="university-logo mt-3">
+                  <img class="img-fluid" src="/wp-content/uploads/university-logos.png" alt="">
+                </figure>
+              </div>
 
-							?>
+            </header>
 
-            </div><!-- .entry-meta -->
-            <?php
-						endif; ?>
+            <!-- UNIVERSITY HEADER END-->
+
+            <!-- LEFT COL CONTENT -->
+            <section class="univ-left-content">
+              <h3 class="">School Data:</h3>
+
+              <div class="row mt-5">
+                <div class="col-6">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">SAT Comp Range:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1170 - 1370</td>
+                      </tr>
+                    </tbody>
+                    <thead>
+                      <tr>
+                        <th scope="col">ACTC</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>27 - 31</td>
+                      </tr>
+                    </tbody>
+                    <thead>
+                      <tr>
+                        <th scope="col">College Grade Rate:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0.9082</td>
+                      </tr>
+                    </tbody>
+                    <thead>
+                      <tr>
+                        <th scope="col">SAT Comp Range:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1170 - 1370</td>
+                      </tr>
+                    </tbody>
+                    <thead>
+                      <tr>
+                        <th scope="col">ACTC</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>27 - 31</td>
+                      </tr>
+                    </tbody>
+                    <thead>
+                      <tr>
+                        <th scope="col">College Grade Rate:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0.9082</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-6">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">SAT Comp Range:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1170 - 1370</td>
+                      </tr>
+                    </tbody>
+                    <thead>
+                      <tr>
+                        <th scope="col">ACTC</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>27 - 31</td>
+                      </tr>
+                    </tbody>
+                    <thead>
+                      <tr>
+                        <th scope="col">College Grade Rate:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0.9082</td>
+                      </tr>
+                    </tbody>
+                    <thead>
+                      <tr>
+                        <th scope="col">SAT Comp Range:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1170 - 1370</td>
+                      </tr>
+                    </tbody>
+                    <thead>
+                      <tr>
+                        <th scope="col">ACTC</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>27 - 31</td>
+                      </tr>
+                    </tbody>
+                    <thead>
+                      <tr>
+                        <th scope="col">College Grade Rate:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0.9082</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <!-- LEFT COL CONTENT END -->
 
           </main>
 
-          <!-- SINGLE LIST ITEM MAP -->
+        </div>
+        <aside id="univ-right-col" class="col-sm-12 col-md-12 col-lg-4">
+
+          <!-- SINGLE ITEM MAP -->
           <div class="acf-map acf-map-single">
 
             <?php 
 
-							$mapLocation = get_field('university_address');
+              $mapLocation = get_field('university_address');
 
-						    // print_r($mapLocation);
-						?>
+            ?>
             <div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>"
               data-lng="<?php echo $mapLocation['lng']; ?>">
               <h6 class=""><?php the_title(); ?></h6>
@@ -68,20 +207,32 @@
 
           </div> <!-- ACF-MAP END -->
 
-          <?php
-						the_content();
+          <!-- ADDRESS BLOCK -->
+          <section class="address-block">
+            <h5>Address:</h5>
+            <p>123 New Haven</p>
+            <p>CT 06520, United States</p>
 
+            <h5>Official Website:</h5>
+            <p><a href="http://google.com">www.yale.edu</a></p>
 
-						// If comments are open or we have at least one comment, load up the comment template.
-						// if ( comments_open() || get_comments_number() ) :
-						// 	comments_template();
-						// endif;						
-					?>
+            <div class="social">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+          </section>
+          <!-- ADDRESS BLOCK END -->
 
-        </div>
-        <aside id="sidebar" class="col-sm-12 col-md-12 col-lg-3">
-
-          <?php get_sidebar();  ?>
+          <!-- BUTTON BLOCK -->
+          <section class="button-block text-center">
+            <i class="fas fa-user-circle"></i>
+            <h5>BUILD YOUR</h5>
+            <h5>PROFILE NOW</h5>
+          </section>
+          <!-- BUTTON BLOCK END -->
 
         </aside>
       </div>

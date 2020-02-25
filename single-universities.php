@@ -9,9 +9,32 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area single-post-asm">
   <!-- <div class="row"> -->
   <main id="main" class="site-main">
+
+    <!-- Page Header with image -->
+    <section id="general-blog-page-header">
+      <section class="top-page-menu clearfix">
+        <h3 class="menu-title float-left">Filters:</h3>
+        <ul class="list-inline menu-box float-left">
+          <a href="/universities/">
+            <li class="list-inline-item">All</li>
+          </a>
+        </ul>
+        <?php
+          wp_nav_menu( array( 
+              'theme_location' => 'univ-cat', 
+              'container_class' => 'menu-box' ) ); 
+          ?>
+
+      </section>
+      <!-- <section class="top-page-menu clearfix">
+
+        <h3 class="menu-title float-left">Get Recruited</h3>
+
+      </section> -->
+    </section>
 
     <?php
 			while ( have_posts() ) : the_post();
@@ -22,8 +45,12 @@ get_header(); ?>
 				// if ( comments_open() || get_comments_number() ) :
 				// 	comments_template();
 				// endif;
+			?>
+
+    <?php
 
 			endwhile; // End of the loop.
+
 			?>
 
   </main><!-- #main -->
@@ -31,34 +58,7 @@ get_header(); ?>
   <!-- </div> END ROW -->
 </div><!-- #primary -->
 
-<!--====================================================
-=            THE IS THE THRIVE LEADBOX AREA            =
-=====================================================-->
 
-<section class="leadbox">
-
-  <div class="container">
-
-    <?php 
-
-			// $leadbox = get_field('mas_post_lead_shortcode');
-
-			// if ($leadbox) {
-			// 	echo do_shortcode( $leadbox ); 
-
-			// } else {
-			// 	echo do_shortcode( '[thrive_leads id="5486"]' );
-			// }
-
-		?>
-    <?php if (function_exists('tve_leads_form_display')) { tve_leads_form_display(0, 5486); } ?>
-
-
-  </div>
-
-</section>
-
-<!--====  End of THE IS THE THRIVE LEADBOX AREA  ====-->
 
 <?php
 get_footer();

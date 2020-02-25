@@ -26,6 +26,44 @@
         color: white;
       }
     }
+
+    .menu-box {
+      margin-top: 1.3rem;
+
+      #menu-post-category-filter {
+        list-style-type: none;
+        list-style: none;
+        list-style-image: none;
+
+        .menu-item {
+          display: inline-block;
+        }
+      }
+
+      #menu-university-menu {
+        list-style-type: none;
+        list-style: none;
+        list-style-image: none;
+
+        .menu-item {
+          display: inline-block;
+        }
+      }
+
+      a {
+        padding: 0.5rem 2rem;
+        margin-left: 1rem;
+        border: 1px solid gray;
+        border-radius: 6px;
+        background-color: #e3e3e3;
+        color: lighten($color: $cg-primary, $amount: 10%);
+        font-size: 1.1rem;
+
+        i {
+          margin-right: 0.5rem;
+        }
+      }
+    }
   }
 }
 
@@ -58,7 +96,7 @@
       margin-left: 60px;
 
       &::before {
-        content: url('../../../assets/img/comment-icon.png');
+        content: url("../../../assets/img/comment-icon.png");
         display: inline-block;
         vertical-align: middle;
         padding-right: 30px;
