@@ -61,6 +61,11 @@ if ( ! function_exists( 'cyberize_setup' ) ) :
 			'post-cat' => esc_html__( 'Post Category', 'cyberize' ),
 		) );
 
+		// University Category Menu
+		register_nav_menus( array(
+			'univ-cat' => esc_html__( 'University Category', 'cyberize' ),
+		) );
+
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.

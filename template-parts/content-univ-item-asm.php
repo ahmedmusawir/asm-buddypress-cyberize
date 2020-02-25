@@ -37,16 +37,22 @@
 
     <div class="entry-meta">
       <?php
-        cyberize_posted_by();
-        cyberize_posted_on();
+        // cyberize_posted_by();
+        // cyberize_posted_on();
 			?>
     </div><!-- .entry-meta -->
 
-    <div class="pr-3">
+    <div class="pr-3 d-flex justify-content-between university-item-content">
+
+      <a class="detail-link" href="<?php the_permalink(); ?>"><span class="btn btn-primary btn-sm">View
+          Details</span></a>
+      <figure class="university-logo">
+        <img class="img-fluid" src="/wp-content/uploads/university-logos.png" alt="">
+      </figure>
 
       <?php
         // <!-- CONTENT -->
-          the_excerpt();
+          // the_excerpt();
         ?>
     </div>
 
@@ -73,11 +79,17 @@
       ?>
     </div><!-- .entry-meta -->
 
-    <div class="pr-3 pt-3 pb-3">
+    <div class="pr-3 pt-3 pb-3 d-flex justify-content-between university-item-content">
+
+      <a class="detail-link" href="<?php the_permalink(); ?>"><span class="btn btn-primary btn-sm">View
+          Details</span></a>
+      <figure class="university-logo">
+        <img class="img-fluid" src="/wp-content/uploads/university-logos.png" alt="">
+      </figure>
 
       <?php
       // <!-- CONTENT -->
-        the_excerpt();
+        // the_excerpt();
       ?>
     </div>
 

@@ -36,8 +36,8 @@
           <div class="col-sm-12 col-md-12 col-lg-6">
 
             <div class="blog-index-header py-3">
-              <h2 class="header-title">All Colleges & Universities:</h2>
-              <h5 class="header-title">Find the right College or University for you ...</h5>
+              <h2 class="header-title">All Universities:</h2>
+              <h5 class="header-title">Find the right university for you ...</h5>
             </div>
 
             <article class="post-item-container">
