@@ -41,7 +41,7 @@ if ( ! function_exists( 'cyberize_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-		add_image_size( 'blog-size', 400, 200, true );
+		add_image_size( 'blog-size', 400, 400, true );
 		add_image_size( 'featured-size', 500, 300, true );
 		add_image_size( 'featured-post-size', 600, 250, true );
 

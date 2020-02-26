@@ -58,7 +58,7 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col">SAT Comp Range:</th>
+                        <th scope="col">SAT Range:</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -68,7 +68,7 @@
                     </tbody>
                     <thead>
                       <tr>
-                        <th scope="col">ACTC</th>
+                        <th scope="col">ACT Range</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -78,7 +78,7 @@
                     </tbody>
                     <thead>
                       <tr>
-                        <th scope="col">College Grade Rate:</th>
+                        <th scope="col">Acceptance Rate</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -88,32 +88,52 @@
                     </tbody>
                     <thead>
                       <tr>
-                        <th scope="col">SAT Comp Range:</th>
+                        <th scope="col">Graduation Rate</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>1170 - 1370</td>
+                        <td>0.571429</td>
                       </tr>
                     </tbody>
                     <thead>
                       <tr>
-                        <th scope="col">ACTC</th>
+                        <th scope="col">Full-Time UnderGrad Students</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>27 - 31</td>
+                        <td>23040</td>
                       </tr>
                     </tbody>
                     <thead>
                       <tr>
-                        <th scope="col">College Grade Rate:</th>
+                        <th scope="col">Full-Time Grad Students</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>0.9082</td>
+                        <td>9082</td>
+                      </tr>
+                    </tbody>
+                    <thead>
+                      <tr>
+                        <th scope="col">Net Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>19082</td>
+                      </tr>
+                    </tbody>
+                    <thead>
+                      <tr>
+                        <th scope="col">College Settings</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Large City</td>
                       </tr>
                     </tbody>
                   </table>
@@ -122,7 +142,7 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col">SAT Comp Range:</th>
+                        <th scope="col">Athletic Association</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -132,7 +152,7 @@
                     </tbody>
                     <thead>
                       <tr>
-                        <th scope="col">ACTC</th>
+                        <th scope="col">Athletic Conference</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -142,7 +162,7 @@
                     </tbody>
                     <thead>
                       <tr>
-                        <th scope="col">College Grade Rate:</th>
+                        <th scope="col">Athletic Division</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -152,7 +172,7 @@
                     </tbody>
                     <thead>
                       <tr>
-                        <th scope="col">SAT Comp Range:</th>
+                        <th scope="col">Male-Female UnderGrad Ratio</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -162,7 +182,7 @@
                     </tbody>
                     <thead>
                       <tr>
-                        <th scope="col">ACTC</th>
+                        <th scope="col">Male-Female Grad Ratio</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -172,7 +192,7 @@
                     </tbody>
                     <thead>
                       <tr>
-                        <th scope="col">College Grade Rate:</th>
+                        <th scope="col">Men’s Varsity Sports</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -180,6 +200,27 @@
                         <td>0.9082</td>
                       </tr>
                     </tbody>
+                    <thead>
+                      <tr>
+                        <th scope="col">Women’s Varsity Sports</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0.9082</td>
+                      </tr>
+                    </tbody>
+                    <thead>
+                      <tr>
+                        <th scope="col">College Type</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>4 Years</td>
+                      </tr>
+                    </tbody>
+
                   </table>
                 </div>
               </div>
