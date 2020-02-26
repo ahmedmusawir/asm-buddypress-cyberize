@@ -273,8 +273,8 @@
               <?php if( get_field('univ_linkedin') ): ?>
               <a href="<?php get_field('univ_linkedin'); ?>"><i class="fab fa-linkedin-in"></i></a>
               <?php endif; ?>
-              <?php if( get_field('univ_golu') ): ?>
-              <a href="<?php get_field('univ_golu'); ?>"><i class="fab fa-google-plus-g"></i></a>
+              <?php if( get_field('univ_google_plus') ): ?>
+              <a href="<?php get_field('univ_google_plus'); ?>"><i class="fab fa-google-plus-g"></i></a>
               <?php endif; ?>
             </div>
           </section>
