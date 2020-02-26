@@ -44,6 +44,7 @@ if ( ! function_exists( 'cyberize_setup' ) ) :
 		add_image_size( 'blog-size', 400, 400, true );
 		add_image_size( 'featured-size', 500, 300, true );
 		add_image_size( 'featured-post-size', 600, 250, true );
+		add_image_size( 'map-image', 300, 250, true );
 
 
 		// This theme uses wp_nav_menu() in one location.

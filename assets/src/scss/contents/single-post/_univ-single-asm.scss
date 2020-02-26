@@ -164,7 +164,7 @@
       .button-block {
         box-shadow: 2px 2px 6px gray;
         padding: 3rem;
-        background-color: #024d80;
+        background-color: $cg-primary;
         color: white;
 
         i {
@@ -176,6 +176,22 @@
           color: white;
         }
       }
+    }
+  }
+
+  #most-viewed-athlete {
+    min-height: 400px;
+    background-color: lighten($color: $cg-primary, $amount: 0%);
+
+    .block-title {
+      color: white;
+      font-weight: 600;
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+    }
+
+    .block-content {
+      background-color: white;
     }
   }
 }

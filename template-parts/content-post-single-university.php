@@ -22,7 +22,7 @@
 
         <div class="col-sm-12 col-md-12 col-lg-8">
 
-          <main class="main-content">
+          <main class="main-content pb-5">
             <!-- UNIVERSITY HEADER -->
             <header class="univ-header row">
 
@@ -276,10 +276,25 @@
           <!-- BUTTON BLOCK END -->
 
         </aside>
-      </div>
+      </div> <!-- top part row end -->
     </div><!-- .entry-content -->
 
-    <footer class="entry-footer">
-    </footer><!-- .entry-footer -->
+    <!-- MOST VIEWED ATHLETE SECTION -->
+
+    <section id="most-viewed-athlete">
+
+      <div class="container-fluid">
+        <h2 class="block-title">Most Viewed Athletes <small>(following block is just an image)</small></h2>
+
+        <div class="row">
+          <img class="img-fluid pb-5" src="/wp-content/uploads/Screen-Shot-2020-02-26-at-1.31.40-PM.png" alt="">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- MOST VIEWED ATHLETE SECTION END -->
+
+
   </section>
 </article><!-- #post- -->
