@@ -36,13 +36,12 @@
                 ?>
 
                 <h3 class="sub-title">
-                  Grade: <span class="text-info pl-3"><?php the_field('university_grade'); ?></span>
+                  Grade: <span class="text-info pl-3">B+</span>
                 </h3>
               </div>
               <div class="col-md-3">
                 <figure class="university-logo mt-3">
-                  <img class="img-fluid" src="<?php the_field('university_logo'); ?>" alt="">
-                  <!-- <img class="img-fluid" src="/wp-content/uploads/university-logos.png" alt=""> -->
+                  <img class="img-fluid" src="/wp-content/uploads/university-logos.png" alt="">
                 </figure>
               </div>
 
@@ -64,7 +63,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('sat_range'); ?></td>
+                        <td>1170 - 1370</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -74,7 +73,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('act_range'); ?></td>
+                        <td>27 - 31</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -84,7 +83,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('acceptance_rate'); ?></td>
+                        <td>0.9082</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -94,7 +93,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('graduation_range'); ?></td>
+                        <td>0.571429</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -104,7 +103,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('full_time_under_grad_students'); ?></td>
+                        <td>23040</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -114,7 +113,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('full_time_grad_students'); ?></td>
+                        <td>9082</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -124,7 +123,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('net_price'); ?></td>
+                        <td>19082</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -134,7 +133,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('college_settings'); ?></td>
+                        <td>Large City</td>
                       </tr>
                     </tbody>
                   </table>
@@ -148,7 +147,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('athletic_association'); ?></td>
+                        <td>1170 - 1370</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -158,7 +157,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('athletic_conference'); ?></td>
+                        <td>27 - 31</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -168,7 +167,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('athletic_division'); ?></td>
+                        <td>0.9082</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -178,7 +177,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('male_female_under_grad_ratio'); ?></td>
+                        <td>1170 - 1370</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -188,7 +187,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('male_female_grad_ratio'); ?></td>
+                        <td>27 - 31</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -198,7 +197,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('men_versity_sports'); ?></td>
+                        <td>0.9082</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -208,7 +207,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('women_varsity_sports'); ?></td>
+                        <td>0.9082</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -218,7 +217,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><?php the_field('college_type'); ?></td>
+                        <td>4 Years</td>
                       </tr>
                     </tbody>
 
@@ -252,30 +251,18 @@
           <!-- ADDRESS BLOCK -->
           <section class="address-block">
             <h5>Address:</h5>
-            <p><?php echo $mapLocation['address']; ?></p>
+            <p>123 New Haven</p>
+            <p>CT 06520, United States</p>
 
             <h5>Official Website:</h5>
-            <p><a href="<?php the_field('website_url'); ?>"><?php the_field('website_url'); ?></a></p>
+            <p><a href="http://google.com">www.yale.edu</a></p>
 
             <div class="social">
-              <?php if( get_field('univ_facebook') ): ?>
-              <a href="<?php get_field('univ_facebook'); ?>"><i class="fab fa-facebook-square"></i></a>
-              <?php endif; ?>
-              <?php if( get_field('univ_instagram') ): ?>
-              <a href="<?php get_field('univ_instagram'); ?>"><i class="fab fa-instagram"></i></a>
-              <?php endif; ?>
-              <?php if( get_field('univ_twitter') ): ?>
-              <a href="<?php get_field('univ_twitter'); ?>"><i class="fab fa-twitter"></i></a>
-              <?php endif; ?>
-              <?php if( get_field('univ_youtube') ): ?>
-              <a href="<?php get_field('univ_youtube'); ?>"><i class="fab fa-youtube"></i></a>
-              <?php endif; ?>
-              <?php if( get_field('univ_linkedin') ): ?>
-              <a href="<?php get_field('univ_linkedin'); ?>"><i class="fab fa-linkedin-in"></i></a>
-              <?php endif; ?>
-              <?php if( get_field('univ_golu') ): ?>
-              <a href="<?php get_field('univ_golu'); ?>"><i class="fab fa-google-plus-g"></i></a>
-              <?php endif; ?>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </section>
           <!-- ADDRESS BLOCK END -->

@@ -205,10 +205,12 @@
           margin-top: 1rem;
         }
         .university-logo {
-          // border: 2px dotted green;
-          border-radius: 50%;
-          box-shadow: 2px 2px 6px gray;
-          width: 60px;
+          img {
+            // border: 2px dotted green;
+            border-radius: 50%;
+            box-shadow: 2px 2px 6px gray;
+            width: 60px;
+          }
         }
       }
     }

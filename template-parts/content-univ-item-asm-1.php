@@ -47,8 +47,7 @@
       <a class="detail-link" href="<?php the_permalink(); ?>"><span class="btn btn-primary btn-sm">View
           Details</span></a>
       <figure class="university-logo">
-        <img class="img-fluid" src="<?php the_field('university_logo'); ?>" alt="">
-        <!-- <img class="img-fluid" src="/wp-content/uploads/university-logos.png" alt=""> -->
+        <img class="img-fluid" src="/wp-content/uploads/university-logos.png" alt="">
       </figure>
 
       <?php
@@ -85,8 +84,7 @@
       <a class="detail-link" href="<?php the_permalink(); ?>"><span class="btn btn-primary btn-sm">View
           Details</span></a>
       <figure class="university-logo">
-        <img class="img-fluid" src="<?php the_field('university_logo'); ?>" alt="">
-        <!-- <img class="img-fluid" src="/wp-content/uploads/university-logos.png" alt=""> -->
+        <img class="img-fluid" src="/wp-content/uploads/university-logos.png" alt="">
       </figure>
 
       <?php
