@@ -299,10 +299,11 @@
     <section id="most-viewed-athlete">
 
       <div class="container-fluid">
-        <h2 class="block-title">Most Viewed Athletes <small>(following block is just an image)</small></h2>
+        <h2 class="block-title text-center">Most Viewed Athletes </h2>
 
-        <div class="row">
-          <img class="img-fluid pb-5" src="/wp-content/uploads/Screen-Shot-2020-02-26-at-1.31.40-PM.png" alt="">
+        <div class="popular-athlete-list">
+          <!-- <img class="img-fluid pb-5" src="/wp-content/uploads/Screen-Shot-2020-02-26-at-1.31.40-PM.png" alt=""> -->
+          <?php echo do_shortcode('[bp-visitors-most-visited-users view="list" max="4" duration="30" show_visits="1"]'); ?>
         </div>
       </div>
 

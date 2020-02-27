@@ -190,8 +190,50 @@
       padding-bottom: 2rem;
     }
 
-    .block-content {
-      background-color: white;
+    .popular-athlete-list {
+      // border: 3px dotted white;
+
+      .item-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+
+        li {
+          display: inline-block;
+
+          .item-avatar {
+            width: 300px;
+          }
+
+          .item {
+            text-align: center;
+
+            .item-title {
+              padding-bottom: 1rem;
+              padding-top: 1rem;
+              a {
+                color: lighten($color: $cg-primary, $amount: 30%);
+                font-size: 1.5rem;
+                font-weight: 600;
+
+                &:hover {
+                  color: lighten($color: $cg-primary, $amount: 50%);
+                }
+              }
+            }
+
+            .item-meta {
+              padding-bottom: 2rem;
+              span {
+                background-color: lighten($color: $cg-primary, $amount: 20%);
+                color: white;
+                padding: 0.5rem 1rem;
+                border-radius: 30px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
