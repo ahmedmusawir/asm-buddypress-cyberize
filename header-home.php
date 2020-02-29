@@ -66,7 +66,7 @@
       <!-- Moose_Framework_2 NAVIGATION GOES HERE -->
 
       <section class="main-navigation">
-        <div id="main-navbar-asm" class="main-navbar navbar fixed-top">
+        <div id="main-navbar-home" class="main-navbar navbar fixed-top">
           <a class="navbar-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
             <img src="/wp-content/uploads/logo.png" class="img-fluid" alt="">
           </a>

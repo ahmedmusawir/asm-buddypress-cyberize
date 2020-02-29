@@ -3,7 +3,6 @@
 // --------------------------------------------------------------*/
 
 .main-navigation {
-  // border: 2rem dotted dodgerblue;
   position: relative;
   float: left;
   width: 100%;
@@ -11,13 +10,9 @@
   clear: both;
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
-  // background: #313131;
+  background: #313131;
 
   .main-navbar {
-    // border: 1rem dotted hotpink;
-    padding: 0.57rem;
-    background-color: #e7e7e7;
-
     .navbar-logo {
       float: left;
       padding: 0 !important;
@@ -59,24 +54,18 @@
       }
     }
   }
-  /** MAIN NAV ITEMS */
+
   li {
     float: left;
     position: relative;
-    // border: 3px dotted yellowgreen;
-
-    a {
-      font-size: 0.8rem;
-      font-weight: 900 !important;
-    }
 
     &:hover > ul {
       display: block;
     }
 
     &:hover > a {
-      color: lighten($color: $cg-primary, $amount: 15%);
-      text-decoration: underline !important;
+      // color: #fff;
+      border-bottom: 4px solid red;
     }
   }
 
@@ -95,15 +84,11 @@
   .current-menu-item > a:hover {
     // background: darken($cg-primary, 10%);
     // color: yellow;
-    color: lighten($color: $cg-primary, $amount: 15%);
-    text-decoration: underline !important;
-    // border-bottom: 4px solid red;
+    border-bottom: 4px solid red;
   }
   // CURRENT PAGE SELECTED STATUS
   .sub-menu .current_page_ancestor {
-    color: lighten($color: $cg-primary, $amount: 15%);
-    text-decoration: underline !important;
-    // border-bottom: 4px solid red;
+    border-bottom: 4px solid red;
   }
 
   ul ul .current_page_parent,

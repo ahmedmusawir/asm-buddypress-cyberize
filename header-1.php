@@ -62,11 +62,11 @@
   <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cyberize' ); ?></a>
 
-    <header id="header-asm" class="site-header">
+    <header id="header-cyberize" class="site-header">
       <!-- Moose_Framework_2 NAVIGATION GOES HERE -->
 
       <section class="main-navigation">
-        <div id="main-navbar-asm" class="main-navbar navbar fixed-top">
+        <div class="main-navbar navbar navbar-light bg-light fixed-top">
           <a class="navbar-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
             <img src="/wp-content/uploads/logo.png" class="img-fluid" alt="">
           </a>
