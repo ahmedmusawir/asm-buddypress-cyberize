@@ -93,17 +93,16 @@
   .current-menu-item > a,
   .current_page_item > a:hover,
   .current-menu-item > a:hover {
-    // background: darken($cg-primary, 10%);
-    // color: yellow;
+    // CURRENT PAGE SELECTED STATUS FOR MAIN MENUS
     color: lighten($color: $cg-primary, $amount: 15%);
-    text-decoration: underline !important;
-    // border-bottom: 4px solid red;
+    // text-decoration: underline !important;
+    border: 1px solid $cg-primary;
   }
-  // CURRENT PAGE SELECTED STATUS
+  // CURRENT PAGE SELECTED STATUS FOR SUBMENUS
   .sub-menu .current_page_ancestor {
     color: lighten($color: $cg-primary, $amount: 15%);
     text-decoration: underline !important;
-    // border-bottom: 4px solid red;
+    border-bottom: 4px solid red;
   }
 
   ul ul .current_page_parent,
