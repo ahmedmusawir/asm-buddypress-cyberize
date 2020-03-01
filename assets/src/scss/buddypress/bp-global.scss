@@ -3,6 +3,7 @@
  * 1. ATHLETE SINGLE PROFILE
  * 2. ATHLETE INDEX
  * 3. BP GLOBAL SEARCH INDEX
+ * 4. BP REGISTRATION PAGE
  */
 
 /**
@@ -496,4 +497,44 @@ body.buddypress {
       }
     }
   }
+}
+
+/**
+ * 4. BP REGISTRATION PAGE
+ */
+
+#asm-registration-pg {
+  // border: 1rem dotted red;
+  margin-top: -4.2rem;
+  padding: 5rem;
+  background: url('/wp-content/themes/asm-buddypress-cyberize/assets/img/ASM-bg.png');
+
+  #register-page {
+    // border: 1rem dotted dodgerblue;
+    border-radius: 30px;
+    padding: 2rem;
+    background-color: rgba($color: #e7e7e7, $alpha: 0.9);
+    // background-color: lighten($color: #e7e7e7, $amount: 0);
+
+    .layout-wrap {
+      // border: 1rem dotted dodgerblue;
+      .description {
+        padding: 1.5rem;
+        border-radius: 20px;
+      }
+    }
+
+    #submit {
+      background-color: lighten($color: $cg-primary, $amount: 10%);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+    }
+  }
+}
+
+.buddypress-wrap .standard-form input[required]:invalid,
+.buddypress-wrap .standard-form select[required]:invalid,
+.buddypress-wrap .standard-form textarea[required]:invalid {
+  border-color: transparent !important;
 }

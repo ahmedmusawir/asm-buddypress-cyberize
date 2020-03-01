@@ -75,7 +75,7 @@
 						'theme_location' => 'menu-1', // Defined when registering the menu
 						'menu_id'        => 'primary-menu',
 						'container'			 => 'div',
-						'container_class' => 'main-nav',  	
+						'container_class' => 'main-nav pr-4',  	
 						'menu_class'     => 'mx-auto', //CENTER ALIGN
 						// 'menu_class'     => 'ml-auto', //RIGHT ALIGN
 						// 'menu_class'     => 'mr-auto', //LEFT ALIGN

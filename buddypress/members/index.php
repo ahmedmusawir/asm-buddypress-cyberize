@@ -6,7 +6,7 @@
  */
 
 ?>
-<section id="athlete-index">
+<section id="athlete-index" class="mt-5 pt-5">
 
   <div class="screen-content">
     <div class="search-menu-container">
@@ -15,10 +15,25 @@
       </article>
     </div>
 
-    <!-- THE FOLLOWING IS LOADING THE MEMEBERS LIST WITH JS [data-bp-list="members"]... DO NOT REMOVE -->
-    <div id="members-dir-list" class="members dir-list" data-bp-list="members">
+    <div class="row">
 
-    </div><!-- #members-dir-list -->
+      <div class="col-md-8">
+        <!-- THE FOLLOWING IS LOADING THE MEMEBERS LIST WITH JS [data-bp-list="members"]... DO NOT REMOVE -->
+        <div id="members-dir-list" class="members dir-list" data-bp-list="members">
+
+        </div><!-- #members-dir-list -->
+      </div> <!-- end col-md-8 -->
+
+      <div class="col-3">
+
+        <?php get_sidebar(); ?>
+
+      </div>
+
+    </div> <!-- end row -->
+
+
+
 
   </div><!-- // .screen-content -->
 

@@ -73,6 +73,14 @@ require get_template_directory() . '/_functions/breadcrum-function.php';
 
 /**
  *
+ * CUSTOMIZING THE LOGIN SCREEN
+ *
+ */
+
+require get_template_directory() . '/_functions/wp-logon-screen.php';
+
+/**
+ *
  * Changing Comments Headline (Leave a Reply to Leave a comment)
  *
  */
@@ -102,6 +110,3 @@ add_filter('comment_form_defaults','freeman_comment_reform');
 	// 	}    
 	// 	return $title;    
 	// });
-
-
-
