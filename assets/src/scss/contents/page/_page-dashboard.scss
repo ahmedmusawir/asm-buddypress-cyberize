@@ -66,29 +66,84 @@
     }
   }
 
+  // TOP TASK BOX
   #dashboard-task-board {
-    border: 3px dotted blue;
+    // border: 3px dotted blue;
+    background-color: #0277bb;
     margin-top: 130px;
     padding: 3rem;
 
     #top-task-block {
-      border: 3px dotted hotpink;
+      // border: 3px dotted hotpink;
       padding: 2rem;
+
+      .block-title {
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      .membership-box {
+        // border: 3px dotted green;
+        background-color: white;
+        float: right;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0.5rem;
+
+        .text {
+          padding-right: 3rem;
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: $cg-primary;
+          float: left;
+        }
+        .btn {
+          padding: 0.5rem 4rem;
+          border-radius: 0;
+        }
+      }
     }
 
     #bottom-task-block {
-      border: 3px dotted dodgerblue;
-      display: flex;
+      // border: 3px dotted dodgerblue;
       justify-content: space-around;
 
       .task-box {
+        background-color: white;
+
+        i {
+          font-size: 2.5rem;
+          font-weight: 600;
+          padding-top: 1rem;
+          color: lighten($color: $cg-primary, $amount: 15%);
+        }
+        .text-only {
+          font-weight: 700;
+          padding-top: 0.5rem;
+          padding-bottom: 1rem;
+          color: $cg-secondary;
+        }
+        .text-number {
+          font-size: 3rem;
+          font-weight: 700;
+        }
+        .btn {
+          padding: 1rem 3rem;
+          margin-top: 2rem;
+          border-radius: 0;
+          background-color: lighten($color: #0277bb, $amount: 10%);
+        }
+      }
+      .task-box-sm {
         width: 270px;
-        border: 3px dotted pink;
+        // border: 3px dotted pink;
         padding: 1rem 2rem;
       }
-      .task-box-large {
+      .task-box-lg {
         width: 550px;
-        border: 3px dotted red;
+        // border: 3px dotted red;
       }
     }
   }
@@ -96,5 +151,48 @@
   #asm-dashboard-content {
     // border: 1rem dotted blue;
     margin-top: 30px;
+  }
+
+  //MAIN CONTENT
+  #main {
+    // border: 3px dotted red;
+    padding: 4rem;
+
+    .task-item {
+      box-shadow: 2px 2px 6px #e3e3e3;
+      .col-sm-3 {
+        padding: 0 !important;
+      }
+      .video-box {
+      }
+      .text-box {
+        border-right: 1px solid $cg-secondary;
+        border-top: 1px solid $cg-secondary;
+        padding: 2rem;
+
+        h3 {
+          font-weight: 700;
+        }
+      }
+      .icon-box {
+        border-top: 1px solid $cg-secondary;
+        border-right: 1px solid $cg-secondary;
+
+        h4 {
+          padding: 1rem;
+          background-color: lighten($color: $cg-primary, $amount: 15%);
+          font-size: 1rem;
+          font-weight: 700;
+          color: white;
+        }
+
+        i {
+          padding: 2rem;
+          font-size: 3rem;
+          font-weight: 700;
+          color: $cg-primary;
+        }
+      }
+    }
   }
 }
