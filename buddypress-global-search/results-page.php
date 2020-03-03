@@ -8,6 +8,8 @@
 
 <div id="buddypress">
 
+  <!-- <div class="container-fluid"> -->
   <?php buddyboss_global_search_load_template("results-page-content"); ?>
+  <!-- </div> -->
 
 </div>

@@ -1,0 +1,100 @@
+/**
+ *
+ * STYLE: Page ASM Dashboard
+ *
+ */
+
+#page-asm-dashboard {
+  #general-page-header {
+    position: fixed;
+    top: 66px;
+    z-index: 100;
+    width: 100vw;
+    height: 65px;
+    background-color: $cg-secondary;
+    background-size: cover;
+    background-position: top center;
+    margin-bottom: 30px;
+
+    .top-page-menu {
+      .menu-title {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 1.3rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: white;
+      }
+    }
+
+    .menu-box {
+      margin-top: 1.3rem;
+
+      #menu-post-category-filter {
+        list-style-type: none;
+        list-style: none;
+        list-style-image: none;
+
+        .menu-item {
+          display: inline-block;
+        }
+      }
+
+      #menu-university-menu {
+        list-style-type: none;
+        list-style: none;
+        list-style-image: none;
+
+        .menu-item {
+          display: inline-block;
+        }
+      }
+
+      a {
+        padding: 0.5rem 2rem;
+        margin-left: 1rem;
+        border: 1px solid gray;
+        border-radius: 6px;
+        background-color: #e3e3e3;
+        color: lighten($color: $cg-primary, $amount: 10%);
+        font-size: 1.1rem;
+
+        i {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  #dashboard-task-board {
+    border: 3px dotted blue;
+    margin-top: 130px;
+    padding: 3rem;
+
+    #top-task-block {
+      border: 3px dotted hotpink;
+      padding: 2rem;
+    }
+
+    #bottom-task-block {
+      border: 3px dotted dodgerblue;
+      display: flex;
+      justify-content: space-around;
+
+      .task-box {
+        width: 270px;
+        border: 3px dotted pink;
+        padding: 1rem 2rem;
+      }
+      .task-box-large {
+        width: 550px;
+        border: 3px dotted red;
+      }
+    }
+  }
+
+  #asm-dashboard-content {
+    // border: 1rem dotted blue;
+    margin-top: 30px;
+  }
+}

@@ -26,7 +26,7 @@
 
     <div class="row">
 
-      <div class="col-md-9">
+      <div class="col-md-8">
 
 
         <div class="search_results">
@@ -34,10 +34,11 @@
         </div>
 
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
 
-        <!-- <img class="img-fluid" src="/wp-content/uploads/2020/01/profile-sidebar.png" alt=""> -->
-        <?php get_sidebar(); ?>
+        <div class="sidebar-holder pr-3">
+          <?php get_sidebar(); ?>
+        </div>
 
       </div>
 
