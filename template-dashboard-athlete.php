@@ -29,15 +29,15 @@ get_header(); ?>
 
     <div id="top-task-block" class="row">
       <article class="col-md-6">
-        <h4 class="block-title">Ready to get recruited?</h4>
+        <h4 class="block-title"><?php the_field('top_left_title'); ?></h4>
       </article>
       <article class="col-md-6">
         <div class="membership-box">
           <h4 class="text">
-            Free Membership
+            <?php the_field('top_right_title'); ?>
           </h4>
-          <a href="#" class="btn btn-danger">
-            UPGRADE
+          <a href="<?php the_field('top_right_button_url'); ?>" target="_blank" class="btn btn-danger">
+            <?php the_field('top_right_button_text'); ?>
           </a>
         </div>
       </article>
@@ -80,64 +80,87 @@ get_header(); ?>
 
       <main id="main" class="site-main col-sm-12 col-md-12 col-lg-8">
 
-        <div class="row task-item">
+        <?php 
+        // check if the repeater field has rows of data
+        if( have_rows('bottom_task_video_box') ):
 
-          <div class="col-sm-3 text-center video-box">
-            <img src="/wp-content/uploads/Screen-Shot-2019-09-25-at-4.44.01-AM@2x.png" alt="" class=" w-100">
-          </div>
-          <div class="col-sm-6 text-center text-box">
-            <h3>1. Welcome Video</h3>
-            <p>
-              Watch this video to learn how to get recruited.
-            </p>
-          </div>
-          <div class="col-sm-3 text-center icon-box">
-            <h4>COMPLETE</h4>
-            <i class="fas fa-check-circle"></i>
-          </div>
+          // loop through the rows of data
+          while ( have_rows('bottom_task_video_box') ) : the_row();
+        ?>
 
-        </div>
         <div class="row task-item mt-4">
 
           <div class="col-sm-3 text-center video-box">
-            <img src="/wp-content/uploads/Screen-Shot-2019-09-25-at-4.51.48-AM@2x.png" alt="" class=" w-100">
+            <a type="button" class="" data-toggle="modal"
+              data-target="#<?php the_sub_field('left_box_youtube_video_id'); ?>">
+
+              <img src="<?php the_sub_field('left_box_image'); ?>" alt="" class=" w-100">
+
+            </a>
           </div>
           <div class="col-sm-6 text-center text-box">
-            <h3>2. Build your profile</h3>
-            <p>
-              Watch this video to learn how to get recruited.
+            <h3 class="title"><?php the_sub_field('middle_box_title'); ?></h3>
+            <p class="sub-title">
+              <?php the_sub_field('middle_box_subtitle'); ?>
             </p>
           </div>
           <div class="col-sm-3 text-center icon-box">
-            <h4>STARTED</h4>
-            <i class="fas fa-clock text-warning"></i>
-          </div>
-
-        </div>
-        <div class="row task-item mt-4">
-
-          <div class="col-sm-3 text-center video-box">
-            <img src="/wp-content/uploads/Screen-Shot-2019-09-25-at-4.51.40-AM@2x.png" alt="" class=" w-100">
-          </div>
-          <div class="col-sm-6 text-center text-box">
-            <h3>3. Search universities</h3>
-            <p>
-              Watch this video to learn how to get recruited.
-            </p>
-          </div>
-          <div class="col-sm-3 text-center icon-box">
-            <h4>TO DO</h4>
-            <i class="fas fa-exclamation-circle text-danger"></i>
+            <h4 class="status-text"><?php the_sub_field('task_status_text'); ?></h4>
+            <i class="fas <?php the_sub_field('task_status_icon'); ?>"></i>
           </div>
 
         </div>
 
+        <!-- YOUTUBE VIDEO MODAL -->
+
+        <!-- Modal -->
+        <div class="modal fade bd-example-modal-lg" id="<?php the_sub_field('left_box_youtube_video_id'); ?>"
+          tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item mt-2"
+                    src="https://www.youtube.com/embed/<?php the_sub_field('left_box_youtube_video_id'); ?>?autoplay=0&loop=0&controls=1&showinfo=0&rel=0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                    <!-- THE YOUTUBE VIDEO EMBED - RESPONSIVE - VIDEO ID INPUT ONLY -->
+                  </iframe>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- YOUTUBE VIDEO MODAL END -->
+        <?php 
+        endwhile;
+
+        else :
+        
+            // no rows found
+            echo "No rows found!";
+        
+        endif;
+        ?>
 
       </main><!-- #main -->
 
       <aside id="asm-dashboard-sidebar" class="asm-sidebar col-sm-12 col-md-12 col-lg-4">
 
-        <?php get_sidebar();  ?>
+        <div class="sidebar-holder pr-5">
+          <?php get_sidebar();  ?>
+        </div>
 
       </aside><!-- #aside -->
 
@@ -145,6 +168,7 @@ get_header(); ?>
   </div><!-- #primary -->
 
 </div> <!-- #page-asm-dashboard end  -->
+
 
 <?php
 get_footer();
