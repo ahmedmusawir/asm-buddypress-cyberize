@@ -31,9 +31,9 @@ $user_id = bp_displayed_user_id();
 
   <section class="athlete-meta">
 
-    <div class="athlete-meta-info clearfix px-1 py-3">
-      <span class="eye float-left"><i class="fas fa-eye"></i> &nbsp;1,234 Views</span>
-      <span class="star float-right"><i class="fas fa-star"></i> &nbsp;4.5</span>
+    <div class="athlete-meta-info clearfix px-1 py-3 text-center">
+      <span class="eye"><i class="fas fa-eye"></i> &nbsp;1,234 Views</span>
+      <!-- <span class="star float-right"><i class="fas fa-star"></i> &nbsp;4.5</span> -->
     </div>
 
   </section>

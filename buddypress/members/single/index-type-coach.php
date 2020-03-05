@@ -22,18 +22,13 @@ get_header();
         <a href="#about-section">
           <li class="list-inline-item"><i class="fad fa-user-circle"></i>Bio</li>
         </a>
-        <a href="#sports-stats-section">
-          <li class="list-inline-item"><i class="fad fa-trophy-alt"></i></i>Sports Stats</li>
-        </a>
         <a href="#academics-section">
-          <li class="list-inline-item"><i class="fad fa-file-certificate"></i>Academics</li>
+          <li class="list-inline-item"><i class="fad fa-file-certificate"></i>University</li>
         </a>
         <a href="#instagram-section">
           <li class="list-inline-item"><i class="fab fa-instagram"></i>Instagram</li>
         </a>
-        <a href="#interview-section">
-          <li class="list-inline-item"><i class="fad fa-comments"></i>Interviews</li>
-        </a>
+
       </ul>
     </section>
   </div>
@@ -88,7 +83,7 @@ get_header();
         <!-- SPORTS STATS SECTION STARTS -->
 
         <?php 
-      get_template_part('/buddypress/members/single/_moose-template-parts/athlete-profile-sports-stats');
+      // get_template_part('/buddypress/members/single/_moose-template-parts/athlete-profile-sports-stats');
       ?>
 
         <!-- SPORTS STATS SECTION END -->
@@ -96,7 +91,7 @@ get_header();
         <!-- ACADEMICS SECTION START -->
 
         <?php 
-      get_template_part('/buddypress/members/single/_moose-template-parts/athlete-profile-academics');
+      get_template_part('/buddypress/members/single/_moose-template-parts/coach-profile-university');
       ?>
 
         <!-- ACADEMICS SECTION END -->
@@ -113,7 +108,7 @@ get_header();
 
 
         <?php 
-      get_template_part('/buddypress/members/single/_moose-template-parts/athlete-profile-interview');
+      // get_template_part('/buddypress/members/single/_moose-template-parts/athlete-profile-interview');
       ?>
 
 

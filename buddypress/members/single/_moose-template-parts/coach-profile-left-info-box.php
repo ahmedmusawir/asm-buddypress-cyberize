@@ -5,7 +5,7 @@ $user_id = bp_displayed_user_id();
   $gender = xprofile_get_field_data( 7, $user_id, $multi_format = 'array' );
   $versity_logo = xprofile_get_field_data( 439, $user_id, $multi_format = 'array' );
   $nationality = xprofile_get_field_data( 11, $user_id, $multi_format = 'array' );
-  $height = xprofile_get_field_data( 14, $user_id, $multi_format = 'array' );
+  $division = xprofile_get_field_data( 434, $user_id, $multi_format = 'array' );
   $weight = xprofile_get_field_data( 15, $user_id, $multi_format = 'array' );
   $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
   $enrollment_year = xprofile_get_field_data( 17, $user_id, $multi_format = 'array' ); 
@@ -31,37 +31,37 @@ $user_id = bp_displayed_user_id();
 
   <section class="athlete-meta">
 
-    <div class="athlete-meta-info clearfix px-1 py-3">
-      <span class="eye float-left"><i class="fas fa-eye"></i> &nbsp;1,234 Views</span>
-      <span class="star float-right"><i class="fas fa-star"></i> &nbsp;4.5</span>
+    <div class="athlete-meta-info clearfix px-1 py-3 text-center">
+      <span class="eye"><i class="fas fa-eye"></i> &nbsp;1,234 Profile Views</span>
+      <!-- <span class="star float-right"><i class="fas fa-star"></i> &nbsp;4.5</span> -->
     </div>
 
   </section>
 
-  <section class="athlete-bio">
+  <section class="coach-bio">
     <ul class="list-group">
       <li class="list-group-item">
         <span class="label float-left">GENDER</span>
-        <span class="label float-right"><?php echo $gender; ?></span>
+        <span class="values float-right"><?php echo $gender; ?></span>
       </li>
       <li class="list-group-item">
         <span class="label float-left">DIVISION</span>
-        <span class="label float-right"><?php echo $division; ?></span>
+        <span class="values float-right"><?php echo $division; ?></span>
       </li>
       <li class="list-group-item">
         <span class="label float-left">COUNTRY OF RESIDENCE</span>
-        <span class="label float-right"><?php echo $nationality; ?></span>
+        <span class="values float-right"><?php echo $nationality; ?></span>
       </li>
     </ul>
     <div class="athlete-sports-info">
-      <h1 class="">
+      <figure class="img-fluid float-left">
+        <?php echo $versity_logo; ?>
+      </figure>
+      <h1 class="text-only">
         <?php echo $sport; ?><br>
-        <small class="float-left">SPORT</small>
+        <small class="">SPORT</small>
       </h1>
-      <!-- <h1 class="float-right">
-        <?php //echo $enrollment_year; ?><br>
-        <small class="float-right">ENROLLMENT YEAR</small>
-      </h1> -->
+
     </div>
   </section>
 
