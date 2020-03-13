@@ -53,6 +53,18 @@ get_header();
       <!-- CENTER COLUMN START -->
       <article class="col-sm-12 col-md-12 col-lg-8 col-xl-6">
 
+        <?php
+          $user_id = bp_displayed_user_id();
+          $current_user = wp_get_current_user();
+          $current_user_id = $current_user->ID;
+        ?>
+
+        <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
+        <!-- SETTING UP EMAIL INBOX -->
+        <?php echo do_shortcode('[front-end-pm]'); ?>
+        <!-- SETTING UP EMAIL INBOX END -->
+        <?php endif; ?>
+
         <!-- THE EDIT MENU START -->
         <!-- FOLLOWING IS USED FOR THE PROFILE EDIT FUNCTION ONLY -->
         <?php bp_nouveau_member_template_part(); ?>

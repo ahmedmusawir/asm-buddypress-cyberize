@@ -4,6 +4,7 @@
  * 2. ATHLETE INDEX
  * 3. BP GLOBAL SEARCH INDEX
  * 4. BP REGISTRATION PAGE
+ * 5. FRONT END PM PRO (THE EMAIL SYSTEM STYLES)
  */
 
 /**
@@ -579,4 +580,140 @@ body.buddypress {
 .buddypress-wrap .standard-form select[required]:invalid,
 .buddypress-wrap .standard-form textarea[required]:invalid {
   border-color: transparent !important;
+}
+
+/**
+ * 5. FRONT END PM PRO (THE EMAIL SYSTEM STYLES)
+ */
+
+#buddypress {
+  #item-body {
+    #fep-wrapper {
+      // border: 4px dotted red;
+      #fep-menu-toggle-button {
+        display: none;
+      }
+      // EMAIL BOX HEADER
+      #fep-header {
+        // border: 4px dotted blue;
+        background-color: #fbfbfb;
+        box-shadow: 2px 2px 8px gray;
+        padding: 1rem;
+
+        .avatar.photo {
+          float: left;
+          margin-right: 2rem;
+          margin-top: 0.3rem;
+          border-radius: 10px;
+        }
+      }
+
+      // EMAIL BOX MENU BAR
+      #fep-menu {
+        // border: 4px dotted blue;
+        // background-color: #e7e7e7;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+        #fep-menu-announcements {
+          display: none;
+        }
+      }
+      // SEARCH BOX
+      #fep-messagebox-search-form {
+        // text-align: center;
+        border-top: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        .fep-messagebox-search-form-field {
+          width: 100%;
+          border: 1px solid #e6e6e6;
+          padding: 0.5rem;
+        }
+      }
+      // BULK ACTION ROW
+      .fep-table.fep-action-table {
+        // border: 2px dotted red;
+
+        .fep-bulk-action {
+          float: left;
+          padding: 0.5rem;
+          margin-top: 0.3rem;
+        }
+        .fep-button {
+          padding: 0.3rem 4rem;
+          border-radius: 10px;
+        }
+        .fep-filter {
+          float: right;
+          margin-top: -0.8rem;
+        }
+      }
+
+      // MESSAGE BOX
+      #fep-box-content-content {
+        .fep-avatar-2,
+        .fep-avatar-1 {
+          display: none;
+        }
+        // CHECK/UNCHECK ALL
+        .fep-cb-check-uncheck-all-div {
+          width: 100%;
+          display: flex;
+          margin: 0.5rem 0;
+        }
+
+        // EMAIL LIST CONTENT
+        #fep-table {
+          // border: 2px dotted red;
+          .fep-table-row {
+            padding: 1rem;
+          }
+
+          .fep-column.fep-column-fep-cb {
+            float: left;
+            margin-top: -0.1rem;
+            // padding-top: 0.5rem;
+            // padding-left: 0.5rem;
+          }
+          .fep-message-author {
+            padding-left: 0.6rem;
+            font-weight: 700;
+          }
+          .fep-message-date {
+            padding-left: 1.5rem;
+            display: block;
+            clear: both;
+            font-size: 0.7rem;
+            font-weight: 800;
+          }
+          .fep-column.fep-column-title {
+            padding-top: 0.5rem;
+            a {
+              color: lighten($color: $cg-primary, $amount: 10%);
+              font-weight: 700;
+              padding-left: 1.5rem;
+              &:hover {
+                color: lighten($color: $cg-primary, $amount: 20%);
+              }
+            }
+            .fep-unread-classp {
+              font-size: 0.6rem;
+              font-weight: 800;
+              padding-left: 0.5rem;
+            }
+            .fep-message-excerpt {
+              padding-left: 1.5rem;
+              padding-top: 0.5rem;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+      // EMAIL BOX FOOTER
+      #fep-footer {
+        display: none;
+      }
+    }
+  }
 }
