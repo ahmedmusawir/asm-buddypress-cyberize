@@ -169,6 +169,31 @@ body.buddypress {
 
       .bp-profile {
         // border: 4px dotted red;
+        // PROFILE EDIT MENU
+        #subnav {
+          border: 2px solid $cg-secondary;
+          margin-top: 2rem;
+          background-color: $cg-secondary;
+          .subnav {
+            li {
+              a {
+                color: white;
+                &:hover {
+                  background-color: lighten($color: $cg-primary, $amount: 40%);
+                }
+              }
+
+              &.current.selected {
+                a {
+                  color: $cg-secondary;
+                }
+              }
+              &.current.selected.hover {
+                color: white !important;
+              }
+            }
+          }
+        }
         #profile-group-edit-submit {
           border: 4px solid $cg-secondary;
           padding: 1rem 4rem;
@@ -550,7 +575,7 @@ body.buddypress {
   // border: 1rem dotted red;
   margin-top: -4.2rem;
   padding: 5rem;
-  background: url("/wp-content/uploads/Group-236.png");
+  background: url('/wp-content/uploads/Group-236.png');
 
   #register-page {
     // border: 1rem dotted dodgerblue;
@@ -590,15 +615,21 @@ body.buddypress {
   #item-body {
     #fep-wrapper {
       // border: 4px dotted red;
+      // MENU TOGGLE BUTTON
       #fep-menu-toggle-button {
-        display: none;
+        box-shadow: 1px 1px 6px gray;
+        border-radius: 20px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: 800;
       }
       // EMAIL BOX HEADER
       #fep-header {
         // border: 4px dotted blue;
         background-color: #fbfbfb;
-        box-shadow: 2px 2px 8px gray;
+        box-shadow: 1px 1px 8px lighten($color: gray, $amount: 20%);
         padding: 1rem;
+        border-radius: 1rem;
 
         .avatar.photo {
           float: left;
@@ -611,12 +642,15 @@ body.buddypress {
       // EMAIL BOX MENU BAR
       #fep-menu {
         // border: 4px dotted blue;
-        // background-color: #e7e7e7;
         padding-top: 0.5rem;
         padding-bottom: 1rem;
         #fep-menu-announcements {
           display: none;
         }
+      }
+
+      .fep-menu-toggle {
+        // display: none;
       }
       // SEARCH BOX
       #fep-messagebox-search-form {
@@ -650,8 +684,12 @@ body.buddypress {
         }
       }
 
-      // MESSAGE BOX
+      /**
+       * MESSAGE BOX PAGE (EMAIL LIST)
+       */
+
       #fep-box-content-content {
+        // border: 3px dotted red;
         .fep-avatar-2,
         .fep-avatar-1 {
           display: none;
@@ -706,6 +744,259 @@ body.buddypress {
               padding-left: 1.5rem;
               padding-top: 0.5rem;
               font-size: 0.8rem;
+            }
+          }
+        }
+      }
+
+      /**
+       * SEND NEW MESSAGE PAGE
+       */
+
+      #fep-content {
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 5px lighten($color: gray, $amount: 20%);
+
+        // BLOCK TITLE (GENERAL EMAIL BLOCK TITLE)
+        h2 {
+          font-size: 1.5rem;
+          font-weight: 800;
+        }
+
+        // FORM LABELS
+        .fep-label {
+          label {
+            margin-top: 1.5rem;
+            font-size: 1rem;
+            font-weight: 700;
+          }
+        }
+
+        // TO INPUT
+        ul.token-input-list-facebook {
+          // border: none !important;
+          border: 0.5px solid lighten($color: gray, $amount: 30%);
+        }
+
+        // SUBJECT INPUT
+        #message_title {
+          border: 0.5px solid lighten($color: gray, $amount: 30%);
+        }
+
+        // TEXTAREA
+        #mceu_24-body {
+          // border: 0.5px solid lighten($color: $cg-secondary, $amount: 10%);
+        }
+
+        // FILE UPLOAD BLOCK
+        #fep_upload {
+          .fep-attachment-field-div {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e7e7e7;
+          }
+        }
+
+        .fep-attachment-field-a,
+        #fep-attachment-field-add {
+          padding: 0.3rem 1rem;
+          margin-top: 0.5rem;
+          border-radius: 10px;
+          border: 1px solid $cg-secondary;
+          font-size: 0.8rem;
+          font-weight: 700;
+        }
+        // SEND MAIL BUTTON
+        .fep-form.fep-form-newmessage {
+          .fep-button {
+            margin-top: 1.5rem;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            background-color: lighten($color: $cg-primary, $amount: 10%);
+            color: white;
+          }
+        }
+
+        /**
+         * EMAIL SETTINGS PAGE
+         */
+        .fep-form.fep-form-settings {
+          // border: 3px dotted red;
+          .fep-button {
+            margin-top: 1.5rem;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            background-color: lighten($color: $cg-primary, $amount: 10%);
+            color: white;
+          }
+        }
+
+        /**
+         * EMAIL DIRECTORY PAGE
+         */
+        // SEARCH BOX
+        #fep-directory-search-form {
+          // text-align: center;
+          border-top: 1px solid #e7e7e7;
+          border-bottom: 1px solid #e7e7e7;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          .fep-directory-search-form-field {
+            width: 100%;
+            border: 1px solid #e6e6e6;
+            padding: 0.5rem;
+          }
+        }
+        // DIRECTORY CONTENT AREA
+        .fep-directory-table.form {
+          // border: 2px dotted red;
+          // BULK ACTION ROW
+          .fep-table.fep-action-table {
+            .fep-bulk-action {
+              float: left;
+              padding: 0.5rem;
+              margin-top: 0.3rem;
+            }
+            .fep-button {
+              padding: 0.3rem 4rem;
+              border-radius: 10px;
+            }
+            .fep-filter {
+              float: right;
+              margin-top: -1.8rem;
+              // border: 2px dotted blue;
+            }
+          }
+
+          // DIRECTORY LISTING BLOCK
+          // border: 3px dotted red;
+
+          // CHECK/UNCHECK ALL
+          .fep-cb-check-uncheck-all-div {
+            width: 100%;
+            display: flex;
+            margin: 0.5rem 0;
+          }
+
+          // DIRECTORY MEMBER IMAGE
+          .avatar.avatar-55.photo {
+            // display: none;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            border-radius: 10px;
+            float: left;
+          }
+
+          // EMAIL LIST CONTENT
+          #fep-table {
+            // border: 2px dotted red;
+            .fep-table-row {
+              // border: 2px dotted red;
+              padding: 1rem;
+            }
+            // CHECKBOX
+            .fep-column.fep-column-fep-cb {
+              float: left;
+            }
+            // MEMBER TITLE
+            .fep-column-name {
+              padding-left: 2rem;
+              font-weight: 700;
+            }
+            // BLOCK BUTTON
+            .fep_block_unblock_user {
+              border: 1px solid $cg-secondary;
+              border-radius: 10px;
+              padding: 0.1rem 2rem;
+              margin-right: 1rem;
+              float: left;
+              font-size: 0.8rem;
+              font-weight: 800;
+              &:hover {
+                color: white;
+                background-color: $cg-primary;
+              }
+            }
+            // SEND MESSAGE BUTTON
+            .fep-column.fep-column-send_message {
+              a {
+                border: 1px solid $cg-secondary;
+                border-radius: 10px;
+                padding: 0.1rem 2rem;
+                margin-right: 1rem;
+                float: left;
+                font-size: 0.8rem;
+                font-weight: 800;
+                &:hover {
+                  color: white;
+                  background-color: $cg-primary;
+                }
+              }
+            }
+          }
+        }
+      }
+      // EMAIL SINGLE MESSAGE PAGE (REPLY ETC.)
+      #fep-content {
+        #fep-content-single {
+          #fep-content-single-sidebar {
+            // GETTING RID OF UNNECESSARY AVATARS
+            #fep-content-single-heads {
+              display: none;
+            }
+          }
+          // SINGLE MESSAGE HEADER & CONTENT
+          #fep-content-single-content {
+            // border: 2px dotted red;
+            margin-top: 1rem;
+            // SUBJECT
+            .fep-message-title-heading {
+              font-size: 1rem;
+              font-weight: 800;
+              padding-top: 0.5rem;
+              padding-left: 0.5rem;
+            }
+            .fep-message-title-heading.participants {
+              font-size: 0.8rem;
+              font-weight: 800;
+              padding-bottom: 0.5rem;
+              padding-left: 0.5rem;
+            }
+            // TOGGLE BUTTON
+            .fep-button.fep-message-toggle-all {
+              margin-top: 0.5rem;
+              margin-bottom: 0.5rem;
+              padding: 1rem 2rem;
+              border-radius: 10px;
+              background-color: lighten($color: $cg-primary, $amount: 10%);
+              color: white;
+            }
+            // SENDER BLOCK
+            .fep-message-title {
+              padding-top: 0.5rem;
+              padding-bottom: 0.5rem;
+              padding-left: 0.5rem;
+              .author {
+                font-size: 1rem;
+                font-weight: 600;
+              }
+              .date {
+                font-size: 0.7rem;
+                font-weight: 800;
+              }
+            }
+          }
+
+          // REPLY BLOCK
+          #fep-content-single-reply-form {
+            // REPLY BUTTON
+            .fep-button {
+              margin-top: 0.5rem;
+              margin-bottom: 0.5rem;
+              padding: 1rem 4rem;
+              border-radius: 10px;
+              background-color: lighten($color: $cg-primary, $amount: 10%);
+              color: white;
             }
           }
         }
