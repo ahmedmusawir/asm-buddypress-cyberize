@@ -42,6 +42,13 @@ get_header(); ?>
         </div>
       </article>
     </div>
+
+    <?php 
+    $user_id = get_current_user_id();
+      // $total_profile_visit = visitors_get_profile_visit_count($user_id);
+      $total_unique_visitors = visitors_get_unique_visitors_count( $user_id );
+    ?>
+
     <div id="bottom-task-block" class="row">
 
       <div class="task-box task-box-sm text-center">
@@ -54,14 +61,15 @@ get_header(); ?>
       <div class="task-box task-box-sm text-center">
         <i class="fas fa-eye"></i>
         <h6 class="text-only">PROFILE VIEWS</h6>
-        <h1 class="text-number">129</h1>
+        <!-- <h1 class="text-number"><?php echo $total_profile_visit; ?></h1> -->
+        <h1 class="text-number"><?php echo $total_unique_visitors; ?></h1>
         <a href="#" class="btn btn-info">View Tasks</a>
       </div>
 
       <div class="task-box task-box-sm text-center">
         <i class="fas fa-envelope-square"></i>
         <h6 class="text-only">NEW MESSAGES</h6>
-        <h1 class="text-number">19</h1>
+        <h1 class="text-number"><?php echo do_shortcode('[fep_shortcode_new_message_count]'); ?></h1>
         <a href="#" class="btn btn-info">View Tasks</a>
       </div>
 

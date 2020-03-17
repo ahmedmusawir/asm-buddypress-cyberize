@@ -11,6 +11,11 @@ $user_id = bp_displayed_user_id();
   $enrollment_year = xprofile_get_field_data( 17, $user_id, $multi_format = 'array' ); 
  
 ?>
+<?php 
+  // $user_id = get_current_user_id();
+  // $total_profile_visit = visitors_get_profile_visit_count($user_id);
+  $total_unique_visitors = visitors_get_unique_visitors_count( $user_id );
+?>
 
 <section class="athlete-info-box">
   <div id="item-header-avatar">
@@ -32,7 +37,7 @@ $user_id = bp_displayed_user_id();
   <section class="athlete-meta">
 
     <div class="athlete-meta-info clearfix px-1 py-3 text-center">
-      <span class="eye"><i class="fas fa-eye"></i> &nbsp;1,234 Views</span>
+      <span class="eye"><i class="fas fa-eye"></i> &nbsp;<?php echo $total_unique_visitors; ?> Views</span>
       <!-- <span class="star float-right"><i class="fas fa-star"></i> &nbsp;4.5</span> -->
     </div>
 

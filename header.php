@@ -70,6 +70,23 @@
           <a class="navbar-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
             <img src="/wp-content/uploads/logo.png" class="img-fluid" alt="">
           </a>
+          <span>
+            <?php 
+            // $athlete_name = bp_get_displayed_user_fullname();
+            // $athlete_email = bp_displayed_user_email();
+            $logged_in_user_name = bp_core_get_user_displayname( bp_loggedin_user_id() );
+            
+            if ( is_user_logged_in() ) {
+
+              echo "Welcome, " . $logged_in_user_name;
+
+            } else {
+
+              echo 'Welcome, visitor!';
+                
+            }
+            ?>
+          </span>
           <?php
 					wp_nav_menu( array(
 						'theme_location' => 'menu-1', // Defined when registering the menu
