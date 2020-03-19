@@ -87,6 +87,7 @@
             } else {
 
               // echo 'Welcome, visitor!';
+              // echo do_shortcode('[user_profile_url]');
                 
             }
             ?>
