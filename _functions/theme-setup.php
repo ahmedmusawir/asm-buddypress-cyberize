@@ -67,6 +67,20 @@ if ( ! function_exists( 'cyberize_setup' ) ) :
 			'univ-cat' => esc_html__( 'University Category', 'cyberize' ),
 		) );
 
+		// Global Dropdown Left Menu
+		register_nav_menus( array(
+			'global-dropdown-left-menu' => esc_html__( 'Global Dropdown Left Menu', 'cyberize' ),
+		) );
+
+		// Global Dropdown Right Menu 1
+		register_nav_menus( array(
+			'global-dropdown-right-menu-1' => esc_html__( 'Global Dropdown Right Menu 1', 'cyberize' ),
+		) );
+		// Global Dropdown Right Menu 2
+		register_nav_menus( array(
+			'global-dropdown-right-menu-2' => esc_html__( 'Global Dropdown Right Menu 2', 'cyberize' ),
+		) );
+
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.

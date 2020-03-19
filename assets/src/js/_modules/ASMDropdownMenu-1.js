@@ -30,15 +30,21 @@ class ASMDropdownMenu {
   };
 
   menuOpen = () => {
-    this.dropdownMenuWindow.classList.remove('menu-close');
-    this.dropdownMenuWindow.classList.add('menu-open');
-    this.fullPage.classList.add('box-close');
+    // console.log('Button Clicked');
+    this.dropdownMenuWindow.classList.add(
+      'box-open',
+      'animated',
+      'bounceInDown'
+    );
+    setTimeout(() => {
+      this.fullPage.classList.add('box-close');
+    }, 500);
   };
 
   menuClose = () => {
     // console.log('Button Clicked');
-    this.dropdownMenuWindow.classList.remove('menu-open');
-    this.dropdownMenuWindow.classList.add('menu-close');
+    this.dropdownMenuWindow.classList.remove('box-open');
+    this.dropdownMenuWindow.classList.add('box-close');
 
     this.fullPage.classList.remove('box-close');
   };

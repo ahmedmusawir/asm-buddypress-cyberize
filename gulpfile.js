@@ -58,12 +58,13 @@ function styles(done) {
  *
  */
 var jsSRC = 'script.js';
+var googleMapSRC = 'GoogleMap.js';
 
 var jsFolder = 'assets/src/js/';
 var jsWatch = 'assets/src/js/**/*.js';
 var jsDIST = './assets/dist/js/';
 
-var jsFILES = [jsSRC];
+var jsFILES = [jsSRC, googleMapSRC];
 
 // The following can be enabled to run React Scripts or any other ES6 Scripts
 // var jsReactSRC = 'script-react.js';

@@ -34,12 +34,15 @@ html {
   position: relative;
   // display: none;
   min-height: 100%;
-  // padding-top: 0;
+  min-width: 100%;
+  overflow-x: hidden;
+  background-color: black;
 }
 
 body {
   min-height: 100%;
   font-family: $secondary-font;
+
   // padding-top: 50px;
 
   p {
