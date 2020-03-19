@@ -58,15 +58,11 @@
   <?php the_field('after_top_body_tag'); ?>
 
   <!--====  End of CUSTOM ANALYTICS TAGS - BODY TOP  ====-->
-  <?php get_template_part( '_cyberize-modules/asm-dropdown-nav' ); ?>
 
   <div id="page" class="site">
-
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cyberize' ); ?></a>
 
     <header id="header-asm" class="site-header">
-
-
       <!-- Moose_Framework_2 NAVIGATION GOES HERE -->
 
       <section class="main-navigation">
@@ -104,8 +100,8 @@
 					) );
 				 ?>
         </div>
+      </section>
 
-      </section> <!-- main-navigation Ends -->
 
       <!-- Moose_Framework_2 NAVIGATION ENDS HERE -->
 

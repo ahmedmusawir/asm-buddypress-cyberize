@@ -24,13 +24,16 @@
       width: 35px;
     }
 
+    //MAIN NAV BOX
     .main-nav {
       display: flex;
       align-items: center !important;
+      // margin-right: 5rem;
       // padding-top: 1rem;
+      // border: 1rem dotted blue;
     }
   }
-
+  //MAIN NAV BOX
   ul {
     list-style: none;
     margin: 0;
