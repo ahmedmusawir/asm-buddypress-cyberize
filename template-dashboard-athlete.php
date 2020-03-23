@@ -61,7 +61,7 @@ get_header(); ?>
       <div class="task-box task-box-sm text-center">
         <i class="fas fa-eye"></i>
         <h6 class="text-only">PROFILE VIEWS</h6>
-        <!-- <h1 class="text-number"><?php echo $total_profile_visit; ?></h1> -->
+        <!-- <h1 class="text-number"><?php //echo $total_profile_visit; ?></h1> -->
         <h1 class="text-number"><?php echo $total_unique_visitors; ?></h1>
         <a href="#" class="btn btn-info">View Tasks</a>
       </div>
@@ -69,7 +69,11 @@ get_header(); ?>
       <div class="task-box task-box-sm text-center">
         <i class="fas fa-envelope-square"></i>
         <h6 class="text-only">NEW MESSAGES</h6>
+        <?php if ( do_shortcode('[fep_shortcode_new_message_count]') ) : ?>
         <h1 class="text-number"><?php echo do_shortcode('[fep_shortcode_new_message_count]'); ?></h1>
+        <?php else :?>
+        <h1 class="text-number">0</h1>
+        <?php endif; ?>
         <a href="#" class="btn btn-info">View Tasks</a>
       </div>
 

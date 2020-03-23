@@ -3,8 +3,7 @@
  * ASM DROPDOWN NAVIGATION
  */
 ?>
-<!-- <section id="dropdown-navigation" class="menu-close"> PUT THIS BACK AFTER DEV -->
-<section id="dropdown-navigation" class="">
+<section id="dropdown-navigation" class="menu-close">
 
   <div id="dropdown-close-button">
     <i class="fas fa-times-circle"></i>
@@ -13,32 +12,64 @@
   <header class="dropdown-navigation-header row">
 
     <div class="col-sm-2 the-logo">
-      <img class="img-fluid" src="/wp-content/uploads/logo.png" alt="">
+      <!-- <img class="img-fluid" src="/wp-content/uploads/logo.png" alt=""> -->
+      <img src=" <?php the_field('site_logo', 'option') ?>" class="img-fluid" alt="">
+
     </div>
 
     <div class="col-sm-4 social-links-box">
+
       <ul class="list-inline">
+
+        <?php if( get_field('facebook_link', 'option') ): ?>
         <li class="list-inline-item">
-          <a class="social-icon text-xs-center" target="_blank" href="#">
+          <a class="social-icon text-xs-center" target="_blank" href="<?php the_field('facebook_link', 'option'); ?>">
             <i class="fab fa-facebook"></i>
           </a>
         </li>
+        <?php endif; ?>
+
+        <?php if( get_field('twitter_link', 'option') ): ?>
         <li class="list-inline-item">
-          <a class="social-icon text-xs-center" target="_blank" href="#">
+          <a class="social-icon text-xs-center" target="_blank" href="<?php the_field('twitter_link', 'option'); ?>">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <?php endif; ?>
+
+        <?php if( get_field('instagram_link', 'option') ): ?>
+        <li class="list-inline-item">
+          <a class="social-icon text-xs-center" target="_blank" href="<?php the_field('instagram_link', 'option'); ?>">
             <i class="fab fa-instagram"></i>
           </a>
         </li>
+        <?php endif; ?>
+
+        <?php if( get_field('youtube_link', 'option') ): ?>
         <li class="list-inline-item">
-          <a class="social-icon text-xs-center" target="_blank" href="#">
+          <a class="social-icon text-xs-center" target="_blank" href="<?php the_field('youtube_link', 'option'); ?>">
             <i class="fab fa-youtube"></i>
           </a>
         </li>
+        <?php endif; ?>
+
       </ul>
+
     </div>
 
     <div class="col-sm-6 login-box">
+
+      <?php if ( !is_user_logged_in() ) : ?>
+
       <a href="/register/" class="btn btn-light">JOIN</a>
       <a href="/wp-login.php" class="btn btn-info">LOGIN</a>
+
+      <?php else : ?>
+
+      <a href="/wp-login.php?action=logout" class="btn btn-danger">LOG OUT</a>
+
+      <?php endif; ?>
+
     </div>
 
   </header>
@@ -53,32 +84,52 @@
             $user_nicename = $logged_in_user_name->user_nicename;
             $user_profile_url = "/members/$user_nicename";
         ?>
+
+        <?php if ( is_user_logged_in() ) : ?>
         <h3><a class="left-menu-title text-white" href="<?php echo $user_profile_url; ?>">PROFILE</a></h3>
+        <?php endif; ?>
+
         <?php
 
           wp_nav_menu( array( 
               'theme_location' => 'global-dropdown-left-menu', 
               'container_class' => 'global-dropdown-left-menu' ) ); 
-          ?>
+        ?>
 
       </div>
       <div class="col-sm-7 right-menu">
         <h3><a class="right-menu-title text-light" href="/members/type/athletes/">ATHLETES</a></h3>
         <section class="row">
           <div class="col-sm-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque culpa deleniti ipsum iste sed dolore? Et,
-            eaque illo deleniti dicta quia nihil alias, commodi assumenda sed nemo hic, ducimus sit.
+            <?php
+
+            wp_nav_menu( array( 
+                'theme_location' => 'global-dropdown-right-menu-1', 
+                'container_class' => 'global-dropdown-right-menu' ) ); 
+            ?>
           </div>
           <div class="col-sm-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nobis explicabo error praesentium voluptate,
-            inventore esse animi sed eum, cupiditate saepe! Nostrum molestias architecto mollitia. Vero excepturi quos
-            quia dolor.
+            <?php
+
+            wp_nav_menu( array( 
+                'theme_location' => 'global-dropdown-right-menu-2', 
+                'container_class' => 'global-dropdown-right-menu' ) ); 
+            ?>
           </div>
         </section>
 
       </div>
     </section>
 
-  </main>
+  </main> <!-- END MAIN BODY -->
 
-</section>
+  <footer>
+    <article class="content text-right pr-5">
+      <a href="#">
+        <h2 class="title">Need Support?</h2>
+      </a>
+      <h3 class="sub-title">Call or WhatsApp us: +1 561 344 5201</h3>
+    </article>
+  </footer>
+
+</section><!-- END #page-asm-dashboard  -->

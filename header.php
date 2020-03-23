@@ -72,7 +72,8 @@
       <section class="main-navigation">
         <div id="main-navbar-asm" class="main-navbar navbar fixed-top">
           <a class="navbar-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-            <img src="/wp-content/uploads/logo.png" class="img-fluid" alt="">
+            <!-- <img src="/wp-content/uploads/logo.png" class="img-fluid" alt=""> -->
+            <img src=" <?php the_field('site_logo', 'option') ?>" class="img-fluid" alt="">
           </a>
 
           <?php 

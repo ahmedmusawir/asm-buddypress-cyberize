@@ -31,10 +31,15 @@
     margin-top: 1rem;
     margin-right: 1rem;
     i {
-      color: lighten($color: deepskyblue, $amount: 0%);
+      // color: lighten($color: deepskyblue, $amount: 0%);
+      color: lighten($color: deepskyblue, $amount: 100%);
       font-size: 3.5rem;
       font-weight: 800;
       float: right;
+
+      &:hover {
+        color: red !important;
+      }
     }
   }
 
@@ -52,6 +57,10 @@
           padding-top: 2rem;
           padding-right: 1.5rem;
           color: white;
+
+          &:hover {
+            color: lighten($color: $cg-primary, $amount: 50%) !important;
+          }
         }
       }
     }
@@ -74,7 +83,7 @@
     margin-top: 4rem;
 
     .left-menu {
-      border: 4px dotted pink;
+      // border: 4px dotted pink;
       .left-menu-title {
         font-weight: 700;
         &:hover {
@@ -83,28 +92,82 @@
       }
       .global-dropdown-left-menu {
         #menu-global-dropdown-left-menu {
-          border: 4px dotted red;
+          // border: 4px dotted red;
           list-style: none;
 
           .menu-item {
             font-size: 1.5rem;
             font-weight: 600;
+            padding-bottom: 0.7rem;
 
             a {
               color: white;
+
+              &:hover {
+                color: lighten($color: $cg-primary, $amount: 50%) !important;
+              }
+            }
+
+            .sub-menu {
+              // border: 4px dotted red;
+              .menu-item {
+                font-size: 1rem;
+              }
             }
           }
         }
       }
     }
     .right-menu {
-      border: 4px dotted skyblue;
+      // border: 4px dotted skyblue;
       .right-menu-title {
         // border: 4px dotted lightblue;
         font-weight: 700;
         &:hover {
           color: lighten($color: $cg-primary, $amount: 50%) !important;
         }
+      }
+      .global-dropdown-right-menu {
+        #menu-global-dropdown-right-menu-1,
+        #menu-global-dropdown-right-menu-2 {
+          // border: 4px dotted red;
+          list-style: none;
+
+          .menu-item {
+            font-size: 1rem;
+            font-weight: 600;
+            padding-bottom: 0.7rem;
+
+            a {
+              color: white;
+
+              &:hover {
+                color: lighten($color: $cg-primary, $amount: 50%) !important;
+              }
+            }
+
+            .sub-menu {
+              // border: 4px dotted red;
+              .menu-item {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .content {
+      .title {
+        color: #e3e3e3;
+        font-weight: 600;
+        font-size: 1.7rem;
+      }
+      .sub-title {
+        color: white;
+        font-weight: 600;
+        font-size: 1.7rem;
       }
     }
   }
