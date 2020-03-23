@@ -125,10 +125,10 @@
 
   <footer>
     <article class="content text-right pr-5">
-      <a href="#">
-        <h2 class="title">Need Support?</h2>
+      <a href="<?php the_field('global_dropdown_footer_link_top', 'option'); ?>">
+        <h2 class="title"><?php the_field('global_dropdown_footer_text_top', 'option'); ?></h2>
       </a>
-      <h3 class="sub-title">Call or WhatsApp us: +1 561 344 5201</h3>
+      <h3 class="sub-title"><?php the_field('global_dropdown_footer_text_bottom', 'option'); ?></h3>
     </article>
   </footer>
 
