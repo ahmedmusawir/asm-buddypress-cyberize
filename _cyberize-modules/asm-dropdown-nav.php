@@ -80,8 +80,8 @@
       <div class="col-sm-5 left-menu">
         <!-- <h1 class="text-light">Left Menu</h1> -->
         <?php 
-            $logged_in_user_name = wp_get_current_user();
-            $user_nicename = $logged_in_user_name->user_nicename;
+            $logged_in_user_obj = wp_get_current_user();
+            $user_nicename = $logged_in_user_obj->user_nicename;
             $user_profile_url = "/members/$user_nicename";
         ?>
 

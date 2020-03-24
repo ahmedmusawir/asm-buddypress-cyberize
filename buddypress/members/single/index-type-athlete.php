@@ -139,6 +139,20 @@ get_header();
 
       <article class="col-sm-12 col-md-12 col-lg-12 col-xl-3">
         <!-- <img src="/wp-content/uploads/2020/01/profile-sidebar.png" alt=""> -->
+        <?php echo do_shortcode('[bp-visitors-recent-visitors]'); ?>
+        <?php 
+        $users_obj = visitors_get_recent_visitors( get_current_user_id(), $count = 5 );
+        echo '<pre>';
+        // print_r($users_obj);
+        echo '</pre>';
+        foreach ($users_obj as $value) {
+          // echo $value->id;
+          $user_id = $value->visitor_id;
+          // echo $user_id;
+          $versity_logo = xprofile_get_field_data( 439, $user_id, $multi_format = 'array' );
+          echo $versity_logo;
+        }
+        ?>
         <?php get_sidebar(); ?>
 
       </article>

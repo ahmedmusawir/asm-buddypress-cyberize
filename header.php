@@ -58,7 +58,14 @@
   <?php the_field('after_top_body_tag'); ?>
 
   <!--====  End of CUSTOM ANALYTICS TAGS - BODY TOP  ====-->
+
+  <!--======================================================
+=           ASM - GLOBAL DROPDOWN MENU            =
+=======================================================-->
+
   <?php get_template_part( '_cyberize-modules/asm-dropdown-nav' ); ?>
+
+  <!--====  End of ASM - GLOBAL DROPDOWN MENU  ====-->
 
   <div id="page" class="site">
 
@@ -80,11 +87,16 @@
             // $athlete_name = bp_get_displayed_user_fullname();
             // $athlete_email = bp_displayed_user_email();
             $logged_in_user_name = bp_core_get_user_displayname( bp_loggedin_user_id() );
+            $logged_in_user_obj = wp_get_current_user();
+            $user_nicename = $logged_in_user_obj->user_nicename;
+            $user_profile_url = "/members/$user_nicename";
             
             if ( is_user_logged_in() ) {
+              echo '<a href="' . $user_profile_url . '">';
               echo '<span class="welcome-user">';
               echo "Welcome, " . $logged_in_user_name;
               echo '</span>';
+              echo '</a>';
             } else {
 
               // echo 'Welcome, visitor!';

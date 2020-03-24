@@ -1,5 +1,6 @@
 <?php 
 $user_id = bp_displayed_user_id();
+echo $user_id;
 
   // FOLLOWING SET IS FOR THE LEFT ATHLETE COLUMN [MEMBER BIO FIELD GROUP]
   $gender = xprofile_get_field_data( 7, $user_id, $multi_format = 'array' );
