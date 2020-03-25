@@ -144,7 +144,7 @@ get_header();
         <section id="athlete-view-count-box">
 
           <!-- <img src="/wp-content/uploads/2020/01/profile-sidebar.png" alt=""> -->
-          <?php echo do_shortcode('[bp-visitors-recent-visitors]'); ?>
+          <?php //echo do_shortcode('[bp-visitors-recent-visitors]'); ?>
           <?php 
           $users_obj = visitors_get_recent_visitors( get_current_user_id(), $count = 5 );
           echo '<pre>';
