@@ -138,21 +138,61 @@ get_header();
       <!-- CENTER COLUMN END -->
 
       <article class="col-sm-12 col-md-12 col-lg-12 col-xl-3">
-        <!-- <img src="/wp-content/uploads/2020/01/profile-sidebar.png" alt=""> -->
-        <?php echo do_shortcode('[bp-visitors-recent-visitors]'); ?>
-        <?php 
-        $users_obj = visitors_get_recent_visitors( get_current_user_id(), $count = 5 );
-        echo '<pre>';
-        // print_r($users_obj);
-        echo '</pre>';
-        foreach ($users_obj as $value) {
-          // echo $value->id;
+
+        <?php if (is_user_logged_in()) : ?>
+
+        <section id="athlete-view-count-box">
+
+          <!-- <img src="/wp-content/uploads/2020/01/profile-sidebar.png" alt=""> -->
+          <?php echo do_shortcode('[bp-visitors-recent-visitors]'); ?>
+          <?php 
+          $users_obj = visitors_get_recent_visitors( get_current_user_id(), $count = 5 );
+          echo '<pre>';
+          // print_r($users_obj);
+          echo '</pre>';
+          foreach ($users_obj as $value) :
+          // OBJECTS FROM THE RECENT VISITOR PLUGIN 
           $user_id = $value->visitor_id;
-          // echo $user_id;
+          // VARSITY NAME
+          $versity_name = xprofile_get_field_data( 435, $user_id, $multi_format = 'array' );
+          // VERSITY LOGO IMAGE
           $versity_logo = xprofile_get_field_data( 439, $user_id, $multi_format = 'array' );
-          echo $versity_logo;
-        }
+
+        /**
+         * ATHLETE VIEW BOX
+         * Look inside ATHLETE & COACH SINGLE PROFILE in bp-global.scss file for styling
+         */
         ?>
+
+          <div class="box-content row">
+            <figure class="versity-logo col-sm-5 d-flex justify-content-center align-items-center">
+              <?php echo $versity_logo; ?>
+            </figure>
+            <article class="text-content col-sm-7">
+              <div class="icon-text-box">
+                <h4 class="icon-text">
+                  <i class="fas fa-eye"></i> &nbsp; Viewed
+                </h4>
+              </div>
+              <div class="text-only-box">
+                <h5 class="text-only">
+                  <?php echo $versity_name; ?> viewed <br>
+                  <?php //print_r($current_user); ?>
+                  <?php echo  $current_user->display_name; ?>
+                </h5>
+              </div>
+            </article>
+          </div>
+
+          <?php endforeach; ?>
+
+        </section> <!-- #athlete-view-count-box end -->
+
+        <?php endif; ?>
+        <!-- End if (is_user_logged_in())  -->
+
+
+        <!-- THE SIDEBAR -->
         <?php get_sidebar(); ?>
 
       </article>

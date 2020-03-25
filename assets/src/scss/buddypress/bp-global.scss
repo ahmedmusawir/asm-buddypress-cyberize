@@ -1,7 +1,7 @@
 /**
  * ITEM INDEX
- * 1. ATHLETE SINGLE PROFILE
- * 2. ATHLETE INDEX
+ * 1. ATHLETE & COACH SINGLE PROFILE
+ * 2. ATHLETE & COACH INDEX
  * 3. BP GLOBAL SEARCH INDEX
  * 4. BP REGISTRATION PAGE
  * 5. FRONT END PM PRO (THE EMAIL SYSTEM STYLES)
@@ -19,7 +19,7 @@ body.buddypress {
   }
 }
 /**
- * 1. ATHLETE SINGLE PROFILE
+ * 1. ATHLETE & COACH SINGLE PROFILE
  */
 
 #buddypress {
@@ -327,10 +327,56 @@ body.buddypress {
       // RIGHT COLUMN END
     }
   }
+
+  // ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR
+  #athlete-view-count-box {
+    // border: 4px dotted red;
+    margin-bottom: 2rem;
+    .box-content {
+      // border: 4px dotted blue;
+      box-shadow: 1px 1px 5px gray;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 1.5rem;
+
+      .versity-logo {
+        img {
+          width: 80px;
+          margin-top: 1rem;
+        }
+      }
+
+      .text-content {
+        padding: 0;
+        margin: 0;
+
+        .icon-text-box {
+          background-color: $cg-primary;
+          border: 1px solid $cg-primary;
+          .icon-text {
+            color: white;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 700;
+          }
+        }
+
+        .text-only-box {
+          border: 1px solid #e7e7e7;
+          background-color: #e7e7e7;
+          .text-only {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
 }
 
 /**
- * 2. ATHLETE INDEX
+ * 2. ATHLETE & COACH INDEX
  */
 #athlete-index {
   // border: 4px dotted pink;

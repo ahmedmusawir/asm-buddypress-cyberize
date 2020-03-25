@@ -1,7 +1,4 @@
 <?php
-/**
- * THIS FILE NEEDS TO BE AT /wp-content/plugins FOLDER
- */
 
 /**
  * To completely control the profile page layout by member type
@@ -15,6 +12,19 @@ add_filter( 'bp_template_hierarchy_members_single_item', function ( $templates )
 
 	return $templates;
 } );
+
+/**
+ * Disable recording of visits of a particular member type.
+ */
+// add_filter( 'visitor_is_visit_recordable', function ( $is_enabled, $user_id ) {
+
+// 	$non_recordable_types = 'coach';// member type.
+// 	if ( bp_has_member_type( $user_id, $non_recordable_types ) ) {
+// 		$is_enabled = false;
+// 	}
+
+// 	return $is_enabled;
+// }, 10, 2 );
 
 /**
  * Make BuddyPress load up single members profile page by default instead of home.
@@ -59,10 +69,10 @@ add_action('init', 'stuff_i_want_triggered_after_bp_loads');
  * AVATAR SIZE CHANGE
  */
 if ( ! defined( 'BP_AVATAR_THUMB_WIDTH' ) )
-	define( 'BP_AVATAR_THUMB_WIDTH', 50 ); //change this with your desired thumb width
+	define( 'BP_AVATAR_THUMB_WIDTH', 350 ); //change this with your desired thumb width
 
 if ( ! defined( 'BP_AVATAR_THUMB_HEIGHT' ) )
-	define( 'BP_AVATAR_THUMB_HEIGHT', 50 ); //change this with your desired thumb height
+	define( 'BP_AVATAR_THUMB_HEIGHT', 350 ); //change this with your desired thumb height
 
 if ( ! defined( 'BP_AVATAR_FULL_WIDTH' ) )
 	define( 'BP_AVATAR_FULL_WIDTH', 350 ); //change this with your desired full size,weel I changed it to 260 :)
