@@ -139,16 +139,23 @@ get_header();
 
       <article class="col-sm-12 col-md-12 col-lg-12 col-xl-3">
 
-        <?php if (is_user_logged_in()) : ?>
+        <?php
+          $user_id = bp_displayed_user_id();
+          $current_user = wp_get_current_user();
+          $current_user_id = $current_user->ID;
+        ?>
+
+
+        <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
 
         <section id="athlete-view-count-box">
 
           <!-- <img src="/wp-content/uploads/2020/01/profile-sidebar.png" alt=""> -->
           <?php //echo do_shortcode('[bp-visitors-recent-visitors]'); ?>
           <?php 
-          $users_obj = visitors_get_recent_visitors( get_current_user_id(), $count = 5 );
+          $users_obj = visitors_get_recent_visitors( get_current_user_id(), $count = 3 );
           echo '<pre>';
-          //print_r($users_obj);
+          // print_r($users_obj);
           echo '</pre>';
           foreach ($users_obj as $value) :
             
