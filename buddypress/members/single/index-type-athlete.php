@@ -148,9 +148,10 @@ get_header();
           <?php 
           $users_obj = visitors_get_recent_visitors( get_current_user_id(), $count = 5 );
           echo '<pre>';
-          // print_r($users_obj);
+          //print_r($users_obj);
           echo '</pre>';
           foreach ($users_obj as $value) :
+            
           // OBJECTS FROM THE RECENT VISITOR PLUGIN 
           $user_id = $value->visitor_id;
           // VARSITY NAME

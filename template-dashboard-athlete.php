@@ -69,8 +69,16 @@ get_header(); ?>
       <div class="task-box task-box-sm text-center">
         <i class="fas fa-envelope-square"></i>
         <h6 class="text-only">NEW MESSAGES</h6>
-        <?php if ( do_shortcode('[fep_shortcode_new_message_count]') ) : ?>
-        <h1 class="text-number"><?php echo do_shortcode('[fep_shortcode_new_message_count]'); ?></h1>
+        <?php 
+        /** 
+         * CHECKING TO SEE IF THERE IS NEW MESSAGE
+         */
+        $new_message = do_shortcode('[fep_shortcode_new_message_count]');
+        $new_message_length = strlen($new_message);
+
+        ?>
+        <?php if ( $new_message_length != 245 ) : ?>
+        <h1 class="text-number"><?php echo $new_message; ?></h1>
         <?php else :?>
         <h1 class="text-number">0</h1>
         <?php endif; ?>

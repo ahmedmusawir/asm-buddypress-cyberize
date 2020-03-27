@@ -5,7 +5,6 @@
 @import 'global';
 @import 'custom';
 @import 'contents/sidebar/sidebar-global';
-@import 'footers/footer-general';
 
 /*=======================================
 =    HEADER & FOOTER & SIDEBAR            =
@@ -66,7 +65,7 @@
 =            SEARCH INDEX PAGE            =
 =========================================*/
 
-@import 'contents/search-index-page/search-index-lovehealth';
+// @import 'contents/search-index-page/search-index-lovehealth';
 
 /*=====  End of SEARCH INDEX PAGE  ======*/
 
@@ -74,7 +73,7 @@
 =            ARCHIVE INDEX PAGE            =
 ==========================================*/
 
-@import 'contents/archive-index-page/archive-index-bizmobile';
+// @import 'contents/archive-index-page/archive-index-bizmobile';
 
 /*=====  End of ARCHIVE INDEX PAGE  ======*/
 
@@ -82,7 +81,7 @@
 =            SIDEBAR STYLES 	            =
 ==========================================*/
 
-@import 'contents/sidebar/sidebar-lovehealth';
+// @import 'contents/sidebar/sidebar-lovehealth';
 
 /*=====  End of SIDEBAR PAGE  ======*/
 
@@ -90,7 +89,7 @@
 =            WIDGETS STYLES 	            =
 ==========================================*/
 
-@import 'contents/widgets/widget-lovehealth';
+// @import 'contents/widgets/widget-lovehealth';
 
 /*=====  End of WIDGETS PAGE  ======*/
 

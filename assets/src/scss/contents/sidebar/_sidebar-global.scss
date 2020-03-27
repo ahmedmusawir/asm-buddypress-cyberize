@@ -26,11 +26,8 @@
     }
     .search-submit {
       display: none;
-      // margin-bottom: 2rem;
       border-radius: 0px;
       border: 1px solid $cg-secondary;
-      // background-color: lighten($cg-secondary, 0%);
-      // background-color: lighten($cg-primary, 20%);
       &:hover {
         background-color: lighten($cg-primary, 10%);
         color: white;
@@ -40,28 +37,6 @@
 
   .widget {
     padding-bottom: 2.5rem;
-
-    // ul {
-    // 	list-style-type: none;
-    // 	padding-inline-start: 0px;
-
-    // 	li {
-    // 		&::before {
-    // 			font-family: 'FontAwesome';
-    // 			content: "\f1de";
-    // 			color: $cg-secondary;
-    // 			padding-right: .5rem;
-    // 			padding-left: .5rem;
-    // 		}
-    // 		&:hover {
-    // 			// border: 1px solid $cg-secondary;
-    // 			text-decoration: underline;
-    // 			a {
-    // 				color: darken($cg-secondary, 10%);
-    // 			}
-    // 		}
-    // 	}
-    // }
   }
 
   .widgettitle,
