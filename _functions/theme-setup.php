@@ -53,9 +53,9 @@ if ( ! function_exists( 'cyberize_setup' ) ) :
 		) );
 
 		// Portfolio Category Menu
-		register_nav_menus( array(
-			'portfolio' => esc_html__( 'Portfolio', 'cyberize' ),
-		) );
+		// register_nav_menus( array(
+		// 	'portfolio' => esc_html__( 'Portfolio', 'cyberize' ),
+		// ) );
 
 		// Post Category Menu
 		register_nav_menus( array(
