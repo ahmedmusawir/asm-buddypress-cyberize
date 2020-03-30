@@ -39,7 +39,6 @@ class ASMDropdownMenu {
     // console.log('Button Clicked');
     this.dropdownMenuWindow.classList.remove('menu-open');
     this.dropdownMenuWindow.classList.add('menu-close');
-
     this.fullPage.classList.remove('box-close');
   };
 }

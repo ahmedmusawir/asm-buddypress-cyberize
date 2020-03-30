@@ -1,4 +1,5 @@
 import ASMDropdownMenu from './_modules/ASMDropdownMenu';
+import ASMProfileEditMenu from './_modules/ASMProfileEditMenu';
 
 class App {
   constructor() {
@@ -6,6 +7,8 @@ class App {
 
     // ASM Global Dropdown Navigation
     const ASMDropdownNav = new ASMDropdownMenu();
+    // ASM Athlete Profile Edit Menu Toggle
+    const ASMProfileEditNav = new ASMProfileEditMenu();
   }
 }
 

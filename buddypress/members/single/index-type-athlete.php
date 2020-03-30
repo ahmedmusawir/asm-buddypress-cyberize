@@ -15,6 +15,34 @@ get_header();
 
     <section class="top-page-menu clearfix">
       <h3 class="menu-title float-left">Profile</h3>
+      <!-- <ul class="list-inline menu-box">
+        <a href="#top-video-section">
+          <li class="list-inline-item"><i class="fad fa-video"></i>Video</li>
+        </a>
+        <a href="#about-section">
+          <li class="list-inline-item"><i class="fad fa-user-circle"></i>Bio</li>
+        </a>
+        <a href="#sports-stats-section">
+          <li class="list-inline-item"><i class="fad fa-trophy-alt"></i></i>Sports Stats</li>
+        </a>
+        <a href="#academics-section">
+          <li class="list-inline-item"><i class="fad fa-file-certificate"></i>Academics</li>
+        </a>
+        <a href="#instagram-section">
+          <li class="list-inline-item"><i class="fab fa-instagram"></i>Instagram</li>
+        </a>
+        <a href="#interview-section">
+          <li class="list-inline-item"><i class="fad fa-comments"></i>Interviews</li>
+        </a>
+      </ul> -->
+      <h3 id="edit-athlete-profile-button" class="menu-title float-right">Edit Profile</h3>
+
+    </section>
+  </div>
+  <div class="top-filter-navbar">
+
+    <section class="top-page-menu clearfix">
+      <h3 class="menu-title float-left">Filter</h3>
       <ul class="list-inline menu-box">
         <a href="#top-video-section">
           <li class="list-inline-item"><i class="fad fa-video"></i>Video</li>
@@ -35,6 +63,8 @@ get_header();
           <li class="list-inline-item"><i class="fad fa-comments"></i>Interviews</li>
         </a>
       </ul>
+      <!-- <h3 id="edit-athlete-profile-button" class="menu-title float-right">Edit Profile</h3> -->
+
     </section>
   </div>
 
@@ -66,13 +96,17 @@ get_header();
 
         <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
         <!-- SETTING UP EMAIL INBOX -->
-        <?php echo do_shortcode('[front-end-pm]'); ?>
+        <?php //echo do_shortcode('[front-end-pm]'); ?>
         <!-- SETTING UP EMAIL INBOX END -->
         <?php endif; ?>
 
         <!-- THE EDIT MENU START -->
+        <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
         <!-- FOLLOWING IS USED FOR THE PROFILE EDIT FUNCTION ONLY -->
-        <?php bp_nouveau_member_template_part(); ?>
+        <section id="athlete-profile-edit-box" class="">
+          <?php bp_nouveau_member_template_part(); ?>
+        </section>
+        <?php endif; ?>
         <!-- THE EDIT MENU END -->
 
         <?php //get_template_part( 'buddypress/members/single/parts/item-nav' ); ?>

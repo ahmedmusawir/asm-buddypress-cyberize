@@ -7,7 +7,7 @@
 #page-asm-dashboard {
   #general-page-header {
     position: fixed;
-    top: 66px;
+    top: 80px;
     z-index: 100;
     width: 100vw;
     height: 65px;
@@ -130,8 +130,9 @@
           font-weight: 700;
         }
         .btn {
-          padding: 1rem 3rem;
+          padding: 1rem 2rem;
           margin-top: 2rem;
+          width: 200px;
           border-radius: 0;
           background-color: lighten($color: #0277bb, $amount: 10%);
         }
@@ -166,8 +167,8 @@
       .video-box {
       }
       .text-box {
-        border-right: 1px solid $cg-secondary;
-        border-top: 1px solid $cg-secondary;
+        border-right: 1px solid darken($color: #e3e3e3, $amount: 10%);
+        border-top: 1px solid darken($color: #e3e3e3, $amount: 10%);
         padding: 2rem;
 
         h3 {
@@ -175,8 +176,8 @@
         }
       }
       .icon-box {
-        border-top: 1px solid $cg-secondary;
-        border-right: 1px solid $cg-secondary;
+        border-top: 1px solid darken($color: #e3e3e3, $amount: 10%);
+        border-right: 1px solid darken($color: #e3e3e3, $amount: 10%);
 
         h4 {
           padding: 1rem;

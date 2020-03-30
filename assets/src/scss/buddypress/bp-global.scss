@@ -30,12 +30,15 @@ body.buddypress {
     display: none;
   }
 
+  //TOP BLUE BAR
   .top-page-navbar {
     position: fixed;
-    top: 65px;
+    top: 78px;
     width: 100%;
     z-index: 100;
+    //TOP MENU PROFILE EDIT
     .top-page-menu {
+      // border: 1rem solid red;
       width: 100%;
       background-color: $cg-secondary;
       border-bottom: 2px solid lighten($color: gray, $amount: 35%);
@@ -43,44 +46,71 @@ body.buddypress {
       .menu-title {
         padding-right: 2rem;
         padding-left: 2rem;
+        font-size: 1.3rem;
         font-weight: 600;
         color: white;
       }
+    }
+  }
+
+  //TOP FILTER BAR
+  .top-filter-navbar {
+    position: fixed;
+    top: 145px;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    //TOP MENU PROFILE EDIT
+    .top-page-menu {
+      // border: 1rem solid red;
+      width: 100%;
+      margin-bottom: -1rem;
+      border-bottom: 2px solid lighten($color: gray, $amount: 35%);
+
+      .menu-title {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $cg-primary;
+      }
 
       .menu-box {
-        margin-top: 2rem;
-        margin-left: 2rem;
+        margin-top: 1.3rem;
+        margin-left: 1rem;
 
         a {
-          padding: 0.5rem 2rem;
+          padding: 1rem 2rem;
           margin-left: 1rem;
           border: 1px solid gray;
           border-radius: 6px;
-          background-color: #e3e3e3;
           color: lighten($color: $cg-primary, $amount: 10%);
-          font-size: 1.1rem;
+          font-size: 0.8rem;
+          font-weight: 600;
 
           i {
             margin-right: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 700;
           }
         }
       }
     }
   }
 
+  // PROFILE BODY
   .bp-wrap {
-    margin-top: 120px;
+    margin-top: 140px;
 
     #item-body {
-      margin-top: 70px;
+      margin-top: 90px;
       // border: 4px dotted red;
       position: relative;
 
       //  LEFT COLUMN START
-
       .athlete-info-box {
         position: fixed;
-        top: 190px;
+        top: 250px;
         width: 23%;
         @media (max-width: 1199px) {
           width: 30%;
@@ -174,7 +204,7 @@ body.buddypress {
         #subnav {
           border: 2px solid $cg-secondary;
           margin-top: 2rem;
-          background-color: $cg-secondary;
+          background-color: $cg-primary;
           .subnav {
             li {
               a {
@@ -195,16 +225,41 @@ body.buddypress {
             }
           }
         }
+
+        // PRFILE EDIT AREA
+        #profile-edit-form {
+          // border: 4px dotted blue;
+          .button-tabs.button-nav {
+            // border: 4px dotted red;
+            li {
+              border: 1px solid $cg-primary;
+              border-radius: 10px;
+              padding: 0.35rem 0.75rem;
+              margin-bottom: 0.5rem;
+            }
+            li.current {
+              background-color: $cg-primary;
+              // color: white;
+              a {
+                background-color: $cg-primary;
+                color: white;
+                padding: 0;
+              }
+            }
+          }
+        }
+
+        // PROFILE SAVE BUTTON
         #profile-group-edit-submit {
-          border: 4px solid $cg-secondary;
+          border: 4px solid $cg-primary;
           padding: 1rem 4rem;
           margin-bottom: 2rem;
           font-weight: 700;
           color: #e7e7e7;
-          background-color: $cg-secondary;
+          background-color: $cg-primary;
 
           &:hover {
-            background-color: lighten($color: $cg-secondary, $amount: 10%);
+            background-color: lighten($color: $cg-primary, $amount: 10%);
           }
         }
       }
@@ -625,7 +680,7 @@ body.buddypress {
   // border: 1rem dotted red;
   margin-top: -4.2rem;
   padding: 5rem;
-  background: url('/wp-content/uploads/Group-236.png');
+  background: url("/wp-content/uploads/Group-236.png");
 
   #register-page {
     // border: 1rem dotted dodgerblue;

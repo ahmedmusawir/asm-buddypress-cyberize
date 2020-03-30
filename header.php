@@ -83,20 +83,37 @@
             <img src=" <?php the_field('site_logo', 'option') ?>" class="img-fluid" alt="">
           </a>
 
+          <!-- THE HEADER SEACH FORM  -->
+          <div id="header-search" class="mr-auto">
+            <?php //get_search_form(); ?>
+            <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+              <label>
+                <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
+                <input type="search" class="search-field"
+                  placeholder="<?php echo esc_attr_x( 'Search Athlete …', 'placeholder' ) ?>"
+                  value="<?php echo get_search_query() ?>" name="s"
+                  title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+              </label>
+              <input type="submit" class="search-submit"
+                value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
+            </form>
+          </div>
+          <!-- THE HEADER SEACH FORM END -->
+
           <?php 
             // $athlete_name = bp_get_displayed_user_fullname();
             // $athlete_email = bp_displayed_user_email();
-            $logged_in_user_name = bp_core_get_user_displayname( bp_loggedin_user_id() );
-            $logged_in_user_obj = wp_get_current_user();
-            $user_nicename = $logged_in_user_obj->user_nicename;
-            $user_profile_url = "/members/$user_nicename";
+            // $logged_in_user_name = bp_core_get_user_displayname( bp_loggedin_user_id() );
+            // $logged_in_user_obj = wp_get_current_user();
+            // $user_nicename = $logged_in_user_obj->user_nicename;
+            // $user_profile_url = "/members/$user_nicename";
             
             if ( is_user_logged_in() ) {
-              echo '<a href="' . $user_profile_url . '">';
-              echo '<span class="welcome-user">';
-              echo "Welcome, " . $logged_in_user_name;
-              echo '</span>';
-              echo '</a>';
+              // echo '<a href="' . $user_profile_url . '">';
+              // echo '<span class="welcome-user">';
+              // echo "Welcome, " . $logged_in_user_name;
+              // echo '</span>';
+              // echo '</a>';
             } else {
 
               // echo 'Welcome, visitor!';

@@ -29,7 +29,14 @@ get_header(); ?>
 
     <div id="top-task-block" class="row">
       <article class="col-md-6">
-        <h4 class="block-title"><?php the_field('top_left_title'); ?></h4>
+        <?php 
+          $logged_in_user_obj = wp_get_current_user();
+          echo '<pre>';
+          // print_r($logged_in_user_obj);
+          echo '</pre>';
+          $athlete_name = $logged_in_user_obj->display_name;
+        ?>
+        <h4 class="block-title"><?php the_field('top_left_title'); ?> <?php echo $athlete_name; ?>?</h4>
       </article>
       <article class="col-md-6">
         <div class="membership-box">
@@ -63,7 +70,7 @@ get_header(); ?>
         <h6 class="text-only">PROFILE VIEWS</h6>
         <!-- <h1 class="text-number"><?php //echo $total_profile_visit; ?></h1> -->
         <h1 class="text-number"><?php echo $total_unique_visitors; ?></h1>
-        <a href="#" class="btn btn-info">View Tasks</a>
+        <a href="#" class="btn btn-info">View Who</a>
       </div>
 
       <div class="task-box task-box-sm text-center">
@@ -82,7 +89,7 @@ get_header(); ?>
         <?php else :?>
         <h1 class="text-number">0</h1>
         <?php endif; ?>
-        <a href="#" class="btn btn-info">View Tasks</a>
+        <a href="#" class="btn btn-info">View Messages</a>
       </div>
 
       <div class="task-box task-box-lg text-center">
