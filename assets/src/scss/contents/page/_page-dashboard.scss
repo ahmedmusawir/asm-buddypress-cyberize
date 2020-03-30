@@ -119,6 +119,9 @@
           padding-top: 1rem;
           color: lighten($color: $cg-primary, $amount: 15%);
         }
+        i.fa-envelope-square {
+          // border: 4px dotted red;
+        }
         .text-only {
           font-weight: 700;
           padding-top: 0.5rem;

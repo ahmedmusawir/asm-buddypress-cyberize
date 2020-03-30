@@ -37,44 +37,27 @@ get_header();
         <a href="#top-video-section">
 
           <li class="list-inline-item"><img class="img-icon"
-              src="/wp-content/uploads/Screen-Shot-2020-03-30-at-11.29.14-AM-e1585539321304.png" alt="">
-            <span class="btn-text">Video</span>
-          </li>
-
+              src="/wp-content/uploads/Screen-Shot-2020-03-30-at-11.29.14-AM-e1585539321304.png" alt=""> <span
+              class="btn-text">Video</span></li>
+          <!-- <li class="list-inline-item"><i class="fad fa-video"></i>Video</li> -->
         </a>
         <a href="#about-section">
-          <!-- <li class="list-inline-item"><i class="fad fa-user-circle"></i>Bio</li> -->
-          <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/bio-icon.png" alt="">
-            <span class="btn-text">Bio</span>
-          </li>
+          <li class="list-inline-item"><i class="fad fa-user-circle"></i>Bio</li>
         </a>
         <a href="#sports-stats-section">
-          <!-- <li class="list-inline-item"><i class="fad fa-trophy-alt"></i></i>Sports Stats</li> -->
-          <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/sports-info-icon.png" alt="">
-            <span class="btn-text">Sports Info</span>
-          </li>
+          <li class="list-inline-item"><i class="fad fa-trophy-alt"></i></i>Sports Stats</li>
         </a>
         <a href="#academics-section">
-          <!-- <li class="list-inline-item"><i class="fad fa-file-certificate"></i>Academics</li> -->
-          <li class="list-inline-item"><img class="img-icon"
-              src="/wp-content/uploads/Screen-Shot-2020-03-30-at-11.30.01-AM.png" alt="">
-            <span class="btn-text">Academics</span>
-          </li>
+          <li class="list-inline-item"><i class="fad fa-file-certificate"></i>Academics</li>
         </a>
         <a href="#instagram-section">
-          <!-- <li class="list-inline-item"><i class="fab fa-instagram"></i>Instagram</li> -->
-          <li class="list-inline-item"><img class="img-icon" style="padding-top: .2rem;"
-              src="/wp-content/uploads/pics-icon.png" alt="">
-            <span class="btn-text">Instagram</span>
-          </li>
+          <li class="list-inline-item"><i class="fab fa-instagram"></i>Instagram</li>
         </a>
         <a href="#interview-section">
-          <!-- <li class="list-inline-item"><i class="fad fa-comments"></i>Interviews</li> -->
-          <li class="list-inline-item"><img class="img-icon" src="/wp-content/uploads/interview-icon.png" alt="">
-            <span class="btn-text">Interviews</span>
-          </li>
+          <li class="list-inline-item"><i class="fad fa-comments"></i>Interviews</li>
         </a>
       </ul>
+      <!-- <h3 id="edit-athlete-profile-button" class="menu-title float-right">Edit Profile</h3> -->
 
     </section>
   </div>
@@ -178,43 +161,8 @@ get_header();
       </article>
       <!-- CENTER COLUMN END -->
 
-      <!-- RIGHT COLUMN - SIDEBAR COLUMN STARTS -->
-
       <article class="col-sm-12 col-md-12 col-lg-12 col-xl-3">
 
-        <!-- ATHLETE PROFILE RIGHT EMAIL BUTTON SET START -->
-
-        <!-- MESSAGE BUTTON -->
-
-        <section id="athlete-right-email-button">
-          <a href="#" class="clearfix">
-            <div class="message-button">
-              <img src="/wp-content/uploads/email-btn-icon.png" alt="" class="float-left btn-image">
-              <div class="btn-text-holder">
-                <h5 class="btn-text">MESSAGE ATHLETE</h5>
-              </div>
-            </div>
-          </a>
-
-        </section>
-
-        <!-- SEARCH ATHLETE BUTTON -->
-
-        <section id="athlete-right-search-athlete-button">
-          <a href="#" class="clearfix">
-            <div class="message-button">
-              <img src="/wp-content/uploads/search-athlete-icon.png" alt="" class="float-left btn-image">
-              <div class="btn-text-holder">
-                <h5 class="btn-text">SEARCH ATHLETE</h5>
-              </div>
-            </div>
-          </a>
-
-        </section>
-
-        <!-- ATHLETE PROFILE RIGHT EMAIL BUTTON SET END -->
-
-        <!-- ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR START -->
         <?php
           $user_id = bp_displayed_user_id();
           $current_user = wp_get_current_user();
@@ -222,13 +170,9 @@ get_header();
         ?>
 
 
+        <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
 
         <section id="athlete-view-count-box">
-
-
-          <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
-
-          <h2 class="view-count-title">Views</h2>
 
           <!-- <img src="/wp-content/uploads/2020/01/profile-sidebar.png" alt=""> -->
           <?php //echo do_shortcode('[bp-visitors-recent-visitors]'); ?>
@@ -251,6 +195,7 @@ get_header();
          * Look inside ATHLETE & COACH SINGLE PROFILE in bp-global.scss file for styling
          */
         ?>
+
           <div class="box-content row">
             <figure class="versity-logo col-sm-5 d-flex justify-content-center align-items-center">
               <?php echo $versity_logo; ?>
@@ -278,7 +223,6 @@ get_header();
         <?php endif; ?>
         <!-- End if (is_user_logged_in())  -->
 
-        <!-- ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR END -->
 
         <!-- THE SIDEBAR -->
         <?php get_sidebar(); ?>

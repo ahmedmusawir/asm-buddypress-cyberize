@@ -1,7 +1,8 @@
 /**
  * ITEM INDEX
  * 1. ATHLETE & COACH SINGLE PROFILE
- *  1a. ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR
+ *  1a. ATHLETE PROFILE RIGHT EMAIL BUTTONS
+ *  2a. ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR
  * 2. ATHLETE & COACH INDEX
  * 3. BP GLOBAL SEARCH INDEX
  * 4. BP REGISTRATION PAGE
@@ -78,9 +79,24 @@ body.buddypress {
       .menu-box {
         margin-top: 1.3rem;
         margin-left: 1rem;
+        // border: 4px dotted blue;
+        li.list-inline-item {
+          // border: 4px dotted red;
+          position: relative;
+          .img-icon {
+            position: absolute;
+            left: -30px;
+            top: -10px;
+            width: 38px;
+          }
+          .btn-text {
+            // position: absolute;
+            padding-left: 1rem;
+          }
+        }
 
         a {
-          padding: 1rem 2rem;
+          padding: 0.75rem 2rem;
           margin-left: 1rem;
           border: 1px solid gray;
           border-radius: 6px;
@@ -125,10 +141,13 @@ body.buddypress {
         // border: 3px dotted greenyellow;
         img.avatar {
           border-radius: 50%;
-          width: 100px;
+          width: 200px;
         }
         .athlete-title {
           font-size: 1.8rem;
+          text-transform: uppercase !important;
+          margin: 0;
+          margin-top: 0.5rem;
         }
       }
 
@@ -190,7 +209,7 @@ body.buddypress {
         }
         small {
           font-size: 1rem;
-          font-weight: 600;
+          font-weight: 500;
         }
       }
 
@@ -226,7 +245,7 @@ body.buddypress {
           }
         }
 
-        // PRFILE EDIT AREA
+        // PROFILE EDIT AREA
         #profile-edit-form {
           // border: 4px dotted blue;
           .button-tabs.button-nav {
@@ -387,16 +406,97 @@ body.buddypress {
     }
   }
 
-  // 1a. ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR
+  // 1a. ATHLETE PROFILE RIGHT EMAIL BUTTONS
+  #athlete-right-email-button {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf0404+0,ff3019+100 */
+    background: #cf0404; /* Old browsers */
+    background: -moz-linear-gradient(
+      left,
+      #cf0404 0%,
+      #ff3019 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      #cf0404 0%,
+      #ff3019 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to right,
+      #cf0404 0%,
+      #ff3019 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', endColorstr='#ff3019',GradientType=1 ); /* IE6-9 */
+
+    .btn-image {
+      width: 60px;
+      border: 1px solid red;
+    }
+    .btn-text-holder {
+      border: 1px solid red;
+      .btn-text {
+        font-size: 1rem;
+        font-weight: 700;
+        color: white;
+        padding-top: 0.5rem;
+        padding-left: 5.5rem;
+      }
+    }
+  }
+
+  #athlete-right-search-athlete-button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf0404+0,ff3019+100 */
+    background: $cg-primary; /* Old browsers */
+    background: -moz-linear-gradient(
+      left,
+      #035083 0%,
+      #0574b8 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      #035083 0%,
+      #0574b8 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to right,
+      #035083 0%,
+      #0574b8 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#035083', endColorstr='#0574b8',GradientType=1 ); /* IE6-9 */
+
+    .btn-image {
+      width: 60px;
+      border: 1px solid #035083;
+    }
+    .btn-text-holder {
+      border: 1px solid transparent;
+      .btn-text {
+        font-size: 1rem;
+        font-weight: 700;
+        color: white;
+        padding-top: 0.5rem;
+        padding-left: 5.5rem;
+      }
+    }
+  }
+  // 2a. ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR
   #athlete-view-count-box {
     // border: 4px dotted red;
+    .view-count-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 0;
+    }
+
     margin-bottom: 2rem;
     .box-content {
       // border: 4px dotted blue;
       box-shadow: 1px 1px 5px gray;
       padding: 0;
       margin: 0;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
 
       .versity-logo {
         img {
@@ -410,8 +510,8 @@ body.buddypress {
         margin: 0;
 
         .icon-text-box {
-          background-color: $cg-primary;
-          border: 1px solid $cg-primary;
+          background-color: darken($color: #4b5ec1, $amount: 10%);
+          border: 1px solid darken($color: #4b5ec1, $amount: 10%);
           .icon-text {
             color: white;
             text-align: center;
@@ -425,7 +525,7 @@ body.buddypress {
           background-color: #e7e7e7;
           .text-only {
             text-align: center;
-            font-size: 1rem;
+            font-size: 0.8rem;
             font-weight: 700;
           }
         }
@@ -680,7 +780,7 @@ body.buddypress {
   // border: 1rem dotted red;
   margin-top: -4.2rem;
   padding: 5rem;
-  background: url("/wp-content/uploads/Group-236.png");
+  background: url('/wp-content/uploads/Group-236.png');
 
   #register-page {
     // border: 1rem dotted dodgerblue;

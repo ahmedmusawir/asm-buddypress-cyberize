@@ -75,6 +75,7 @@ get_header(); ?>
 
       <div class="task-box task-box-sm text-center">
         <i class="fas fa-envelope-square"></i>
+        <!-- <img src="/wp-content/uploads/dashboard-email-icon.png" alt=""> -->
         <h6 class="text-only">NEW MESSAGES</h6>
         <?php 
         /** 
