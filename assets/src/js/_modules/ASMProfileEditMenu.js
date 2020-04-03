@@ -9,7 +9,9 @@ class ASMProfileEditMenu {
     // EDIT PROFILE BOX
     this.editProfileBox = document.getElementById('athlete-profile-edit-box');
 
-    this.addEvents();
+    if (this.editProfileBox) {
+      this.addEvents();
+    }
   }
 
   addEvents = () => {
