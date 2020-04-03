@@ -11,7 +11,7 @@ bp_nouveau_before_loop(); ?>
 
 <section id="athlete-index-container" class="">
 
-  <?php if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&type=alphabetical' ) ) : ?>
+  <?php if ( bp_has_members( bp_ajax_querystring( 'members' ) ) ) : ?>
 
   <?php bp_nouveau_pagination( 'top' ); ?>
 
@@ -31,8 +31,8 @@ bp_nouveau_before_loop(); ?>
        
         ?>
 
-    <li <?php bp_member_class( array( 'item-entry-asm', "$sport", 'animated', 'bounceIn' ) ); ?>
-      data-bp-item-id="<?php bp_member_user_id(); ?>" data-bp-item-component="members">
+    <li <?php bp_member_class( array( 'item-entry-asm' ) ); ?> data-bp-item-id="<?php bp_member_user_id(); ?>"
+      data-bp-item-component="members">
       <div class="list-wrap-asm row">
 
         <article class="col-md-4">

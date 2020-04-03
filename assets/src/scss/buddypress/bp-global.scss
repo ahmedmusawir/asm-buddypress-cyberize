@@ -15,6 +15,7 @@
 .container-fluid {
   padding: 0 !important;
 }
+
 body.buddypress {
   .site-content {
     padding-top: 0 !important;
@@ -573,9 +574,66 @@ body.buddypress {
     }
   }
 
+  //TOP FILTER BAR
+  .top-filter-navbar-index {
+    // border: 1rem dotted red;
+    position: fixed;
+    top: 145px;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    //TOP MENU PROFILE EDIT
+    .top-page-menu {
+      // border: 1rem solid red;
+      width: 100%;
+      margin-bottom: -1rem;
+      border-bottom: 2px solid lighten($color: gray, $amount: 35%);
+
+      .menu-title {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $cg-primary;
+      }
+
+      .menu-box {
+        margin-top: 1.3rem;
+        margin-left: 1rem;
+        // border: 4px dotted blue;
+        li.list-inline-item {
+          // border: 4px dotted red;
+          position: relative;
+
+          .btn-text {
+            // position: absolute;
+            padding-left: 1rem;
+          }
+        }
+
+        a {
+          padding: 0.75rem 2rem;
+          margin-left: 1rem;
+          border: 1px solid gray;
+          border-radius: 6px;
+          color: lighten($color: $cg-primary, $amount: 10%);
+          font-size: 0.8rem;
+          font-weight: 600;
+
+          i {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
   #athlete-index-container {
     // border: 4px solid red;
     .item-entry-asm {
+      border: 4px solid red;
       box-shadow: 2px 2px 6px #e3e3e3;
 
       .item-avatar-asm {

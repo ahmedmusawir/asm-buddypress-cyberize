@@ -14,6 +14,19 @@ add_filter( 'bp_template_hierarchy_members_single_item', function ( $templates )
 } );
 
 /**
+ * LIMITING HOW MANY MEMBERS SHOULD BE SHOWN PER PAGE
+ */
+/**
+ * Limit numbers of members per page.
+ */
+add_filter( 'bp_after_has_members_parse_args', function ( $args ) {
+	$args['per_page'] = 5;// only show 5 members per page.
+
+	return $args;
+} );
+
+
+/**
  * Disable recording of visits of a particular member type.
  */
 // add_filter( 'visitor_is_visit_recordable', function ( $is_enabled, $user_id ) {
