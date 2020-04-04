@@ -4,21 +4,20 @@ class ASMTestJQModule {
   constructor() {
     this.init();
     // COLLECTING BUTTON
-    this.$button = $('.moose-item');
+    this.$button = $('.list-inline-item');
 
-    this.setEvents();
+    this.events();
   }
 
   init = () => {
     console.log('ASM JQ Filter Init');
   };
 
-  setEvents() {
+  events() {
     this.$button.on('click', this.clickHandler);
   }
 
   clickHandler() {
-    // console.log(this);
     const $sport = $(this).attr('id');
     const $theItem = $('.item-entry-asm');
 

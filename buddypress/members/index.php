@@ -25,40 +25,40 @@
         <ul class="list-inline menu-box">
           <a href="#top-video-section">
 
-            <li class="list-inline-item" id="all">
+            <li class="list-inline-item moose-item" id="all">
               <span class="btn-text">ALL</span>
             </li>
 
           </a>
           <a href="#top-video-section">
 
-            <li class="list-inline-item" id="FOOTBALL">
+            <li class="list-inline-item moose-item" id="FOOTBALL">
               <span class="btn-text">US FOOTBALL</span>
             </li>
 
           </a>
           <a href="#about-section">
-            <li class="list-inline-item" id="GOLF">
+            <li class="list-inline-item moose-item" id="GOLF">
               <span class="btn-text">GOLF</span>
             </li>
           </a>
           <a href="#sports-stats-section">
-            <li class="list-inline-item" id="BASEBALL">
+            <li class="list-inline-item moose-item" id="BASEBALL">
               <span class="btn-text">BASEBALL</span>
             </li>
           </a>
           <a href="#academics-section">
-            <li class="list-inline-item" id="BASEKTBALL">
+            <li class="list-inline-item moose-item" id="BASKETBALL">
               <span class="btn-text">BASKETBALL</span>
             </li>
           </a>
           <a href="#instagram-section">
-            <li class="list-inline-item" id="SOCCER">
+            <li class="list-inline-item moose-item" id="SOCCER">
               <span class="btn-text">SOCCER</span>
             </li>
           </a>
           <a href="#interview-section">
-            <li class="list-inline-item" id="CHEERLEADING">
+            <li class="list-inline-item moose-item" id="CHEERLEADING">
               <span class="btn-text">CHEERLEADING</span>
             </li>
           </a>

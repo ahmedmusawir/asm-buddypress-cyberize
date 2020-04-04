@@ -4,7 +4,7 @@ class ASMTestJQModule {
   constructor() {
     this.init();
     // COLLECTING BUTTON
-    this.$button = $('.moose-item');
+    this.$button = $('.list-inline-item');
 
     this.setEvents();
   }
@@ -18,7 +18,6 @@ class ASMTestJQModule {
   }
 
   clickHandler() {
-    // console.log(this);
     const $sport = $(this).attr('id');
     const $theItem = $('.item-entry-asm');
 
@@ -33,6 +32,9 @@ class ASMTestJQModule {
         $(`.${$sport}`).removeClass('d-none');
       });
     }
+
+    console.log('list-inline-item clicked!');
+    console.log(this);
   }
 }
 
