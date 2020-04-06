@@ -1,7 +1,8 @@
 import ASMDropdownMenu from './_modules/ASMDropdownMenu';
 import ASMProfileEditMenu from './_modules/ASMProfileEditMenu';
 import ASMJQFilter from './_modules/ASMJQFilter';
-// import ASMTestJQModule from './_modules/ASMTestJQModule';
+import UniversityFilters from './_modules/UniversityFilters';
+import AthleteFilters from './_modules/AthleteFilters';
 
 class App {
   constructor() {
@@ -14,7 +15,11 @@ class App {
     // ASM Jquery Test
     // const jQTest = new ASMTestJQModule();
     // ASM Jquery Test
-    const jQFilter = new ASMJQFilter();
+    // const jQFilter = new ASMJQFilter();
+    // University Filters
+    const univFilters = new UniversityFilters();
+    // Athlete Filters
+    const athleteFilters = new AthleteFilters();
   }
 }
 
