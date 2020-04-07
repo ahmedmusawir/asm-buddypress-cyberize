@@ -134,10 +134,10 @@
                 data-lng="<?php echo $mapLocation['lng']; ?>">
                 <a href="<?php the_permalink(); ?>">
                   <figure style="width: 100% !important;">
-                    <?php // the_post_thumbnail( 'map-image' ); ?>
+                    <?php the_post_thumbnail( 'map-image' ); ?>
                   </figure>
-                  <h6><?php // the_title(); ?></h6>
-                  <?php // echo $mapLocation['address']; ?>
+                  <h6><?php the_title(); ?></h6>
+                  <?php echo $mapLocation['address']; ?>
                 </a>
               </div>
               <?php // echo $mapLocation['lat'] ?>
