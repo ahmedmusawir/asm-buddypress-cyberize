@@ -33,6 +33,9 @@ bp_nouveau_before_loop(); ?>
         $verification = get_field( 'athlete_verification', $user_id_for_ACF );
         $availability = get_field( 'athlete_availability', $user_id_for_ACF );
 
+        // ATHLETE VIEWS
+        $total_unique_visitors = visitors_get_unique_visitors_count( $user_id );
+
         // echo $verification;
 
         if ( $verification ) {
@@ -86,7 +89,9 @@ bp_nouveau_before_loop(); ?>
               <ul class="list-inline info-bar">
                 <li class="list-inline-item"><i class="fas fa-globe"></i> &nbsp;Residence:
                   <?php echo $nationality; ?></li>
-                <li class="list-inline-item"><i class="fas fa-eye"></i> &nbsp;993 Profile Views</li>
+                <li class="list-inline-item"><i class="fas fa-eye"></i> &nbsp;
+                  <?php echo $total_unique_visitors; ?> Profile Views
+                </li>
                 <li class="list-inline-item"><i class="fas fa-users-class"></i>&nbsp;Class:
                   <?php echo $enrollment_year; ?> </li>
               </ul>

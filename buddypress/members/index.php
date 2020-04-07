@@ -31,34 +31,34 @@
             </li>
 
           </a>
-          <a href="#top-video-section">
+          <a href="#">
 
             <li class="list-inline-item moose-item" id="FOOTBALL">
               <span class="btn-text">US FOOTBALL</span>
             </li>
 
           </a>
-          <a href="#about-section">
+          <a href="#">
             <li class="list-inline-item moose-item" id="GOLF">
               <span class="btn-text">GOLF</span>
             </li>
           </a>
-          <a href="#sports-stats-section">
+          <a href="#">
             <li class="list-inline-item moose-item" id="BASEBALL">
               <span class="btn-text">BASEBALL</span>
             </li>
           </a>
-          <a href="#academics-section">
+          <a href="#">
             <li class="list-inline-item moose-item" id="BASKETBALL">
               <span class="btn-text">BASKETBALL</span>
             </li>
           </a>
-          <a href="#instagram-section">
+          <a href="#">
             <li class="list-inline-item moose-item" id="SOCCER">
               <span class="btn-text">SOCCER</span>
             </li>
           </a>
-          <a href="#interview-section">
+          <a href="#">
             <li class="list-inline-item moose-item" id="CHEERLEADING">
               <span class="btn-text">CHEERLEADING</span>
             </li>
