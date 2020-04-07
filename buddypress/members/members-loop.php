@@ -7,7 +7,7 @@
  */
 
 bp_nouveau_before_loop(); ?>
-<script src="https://kit.fontawesome.com/c8084101a0.js" crossorigin="anonymous"></script>
+<!-- <script src="https://kit.fontawesome.com/c8084101a0.js" crossorigin="anonymous"></script> -->
 
 <section id="athlete-index-container" class="">
 
@@ -21,6 +21,7 @@ bp_nouveau_before_loop(); ?>
 
     <?php 
         $user_id = bp_get_member_user_id();
+        $user_id_for_ACF = "user_" . $user_id;
 
         // ABOUT
         $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
@@ -28,6 +29,25 @@ bp_nouveau_before_loop(); ?>
         $excerpt = substr($about, 0, 200) . '...';
         $nationality = xprofile_get_field_data( 11, $user_id, $multi_format = 'array' );
         $enrollment_year = xprofile_get_field_data( 17, $user_id, $multi_format = 'array' ); 
+
+        $verification = get_field( 'athlete_verification', $user_id_for_ACF );
+        $availability = get_field( 'athlete_availability', $user_id_for_ACF );
+
+        // echo $verification;
+
+        if ( $verification ) {
+          $v_result = '<span class="verified-status"><i class="fas fa-check-circle"></i> Verified</span>';
+        } else {
+          $v_result = '<span class="verified-status"><i class="fas fa-times-circle"></i> Verified</span>';
+        }
+
+        // echo $availability;
+
+        if ( !$availability || $availability == 'yes') {
+          $a_result = '<span  class="available-status"><span class="available">Available</span></span>';
+        } else {
+          $a_result = '<span class="available-status"><span class="committed">Committed</span></span>';
+        }
        
         ?>
 
@@ -35,13 +55,22 @@ bp_nouveau_before_loop(); ?>
       data-bp-item-id="<?php bp_member_user_id(); ?>" data-bp-item-component="members">
       <div class="list-wrap-asm row">
 
-        <article class="col-md-4">
+        <article class="col-md-3">
           <div class="item-avatar-asm">
             <a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar( bp_nouveau_avatar_args() ); ?></a>
           </div>
         </article>
-        <article class="col-md-8">
+        <article class="col-md-9">
           <div class="item-asm">
+
+            <ul class="list-inline status-bar float-right">
+              <li class="list-inline-item">
+                <?php echo $v_result; ?>
+              </li>
+              <li class="list-inline-item">
+                <?php echo $a_result; ?>
+              </li>
+            </ul>
 
             <div class="item-block-asm">
 
@@ -49,7 +78,10 @@ bp_nouveau_before_loop(); ?>
                 <a href="<?php bp_member_permalink(); ?>"><?php bp_member_name(); ?></a>
                 <!-- (<?php echo bp_get_member_user_id(); ?>) -->
                 <small>(<?php echo $sport; ?>)</small>
+                <!-- VERIFICATION: <?php the_field( 'athlete_verification', $user_id_for_ACF ); ?> -->
+                <!-- AVAILABILITY: <?php the_field( 'athlete_availability', $user_id_for_ACF ); ?> -->
               </h2>
+
 
               <ul class="list-inline info-bar">
                 <li class="list-inline-item"><i class="fas fa-globe"></i> &nbsp;Residence:

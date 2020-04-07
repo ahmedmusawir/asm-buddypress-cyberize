@@ -13,6 +13,7 @@
     <!-- TOP BLUE BAR -->
     <div class="search-menu-container">
       <article class="">
+        <h5 class="text-light pt-3 pl-4">Athletes: </h5>
         <?php //bp_get_template_part( 'common/search-and-filters-bar' ); ?>
       </article>
     </div>
@@ -21,7 +22,7 @@
     <div class="top-filter-navbar-index">
 
       <section class="top-page-menu clearfix">
-        <h3 class="menu-title float-left">FILTERS</h3>
+        <h3 class="menu-title float-left">Filters</h3>
         <ul class="list-inline menu-box">
           <a href="#top-video-section">
 
@@ -68,9 +69,9 @@
     </div>
 
 
-    <div class="row">
+    <div class="row asm-index-page-content">
 
-      <div class="col-md-8">
+      <div class="col-md-9">
         <!-- THE FOLLOWING IS LOADING THE MEMEBERS LIST WITH JS [data-bp-list="members"]... DO NOT REMOVE -->
         <div id="members-dir-list" class="members dir-list" data-bp-list="members">
 
@@ -79,7 +80,9 @@
 
       <div class="col-3">
 
-        <?php get_sidebar(); ?>
+        <div class="sidebar-container pr-3">
+          <?php get_sidebar(); ?>
+        </div>
 
       </div>
 

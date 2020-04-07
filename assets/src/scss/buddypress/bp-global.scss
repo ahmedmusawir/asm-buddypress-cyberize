@@ -93,6 +93,8 @@ body.buddypress {
           .btn-text {
             // position: absolute;
             padding-left: 1rem;
+            font-size: 0.8rem;
+            font-weight: 700;
           }
         }
 
@@ -411,16 +413,8 @@ body.buddypress {
   #athlete-right-email-button {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf0404+0,ff3019+100 */
     background: #cf0404; /* Old browsers */
-    background: -moz-linear-gradient(
-      left,
-      #cf0404 0%,
-      #ff3019 100%
-    ); /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      left,
-      #cf0404 0%,
-      #ff3019 100%
-    ); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(left, #cf0404 0%, #ff3019 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #cf0404 0%, #ff3019 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
       to right,
       #cf0404 0%,
@@ -449,16 +443,8 @@ body.buddypress {
     margin-bottom: 1rem;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf0404+0,ff3019+100 */
     background: $cg-primary; /* Old browsers */
-    background: -moz-linear-gradient(
-      left,
-      #035083 0%,
-      #0574b8 100%
-    ); /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      left,
-      #035083 0%,
-      #0574b8 100%
-    ); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(left, #035083 0%, #0574b8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #035083 0%, #0574b8 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
       to right,
       #035083 0%,
@@ -607,12 +593,12 @@ body.buddypress {
 
           .btn-text {
             // position: absolute;
-            padding-left: 1rem;
+            // padding-left: 1rem;
           }
         }
 
         a {
-          padding: 0.75rem 2rem;
+          padding: 0.5rem 2rem;
           margin-left: 1rem;
           border: 1px solid gray;
           border-radius: 6px;
@@ -630,14 +616,31 @@ body.buddypress {
     }
   }
 
+  // MAIN PAGE CONTENT
+  .asm-index-page-content {
+    // border: 1rem dotted red;
+    margin-top: 65px;
+  }
+
   #athlete-index-container {
-    // border: 4px solid red;
+    // border: 4px solid blue;
+    padding: 0rem 5rem;
+    .bp-pagination {
+      .pag-data {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: $cg-primary;
+      }
+    }
+
     .item-entry-asm {
-      border: 4px solid red;
-      box-shadow: 2px 2px 6px #e3e3e3;
+      // border: 4px solid red;
+      margin-bottom: 2rem;
+      box-shadow: 2px 2px 12px lighten($color: gray, $amount: 15%);
 
       .item-avatar-asm {
         padding-left: 0.5rem;
+        width: 250px;
       }
     }
 
@@ -647,11 +650,55 @@ body.buddypress {
     }
 
     .item-asm {
-      .item-block-asm {
-        .member-name {
+      // margin-bottom: 1rem;
+      // border: 3px dotted red;
+      .status-bar {
+        // border: 3px dotted blue;
+        padding-right: 2rem;
+        margin-top: -2.5rem;
+
+        .verified-status {
+          padding-right: 1rem;
+          font-size: 0.8rem;
           font-weight: 600;
+          color: $cg-primary;
+
+          .fa-check-circle {
+            color: lighten($color: $cg-primary, $amount: 25%);
+          }
+          .fa-times-circle {
+            color: red;
+          }
+        }
+
+        .available-status {
+          font-size: 0.8rem;
+          font-weight: 600;
+          text-transform: uppercase;
+
+          .available {
+            color: green;
+          }
+          .committed {
+            color: red;
+          }
+        }
+      }
+
+      .item-block-asm {
+        // border: 3px dotted red;
+        padding-left: 1.5rem;
+
+        .member-name {
+          // border: 3px dotted red;
+          font-weight: 600;
+          font-size: 1.5rem;
           a {
             color: $cg-primary;
+          }
+          small {
+            font-size: 1rem;
+            font-weight: 700;
           }
         }
 
@@ -661,16 +708,25 @@ body.buddypress {
             font-size: 1rem;
             font-weight: 700;
             color: lighten($color: $cg-primary, $amount: 10%);
+
+            .fas {
+              // border: 3px dotted red;
+              color: lighten($color: $cg-primary, $amount: 35%) !important;
+            }
           }
         }
 
         .text-content {
+          font-size: 0.9rem;
           padding-right: 2rem;
           color: $cg-primary;
 
           .readmore {
+            float: right;
             a {
-              color: lighten($color: $cg-primary, $amount: 20%);
+              font-size: 1rem;
+              font-weight: 600;
+              color: lighten($color: $cg-primary, $amount: 0%);
             }
           }
         }
@@ -838,7 +894,7 @@ body.buddypress {
   // border: 1rem dotted red;
   margin-top: -4.2rem;
   padding: 5rem;
-  background: url('/wp-content/uploads/Group-236.png');
+  background: url("/wp-content/uploads/Group-236.png");
 
   #register-page {
     // border: 1rem dotted dodgerblue;
