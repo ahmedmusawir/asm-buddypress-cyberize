@@ -141,7 +141,8 @@ $wrestling_team_name = xprofile_get_field_data( 186, $user_id, $multi_format = '
 <section id="sports-stats-section">
 
   <h1 class="block-header">
-    <i class="fas fa-trophy"></i> Sports Stats
+    <!-- <i class="fas fa-trophy"></i> Sports Stats -->
+    <img src="/wp-content/uploads/sports-info-icon-1.png" class="pb-2" alt=""> Sports Stats
   </h1>
   <!-- <h5>Sports (REMOVE THIS): <?php echo $sport; ?></h5> -->
 

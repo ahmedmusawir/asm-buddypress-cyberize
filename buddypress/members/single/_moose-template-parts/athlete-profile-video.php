@@ -28,7 +28,8 @@ $user_id = bp_displayed_user_id();
   </div>
 
   <h1 class="block-header">
-    <i class="fab fa-youtube"></i> Videos
+    <!-- <i class="fab fa-youtube"></i> Videos -->
+    <img src="/wp-content/uploads/videos-icon.png" alt=""></i> Videos
   </h1>
 
   <section class="more-videos-box">

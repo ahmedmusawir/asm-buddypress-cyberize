@@ -9,7 +9,8 @@ $user_id = bp_displayed_user_id();
 <section id="about-section">
 
   <h1 id="about" class="block-header">
-    <i class="fas fa-user-circle"></i> About
+    <!-- <i class="fas fa-user-circle"></i> About -->
+    <img class="pb-2" src="/wp-content/uploads/bio-icon-1.png" alt=""> About
   </h1>
 
   <p class="text-content">

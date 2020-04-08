@@ -16,7 +16,8 @@ $instagram_4 = xprofile_get_field_data( 36, $user_id, $multi_format = 'array' );
 <section id="instagram-section">
 
   <h1 class="block-header">
-    <i class="fab fa-instagram"></i> Instagram
+    <!-- <i class="fab fa-instagram"></i> Instagram -->
+    <img class="pb-2" src="/wp-content/uploads/pictures-icon.png" alt=""> Instagram
   </h1>
 
   <div class="row gallery-box">

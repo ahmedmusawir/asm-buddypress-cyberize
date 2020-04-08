@@ -15,7 +15,8 @@ $ans4 = xprofile_get_field_data( 327, $user_id, $multi_format = 'array' );
 <section id="interview-section">
 
   <h1 class="block-header">
-    <i class="fad fa-comments"></i> Interviews
+    <!-- <i class="fad fa-comments"></i> Interviews -->
+    <img class="pb-2" src="/wp-content/uploads/interview-icon-1.png" alt=""> Interviews
   </h1>
 
   <article class="qa-content py-2">

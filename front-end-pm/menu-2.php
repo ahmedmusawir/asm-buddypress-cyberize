@@ -4,8 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<button id="fep-menu-toggle-button"
-  class="fep-button d-none"><?php esc_html_e( 'Message Menu', 'front-end-pm' ); ?></button>
+<button id="fep-menu-toggle-button" class="fep-button"><?php esc_html_e( 'Message Menu', 'front-end-pm' ); ?></button>
 <script type="text/javascript">
 document.getElementById('fep-menu-toggle-button').onclick = function() {
   this.classList.toggle('fep-menu-toggle-expanded');

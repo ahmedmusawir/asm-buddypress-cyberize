@@ -1,31 +1,14 @@
 /**
  * ITEM INDEX
- * 1. ATHLETE & COACH SINGLE PROFILE
- *  1a. ATHLETE PROFILE RIGHT EMAIL BUTTONS
- *  2a. ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR
- * 2. ATHLETE & COACH INDEX
- * 3. BP GLOBAL SEARCH INDEX
- * 4. BP REGISTRATION PAGE
- * 5. FRONT END PM PRO (THE EMAIL SYSTEM STYLES)
+ * 1. ATHLETE EMAIL PAGE
+ * 2. FRONT END PM PRO (THE EMAIL SYSTEM STYLES)
  */
 
 /**
- * GENERAL
- */
-.container-fluid {
-  padding: 0 !important;
-}
-
-body.buddypress {
-  .site-content {
-    padding-top: 0 !important;
-  }
-}
-/**
- * 1. ATHLETE & COACH SINGLE PROFILE
+ * 1. ATHLETE EMAIL PAGE
  */
 
-#buddypress {
+#asm-athlete-email-page {
   position: relative;
 
   #change-cover-image-personal-li {
@@ -40,86 +23,27 @@ body.buddypress {
     z-index: 100;
     //TOP MENU PROFILE EDIT
     .top-page-menu {
-      // border: 1rem solid red;
+      // border: 4px dotted red;
       width: 100%;
       background-color: $cg-secondary;
       border-bottom: 2px solid lighten($color: gray, $amount: 35%);
 
       .menu-title {
-        padding-right: 2rem;
+        padding: 1rem;
         padding-left: 2rem;
+        padding-top: 1.5rem;
         font-size: 1.3rem;
-        font-weight: 600;
+        font-weight: 700;
         color: white;
-      }
-    }
-  }
-
-  //TOP FILTER BAR
-  .top-filter-navbar {
-    position: fixed;
-    top: 145px;
-    width: 100%;
-    z-index: 100;
-    background-color: white;
-    //TOP MENU PROFILE EDIT
-    .top-page-menu {
-      // border: 1rem solid red;
-      width: 100%;
-      margin-bottom: -1rem;
-      border-bottom: 2px solid lighten($color: gray, $amount: 35%);
-
-      .menu-title {
-        padding-right: 2rem;
-        padding-left: 2rem;
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: $cg-primary;
-      }
-
-      .menu-box {
-        margin-top: 1.3rem;
-        margin-left: 1rem;
-        // border: 4px dotted blue;
-        li.list-inline-item {
-          // border: 4px dotted red;
-          position: relative;
-          .img-icon {
-            position: absolute;
-            left: -30px;
-            top: -10px;
-            width: 38px;
-          }
-          .btn-text {
-            // position: absolute;
-            padding-left: 1rem;
-            font-size: 0.8rem;
-            font-weight: 700;
-          }
-        }
-
-        a {
-          padding: 0.75rem 2rem;
-          margin-left: 1rem;
-          border: 1px solid gray;
-          border-radius: 6px;
-          color: lighten($color: $cg-primary, $amount: 10%);
-          font-size: 0.8rem;
-          font-weight: 600;
-
-          i {
-            margin-right: 0.5rem;
-            font-size: 1.2rem;
-            font-weight: 700;
-          }
-        }
       }
     }
   }
 
   // PROFILE BODY
   .bp-wrap {
-    margin-top: 140px;
+    margin-top: 80px;
+    min-height: 80vh;
+    // border: 4px dotted red;
 
     #item-body {
       margin-top: 90px;
@@ -129,7 +53,7 @@ body.buddypress {
       //  LEFT COLUMN START
       .athlete-info-box {
         position: fixed;
-        top: 250px;
+        top: 180px;
         width: 23%;
         @media (max-width: 1199px) {
           width: 30%;
@@ -427,12 +351,13 @@ body.buddypress {
       border: 1px solid red;
     }
     .btn-text-holder {
-      border: 1px solid red;
+      border: 1px solid transparent;
       .btn-text {
         font-size: 1rem;
         font-weight: 700;
         color: white;
-        padding-top: 0.5rem;
+        // padding-top: 0.5rem;
+        padding-top: 1.35rem;
         padding-left: 5.5rem;
       }
     }
@@ -462,7 +387,7 @@ body.buddypress {
         font-size: 1rem;
         font-weight: 700;
         color: white;
-        padding-top: 0.5rem;
+        padding-top: 1.35rem;
         padding-left: 5.5rem;
       }
     }
@@ -522,406 +447,403 @@ body.buddypress {
 }
 
 /**
- * 2. ATHLETE & COACH INDEX
+ * 2. FRONT END PM PRO (THE EMAIL SYSTEM STYLES)
  */
-#athlete-index {
-  // border: 4px dotted pink;
-  position: relative;
 
-  .search-menu-container {
-    // border: 4px dotted pink;
-    position: fixed;
-    top: 65px;
-    background-color: $cg-secondary;
-    width: 100%;
-    height: 80px;
-    z-index: 100;
-
-    .subnav-search-asm,
-    .subnav-filter-asm {
-      .nav-title {
-        margin-top: 0.8rem;
+#asm-athlete-email-page {
+  #item-body {
+    #fep-wrapper {
+      // border: 4px dotted red;
+      // MENU TOGGLE BUTTON
+      #fep-menu-toggle-button {
+        box-shadow: 1px 1px 6px gray;
+        border-radius: 20px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: 800;
       }
-    }
-
-    .bp-dir-search-form {
-      // border: 1rem solid red;
-      margin-top: 0.7rem;
-      background-color: #e7e7e7;
-      #dir-members-search {
-        background-color: #e7e7e7;
-        outline: lighten($color: blue, $amount: 10%);
-      }
-    }
-
-    #members-order-select {
-      background-color: #e7e7e7;
-      margin-top: 0.5rem;
-    }
-  }
-
-  //TOP FILTER BAR
-  .top-filter-navbar-index {
-    // border: 1rem dotted red;
-    position: fixed;
-    top: 145px;
-    width: 100%;
-    z-index: 100;
-    background-color: white;
-    //TOP MENU PROFILE EDIT
-    .top-page-menu {
-      // border: 1rem solid red;
-      width: 100%;
-      margin-bottom: -1rem;
-      border-bottom: 2px solid lighten($color: gray, $amount: 35%);
-
-      .menu-title {
-        padding-right: 2rem;
-        padding-left: 2rem;
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: $cg-primary;
-      }
-
-      .menu-box {
-        margin-top: 1.3rem;
-        margin-left: 1rem;
+      // EMAIL BOX HEADER
+      #fep-header {
         // border: 4px dotted blue;
-        li.list-inline-item {
-          // border: 4px dotted red;
-          position: relative;
+        background-color: #fbfbfb;
+        box-shadow: 1px 1px 8px lighten($color: gray, $amount: 20%);
+        padding: 1rem;
+        border-radius: 1rem;
 
-          .btn-text {
-            // position: absolute;
-            // padding-left: 1rem;
-          }
-        }
-
-        a {
-          padding: 0.5rem 2rem;
-          margin-left: 1rem;
-          border: 1px solid gray;
-          border-radius: 6px;
-          color: lighten($color: $cg-primary, $amount: 10%);
-          font-size: 0.8rem;
-          font-weight: 600;
-
-          i {
-            margin-right: 0.5rem;
-            font-size: 1.2rem;
-            font-weight: 700;
-          }
-        }
-      }
-    }
-  }
-
-  // MAIN PAGE CONTENT
-  .asm-index-page-content {
-    // border: 1rem dotted red;
-    margin-top: 65px;
-  }
-
-  #athlete-index-container {
-    // border: 4px solid blue;
-    padding: 0rem 5rem;
-    .bp-pagination {
-      .pag-data {
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: $cg-primary;
-      }
-    }
-
-    .item-entry-asm {
-      // border: 4px solid red;
-      margin-bottom: 2rem;
-      box-shadow: 2px 2px 12px lighten($color: gray, $amount: 15%);
-
-      .item-avatar-asm {
-        padding-left: 0.5rem;
-        width: 250px;
-      }
-    }
-
-    .bp-pagination {
-      // border: 1rem dotted red;
-      padding-left: 1rem;
-    }
-
-    .item-asm {
-      // margin-bottom: 1rem;
-      // border: 3px dotted red;
-      .status-bar {
-        // border: 3px dotted blue;
-        padding-right: 2rem;
-        margin-top: -2.5rem;
-
-        .verified-status {
-          padding-right: 1rem;
-          font-size: 0.8rem;
-          font-weight: 600;
-          color: $cg-primary;
-
-          .fa-check-circle {
-            color: lighten($color: $cg-primary, $amount: 25%);
-          }
-          .fa-times-circle {
-            color: red;
-          }
-        }
-
-        .available-status {
-          font-size: 0.8rem;
-          font-weight: 600;
-          text-transform: uppercase;
-
-          .available {
-            color: green;
-          }
-          .committed {
-            color: red;
-          }
+        .avatar.photo {
+          float: left;
+          margin-right: 2rem;
+          margin-top: 0.3rem;
+          border-radius: 10px;
         }
       }
 
-      .item-block-asm {
+      // EMAIL BOX MENU BAR
+      #fep-menu {
+        // border: 4px dotted blue;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+        #fep-menu-announcements {
+          display: none;
+        }
+      }
+
+      .fep-menu-toggle {
+        display: none;
+      }
+      // SEARCH BOX
+      #fep-messagebox-search-form {
+        // text-align: center;
+        border-top: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        .fep-messagebox-search-form-field {
+          width: 100%;
+          border: 1px solid #e6e6e6;
+          padding: 0.5rem;
+        }
+      }
+      // BULK ACTION ROW
+      .fep-table.fep-action-table {
+        // border: 2px dotted red;
+
+        .fep-bulk-action {
+          float: left;
+          padding: 0.5rem;
+          margin-top: 0.3rem;
+        }
+        .fep-button {
+          padding: 0.3rem 4rem;
+          border-radius: 10px;
+        }
+        .fep-filter {
+          float: right;
+          margin-top: -0.8rem;
+        }
+      }
+
+      /**
+       * MESSAGE BOX PAGE (EMAIL LIST)
+       */
+
+      #fep-box-content-content {
         // border: 3px dotted red;
-        padding-left: 1.5rem;
+        .fep-avatar-2,
+        .fep-avatar-1 {
+          display: none;
+        }
+        // CHECK/UNCHECK ALL
+        .fep-cb-check-uncheck-all-div {
+          width: 100%;
+          display: flex;
+          margin: 0.5rem 0;
+        }
 
-        .member-name {
-          // border: 3px dotted red;
-          font-weight: 600;
+        // EMAIL LIST CONTENT
+        #fep-table {
+          // border: 2px dotted red;
+          .fep-table-row {
+            padding: 1rem;
+          }
+
+          .fep-column.fep-column-fep-cb {
+            float: left;
+            margin-top: -0.1rem;
+            // padding-top: 0.5rem;
+            // padding-left: 0.5rem;
+          }
+          .fep-message-author {
+            padding-left: 0.6rem;
+            font-weight: 700;
+          }
+          .fep-message-date {
+            padding-left: 1.5rem;
+            display: block;
+            clear: both;
+            font-size: 0.7rem;
+            font-weight: 800;
+          }
+          .fep-column.fep-column-title {
+            padding-top: 0.5rem;
+            a {
+              color: lighten($color: $cg-primary, $amount: 10%);
+              font-weight: 700;
+              padding-left: 1.5rem;
+              &:hover {
+                color: lighten($color: $cg-primary, $amount: 20%);
+              }
+            }
+            .fep-unread-classp {
+              font-size: 0.6rem;
+              font-weight: 800;
+              padding-left: 0.5rem;
+            }
+            .fep-message-excerpt {
+              padding-left: 1.5rem;
+              padding-top: 0.5rem;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+
+      /**
+       * SEND NEW MESSAGE PAGE
+       */
+
+      #fep-content {
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 5px lighten($color: gray, $amount: 20%);
+
+        // BLOCK TITLE (GENERAL EMAIL BLOCK TITLE)
+        h2 {
           font-size: 1.5rem;
-          a {
-            color: $cg-primary;
-          }
-          small {
+          font-weight: 800;
+        }
+
+        // FORM LABELS
+        .fep-label {
+          label {
+            margin-top: 1.5rem;
             font-size: 1rem;
             font-weight: 700;
           }
         }
 
-        .info-bar {
+        // TO INPUT
+        ul.token-input-list-facebook {
+          // border: none !important;
+          border: 0.5px solid lighten($color: gray, $amount: 30%);
+        }
+
+        // SUBJECT INPUT
+        #message_title {
+          border: 0.5px solid lighten($color: gray, $amount: 30%);
+        }
+
+        // TEXTAREA
+        #mceu_24-body {
+          // border: 0.5px solid lighten($color: $cg-secondary, $amount: 10%);
+        }
+
+        // FILE UPLOAD BLOCK
+        #fep_upload {
+          .fep-attachment-field-div {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e7e7e7;
+          }
+        }
+
+        .fep-attachment-field-a,
+        #fep-attachment-field-add {
+          padding: 0.3rem 1rem;
+          margin-top: 0.5rem;
+          border-radius: 10px;
+          border: 1px solid $cg-secondary;
+          font-size: 0.8rem;
+          font-weight: 700;
+        }
+        // SEND MAIL BUTTON
+        .fep-form.fep-form-newmessage {
+          .fep-button {
+            margin-top: 1.5rem;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            background-color: lighten($color: $cg-primary, $amount: 10%);
+            color: white;
+          }
+        }
+
+        /**
+         * EMAIL SETTINGS PAGE
+         */
+        .fep-form.fep-form-settings {
           // border: 3px dotted red;
-          .list-inline-item {
-            font-size: 1rem;
-            font-weight: 700;
-            color: lighten($color: $cg-primary, $amount: 10%);
-
-            .fas {
-              // border: 3px dotted red;
-              color: lighten($color: $cg-primary, $amount: 35%) !important;
-            }
+          .fep-button {
+            margin-top: 1.5rem;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            background-color: lighten($color: $cg-primary, $amount: 10%);
+            color: white;
           }
         }
 
-        .text-content {
-          font-size: 0.9rem;
-          padding-right: 2rem;
-          color: $cg-primary;
-
-          .readmore {
-            float: right;
-            a {
-              font-size: 1rem;
-              font-weight: 600;
-              color: lighten($color: $cg-primary, $amount: 0%);
-            }
+        /**
+         * EMAIL DIRECTORY PAGE
+         */
+        // SEARCH BOX
+        #fep-directory-search-form {
+          // text-align: center;
+          border-top: 1px solid #e7e7e7;
+          border-bottom: 1px solid #e7e7e7;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          .fep-directory-search-form-field {
+            width: 100%;
+            border: 1px solid #e6e6e6;
+            padding: 0.5rem;
           }
         }
-      }
-    }
-  }
-}
-
-/**
- * 3. BP GLOBAL SEARCH INDEX
- */
-#buddypress {
-  .bboss_search_page {
-    position: relative;
-
-    .search-menu-container {
-      // border: 4px dotted pink;
-      position: fixed;
-      top: 65px;
-      background-color: $cg-secondary;
-      width: 100%;
-      height: 80px;
-      z-index: 100;
-
-      .bboss_search_filters_wrapper {
-        // border: 3px dotted yellow;
-        .search_filters {
-          margin-top: 1.5rem;
-          margin-left: 1rem;
-        }
-
-        ul {
-          li {
-            a {
-              color: lighten($color: $cg-primary, $amount: 30%);
+        // DIRECTORY CONTENT AREA
+        .fep-directory-table.form {
+          // border: 2px dotted red;
+          // BULK ACTION ROW
+          .fep-table.fep-action-table {
+            .fep-bulk-action {
+              float: left;
+              padding: 0.5rem;
+              margin-top: 0.3rem;
+            }
+            .fep-button {
+              padding: 0.3rem 4rem;
+              border-radius: 10px;
+            }
+            .fep-filter {
+              float: right;
+              margin-top: -1.8rem;
+              // border: 2px dotted blue;
             }
           }
 
-          li.active {
-            a {
-              background: lighten($color: #e6e6e6, $amount: 0%);
+          // DIRECTORY LISTING BLOCK
+          // border: 3px dotted red;
+
+          // CHECK/UNCHECK ALL
+          .fep-cb-check-uncheck-all-div {
+            width: 100%;
+            display: flex;
+            margin: 0.5rem 0;
+          }
+
+          // DIRECTORY MEMBER IMAGE
+          .avatar.avatar-55.photo {
+            // display: none;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            border-radius: 10px;
+            float: left;
+          }
+
+          // EMAIL LIST CONTENT
+          #fep-table {
+            // border: 2px dotted red;
+            .fep-table-row {
+              // border: 2px dotted red;
+              padding: 1rem;
             }
-          }
-        }
-      }
-
-      .bboss_search_form_wrapper {
-        // width: 500px;
-        .search-form {
-          margin-top: -1.5rem;
-          margin-right: 1rem;
-          width: 350px !important;
-          .search-field {
-            // border: 5px dotted limegreen;
-            width: 350px !important;
-          }
-          .search-submit {
-            border: 5px dotted red;
-            display: none;
-          }
-        }
-      }
-    }
-  }
-
-  #athlete-index-container {
-    // border: 4px dotted hotpink;
-    margin-top: -2.5rem;
-  }
-
-  /**
-   * Global Search Member
-   */
-  .search_results {
-    #members-stream {
-      .item-entry-asm {
-        box-shadow: 2px 2px 6px #e7e7e7;
-
-        .item-avatar-asm {
-          margin-bottom: -1.5rem;
-          margin-left: 1rem;
-          img {
-            width: 100% !important;
-            height: auto !important;
-          }
-        }
-        .item-asm {
-          .item-block-asm {
-            .member-name {
-              font-weight: 600;
+            // CHECKBOX
+            .fep-column.fep-column-fep-cb {
+              float: left;
+            }
+            // MEMBER TITLE
+            .fep-column-name {
+              padding-left: 2rem;
+              font-weight: 700;
+            }
+            // BLOCK BUTTON
+            .fep_block_unblock_user {
+              border: 1px solid $cg-secondary;
+              border-radius: 10px;
+              padding: 0.1rem 2rem;
+              margin-right: 1rem;
+              float: left;
+              font-size: 0.8rem;
+              font-weight: 800;
+              &:hover {
+                color: white;
+                background-color: $cg-primary;
+              }
+            }
+            // SEND MESSAGE BUTTON
+            .fep-column.fep-column-send_message {
               a {
-                color: $cg-primary;
-              }
-            }
-
-            .info-bar {
-              // border: 3px dotted red;
-              .list-inline-item {
-                font-size: 1rem;
-                font-weight: 700;
-                color: lighten($color: $cg-primary, $amount: 10%);
-              }
-            }
-
-            .text-content {
-              padding-right: 2rem;
-              color: $cg-primary;
-
-              .readmore {
-                a {
-                  color: lighten($color: $cg-primary, $amount: 20%);
+                border: 1px solid $cg-secondary;
+                border-radius: 10px;
+                padding: 0.1rem 2rem;
+                margin-right: 1rem;
+                float: left;
+                font-size: 0.8rem;
+                font-weight: 800;
+                &:hover {
+                  color: white;
+                  background-color: $cg-primary;
                 }
               }
             }
           }
         }
       }
-    }
-  }
+      // EMAIL SINGLE MESSAGE PAGE (REPLY ETC.)
+      #fep-content {
+        #fep-content-single {
+          #fep-content-single-sidebar {
+            // GETTING RID OF UNNECESSARY AVATARS
+            #fep-content-single-heads {
+              display: none;
+            }
+          }
+          // SINGLE MESSAGE HEADER & CONTENT
+          #fep-content-single-content {
+            // border: 2px dotted red;
+            margin-top: 1rem;
+            // SUBJECT
+            .fep-message-title-heading {
+              font-size: 1rem;
+              font-weight: 800;
+              padding-top: 0.5rem;
+              padding-left: 0.5rem;
+            }
+            .fep-message-title-heading.participants {
+              font-size: 0.8rem;
+              font-weight: 800;
+              padding-bottom: 0.5rem;
+              padding-left: 0.5rem;
+            }
+            // TOGGLE BUTTON
+            .fep-button.fep-message-toggle-all {
+              margin-top: 0.5rem;
+              margin-bottom: 0.5rem;
+              padding: 1rem 2rem;
+              border-radius: 10px;
+              background-color: lighten($color: $cg-primary, $amount: 10%);
+              color: white;
+            }
+            // SENDER BLOCK
+            .fep-message-title {
+              padding-top: 0.5rem;
+              padding-bottom: 0.5rem;
+              padding-left: 0.5rem;
+              .author {
+                font-size: 1rem;
+                font-weight: 600;
+              }
+              .date {
+                font-size: 0.7rem;
+                font-weight: 800;
+              }
+            }
+          }
 
-  /**
-   * Global Search Posts
-   */
-  .results-group-title {
-    display: none;
-  }
-
-  .bboss_search_item.bboss_search_item_post {
-    // border: 1rem dotted red;
-    box-shadow: 2px 2px 6px #e7e7e7;
-    margin-left: 2rem;
-    margin-right: 1rem;
-
-    .entry-title {
-      padding: 0 2rem;
-
-      a {
-        color: $cg-primary;
-
-        &:hover {
-          color: lighten($color: $cg-primary, $amount: 10%);
+          // REPLY BLOCK
+          #fep-content-single-reply-form {
+            // REPLY BUTTON
+            .fep-button {
+              margin-top: 0.5rem;
+              margin-bottom: 0.5rem;
+              padding: 1rem 4rem;
+              border-radius: 10px;
+              background-color: lighten($color: $cg-primary, $amount: 10%);
+              color: white;
+            }
+          }
         }
       }
-    }
-
-    .entry-content {
-      padding: 0 2rem;
-
-      a.moretag {
-        color: lighten($color: $cg-primary, $amount: 20%);
-
-        &:hover {
-          color: lighten($color: $cg-primary, $amount: 30%);
-        }
+      // EMAIL BOX FOOTER
+      #fep-footer {
+        display: none;
       }
     }
   }
-}
-
-/**
- * 4. BP REGISTRATION PAGE
- */
-
-#asm-registration-pg {
-  // border: 1rem dotted red;
-  margin-top: -4.2rem;
-  padding: 5rem;
-  background: url("/wp-content/uploads/Group-236.png");
-
-  #register-page {
-    // border: 1rem dotted dodgerblue;
-    border-radius: 30px;
-    padding: 2rem;
-    background-color: rgba($color: #e7e7e7, $alpha: 0.9);
-    // background-color: lighten($color: #e7e7e7, $amount: 0);
-
-    .layout-wrap {
-      // border: 1rem dotted dodgerblue;
-      .description {
-        padding: 1.5rem;
-        border-radius: 20px;
-      }
-    }
-
-    #submit {
-      background-color: lighten($color: $cg-primary, $amount: 10%);
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 30px;
-    }
-  }
-}
-
-.buddypress-wrap .standard-form input[required]:invalid,
-.buddypress-wrap .standard-form select[required]:invalid,
-.buddypress-wrap .standard-form textarea[required]:invalid {
-  border-color: transparent !important;
 }

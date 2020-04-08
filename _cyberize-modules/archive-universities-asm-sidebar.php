@@ -1,18 +1,18 @@
 <?php
 /**
  *
- * MODULE: Blog Index ASM
+ * MODULE: Univ Index ASM
  *
  */
 ?>
 
-<section id="" class="blog-index-block-asm">
+<section id="" class="univ-index-block-asm">
 
   <div id="primary" class="content-area">
     <main id="main" class="site-main">
 
       <!-- Blue Top Bar -->
-      <section id="general-blog-page-header">
+      <section id="general-univ-page-header">
         <h4 class="page-header-title">Universities</h4>
       </section>
       <!-- Blue Top Bar End-->
@@ -79,7 +79,7 @@
 
               <?php	if ( have_posts() ) :	?>
 
-              <div class="masonry">
+              <div class="row">
                 <?php
 									/* Start the Loop */
 									while ( have_posts() ) : the_post();

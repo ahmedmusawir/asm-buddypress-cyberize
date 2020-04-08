@@ -9,7 +9,7 @@ get_header();
 ?>
 <div id="buddypress" class="buddypress-wrap coach bp-dir-hori-nav">
   <!-- FONT AWESOME 5 PRO -->
-  <script src="https://kit.fontawesome.com/c8084101a0.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/c8084101a0.js" crossorigin="anonymous"></script> -->
   <?php
     $user_id = bp_displayed_user_id();
     $current_user = wp_get_current_user();
@@ -185,9 +185,10 @@ get_header();
         <!-- ATHLETE PROFILE RIGHT EMAIL BUTTON SET START -->
 
         <!-- MESSAGE BUTTON -->
+        <?php // if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
 
         <section id="athlete-right-email-button">
-          <a href="#" class="clearfix">
+          <a href="/athlete-email-inbox/" class="clearfix">
             <div class="message-button">
               <img src="/wp-content/uploads/email-btn-icon.png" alt="" class="float-left btn-image">
               <div class="btn-text-holder">
@@ -197,11 +198,13 @@ get_header();
           </a>
 
         </section>
+        <?php // endif; ?>
+
 
         <!-- SEARCH ATHLETE BUTTON -->
 
         <section id="athlete-right-search-athlete-button">
-          <a href="#" class="clearfix">
+          <a href="/members/type/athletes/" class="clearfix">
             <div class="message-button">
               <img src="/wp-content/uploads/search-athlete-icon.png" alt="" class="float-left btn-image">
               <div class="btn-text-holder">
