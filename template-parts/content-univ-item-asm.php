@@ -28,7 +28,7 @@ echo '</pre>';
 
     <?php if (has_post_thumbnail()) : ?>
 
-    <section class="col-sm-6">
+    <section class="col-sm-5">
 
       <figure class="featured-image-box">
         <a href="<?php the_permalink(); ?>">
@@ -38,26 +38,37 @@ echo '</pre>';
 
     </section>
 
-    <section class="col-sm-6">
+    <section id="university-item-box" class="col-sm-7">
 
-      <?php
+      <div class="university-text">
+        <?php
+
+        $mapLocation = get_field('university_address');
+
     
-				if ( is_singular() ) :
-					the_title( '<h1 class="entry-title">', '</h1>' );
-				else :
-					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-				endif;
+        if ( is_singular() ) :
+          the_title( '<h1 class="entry-title">', '</h1>' );
+        else :
+          the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+        endif;
 
-		?>
-
+      ?>
+        <h5 class="university-address">
+          <strong><?php echo $mapLocation['address']; ?></strong>
+        </h5>
+      </div>
       <div class="university-item-content">
 
-        <a class="detail-link" href="<?php the_permalink(); ?>"><span class="btn btn-primary btn-sm">View
-            Details</span></a>
-        <figure class="university-logo float-right">
+
+        <figure class="university-logo">
           <img class="img-fluid" src="<?php the_field('university_logo'); ?>" alt="">
-          <!-- <img class="img-fluid" src="/wp-content/uploads/university-logos.png" alt=""> -->
         </figure>
+
+        <a class="detail-link" href="<?php the_permalink(); ?>">
+          <span class="btn btn-primary btn-sm">
+            View Details
+          </span>
+        </a>
 
         <?php
         // <!-- CONTENT -->

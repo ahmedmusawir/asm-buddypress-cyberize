@@ -15,11 +15,25 @@ get_header(); ?>
 
     <!-- Page Header with image -->
     <section id="general-blog-page-header">
+      <section class="top-page-menu clearfix">
+        <h3 class="menu-title float-left">Filters:</h3>
+        <ul class="list-inline menu-box float-left">
+          <a href="/universities/">
+            <li class="list-inline-item">All</li>
+          </a>
+        </ul>
+        <?php
+          wp_nav_menu( array( 
+              'theme_location' => 'univ-cat', 
+              'container_class' => 'menu-box' ) ); 
+          ?>
 
-      <section class="top-page-menu pt-1">
-        <h3 class="menu-title">Universities</h3>
       </section>
+      <!-- <section class="top-page-menu clearfix">
 
+        <h3 class="menu-title float-left">Get Recruited</h3>
+
+      </section> -->
     </section>
 
     <?php
