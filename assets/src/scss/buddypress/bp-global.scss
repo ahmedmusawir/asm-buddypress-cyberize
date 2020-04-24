@@ -6,7 +6,6 @@
  * 2. ATHLETE & COACH INDEX
  * 3. BP GLOBAL SEARCH INDEX
  * 4. BP REGISTRATION PAGE
- * 5. FRONT END PM PRO (THE EMAIL SYSTEM STYLES)
  */
 
 /**
@@ -303,6 +302,12 @@ body.buddypress {
             color: lighten($color: $cg-primary, $amount: 20%);
           }
         }
+
+        .more-videos-box {
+          .video-button {
+            cursor: pointer;
+          }
+        }
       }
 
       #about-section {
@@ -313,10 +318,18 @@ body.buddypress {
 
         .block-header {
           font-size: 2rem;
-          i.fa-user-circle {
-            color: lighten($color: $cg-primary, $amount: 20%);
+          text-transform: capitalize;
+
+          #the-name {
+            text-transform: capitalize !important;
+            // border: 1px dotted red;
           }
+
+          // i.fa-user-circle {
+          //   color: lighten($color: $cg-primary, $amount: 20%);
+          // }
         }
+
         .text-content {
           color: lighten($color: $cg-primary, $amount: 10%);
         }
@@ -413,8 +426,16 @@ body.buddypress {
   #athlete-right-email-button {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf0404+0,ff3019+100 */
     background: #cf0404; /* Old browsers */
-    background: -moz-linear-gradient(left, #cf0404 0%, #ff3019 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #cf0404 0%, #ff3019 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(
+      left,
+      #cf0404 0%,
+      #ff3019 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      #cf0404 0%,
+      #ff3019 100%
+    ); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
       to right,
       #cf0404 0%,
@@ -443,8 +464,16 @@ body.buddypress {
     margin-bottom: 1rem;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf0404+0,ff3019+100 */
     background: $cg-primary; /* Old browsers */
-    background: -moz-linear-gradient(left, #035083 0%, #0574b8 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #035083 0%, #0574b8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(
+      left,
+      #035083 0%,
+      #0574b8 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      #035083 0%,
+      #0574b8 100%
+    ); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
       to right,
       #035083 0%,
@@ -894,7 +923,7 @@ body.buddypress {
   // border: 1rem dotted red;
   margin-top: -4.2rem;
   padding: 5rem;
-  background: url("/wp-content/uploads/Group-236.png");
+  background: url('/wp-content/uploads/Group-236.png');
 
   #register-page {
     // border: 1rem dotted dodgerblue;

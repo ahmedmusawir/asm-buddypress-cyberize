@@ -2,6 +2,7 @@
  * ITEM INDEX
  * 1. ATHLETE EMAIL PAGE
  * 2. FRONT END PM PRO (THE EMAIL SYSTEM STYLES)
+ * -- EMAIL DIRECTORY PAGE
  */
 
 /**
@@ -337,8 +338,16 @@
   #athlete-right-email-button {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf0404+0,ff3019+100 */
     background: #cf0404; /* Old browsers */
-    background: -moz-linear-gradient(left, #cf0404 0%, #ff3019 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #cf0404 0%, #ff3019 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(
+      left,
+      #cf0404 0%,
+      #ff3019 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      #cf0404 0%,
+      #ff3019 100%
+    ); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
       to right,
       #cf0404 0%,
@@ -368,8 +377,16 @@
     margin-bottom: 1rem;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf0404+0,ff3019+100 */
     background: $cg-primary; /* Old browsers */
-    background: -moz-linear-gradient(left, #035083 0%, #0574b8 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #035083 0%, #0574b8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(
+      left,
+      #035083 0%,
+      #0574b8 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      #035083 0%,
+      #0574b8 100%
+    ); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
       to right,
       #035083 0%,
@@ -732,6 +749,13 @@
             .fep-table-row {
               // border: 2px dotted red;
               padding: 1rem;
+
+              .fep-column.fep-column-avatar {
+                // border: 2px dotted red;
+                img {
+                  display: none;
+                }
+              }
             }
             // CHECKBOX
             .fep-column.fep-column-fep-cb {

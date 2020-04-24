@@ -10,7 +10,10 @@ $user_id = bp_displayed_user_id();
 
   <h1 id="about" class="block-header">
     <!-- <i class="fas fa-user-circle"></i> About -->
-    <img class="pb-2" src="/wp-content/uploads/bio-icon-1.png" alt=""> About
+    <img class="pb-2" src="/wp-content/uploads/bio-icon-1.png" alt="">
+    About <span id="the-name">
+      <?php echo bp_core_get_user_displayname( $user_id, true ); ?>
+    </span>
   </h1>
 
   <p class="text-content">
