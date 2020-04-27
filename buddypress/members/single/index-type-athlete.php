@@ -231,15 +231,15 @@ get_header();
 
           <?php if (is_user_logged_in() && ($user_id == $current_user_id)) : ?>
 
-          <h2 class="view-count-title">Views</h2>
+          <h2 class="view-count-title pb-3">Views</h2>
 
           <!-- <img src="/wp-content/uploads/2020/01/profile-sidebar.png" alt=""> -->
           <?php //echo do_shortcode('[bp-visitors-recent-visitors]'); ?>
           <?php 
-          $users_obj = visitors_get_recent_visitors( get_current_user_id(), $count = 3 );
-          echo '<pre>';
+          $users_obj = visitors_get_recent_visitors( get_current_user_id(), $count = 5 );
+          // echo '<pre>';
           // print_r($users_obj);
-          echo '</pre>';
+          // echo '</pre>';
           foreach ($users_obj as $value) :
             
           // OBJECTS FROM THE RECENT VISITOR PLUGIN 
@@ -249,10 +249,30 @@ get_header();
           // VERSITY LOGO IMAGE
           $versity_logo = xprofile_get_field_data( 439, $user_id, $multi_format = 'array' );
 
+          // GETTING USER DATA
+          $user_obj = get_userdata($user_id);
+          // echo '<pre>';
+          // print_r($user_obj);
+          // echo $user_obj->roles[0];
+          // echo $user_obj->roles[1];
+          // echo '</pre>';
+
         /**
          * ATHLETE VIEW BOX
          * Look inside ATHLETE & COACH SINGLE PROFILE in bp-global.scss file for styling
          */
+
+         if ( !isset($user_obj->roles[0])) {
+          $user_obj->roles[0] = null;
+         }
+         if ( !isset($user_obj->roles[1])) {
+          $user_obj->roles[1] = null;
+         }
+
+         $user_role = $user_obj->roles[1];
+
+         // CHECKING FOR COACH VIEWS
+         if ( $user_role == 'coach') :
         ?>
           <div class="box-content row">
             <figure class="versity-logo col-sm-5 d-flex justify-content-center align-items-center">
@@ -274,6 +294,8 @@ get_header();
             </article>
           </div>
 
+          <?php endif; ?>
+
           <?php endforeach; ?>
 
         </section> <!-- #athlete-view-count-box end -->
@@ -284,7 +306,9 @@ get_header();
         <!-- ATHLETE VIEW COUNT BOX ON RIGHT SIDEBAR END -->
 
         <!-- THE SIDEBAR -->
-        <?php get_sidebar(); ?>
+        <div class="sidebar-area mt-5">
+          <?php get_sidebar(); ?>
+        </div>
 
       </article>
 

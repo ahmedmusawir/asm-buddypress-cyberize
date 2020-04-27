@@ -25,24 +25,13 @@
         <h3 class="menu-title float-left">Filters</h3>
         <ul class="list-inline menu-box">
 
-          <!-- <a class="moose-item" href="#" id="all">
+          <a class="moose-item" href="#" id="all">
 
             <li class="list-inline-item">
               <span class="btn-text">ALL</span>
             </li>
 
-          </a> -->
-          <li class="list-inline-item">
-
-            <select id="sports-select">
-              <option value="all">All Sports</option>
-              <option value="football">FootBall</option>
-              <option value="golf">Golf</option>
-              <option value="baseball">Baseball</option>
-            </select>
-
-          </li>
-
+          </a>
           <a class="moose-item" href="#" id="FOOTBALL">
 
             <li class="list-inline-item">

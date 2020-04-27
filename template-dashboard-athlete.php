@@ -52,8 +52,8 @@ get_header(); ?>
 
     <?php 
     $user_id = get_current_user_id();
-      // $total_profile_visit = visitors_get_profile_visit_count($user_id);
-      $total_unique_visitors = visitors_get_unique_visitors_count( $user_id );
+      $total_profile_visit = visitors_get_profile_visit_count($user_id);
+      // $total_unique_visitors = visitors_get_unique_visitors_count( $user_id );
     ?>
 
     <div id="bottom-task-block" class="row">
@@ -69,7 +69,7 @@ get_header(); ?>
         <i class="fas fa-eye"></i>
         <h6 class="text-only">PROFILE VIEWS</h6>
         <!-- <h1 class="text-number"><?php //echo $total_profile_visit; ?></h1> -->
-        <h1 class="text-number"><?php echo $total_unique_visitors; ?></h1>
+        <h1 class="text-number"><?php echo $total_profile_visit; ?></h1>
         <a href="#" class="btn btn-info">View Who</a>
       </div>
 
