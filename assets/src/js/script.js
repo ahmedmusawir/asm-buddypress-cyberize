@@ -3,6 +3,8 @@ import ASMProfileEditMenu from './_modules/ASMProfileEditMenu';
 import UniversityFilters from './_modules/UniversityFilters';
 import AthleteFilters from './_modules/AthleteFilters';
 import AthleteFiltersSelect from './_modules/AthleteFiltersSelect';
+import AthleteGenderFiltersSelect from './_modules/AthleteGenderFiltersSelect';
+import AthleteAvailFiltersSelect from './_modules/AthleteAvailFiltersSelect';
 
 class App {
   constructor() {
@@ -17,7 +19,11 @@ class App {
     // Athlete Filters
     // const athleteFilters = new AthleteFilters();
     // Athlete Filters Select
-    // const filtersSelect = new AthleteFiltersSelect();
+    const filtersSelect = new AthleteFiltersSelect();
+    // ATHLETE GENDER SELECT
+    const athleteGenderFilter = new AthleteGenderFiltersSelect();
+    // ATHLETE AVAILABLILITY SELECT
+    const athleteAvailFilter = new AthleteAvailFiltersSelect();
   }
 }
 

@@ -5,12 +5,12 @@ class AthleteFilters {
     this.init();
 
     // COLLECTING SELECT
-    this.select = $('#sports-select');
+    this.select = $('#avail-select');
     this.setEvents();
   }
 
   init = () => {
-    console.log('ASM Select Filter Init');
+    console.log('ASM Avail Select Filter Init');
   };
 
   setEvents() {
@@ -19,24 +19,26 @@ class AthleteFilters {
 
   changeHandler() {
     // console.log($(this).val());
-    const sport = $(this).val();
+    const sport = $('#sports-select').val();
+    const gender = $('#gender-select').val();
+
+    const avail = $(this).val();
     const theItem = $('.item-entry-asm');
 
-    const gender = $('#gender-select');
-    gender.val('all');
-
-    const avail = $('#avail-select');
-    avail.val('all');
-
-    if (sport == 'all') {
+    if (avail == 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
         theItem.removeClass('d-none');
       });
+    } else if (sport == 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${avail}`).removeClass('d-none');
+      });
     } else {
       theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${sport}`).removeClass('d-none');
+        $(`.${avail}.${sport}`).removeClass('d-none');
       });
     }
   }

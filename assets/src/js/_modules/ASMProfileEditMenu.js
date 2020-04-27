@@ -1,6 +1,6 @@
 class ASMProfileEditMenu {
   constructor() {
-    console.info('ASM Edit Menu initialized!');
+    // console.info('ASM Edit Menu initialized!');
 
     // EDIT PROFILE NAV BUTTON
     this.editProfileButton = document.getElementById(

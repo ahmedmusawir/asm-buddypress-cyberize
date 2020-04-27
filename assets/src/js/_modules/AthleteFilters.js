@@ -10,7 +10,7 @@ class AthleteFilters {
   }
 
   init = () => {
-    console.log('ASM JQ Filter Init');
+    // console.log('ASM JQ Filter Init');
   };
 
   setEvents() {
@@ -26,12 +26,12 @@ class AthleteFilters {
 
     if ($sport == 'all') {
       $theItem.addClass('d-none');
-      setTimeout(function() {
+      setTimeout(function () {
         $theItem.removeClass('d-none');
       });
     } else {
       $theItem.addClass('d-none');
-      setTimeout(function() {
+      setTimeout(function () {
         $(`.${$sport}`).removeClass('d-none');
       });
     }

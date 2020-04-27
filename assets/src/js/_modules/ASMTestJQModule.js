@@ -10,7 +10,7 @@ class ASMTestJQModule {
   }
 
   init = () => {
-    console.log('Simple Module Init');
+    // console.log('Simple Module Init');
   };
 
   events = () => {

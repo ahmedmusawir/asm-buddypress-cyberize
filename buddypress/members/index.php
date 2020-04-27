@@ -25,36 +25,45 @@
         <h3 class="menu-title float-left">Filters</h3>
         <ul class="list-inline menu-box">
 
-          <!-- <a class="moose-item" href="#" id="all">
-
-            <li class="list-inline-item">
-              <span class="btn-text">ALL</span>
-            </li>
-
-          </a> -->
           <li class="list-inline-item">
 
             <select id="sports-select">
+
               <option value="all">All Sports</option>
-              <option value="football">FootBall</option>
-              <option value="golf">Golf</option>
-              <option value="baseball">Baseball</option>
+              <option value="FOOTBALL">FootBall</option>
+              <option value="GOLF">Golf</option>
+              <option value="BASEBALL">Baseball</option>
+              <option value="BASKETBALL">Basketball</option>
+              <option value="SOCCER">Soccer</option>
+              <option value="CHEERLEADING">Cheerleading</option>
+
             </select>
 
           </li>
 
-          <a class="moose-item" href="#" id="FOOTBALL">
 
-            <li class="list-inline-item">
-              <span class="btn-text">US FOOTBALL</span>
-            </li>
+          <li class="list-inline-item">
 
-          </a>
-          <a class="moose-item" href="#" id="GOLF">
-            <li class="list-inline-item">
-              <span class="btn-text">GOLF</span>
-            </li>
-          </a>
+            <select id="gender-select">
+
+              <option value="all">All Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+
+            </select>
+
+          </li>
+
+          <li class="list-inline-item">
+            <select id="avail-select">
+
+              <option value="all">Availablility</option>
+              <option value="available">Available</option>
+              <option value="committed">Committed</option>
+
+            </select>
+          </li>
+
           <a class="moose-item" href="#" id="BASEBALL">
             <li class="list-inline-item">
               <span class="btn-text">BASEBALL</span>

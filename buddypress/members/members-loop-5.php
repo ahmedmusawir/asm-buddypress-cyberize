@@ -29,8 +29,6 @@ bp_nouveau_before_loop(); ?>
         $excerpt = substr($about, 0, 200) . '...';
         $nationality = xprofile_get_field_data( 11, $user_id, $multi_format = 'array' );
         $enrollment_year = xprofile_get_field_data( 17, $user_id, $multi_format = 'array' ); 
-        $gender = xprofile_get_field_data( 7, $user_id, $multi_format = 'array' );
-
 
         $verification = get_field( 'athlete_verification', $user_id_for_ACF );
         $availability = get_field( 'athlete_availability', $user_id_for_ACF );
@@ -40,34 +38,23 @@ bp_nouveau_before_loop(); ?>
 
         // echo $verification;
 
-        if ( ! $verification || $verification == 'no' ) {
-
-          $v_result = '<span class="verified-status"><i class="fas fa-times-circle"></i> Verified</span>';
-
-        } else {
-
+        if ( $verification ) {
           $v_result = '<span class="verified-status"><i class="fas fa-check-circle"></i> Verified</span>';
-
+        } else {
+          $v_result = '<span class="verified-status"><i class="fas fa-times-circle"></i> Verified</span>';
         }
 
         // echo $availability;
 
         if ( !$availability || $availability == 'yes') {
-
           $a_result = '<span  class="available-status"><span class="available">Available</span></span>';
-          $availability = 'available';
-
         } else {
-          
           $a_result = '<span class="available-status"><span class="committed">Committed</span></span>';
-          $availability = 'committed';
-          
         }
        
         ?>
 
-    <li
-      <?php bp_member_class( array( 'item-entry-asm', "$sport", "$gender", "$availability", 'animated', 'bounceIn' ) ); ?>
+    <li <?php bp_member_class( array( 'item-entry-asm', "$sport", 'animated', 'bounceIn' ) ); ?>
       data-bp-item-id="<?php bp_member_user_id(); ?>" data-bp-item-component="members">
       <div class="list-wrap-asm row">
 

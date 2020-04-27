@@ -1,6 +1,6 @@
 class ASMDropdownMenu {
   constructor() {
-    console.info('ASM Dropdown Menu initialized!');
+    // console.info('ASM Dropdown Menu initialized!');
 
     // THE PAGE
     this.fullPage = document.getElementById('page');
