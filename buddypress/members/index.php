@@ -27,7 +27,7 @@
 
           <li class="list-inline-item">
 
-            <select id="sports-select">
+            <select class="select-filter" id="sports-select">
 
               <option value="all">All Sports</option>
               <option value="FOOTBALL">FootBall</option>
@@ -44,7 +44,7 @@
 
           <li class="list-inline-item">
 
-            <select id="gender-select">
+            <select class="select-filter" id="gender-select">
 
               <option value="all">All Gender</option>
               <option value="Male">Male</option>
@@ -55,7 +55,7 @@
           </li>
 
           <li class="list-inline-item">
-            <select id="avail-select">
+            <select class="select-filter" id="avail-select">
 
               <option value="all">Availablility</option>
               <option value="available">Available</option>
@@ -64,24 +64,42 @@
             </select>
           </li>
 
-          <a class="moose-item" href="#" id="BASEBALL">
+          <li class="list-inline-item">
+            <select class="select-filter" id="class-select">
+
+              <option value="all">Class Year</option>
+              <option value="2018">2018</option>
+              <option value="2018">2019</option>
+              <option value="2018">2020</option>
+
+            </select>
+          </li>
+
+          <li class="list-inline-item">
+            <select class="select-filter" id="location-select">
+
+              <option value="all">Location</option>
+              <option value="usa">U.S.A.</option>
+              <option value="uk">UK</option>
+              <option value="canada">Canada</option>
+
+            </select>
+          </li>
+
+          <li class="list-inline-item">
+            <select class="select-filter" id="verify-select">
+
+              <option value="all">Verification</option>
+              <option value="verfied">Verified</option>
+              <option value="unverified">Not Verified</option>
+
+            </select>
+          </li>
+
+
+          <a class="moose-item" href="#" id="ath-filter-reset">
             <li class="list-inline-item">
-              <span class="btn-text">BASEBALL</span>
-            </li>
-          </a>
-          <a class="moose-item" href="#" id="BASKETBALL">
-            <li class="list-inline-item">
-              <span class="btn-text">BASKETBALL</span>
-            </li>
-          </a>
-          <a class="moose-item" href="#" id="SOCCER">
-            <li class="list-inline-item">
-              <span class="btn-text">SOCCER</span>
-            </li>
-          </a>
-          <a class="moose-item" href="#" id="CHEERLEADING">
-            <li class="list-inline-item">
-              <span class="btn-text">CHEERLEADING</span>
+              <span class="btn-text">RESET FILTERS</span>
             </li>
           </a>
         </ul>

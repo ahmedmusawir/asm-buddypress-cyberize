@@ -5,22 +5,23 @@ class AthleteFilters {
     this.init();
 
     // COLLECTING SELECT
-    this.select = $('#sports-select');
+    this.select = $('#ath-filter-reset');
     this.setEvents();
   }
 
   init = () => {
-    console.log('ASM Select Filter Init');
+    console.log('ASM Select Filter Reset');
   };
 
   setEvents() {
-    this.select.on('change', this.changeHandler);
+    this.select.on('click', this.changeHandler);
   }
 
   changeHandler() {
-    // console.log($(this).val());
-    const sport = $(this).val();
     const theItem = $('.item-entry-asm');
+
+    const sport = $('#sports-select');
+    sport.val('all');
 
     const gender = $('#gender-select');
     gender.val('all');
@@ -28,17 +29,10 @@ class AthleteFilters {
     const avail = $('#avail-select');
     avail.val('all');
 
-    if (sport == 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        theItem.removeClass('d-none');
-      });
-    } else {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${sport}`).removeClass('d-none');
-      });
-    }
+    theItem.addClass('d-none');
+    setTimeout(function () {
+      theItem.removeClass('d-none');
+    });
   }
 }
 

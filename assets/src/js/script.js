@@ -1,7 +1,7 @@
 import ASMDropdownMenu from './_modules/ASMDropdownMenu';
 import ASMProfileEditMenu from './_modules/ASMProfileEditMenu';
 import UniversityFilters from './_modules/UniversityFilters';
-import AthleteFilters from './_modules/AthleteFilters';
+import AthleteSportsFiltersSelect from './_modules/AthleteSportsFiltersSelect';
 import AthleteFiltersSelect from './_modules/AthleteFiltersSelect';
 import AthleteGenderFiltersSelect from './_modules/AthleteGenderFiltersSelect';
 import AthleteAvailFiltersSelect from './_modules/AthleteAvailFiltersSelect';
@@ -20,6 +20,8 @@ class App {
     // const athleteFilters = new AthleteFilters();
     // Athlete Filters Select
     const filtersSelect = new AthleteFiltersSelect();
+    // ATHLETE SPORTS SELECT
+    const AthleteSportsFilter = new AthleteSportsFiltersSelect();
     // ATHLETE GENDER SELECT
     const athleteGenderFilter = new AthleteGenderFiltersSelect();
     // ATHLETE AVAILABLILITY SELECT
