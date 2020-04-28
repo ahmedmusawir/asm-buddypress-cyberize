@@ -30,12 +30,22 @@ class AthleteFilters {
       setTimeout(function () {
         theItem.removeClass('d-none');
       });
+    } else if (sport == 'all' && gender != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${avail}.${gender}`).removeClass('d-none');
+      });
     } else if (sport == 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${avail}`).removeClass('d-none');
       });
-    } else {
+    } else if (sport != 'all' && gender != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${gender}.${avail}`).removeClass('d-none');
+      });
+    } else if (sport != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${avail}.${sport}`).removeClass('d-none');

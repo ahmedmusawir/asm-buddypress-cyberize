@@ -18,31 +18,31 @@ class AthleteFilters {
   }
 
   changeHandler() {
-    console.log('gender clicked');
-    // console.log($(this).val());
-    const sportSelect = $('#sports-select');
-    // console.log(sportSelect.val());
-    const sport = sportSelect.val();
-    console.log(sport);
+    const sport = $('#sports-select').val();
+    const avail = $('#avail-select').val();
 
-    const $gender = $(this).val();
-    // console.log($gender.val());
-    const $theItem = $('.item-entry-asm');
+    const gender = $(this).val();
+    const theItem = $('.item-entry-asm');
 
-    if ($gender == 'all') {
+    if (gender == 'all') {
       $theItem.addClass('d-none');
       setTimeout(function () {
-        $theItem.removeClass('d-none');
+        theItem.removeClass('d-none');
       });
     } else if (sport == 'all') {
-      $theItem.addClass('d-none');
+      theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${$gender}`).removeClass('d-none');
+        $(`.${gender}`).removeClass('d-none');
       });
-    } else {
-      $theItem.addClass('d-none');
+    } else if (sport != 'all' && avail != 'all') {
+      theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${sport}.${$gender}`).removeClass('d-none');
+        $(`.${sport}.${gender}.${avail}`).removeClass('d-none');
+      });
+    } else if (sport != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${gender}.${sport}`).removeClass('d-none');
       });
     }
   }
