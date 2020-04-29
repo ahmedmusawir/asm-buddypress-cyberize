@@ -49,7 +49,6 @@ class AthleteClassYearFiltersSelect extends AthleteFiltersSelect {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${classYr}.${gender}.${avail}`).removeClass('d-none');
-        console.log('gender & classYr not all');
       });
     } else if (sport != 'all') {
       theItem.addClass('d-none');

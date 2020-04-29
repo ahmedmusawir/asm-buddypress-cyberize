@@ -34,40 +34,30 @@ class AthleteGenderFiltersSelect extends AthleteFiltersSelect {
       setTimeout(function () {
         theItem.removeClass('d-none');
       });
-    } else if (sport != 'all' && classYr != 'all' && avail != 'all') {
+    } else if (sport == 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${gender}.${sport}.${classYr}.${avail}`).removeClass('d-none');
+        $(`.${gender}`).removeClass('d-none');
       });
     } else if (sport != 'all' && avail != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${gender}.${sport}.${avail}`).removeClass('d-none');
+        $(`.${sport}.${gender}.${avail}`).removeClass('d-none');
       });
-    } else if (classYr != 'all' && avail != 'all') {
+    } else if (sport != 'all' && classYr != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${gender}.${avail}.${classYr}`).removeClass('d-none');
+        $(`.${sport}.${gender}.${classYr}`).removeClass('d-none');
+      });
+    } else if (sport != 'all' && classYr != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${gender}.${avail}`).removeClass('d-none');
       });
     } else if (sport != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${gender}.${sport}`).removeClass('d-none');
-      });
-    } else if (classYr != 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${gender}.${classYr}`).removeClass('d-none');
-      });
-    } else if (avail != 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${gender}.${avail}`).removeClass('d-none');
-      });
-    } else if (sport == 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${gender}`).removeClass('d-none');
       });
     }
   }
