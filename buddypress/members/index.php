@@ -65,12 +65,12 @@
           </li>
 
           <li class="list-inline-item">
-            <select class="select-filter" id="class-select">
+            <select class="select-filter" id="class-year-select">
 
               <option value="all">Class Year</option>
               <option value="2018">2018</option>
-              <option value="2018">2019</option>
-              <option value="2018">2020</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
 
             </select>
           </li>

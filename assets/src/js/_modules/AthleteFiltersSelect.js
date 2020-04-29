@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-class AthleteFilters {
+class AthleteFiltersSelect {
   constructor() {
     this.init();
 
@@ -14,10 +14,10 @@ class AthleteFilters {
   };
 
   setEvents() {
-    this.select.on('click', this.changeHandler);
+    this.select.on('click', this.resetFilters);
   }
 
-  changeHandler() {
+  resetFilters() {
     const theItem = $('.item-entry-asm');
 
     const sport = $('#sports-select');
@@ -29,6 +29,15 @@ class AthleteFilters {
     const avail = $('#avail-select');
     avail.val('all');
 
+    const classYr = $('#class-year-select');
+    classYr.val('all');
+
+    const location = $('#location-select');
+    location.val('all');
+
+    const verify = $('#verify-select');
+    verify.val('all');
+
     theItem.addClass('d-none');
     setTimeout(function () {
       theItem.removeClass('d-none');
@@ -36,4 +45,4 @@ class AthleteFilters {
   }
 }
 
-export default AthleteFilters;
+export default AthleteFiltersSelect;

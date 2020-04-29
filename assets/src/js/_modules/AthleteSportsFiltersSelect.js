@@ -28,6 +28,9 @@ class AthleteFilters {
     const avail = $('#avail-select');
     avail.val('all');
 
+    const classYr = $('#class-year-select');
+    classYr.val('all');
+
     if (sport == 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {

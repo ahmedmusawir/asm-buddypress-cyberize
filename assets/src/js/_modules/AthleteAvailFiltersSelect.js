@@ -1,7 +1,9 @@
 import $ from 'jquery';
+import AthleteFiltersSelect from './AthleteFiltersSelect';
 
-class AthleteFilters {
+class AthleteAvailFiltersSelect extends AthleteFiltersSelect {
   constructor() {
+    super();
     this.init();
 
     // COLLECTING SELECT
@@ -27,6 +29,8 @@ class AthleteFilters {
 
     if (avail == 'all') {
       theItem.addClass('d-none');
+      super.resetFilters();
+
       setTimeout(function () {
         theItem.removeClass('d-none');
       });
@@ -54,4 +58,4 @@ class AthleteFilters {
   }
 }
 
-export default AthleteFilters;
+export default AthleteAvailFiltersSelect;

@@ -5,6 +5,7 @@ import AthleteSportsFiltersSelect from './_modules/AthleteSportsFiltersSelect';
 import AthleteFiltersSelect from './_modules/AthleteFiltersSelect';
 import AthleteGenderFiltersSelect from './_modules/AthleteGenderFiltersSelect';
 import AthleteAvailFiltersSelect from './_modules/AthleteAvailFiltersSelect';
+import AthleteClassYearFiltersSelect from './_modules/AthleteClassYearFiltersSelect';
 
 class App {
   constructor() {
@@ -26,6 +27,8 @@ class App {
     const athleteGenderFilter = new AthleteGenderFiltersSelect();
     // ATHLETE AVAILABLILITY SELECT
     const athleteAvailFilter = new AthleteAvailFiltersSelect();
+    // ATHLETE CLASS YEAR SELECT
+    const AthleteClassYearFilter = new AthleteClassYearFiltersSelect();
   }
 }
 
