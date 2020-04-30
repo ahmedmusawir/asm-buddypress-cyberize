@@ -12,7 +12,7 @@ class AthleteGenderFiltersSelect extends AthleteFiltersSelect {
   }
 
   init = () => {
-    console.log('ASM Gender Select Filter Init');
+    // console.log('ASM Gender Select Filter Init');
   };
 
   setEvents() {

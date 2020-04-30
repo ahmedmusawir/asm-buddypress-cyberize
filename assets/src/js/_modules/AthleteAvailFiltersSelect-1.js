@@ -12,7 +12,7 @@ class AthleteAvailFiltersSelect extends AthleteFiltersSelect {
   }
 
   init = () => {
-    // console.log('ASM Avail Select Filter Init');
+    console.log('ASM Avail Select Filter Init');
   };
 
   setEvents() {
@@ -23,7 +23,6 @@ class AthleteAvailFiltersSelect extends AthleteFiltersSelect {
     // console.log($(this).val());
     const sport = $('#sports-select').val();
     const gender = $('#gender-select').val();
-    const classYr = $('#class-year-select').val();
 
     const avail = $(this).val();
     const theItem = $('.item-entry-asm');
@@ -35,40 +34,25 @@ class AthleteAvailFiltersSelect extends AthleteFiltersSelect {
       setTimeout(function () {
         theItem.removeClass('d-none');
       });
-    } else if (sport != 'all' && classYr != 'all' && gender != 'all') {
+    } else if (sport == 'all' && gender != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${avail}.${gender}.${sport}.${classYr}`).removeClass('d-none');
+        $(`.${avail}.${gender}`).removeClass('d-none');
+      });
+    } else if (sport == 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${avail}`).removeClass('d-none');
       });
     } else if (sport != 'all' && gender != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${avail}.${gender}.${sport}`).removeClass('d-none');
-      });
-    } else if (classYr != 'all' && gender != 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${avail}.${gender}.${classYr}`).removeClass('d-none');
+        $(`.${sport}.${gender}.${avail}`).removeClass('d-none');
       });
     } else if (sport != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${avail}.${sport}`).removeClass('d-none');
-      });
-    } else if (classYr != 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${avail}.${classYr}`).removeClass('d-none');
-      });
-    } else if (gender != 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${avail}.${gender}`).removeClass('d-none');
-      });
-    } else {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${avail}`).removeClass('d-none');
       });
     }
   }

@@ -79,9 +79,11 @@
             <select class="select-filter" id="location-select">
 
               <option value="all">Location</option>
-              <option value="usa">U.S.A.</option>
-              <option value="uk">UK</option>
-              <option value="canada">Canada</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+              <option value="Canada">Canada</option>
+              <option value="Domenican-Republic">Domenican Republic</option>
+              <option value="Mexico">Mexico</option>
 
             </select>
           </li>
@@ -90,7 +92,7 @@
             <select class="select-filter" id="verify-select">
 
               <option value="all">Verification</option>
-              <option value="verfied">Verified</option>
+              <option value="verified">Verified</option>
               <option value="unverified">Not Verified</option>
 
             </select>

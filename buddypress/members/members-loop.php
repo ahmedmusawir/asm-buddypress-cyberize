@@ -72,7 +72,7 @@ bp_nouveau_before_loop(); ?>
         ?>
 
     <li
-      <?php bp_member_class( array( 'item-entry-asm', "$sport", "$gender", "$availability", "$verify_filter", "$enrollment_year",'animated', 'bounceIn' ) ); ?>
+      <?php bp_member_class( array( 'item-entry-asm', "$sport", "$gender", "$availability", "$verify_filter", "$enrollment_year", "$nationality",'animated', 'bounceIn' ) ); ?>
       data-bp-item-id="<?php bp_member_user_id(); ?>" data-bp-item-component="members">
       <div class="list-wrap-asm row">
 

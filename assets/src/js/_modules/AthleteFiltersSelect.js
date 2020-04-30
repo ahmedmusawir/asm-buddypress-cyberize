@@ -10,7 +10,7 @@ class AthleteFiltersSelect {
   }
 
   init = () => {
-    console.log('ASM Select Filter Reset');
+    // console.log('ASM Select Filter Reset');
   };
 
   setEvents() {

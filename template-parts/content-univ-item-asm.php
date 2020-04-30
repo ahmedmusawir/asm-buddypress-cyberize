@@ -15,11 +15,19 @@
 
 $tax_list = get_the_terms(get_the_ID(), 'school-type'); // THIS IS FOR CPT TAXONOMIES
 // $cat_list = get_the_category(); // THIS IS GOOD FOR REGULAR POSTS
-$school_type = $tax_list[0]->name;
-echo '<pre>';
-// echo print_r($tax_list);
-// echo $tax_list[0]->name;
-echo '</pre>';
+if ($tax_list) {
+
+  $school_type = $tax_list[0]->name;
+  echo '<pre>';
+  // echo print_r($tax_list);
+  // echo $tax_list[0]->name;
+  echo '</pre>';
+  
+} else {
+
+  $school_type = null;
+
+}
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class("col-md-12 post-item item animated bounceIn  $school_type"); ?>>

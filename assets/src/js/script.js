@@ -6,6 +6,8 @@ import AthleteFiltersSelect from './_modules/AthleteFiltersSelect';
 import AthleteGenderFiltersSelect from './_modules/AthleteGenderFiltersSelect';
 import AthleteAvailFiltersSelect from './_modules/AthleteAvailFiltersSelect';
 import AthleteClassYearFiltersSelect from './_modules/AthleteClassYearFiltersSelect';
+import AthleteLocationFiltersSelect from './_modules/AthleteLocationFiltersSelect';
+import AthleteVerificationFiltersSelect from './_modules/AthleteVerificationFiltersSelect';
 
 class App {
   constructor() {
@@ -17,18 +19,21 @@ class App {
     const ASMProfileEditNav = new ASMProfileEditMenu();
     // University Filters
     const univFilters = new UniversityFilters();
-    // Athlete Filters
-    // const athleteFilters = new AthleteFilters();
+
     // Athlete Filters Select
     const filtersSelect = new AthleteFiltersSelect();
     // ATHLETE SPORTS SELECT
-    const AthleteSportsFilter = new AthleteSportsFiltersSelect();
+    const athleteSportsFilter = new AthleteSportsFiltersSelect();
     // ATHLETE GENDER SELECT
     const athleteGenderFilter = new AthleteGenderFiltersSelect();
     // ATHLETE AVAILABLILITY SELECT
     const athleteAvailFilter = new AthleteAvailFiltersSelect();
     // ATHLETE CLASS YEAR SELECT
-    const AthleteClassYearFilter = new AthleteClassYearFiltersSelect();
+    const athleteClassYearFilter = new AthleteClassYearFiltersSelect();
+    // ATHLETE LOCATION SELECT
+    const athleteLocationFilter = new AthleteLocationFiltersSelect();
+    // ATHLETE VERIFY SELECT
+    new AthleteVerificationFiltersSelect();
   }
 }
 
