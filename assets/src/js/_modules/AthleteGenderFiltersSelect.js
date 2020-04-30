@@ -91,7 +91,17 @@ class AthleteGenderFiltersSelect extends AthleteFiltersSelect {
       setTimeout(function () {
         $(`.${gender}.${avail}`).removeClass('d-none');
       });
-    } else if (sport == 'all') {
+    } else if (location != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${gender}.${location}`).removeClass('d-none');
+      });
+    } else if (verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${gender}.${verify}`).removeClass('d-none');
+      });
+    } else {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${gender}`).removeClass('d-none');

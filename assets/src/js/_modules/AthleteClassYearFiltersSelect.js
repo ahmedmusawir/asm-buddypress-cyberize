@@ -102,6 +102,11 @@ class AthleteClassYearFiltersSelect extends AthleteFiltersSelect {
       setTimeout(function () {
         $(`.${classYr}.${avail}`).removeClass('d-none');
       });
+    } else if (location != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${classYr}.${location}`).removeClass('d-none');
+      });
     } else {
       theItem.addClass('d-none');
       setTimeout(function () {
