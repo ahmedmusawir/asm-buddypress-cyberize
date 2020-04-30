@@ -12,7 +12,7 @@ class AthleteVerificationFiltersSelect extends AthleteFiltersSelect {
   }
 
   init = () => {
-    console.log('ASM Verify Select Filter Init');
+    // console.log('ASM Verify Select Filter Init');
   };
 
   setEvents() {
@@ -28,7 +28,7 @@ class AthleteVerificationFiltersSelect extends AthleteFiltersSelect {
     const location = $('#location-select').val();
 
     const verify = $(this).val();
-    console.log(verify);
+    // console.log(verify);
     const theItem = $('.item-entry-asm');
 
     if (verify == 'all') {

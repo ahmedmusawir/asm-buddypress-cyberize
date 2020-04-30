@@ -24,6 +24,8 @@ class AthleteSportsFiltersSelect extends AthleteFiltersSelect {
     const gender = $('#gender-select').val();
     const avail = $('#avail-select').val();
     const classYr = $('#class-year-select').val();
+    const location = $('#location-select').val();
+    const verify = $('#verify-select').val();
 
     const sport = $(this).val();
     const theItem = $('.item-entry-asm');
@@ -34,6 +36,31 @@ class AthleteSportsFiltersSelect extends AthleteFiltersSelect {
 
       setTimeout(function () {
         theItem.removeClass('d-none');
+      });
+    } else if (
+      avail != 'all' &&
+      gender != 'all' &&
+      location != 'all' &&
+      classYr != 'all' &&
+      verify != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(
+          `.${sport}.${avail}.${location}.${verify}.${classYr}.${gender}`
+        ).removeClass('d-none');
+      });
+    } else if (
+      avail != 'all' &&
+      gender != 'all' &&
+      location != 'all' &&
+      classYr != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${avail}.${location}.${classYr}.${gender}`).removeClass(
+          'd-none'
+        );
       });
     } else if (avail != 'all' && classYr != 'all' && gender != 'all') {
       theItem.addClass('d-none');

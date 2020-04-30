@@ -25,9 +25,9 @@ class AthleteLocationFiltersSelect extends AthleteFiltersSelect {
     const gender = $('#gender-select').val();
     const avail = $('#avail-select').val();
     const classYr = $('#class-year-select').val();
+    const verify = $('#verify-select').val();
 
     const location = $(this).val();
-    // console.log(location);
     const theItem = $('.item-entry-asm');
 
     if (location == 'all') {
@@ -36,6 +36,19 @@ class AthleteLocationFiltersSelect extends AthleteFiltersSelect {
 
       setTimeout(function () {
         theItem.removeClass('d-none');
+      });
+    } else if (
+      sport != 'all' &&
+      gender != 'all' &&
+      avail != 'all' &&
+      classYr != 'all' &&
+      verify != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(
+          `.${location}.${verify}.${classYr}.${sport}.${gender}.${avail}`
+        ).removeClass('d-none');
       });
     } else if (
       sport != 'all' &&
@@ -83,6 +96,11 @@ class AthleteLocationFiltersSelect extends AthleteFiltersSelect {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${location}.${classYr}`).removeClass('d-none');
+      });
+    } else if (verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${verify}`).removeClass('d-none');
       });
     } else {
       theItem.addClass('d-none');

@@ -24,6 +24,8 @@ class AthleteClassYearFiltersSelect extends AthleteFiltersSelect {
     const sport = $('#sports-select').val();
     const gender = $('#gender-select').val();
     const avail = $('#avail-select').val();
+    const location = $('#location-select').val();
+    const verify = $('#verify-select').val();
 
     const classYr = $(this).val();
     const theItem = $('.item-entry-asm');
@@ -35,10 +37,35 @@ class AthleteClassYearFiltersSelect extends AthleteFiltersSelect {
       setTimeout(function () {
         theItem.removeClass('d-none');
       });
+    } else if (
+      sport != 'all' &&
+      gender != 'all' &&
+      avail != 'all' &&
+      classYr != 'all' &&
+      verify != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(
+          `.${location}.${verify}.${classYr}.${sport}.${gender}.${avail}`
+        ).removeClass('d-none');
+      });
     } else if (sport != 'all' && gender != 'all' && avail != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${classYr}.${sport}.${gender}.${avail}`).removeClass('d-none');
+      });
+    } else if (
+      sport != 'all' &&
+      gender != 'all' &&
+      avail != 'all' &&
+      classYr != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${classYr}.${sport}.${gender}.${avail}`).removeClass(
+          'd-none'
+        );
       });
     } else if (sport != 'all' && gender != 'all') {
       theItem.addClass('d-none');
@@ -54,6 +81,11 @@ class AthleteClassYearFiltersSelect extends AthleteFiltersSelect {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${classYr}.${gender}.${avail}`).removeClass('d-none');
+      });
+    } else if (location != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${classYr}.${location}.${verify}`).removeClass('d-none');
       });
     } else if (sport != 'all') {
       theItem.addClass('d-none');

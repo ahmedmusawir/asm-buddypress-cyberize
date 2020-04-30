@@ -24,6 +24,8 @@ class AthleteAvailFiltersSelect extends AthleteFiltersSelect {
     const sport = $('#sports-select').val();
     const gender = $('#gender-select').val();
     const classYr = $('#class-year-select').val();
+    const location = $('#location-select').val();
+    const verify = $('#verify-select').val();
 
     const avail = $(this).val();
     const theItem = $('.item-entry-asm');
@@ -35,10 +37,40 @@ class AthleteAvailFiltersSelect extends AthleteFiltersSelect {
       setTimeout(function () {
         theItem.removeClass('d-none');
       });
+    } else if (
+      sport != 'all' &&
+      gender != 'all' &&
+      location != 'all' &&
+      classYr != 'all' &&
+      verify != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(
+          `.${avail}.${location}.${verify}.${classYr}.${sport}.${gender}`
+        ).removeClass('d-none');
+      });
+    } else if (
+      sport != 'all' &&
+      gender != 'all' &&
+      location != 'all' &&
+      classYr != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${avail}.${location}.${classYr}.${sport}.${gender}`).removeClass(
+          'd-none'
+        );
+      });
     } else if (sport != 'all' && classYr != 'all' && gender != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${avail}.${gender}.${sport}.${classYr}`).removeClass('d-none');
+      });
+    } else if (location != 'all' && classYr != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${avail}.${location}.${verify}.${classYr}`).removeClass('d-none');
       });
     } else if (sport != 'all' && gender != 'all') {
       theItem.addClass('d-none');
