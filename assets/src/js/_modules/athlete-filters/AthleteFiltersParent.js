@@ -1,20 +1,29 @@
 import $ from 'jquery';
 
-class AthleteFiltersSelect {
+class AthleteFiltersParent {
   constructor() {
-    this.init();
+    // this.init();
 
     // COLLECTING SELECT
-    this.select = $('#ath-filter-reset');
+    // this.selectSport = $('#sports-select');
+    // this.selectGender = $('#gender-select');
+    // this.selectAvail = $('#avail-select');
+    // this.selectClassYr = $('#class-year-select');
+    // this.selectLocation = $('#location-select');
+    // this.selectVerify = $('#verify-select');
+
+    // COLLECTING RESET BUTTON
+    this.button = $('#ath-filter-reset');
+    // console.log(this.button);
     this.setEvents();
   }
 
   init = () => {
-    // console.log('ASM Select Filter Reset');
+    console.log('ASM Parent Filter Reset');
   };
 
   setEvents() {
-    this.select.on('click', this.resetFilters);
+    this.button.on('click', this.resetFilters);
   }
 
   resetFilters() {
@@ -45,4 +54,4 @@ class AthleteFiltersSelect {
   }
 }
 
-export default AthleteFiltersSelect;
+export default AthleteFiltersParent;

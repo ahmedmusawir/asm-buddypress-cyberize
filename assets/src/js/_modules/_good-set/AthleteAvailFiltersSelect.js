@@ -97,6 +97,16 @@ class AthleteAvailFiltersSelect extends AthleteFiltersSelect {
       setTimeout(function () {
         $(`.${avail}.${gender}`).removeClass('d-none');
       });
+    } else if (location != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${avail}.${location}`).removeClass('d-none');
+      });
+    } else if (verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${avail}.${verify}`).removeClass('d-none');
+      });
     } else {
       theItem.addClass('d-none');
       setTimeout(function () {
