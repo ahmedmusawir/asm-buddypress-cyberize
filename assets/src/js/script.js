@@ -32,9 +32,9 @@ class App {
     // // ATHLETE CLASS YEAR SELECT
     new AthleteClassYearFiltersSelect();
     // // ATHLETE LOCATION SELECT
-    // new AthleteLocationFiltersSelect();
+    new AthleteLocationFiltersSelect();
     // // ATHLETE VERIFY SELECT
-    // new AthleteVerificationFiltersSelect();
+    new AthleteVerificationFiltersSelect();
   }
 }
 

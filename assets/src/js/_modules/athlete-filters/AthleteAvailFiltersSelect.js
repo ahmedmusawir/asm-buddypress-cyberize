@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import AthleteFiltersParent from './AthleteFiltersParent';
 
-class AthleteGenderFiltersSelect extends AthleteFiltersParent {
+class AthleteAvailFiltersSelect extends AthleteFiltersParent {
   constructor() {
     super();
     this.init();
@@ -200,4 +200,4 @@ class AthleteGenderFiltersSelect extends AthleteFiltersParent {
   }
 }
 
-export default AthleteGenderFiltersSelect;
+export default AthleteAvailFiltersSelect;

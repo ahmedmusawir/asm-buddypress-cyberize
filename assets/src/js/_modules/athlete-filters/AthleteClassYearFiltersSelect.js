@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import AthleteFiltersParent from './AthleteFiltersParent';
 
-class AthleteGenderFiltersSelect extends AthleteFiltersParent {
+class AthleteClassYearFiltersSelect extends AthleteFiltersParent {
   constructor() {
     super();
     this.init();
@@ -12,7 +12,7 @@ class AthleteGenderFiltersSelect extends AthleteFiltersParent {
   }
 
   init = () => {
-    console.log('ASM ClassYr Filter Init');
+    // console.log('ASM ClassYr Filter Init');
   };
 
   setEvents = () => {
@@ -200,4 +200,4 @@ class AthleteGenderFiltersSelect extends AthleteFiltersParent {
   }
 }
 
-export default AthleteGenderFiltersSelect;
+export default AthleteClassYearFiltersSelect;

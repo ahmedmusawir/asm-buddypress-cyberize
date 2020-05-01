@@ -7,17 +7,17 @@ class AthleteLocationFiltersSelect extends AthleteFiltersParent {
     this.init();
 
     // COLLECTING SELECT
-    this.select = $('#location-select');
+    this.selectLocation = $('#location-select');
     this.setEvents();
   }
 
   init = () => {
-    // console.log('ASM Location Select Filter Init');
+    console.log('ASM Location Filter Init');
   };
 
-  setEvents() {
-    this.select.on('change', this.changeHandler);
-  }
+  setEvents = () => {
+    this.selectLocation.on('change', this.changeHandler);
+  };
 
   changeHandler() {
     // console.log($(this).val());
@@ -47,7 +47,7 @@ class AthleteLocationFiltersSelect extends AthleteFiltersParent {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(
-          `.${location}.${verify}.${classYr}.${sport}.${gender}.${avail}`
+          `.${location}.${gender}.${sport}.${avail}.${classYr}.${verify}`
         ).removeClass('d-none');
       });
     } else if (
@@ -58,24 +58,113 @@ class AthleteLocationFiltersSelect extends AthleteFiltersParent {
     ) {
       theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${location}.${classYr}.${sport}.${gender}.${avail}`).removeClass(
+        $(`.${location}.${classYr}.${gender}.${sport}.${avail}`).removeClass(
+          'd-none'
+        );
+      });
+    } else if (
+      sport != 'all' &&
+      gender != 'all' &&
+      avail != 'all' &&
+      verify != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${gender}.${sport}.${avail}.${verify}`).removeClass(
+          'd-none'
+        );
+      });
+    } else if (
+      sport != 'all' &&
+      gender != 'all' &&
+      classYr != 'all' &&
+      verify != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${classYr}.${gender}.${sport}.${verify}`).removeClass(
           'd-none'
         );
       });
     } else if (sport != 'all' && gender != 'all' && avail != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${location}.${sport}.${gender}.${avail}`).removeClass('d-none');
+        $(`.${location}.${gender}.${sport}.${avail}`).removeClass('d-none');
+      });
+    } else if (sport != 'all' && gender != 'all' && classYr != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${classYr}.${sport}.${gender}`).removeClass('d-none');
+      });
+    } else if (sport != 'all' && gender != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${gender}.${sport}.${verify}`).removeClass('d-none');
+      });
+    } else if (avail != 'all' && classYr != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${classYr}.${avail}.${verify}`).removeClass('d-none');
+      });
+    } else if (avail != 'all' && classYr != 'all' && gender != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${classYr}.${gender}.${avail}`).removeClass('d-none');
+      });
+    } else if (avail != 'all' && verify != 'all' && gender != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${gender}.${verify}.${avail}`).removeClass('d-none');
       });
     } else if (sport != 'all' && gender != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${location}.${sport}.${gender}`).removeClass('d-none');
+        $(`.${location}.${gender}.${sport}`).removeClass('d-none');
+      });
+    } else if (sport != 'all' && avail != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${avail}.${sport}`).removeClass('d-none');
+      });
+    } else if (sport != 'all' && classYr != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${classYr}.${sport}`).removeClass('d-none');
+      });
+    } else if (sport != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${sport}.${verify}`).removeClass('d-none');
       });
     } else if (gender != 'all' && avail != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${location}.${gender}.${avail}`).removeClass('d-none');
+      });
+    } else if (gender != 'all' && classYr != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${classYr}.${gender}`).removeClass('d-none');
+      });
+    } else if (gender != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${gender}.${verify}`).removeClass('d-none');
+      });
+    } else if (avail != 'all' && classYr != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${classYr}.${avail}`).removeClass('d-none');
+      });
+    } else if (avail != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${avail}.${verify}`).removeClass('d-none');
+      });
+    } else if (classYr != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${location}.${classYr}.${verify}`).removeClass('d-none');
       });
     } else if (sport != 'all') {
       theItem.addClass('d-none');
