@@ -1,23 +1,23 @@
 import $ from 'jquery';
 import AthleteFiltersParent from './AthleteFiltersParent';
 
-class AthleteAvailFiltersSelect extends AthleteFiltersParent {
+class AthleteGenderFiltersSelect extends AthleteFiltersParent {
   constructor() {
     super();
     this.init();
 
     // COLLECTING SELECT
-    this.select = $('#avail-select');
+    this.selectAvail = $('#avail-select');
     this.setEvents();
   }
 
   init = () => {
-    // console.log('ASM Avail Select Filter Init');
+    console.log('ASM Avail Filter Init');
   };
 
-  setEvents() {
-    this.select.on('change', this.changeHandler);
-  }
+  setEvents = () => {
+    this.selectAvail.on('change', this.changeHandler);
+  };
 
   changeHandler() {
     // console.log($(this).val());
@@ -40,62 +40,134 @@ class AthleteAvailFiltersSelect extends AthleteFiltersParent {
     } else if (
       sport != 'all' &&
       gender != 'all' &&
-      location != 'all' &&
       classYr != 'all' &&
+      location != 'all' &&
       verify != 'all'
     ) {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(
-          `.${avail}.${location}.${verify}.${classYr}.${sport}.${gender}`
+          `.${gender}.${sport}.${avail}.${classYr}.${location}.${verify}`
         ).removeClass('d-none');
       });
     } else if (
       sport != 'all' &&
       gender != 'all' &&
-      location != 'all' &&
-      classYr != 'all'
+      classYr != 'all' &&
+      location != 'all'
     ) {
       theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${avail}.${location}.${classYr}.${sport}.${gender}`).removeClass(
+        $(`.${gender}.${sport}.${avail}.${classYr}.${location}`).removeClass(
           'd-none'
         );
       });
-    } else if (sport != 'all' && classYr != 'all' && gender != 'all') {
+    } else if (
+      sport != 'all' &&
+      gender != 'all' &&
+      classYr != 'all' &&
+      verify != 'all'
+    ) {
       theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${avail}.${gender}.${sport}.${classYr}`).removeClass('d-none');
+        $(`.${gender}.${sport}.${avail}.${classYr}.${verify}`).removeClass(
+          'd-none'
+        );
       });
-    } else if (location != 'all' && classYr != 'all' && verify != 'all') {
+    } else if (sport != 'all' && gender != 'all' && classYr != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${avail}.${location}.${verify}.${classYr}`).removeClass('d-none');
+        $(`.${gender}.${sport}.${avail}.${classYr}`).removeClass('d-none');
+      });
+    } else if (sport != 'all' && gender != 'all' && location != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${gender}.${sport}.${avail}.${location}`).removeClass('d-none');
+      });
+    } else if (sport != 'all' && gender != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${gender}.${sport}.${avail}.${verify}`).removeClass('d-none');
+      });
+    } else if (classYr != 'all' && location != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${avail}.${classYr}.${location}.${verify}`).removeClass('d-none');
+      });
+    } else if (classYr != 'all' && location != 'all' && gender != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${gender}.${classYr}.${location}.${avail}`).removeClass('d-none');
+      });
+    } else if (classYr != 'all' && verify != 'all' && gender != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${gender}.${classYr}.${verify}.${avail}`).removeClass('d-none');
       });
     } else if (sport != 'all' && gender != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${avail}.${gender}.${sport}`).removeClass('d-none');
+        $(`.${gender}.${sport}.${avail}`).removeClass('d-none');
       });
-    } else if (classYr != 'all' && gender != 'all') {
+    } else if (sport != 'all' && classYr != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
-        $(`.${avail}.${gender}.${classYr}`).removeClass('d-none');
+        $(`.${avail}.${sport}.${classYr}`).removeClass('d-none');
+      });
+    } else if (sport != 'all' && location != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${avail}.${sport}.${location}`).removeClass('d-none');
+      });
+    } else if (sport != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${avail}.${sport}.${verify}`).removeClass('d-none');
+      });
+    } else if (gender != 'all' && classYr != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${gender}.${avail}.${classYr}`).removeClass('d-none');
+      });
+    } else if (gender != 'all' && location != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${gender}.${avail}.${location}`).removeClass('d-none');
+      });
+    } else if (gender != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${gender}.${avail}.${verify}`).removeClass('d-none');
+      });
+    } else if (classYr != 'all' && location != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${avail}.${classYr}.${location}`).removeClass('d-none');
+      });
+    } else if (classYr != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${avail}.${classYr}.${verify}`).removeClass('d-none');
+      });
+    } else if (location != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${avail}.${location}.${verify}`).removeClass('d-none');
       });
     } else if (sport != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${avail}.${sport}`).removeClass('d-none');
       });
-    } else if (classYr != 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${avail}.${classYr}`).removeClass('d-none');
-      });
     } else if (gender != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${avail}.${gender}`).removeClass('d-none');
+      });
+    } else if (classYr != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${avail}.${classYr}`).removeClass('d-none');
       });
     } else if (location != 'all') {
       theItem.addClass('d-none');
@@ -116,4 +188,4 @@ class AthleteAvailFiltersSelect extends AthleteFiltersParent {
   }
 }
 
-export default AthleteAvailFiltersSelect;
+export default AthleteGenderFiltersSelect;

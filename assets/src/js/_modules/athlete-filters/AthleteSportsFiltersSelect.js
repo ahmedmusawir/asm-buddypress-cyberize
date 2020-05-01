@@ -2,7 +2,6 @@ import $ from 'jquery';
 import AthleteFiltersParent from './AthleteFiltersParent';
 
 class AthleteSportsFiltersSelect extends AthleteFiltersParent {
-  // class AthleteSportsFiltersSelect {
   constructor() {
     super();
     this.init();
@@ -90,6 +89,21 @@ class AthleteSportsFiltersSelect extends AthleteFiltersParent {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${sport}.${gender}.${avail}.${verify}`).removeClass('d-none');
+      });
+    } else if (classYr != 'all' && location != 'all' && verify != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${classYr}.${location}.${verify}`).removeClass('d-none');
+      });
+    } else if (classYr != 'all' && location != 'all' && avail != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${classYr}.${location}.${avail}`).removeClass('d-none');
+      });
+    } else if (classYr != 'all' && verify != 'all' && avail != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${classYr}.${verify}.${avail}`).removeClass('d-none');
       });
     } else if (gender != 'all' && avail != 'all') {
       theItem.addClass('d-none');

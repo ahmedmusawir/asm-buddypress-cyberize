@@ -26,11 +26,11 @@ class App {
     // // ATHLETE SPORTS SELECT
     new AthleteSportsFiltersSelect();
     // // ATHLETE GENDER SELECT
-    // new AthleteGenderFiltersSelect();
+    new AthleteGenderFiltersSelect();
     // // ATHLETE AVAILABLILITY SELECT
-    // new AthleteAvailFiltersSelect();
+    new AthleteAvailFiltersSelect();
     // // ATHLETE CLASS YEAR SELECT
-    // new AthleteClassYearFiltersSelect();
+    new AthleteClassYearFiltersSelect();
     // // ATHLETE LOCATION SELECT
     // new AthleteLocationFiltersSelect();
     // // ATHLETE VERIFY SELECT
