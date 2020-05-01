@@ -75,6 +75,18 @@ class AthleteGenderFiltersSelect extends AthleteFiltersParent {
           'd-none'
         );
       });
+    } else if (
+      sport != 'all' &&
+      classYr != 'all' &&
+      location != 'all' &&
+      verify != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${gender}.${classYr}.${sport}.${location}.${verify}`).removeClass(
+          'd-none'
+        );
+      });
     } else if (sport != 'all' && avail != 'all' && classYr != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
