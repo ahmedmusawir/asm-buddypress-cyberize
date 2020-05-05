@@ -22,24 +22,6 @@
 
         <section class="top-page-menu clearfix">
           <h3 class="menu-title float-left">Filters</h3>
-
-          <!-- WP LOCATION MENU START -->
-
-          <!-- <ul class="list-inline menu-box float-left">
-            <a href="/universities/">
-              <li class="list-inline-item">All</li>
-            </a>
-          </ul>
-          <br>
-          <?php
-          wp_nav_menu( array( 
-              'theme_location' => 'univ-cat', 
-              'container_class' => 'menu-box' ) ); 
-          ?> -->
-
-          <!-- WP LOCATION MENU END -->
-
-
           <ul class="list-inline menu-box">
 
             <li class="list-inline-item">
@@ -47,18 +29,18 @@
               <select class="select-filter" id="division-select">
 
                 <option value="all">All Divisions</option>
-                <option value="divisions-cccaa">CCCAA</option>
-                <option value="divisions-uscaa">USCAA</option>
-                <option value="divisions-naia-division-i">NAIA Division I</option>
-                <option value="divisions-naia-division-ii">NAIA Division II</option>
-                <option value="divisions-ncaa-division-i">NCAA Division I</option>
-                <option value="divisions-ncaa-division-i-fbs">NCAA Division I-FBS</option>
-                <option value="divisions-ncaa-division-i-fcs">NCAA Division I-FCS</option>
-                <option value="divisions-ncaa-division-ii">NCAA Division II</option>
-                <option value="divisions-ncaa-division-iii">NCAA Division III</option>
-                <option value="divisions-njcaa-division-i">NJCAA Division I</option>
-                <option value="divisions-njcaa-division-ii">NJCAA Division II</option>
-                <option value="divisions-njcaa-division-iii">NJCAA Division III</option>
+                <option value="cccaa">CCCAA</option>
+                <option value="uscaa">USCAA</option>
+                <option value="naia-division-i">NAIA Division I</option>
+                <option value="naia-division-ii">NAIA Division II</option>
+                <option value="ncaa-division-i">NCAA Division I</option>
+                <option value="ncaa-division-i-fbs">NCAA Division I-FBS</option>
+                <option value="ncaa-division-i-fcs">NCAA Division I-FCS</option>
+                <option value="ncaa-division-ii">NCAA Division II</option>
+                <option value="ncaa-division-iii">NCAA Division III</option>
+                <option value="njcaa-division-i">NJCAA Division I</option>
+                <option value="njcaa-division-ii">NJCAA Division II</option>
+                <option value="njcaa-division-iii">NJCAA Division III</option>
 
               </select>
 
@@ -70,11 +52,12 @@
               <select class="select-filter" id="men-select">
 
                 <option value="all">All Men's Sports</option>
-                <option value="mens-sports-baseball-men">Baseball – Men</option>
-                <option value="mens-sports-basketball-men">Basketball – Men</option>
-                <option value="mens-sports-football-men">Football – Men</option>
-                <option value="mens-sports-golf-men">Golf – Men</option>
-                <option value="mens-sports-soccer-men">Soccer – Men</option>
+                <option value="baseball-men">Baseball – Men</option>
+                <option value="basketball-men">Basketball – Men</option>
+                <option value="football-men">Football – Men</option>
+                <option value="golf-men">Golf – Men</option>
+                <option value="soccer-men">Soccer – Men</option>
+                <option value="tennis-men">Tennis – Men</option>
 
               </select>
 
@@ -84,11 +67,26 @@
               <select class="select-filter" id="women-select">
 
                 <option value="all">All Women's Sports</option>
-                <option value="womens-sports-baseball-women">Baseball – Women</option>
-                <option value="womens-sports-basketball-women">Basketball – Women</option>
-                <option value="womens-sports-softball-women">Softball – Women</option>
-                <option value="womens-sports-golf-women">Golf – Women</option>
-                <option value="womens-sports-soccer-women">Soccer – Women</option>
+                <option value="baseball-women">Baseball – Women</option>
+                <option value="basketball-women">Basketball – Women</option>
+                <option value="softball-women">Softball – Women</option>
+                <option value="golf-women">Golf – Women</option>
+                <option value="soccer-women">Soccer – Women</option>
+
+              </select>
+            </li>
+
+            <li class="list-inline-item">
+              <select class="select-filter" id="location-state-select">
+
+                <option value="all">Location</option>
+                <option value="california">California</option>
+                <option value="new-york">New York</option>
+                <option value="texas">Texas</option>
+                <option value="florida">Florida</option>
+                <option value="georgia">Georgia</option>
+                <option value="alabama">Alabama</option>
+                <option value="alaska">Alaska</option>
 
               </select>
             </li>
@@ -113,16 +111,20 @@
 
           <div class="col-sm-12 col-md-12 col-lg-6">
 
+            <!-- <div class="blog-index-header py-3">
+              <h2 class="header-title">All Colleges & Universities:</h2>
+              <h5 class="header-title">Find the right College or University for you ...</h5>
+            </div> -->
+            <header class="blog-index-header py-3">
+              <?php
+										the_archive_title( '<h2 class="archive-type">', '</h2>' );
+										//the_archive_description( '<div class="archive-description">', '</div>' );
+									?>
+              <!-- <div class="long-underline"></div>	 -->
+
+            </header><!-- .page-header -->
+
             <article class="post-item-container">
-
-              <!-- NO DATA FOUND START -->
-
-              <div class="no-data-found">
-                <h3 class="no-data-title">NO DATA FOUND ... SORRY!</h3>
-              </div>
-
-
-              <!-- NO DATA FOUND END -->
 
               <?php	if ( have_posts() ) :	?>
 

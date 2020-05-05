@@ -58,18 +58,19 @@
       .menu-box {
         margin-top: 1.3rem;
         margin-left: 1rem;
-        // border: 4px dotted blue;
-        li.list-inline-item {
-          // border: 4px dotted red;
-          position: relative;
 
-          .btn-text {
-            // position: absolute;
-            padding-left: 1rem;
-          }
+        .select-filter {
+          background-color: white;
+          border: 1px solid gray;
+          border-radius: 6px;
+          padding: 0.5rem;
+          color: lighten($color: $cg-primary, $amount: 10%);
+          font-size: 0.8rem;
+          font-weight: 600;
+          text-transform: uppercase;
         }
 
-        a {
+        #univ-filter-reset {
           padding: 0.75rem 2rem;
           margin-left: 1rem;
           border: 1px solid gray;
@@ -92,11 +93,24 @@
   .container-fluid {
     width: 95% !important;
     margin-top: 220px;
+
+    .post-item-container {
+      position: relative;
+
+      .no-data-found {
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        // border: 3px dotted pink;
+      }
+    }
   }
 
   article {
     margin-bottom: 30px;
+    margin-top: 10px;
     position: relative;
+    background-color: white;
 
     .pr-3 {
       p {
@@ -107,7 +121,7 @@
     .entry-content {
       box-shadow: 2px 2px 10px lighten($color: gray, $amount: 20%);
       border-radius: 10px;
-      // border: 2px dotted red;
+      // border: 2px dotted blue;
       &:hover {
         background-color: $cg-primary;
 
@@ -115,9 +129,11 @@
           a {
             color: white !important;
           }
+          // border: 3px dotted red;
         }
         .university-address {
           color: white;
+          font-size: 1rem;
         }
         .university-item-content {
           .detail-link {
@@ -155,7 +171,7 @@
 
         .university-address {
           padding-right: 2rem;
-          font-size: 1.3rem;
+          font-size: 1rem;
         }
 
         .university-item-content {

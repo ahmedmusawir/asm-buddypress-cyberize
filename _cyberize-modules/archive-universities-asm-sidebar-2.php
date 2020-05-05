@@ -1,33 +1,68 @@
 <?php
 /**
  *
- * MODULE: Blog Index ASM
+ * MODULE: Univ Index ASM
  *
  */
 ?>
 
-<section id="" class="blog-index-block-asm">
+<section id="" class="univ-index-block-asm">
 
   <div id="primary" class="content-area">
     <main id="main" class="site-main">
 
-      <!-- Page Header with image -->
-      <section id="general-blog-page-header">
+      <!-- Blue Top Bar -->
+      <section id="general-univ-page-header">
+        <h4 class="page-header-title">Universities</h4>
+      </section>
+      <!-- Blue Top Bar End-->
+
+      <!-- TOP FILTER BAR -->
+      <div class="top-filter-navbar-index">
+
         <section class="top-page-menu clearfix">
-          <h3 class="menu-title float-left">Filters:</h3>
-          <ul class="list-inline menu-box float-left">
-            <a href="/universities/">
-              <li class="list-inline-item">All</li>
+          <h3 class="menu-title float-left">Filters</h3>
+          <ul class="list-inline menu-box">
+            <a href="#">
+
+              <li class="list-inline-item university-item" id="all">
+                <span class="btn-text">ALL</span>
+              </li>
+
             </a>
+            <a href="#">
+              <li class="list-inline-item university-item" id="University">
+                <span class="btn-text">University</span>
+              </li>
+            </a>
+            <a href="#">
+              <li class=" list-inline-item university-item" id="College">
+                <span class="btn-text">College</span>
+              </li>
+            </a>
+            <a href="#">
+              <li class="list-inline-item university-item" id="Nearby">
+                <span class="btn-text">Nearby</span>
+              </li>
+            </a>
+            <a href="#">
+              <li class="list-inline-item university-item" id="Popular">
+                <span class="btn-text">Popular</span>
+              </li>
+            </a>
+            <a href="#">
+              <li class="list-inline-item university-item" id="Athletes">
+                <span class="btn-text">Athletes</span>
+              </li>
+            </a>
+
           </ul>
-          <?php
-          wp_nav_menu( array( 
-              'theme_location' => 'univ-cat', 
-              'container_class' => 'menu-box' ) ); 
-          ?>
 
         </section>
-      </section>
+      </div>
+
+      <!-- TOP FILTER BAR END-->
+
 
       <section class="container-fluid">
 
@@ -35,16 +70,16 @@
 
           <div class="col-sm-12 col-md-12 col-lg-6">
 
-            <div class="blog-index-header py-3">
-              <h2 class="header-title">All Colleges:</h2>
-              <h5 class="header-title">Find the right college for you ...</h5>
-            </div>
+            <!-- <div class="blog-index-header py-3">
+              <h2 class="header-title">All Colleges & Universities:</h2>
+              <h5 class="header-title">Find the right College or University for you ...</h5>
+            </div> -->
 
             <article class="post-item-container">
 
               <?php	if ( have_posts() ) :	?>
 
-              <div class="masonry">
+              <div class="row">
                 <?php
 									/* Start the Loop */
 									while ( have_posts() ) : the_post();
@@ -105,8 +140,8 @@
                   <?php echo $mapLocation['address']; ?>
                 </a>
               </div>
-              <?php echo $mapLocation['lat'] ?>
-              <?php echo $mapLocation['lng']; ?>
+              <?php // echo $mapLocation['lat'] ?>
+              <?php // echo $mapLocation['lng']; ?>
 
               <?php 	endwhile;
 								

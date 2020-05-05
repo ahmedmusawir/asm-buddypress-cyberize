@@ -4,7 +4,7 @@ import AthleteFiltersParent from './AthleteFiltersParent';
 class AthleteClassYearFiltersSelect extends AthleteFiltersParent {
   constructor() {
     super();
-    this.init();
+    // this.init();
 
     // COLLECTING SELECT
     this.selectClassYr = $('#class-year-select');

@@ -4,7 +4,7 @@ import AthleteFiltersParent from './AthleteFiltersParent';
 class AthleteLocationFiltersSelect extends AthleteFiltersParent {
   constructor() {
     super();
-    this.init();
+    // this.init();
 
     // COLLECTING SELECT
     this.selectVerify = $('#verify-select');

@@ -4,7 +4,7 @@ import AthleteFiltersParent from './AthleteFiltersParent';
 class AthleteAvailFiltersSelect extends AthleteFiltersParent {
   constructor() {
     super();
-    this.init();
+    // this.init();
 
     // COLLECTING SELECT
     this.selectAvail = $('#avail-select');

@@ -8,35 +8,37 @@
  */
 
 ?>
+
+<!-- THIS BLOCK IS FOR DATA TESTING ONLY - START -->
 <?php 
-/**
- * Collecting University Categories
- */
+$division_list = get_the_terms(get_the_ID(), 'divisions'); // THIS IS FOR CPT TAXONOMIES
+$men_list = get_the_terms(get_the_ID(), 'mens-sports'); // THIS IS FOR CPT TAXONOMIES
+$women_list = get_the_terms(get_the_ID(), 'womens-sports'); // THIS IS FOR CPT TAXONOMIES
+// print_r($division_list);
 
-$tax_list = get_the_terms(get_the_ID(), 'school-type'); // THIS IS FOR CPT TAXONOMIES
 // $cat_list = get_the_category(); // THIS IS GOOD FOR REGULAR POSTS
-if ($tax_list) {
 
-  $school_type = $tax_list[0]->name;
-  echo '<pre>';
-  // echo print_r($tax_list);
-  // echo $tax_list[0]->name;
-  echo '</pre>';
+if ($division_list) {
+
+//  echo $division_list[0]->name;
+  
+$division_class = $division_list[0]->name;
   
 } else {
 
-  $school_type = null;
+  $division_list = null;
 
 }
-
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class("col-md-12 post-item item animated bounceIn  $school_type"); ?>>
+<!-- THIS BLOCK IS FOR DATA TESTING ONLY - END -->
+
+<article id="post-<?php the_ID(); ?>" <?php post_class("col-md-12 univ-post-item item animated bounceIn"); ?>>
 
   <div class="entry-content row">
 
-    <?php if (has_post_thumbnail()) : ?>
-
     <section class="col-sm-5">
+
+      <?php if (has_post_thumbnail()) : ?>
 
       <figure class="featured-image-box">
         <a href="<?php the_permalink(); ?>">
@@ -44,7 +46,73 @@ if ($tax_list) {
         </a>
       </figure>
 
+
+      <!-- DATA TESTING START - REMOVE LATER   -->
+      <h4><?php echo $division_class ?></h4>
+
+      <?php 
+
+        foreach ($men_list as $men_sport) {
+          echo '<pre>';
+          
+          echo $men_sport->name;
+          
+          echo '</pre>';
+        }
+        
+        foreach ($women_list as $women_sport) {
+          echo '<pre>';
+          
+          echo $women_sport->name;
+          
+          echo '</pre>';
+        }
+        
+      ?>
+
+      <!-- DATA TESTING END - REMOVE LATER   -->
+
+
+      <?php else : ?>
+
+      <figure class="featured-image-box">
+        <a href="<?php the_permalink(); ?>">
+          <img class="attachment-featured-size size-featured-size wp-post-image"
+            src="/wp-content/uploads/image-not-found-500x300.jpg" alt="" width="500" height="300">
+        </a>
+      </figure>
+
+
+      <!-- DATA TESTING START - REMOVE LATER   -->
+      <h4><?php echo $division_class ?></h4>
+
+      <?php 
+
+        foreach ($men_list as $men_sport) {
+          echo '<pre>';
+          
+          echo $men_sport->name;
+          
+          echo '</pre>';
+        }
+
+        foreach ($women_list as $women_sport) {
+          echo '<pre>';
+          
+          echo $women_sport->name;
+          
+          echo '</pre>';
+        }
+        
+      ?>
+
+      <!-- DATA TESTING END - REMOVE LATER   -->
+
+      <?php endif; ?>
+
     </section>
+
+
 
     <section id="university-item-box" class="col-sm-7">
 
@@ -67,10 +135,15 @@ if ($tax_list) {
       </div>
       <div class="university-item-content">
 
-
+        <?php if (get_field('university_logo') ) : ?>
         <figure class="university-logo">
           <img class="img-fluid" src="<?php the_field('university_logo'); ?>" alt="">
         </figure>
+        <?php else : ?>
+        <figure class="university-logo">
+          <img class="img-fluid" src="/wp-content/uploads/no-logo.jpg" alt="">
+        </figure>
+        <?php endif; ?>
 
         <a class="detail-link" href="<?php the_permalink(); ?>">
           <span class="btn btn-primary btn-sm">
@@ -88,43 +161,6 @@ if ($tax_list) {
 
     <hr>
 
-    <?php else : ?>
-
-    <div class="FL-post-item-footer">
-      <?php cyberize_entry_footer(); ?>
-    </div>
-
-    <?php
-				if ( is_singular() ) :
-					the_title( '<h1 class="entry-title">', '</h1>' );
-				else :
-					the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
-				endif;
-
-				?>
-    <div class="entry-meta">
-      <?php
-        // cyberize_posted_by();
-        // cyberize_posted_on();
-      ?>
-    </div><!-- .entry-meta -->
-
-    <div class="pr-3 pt-3 pb-3 d-flex justify-content-between university-item-content">
-
-      <a class="detail-link" href="<?php the_permalink(); ?>"><span class="btn btn-primary btn-sm">View
-          Details</span></a>
-      <figure class="university-logo">
-        <img class="img-fluid" src="<?php the_field('university_logo'); ?>" alt="">
-        <!-- <img class="img-fluid" src="/wp-content/uploads/university-logos.png" alt=""> -->
-      </figure>
-
-      <?php
-      // <!-- CONTENT -->
-        // the_excerpt();
-      ?>
-    </div>
-
-    <?php endif; ?>
 
   </div><!-- .entry-content -->
 

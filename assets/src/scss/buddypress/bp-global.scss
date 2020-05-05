@@ -426,16 +426,8 @@ body.buddypress {
   #athlete-right-email-button {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf0404+0,ff3019+100 */
     background: #cf0404; /* Old browsers */
-    background: -moz-linear-gradient(
-      left,
-      #cf0404 0%,
-      #ff3019 100%
-    ); /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      left,
-      #cf0404 0%,
-      #ff3019 100%
-    ); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(left, #cf0404 0%, #ff3019 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #cf0404 0%, #ff3019 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
       to right,
       #cf0404 0%,
@@ -464,16 +456,8 @@ body.buddypress {
     margin-bottom: 1rem;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf0404+0,ff3019+100 */
     background: $cg-primary; /* Old browsers */
-    background: -moz-linear-gradient(
-      left,
-      #035083 0%,
-      #0574b8 100%
-    ); /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      left,
-      #035083 0%,
-      #0574b8 100%
-    ); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(left, #035083 0%, #0574b8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #035083 0%, #0574b8 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
       to right,
       #035083 0%,
@@ -616,14 +600,16 @@ body.buddypress {
         margin-top: 1.3rem;
         margin-left: 1rem;
         // border: 4px dotted blue;
-        li.list-inline-item {
-          // border: 4px dotted red;
-          position: relative;
 
-          .btn-text {
-            // position: absolute;
-            // padding-left: 1rem;
-          }
+        .select-filter {
+          background-color: white;
+          border: 1px solid gray;
+          border-radius: 6px;
+          padding: 0.5rem;
+          color: lighten($color: $cg-primary, $amount: 10%);
+          font-size: 0.8rem;
+          font-weight: 600;
+          text-transform: uppercase;
         }
 
         a {
@@ -923,7 +909,7 @@ body.buddypress {
   // border: 1rem dotted red;
   margin-top: -4.2rem;
   padding: 5rem;
-  background: url('/wp-content/uploads/Group-236.png');
+  background: url("/wp-content/uploads/Group-236.png");
 
   #register-page {
     // border: 1rem dotted dodgerblue;

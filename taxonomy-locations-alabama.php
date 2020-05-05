@@ -12,7 +12,7 @@ get_header(); ?>
 
 <section id="universities-index">
 
-  <?php get_template_part( '_cyberize-modules/archive-taxonomy-college-sidebar' ); ?>
+  <?php get_template_part( '_cyberize-modules/archive-taxonomy-locations-sidebar' ); ?>
 
 </section>
 
