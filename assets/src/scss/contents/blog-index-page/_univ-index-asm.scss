@@ -76,7 +76,7 @@
           border-radius: 10px;
           background-color: lighten($color: #e3e3e3, $amount: 9%);
           box-shadow: 2px 2px 6px gray;
-          padding: 1rem;
+          padding: 0;
           position: absolute;
           top: 40px;
           left: 120px;
@@ -85,11 +85,18 @@
           li {
             list-style: none;
 
+            &:hover {
+              background-color: lighten($color: #006ac5, $amount: 5%);
+              a {
+                color: white;
+              }
+            }
+
             a {
               text-transform: uppercase;
-              padding-bottom: 0.5rem;
+              padding: 1rem;
               font-size: 0.9rem;
-              font-family: inherit;
+              font-family: $primary-font;
               font-weight: 500;
               color: $cg-text;
             }
@@ -110,6 +117,12 @@
           font-size: 0.8rem;
           font-weight: 600;
           text-transform: uppercase;
+
+          option {
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-family: $primary-font !important;
+          }
         }
 
         #univ-filter-reset {

@@ -9,6 +9,29 @@
 
 ?>
 
+<!-- THIS BLOCK IS FOR DATA TESTING ONLY - START -->
+<?php 
+$division_list = get_the_terms(get_the_ID(), 'divisions'); // THIS IS FOR CPT TAXONOMIES
+$men_list = get_the_terms(get_the_ID(), 'mens-sports'); // THIS IS FOR CPT TAXONOMIES
+$women_list = get_the_terms(get_the_ID(), 'womens-sports'); // THIS IS FOR CPT TAXONOMIES
+// print_r($division_list);
+
+// $cat_list = get_the_category(); // THIS IS GOOD FOR REGULAR POSTS
+
+if ($division_list) {
+
+//  echo $division_list[0]->name;
+  
+$division_class = $division_list[0]->name;
+  
+} else {
+
+  $division_list = null;
+
+}
+?>
+<!-- THIS BLOCK IS FOR DATA TESTING ONLY - END -->
+
 <article id="post-<?php the_ID(); ?>" <?php post_class("col-md-12 univ-post-item item animated bounceIn"); ?>>
 
   <div class="entry-content row">
@@ -23,6 +46,33 @@
         </a>
       </figure>
 
+
+      <!-- DATA TESTING START - REMOVE LATER   -->
+      <h4><?php echo $division_class ?></h4>
+
+      <?php 
+
+        foreach ($men_list as $men_sport) {
+          echo '<pre>';
+          
+          echo $men_sport->name;
+          
+          echo '</pre>';
+        }
+        
+        foreach ($women_list as $women_sport) {
+          echo '<pre>';
+          
+          echo $women_sport->name;
+          
+          echo '</pre>';
+        }
+        
+      ?>
+
+      <!-- DATA TESTING END - REMOVE LATER   -->
+
+
       <?php else : ?>
 
       <figure class="featured-image-box">
@@ -31,6 +81,32 @@
             src="/wp-content/uploads/image-not-found-500x300.jpg" alt="" width="500" height="300">
         </a>
       </figure>
+
+
+      <!-- DATA TESTING START - REMOVE LATER   -->
+      <h4><?php echo $division_class ?></h4>
+
+      <?php 
+
+        foreach ($men_list as $men_sport) {
+          echo '<pre>';
+          
+          echo $men_sport->name;
+          
+          echo '</pre>';
+        }
+
+        foreach ($women_list as $women_sport) {
+          echo '<pre>';
+          
+          echo $women_sport->name;
+          
+          echo '</pre>';
+        }
+        
+      ?>
+
+      <!-- DATA TESTING END - REMOVE LATER   -->
 
       <?php endif; ?>
 
