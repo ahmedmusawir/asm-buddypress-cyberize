@@ -25,7 +25,7 @@
 
           <!-- WP LOCATION MENU START -->
 
-          <!-- <ul class="list-inline menu-box float-left">
+          <ul class="list-inline menu-box float-left">
             <a href="/universities/">
               <li class="list-inline-item">All</li>
             </a>
@@ -35,7 +35,7 @@
           wp_nav_menu( array( 
               'theme_location' => 'univ-cat', 
               'container_class' => 'menu-box' ) ); 
-          ?> -->
+          ?>
 
           <!-- WP LOCATION MENU END -->
 
