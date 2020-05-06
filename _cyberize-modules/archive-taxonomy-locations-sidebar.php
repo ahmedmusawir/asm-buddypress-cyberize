@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * MODULE: Univ Location Index ASM
+ * MODULE: Univ LOCATION Index ASM
  *
  */
 ?>
@@ -25,22 +25,21 @@
 
           <!-- WP LOCATION MENU START -->
 
-          <ul class="list-inline menu-box float-left">
-            <a href="/universities/">
-              <li class="list-inline-item">All</li>
-            </a>
-          </ul>
-          <br>
           <?php
-          wp_nav_menu( array( 
-              'theme_location' => 'univ-cat', 
-              'container_class' => 'menu-box' ) ); 
-          ?>
+              wp_nav_menu( array( 
+                'theme_location' => 'univ-cat', 
+                'container_class' => 'menu-box' ) ); 
+            ?>
 
           <!-- WP LOCATION MENU END -->
 
-
           <ul class="list-inline menu-box">
+
+            <li id="location-dropdown-btn" class="list-inline-item">
+
+              <span class="btn-text select-filter">All Locations</span>
+
+            </li>
 
             <li class="list-inline-item">
 
@@ -114,6 +113,14 @@
           <div class="col-sm-12 col-md-12 col-lg-6">
 
             <article class="post-item-container">
+
+              <header class="blog-index-header py-1">
+                <?php
+                  the_archive_title( '<h2 class="archive-type">', '</h2>' );
+                ?>
+                <!-- <div class="long-underline"></div>	 -->
+
+              </header><!-- .page-header -->
 
               <!-- NO DATA FOUND START -->
 

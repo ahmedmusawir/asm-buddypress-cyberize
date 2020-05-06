@@ -3,13 +3,13 @@ import $ from 'jquery';
 class UniversityFiltersParent {
   constructor() {
     // this.init();
-    this.doc = $(document);
+
     // COLLECTING RESET BUTTON
     this.resetBtn = $('#univ-filter-reset');
     // COLLECTING RESET BUTTON
     this.locationBtn = $('#location-dropdown-btn');
     // COLLECTIN DROPDOWN
-    this.dropDownBox = $('#menu-university-menu');
+    this.dropDownBox = $('.univ-location-menu');
 
     // console.log(this.button);
     this.setEvents();
@@ -23,20 +23,11 @@ class UniversityFiltersParent {
     this.resetBtn.on('click', this.resetFilters);
     this.locationBtn.on('click', this.locationDropdownIn);
     this.dropDownBox.on('mouseleave', this.locationDropdownOut);
-    this.doc.on('mouseup', this.docClick);
   }
 
-  docClick = (e) => {
-    // console.log('doc mouse up');
-    // const dropDownBox = $('#menu-university-menu');
-    if (!this.dropDownBox.is(e.target)) {
-      this.dropDownBox.removeClass('is-active');
-    }
-  };
-
   locationDropdownIn = (e) => {
-    console.log('location btn clicked');
-    this.dropDownBox.addClass('is-active');
+    // console.log('location btn clicked');
+    this.dropDownBox.removeClass('d-none');
   };
 
   locationDropdownOut = (e) => {

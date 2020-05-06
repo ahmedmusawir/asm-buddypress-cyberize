@@ -25,22 +25,21 @@
 
           <!-- WP LOCATION MENU START -->
 
-          <ul class="list-inline menu-box float-left">
-            <a href="/universities/">
-              <li class="list-inline-item">All</li>
-            </a>
-          </ul>
-          <br>
           <?php
-          wp_nav_menu( array( 
-              'theme_location' => 'univ-cat', 
-              'container_class' => 'menu-box' ) ); 
-          ?>
+              wp_nav_menu( array( 
+                'theme_location' => 'univ-cat', 
+                'container_class' => 'menu-box' ) ); 
+            ?>
 
           <!-- WP LOCATION MENU END -->
 
-
           <ul class="list-inline menu-box">
+
+            <li id="location-dropdown-btn" class="list-inline-item">
+
+              <span class="btn-text select-filter">All Locations</span>
+
+            </li>
 
             <li class="list-inline-item">
 
