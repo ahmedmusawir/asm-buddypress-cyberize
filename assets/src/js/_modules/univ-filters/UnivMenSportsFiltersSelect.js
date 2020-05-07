@@ -12,7 +12,7 @@ class UnivMensSportsFiltersSelect extends UnivFilterParent {
   }
 
   init = () => {
-    console.log('Univ Men Filter Init');
+    // console.log('Univ Men Filter Init');
   };
 
   setEvents = () => {

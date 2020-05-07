@@ -14,6 +14,8 @@ import UnivDivisionsFiltersSelect from './_modules/univ-filters/UnivDivisionsFil
 import UnivMensSportsFiltersSelect from './_modules/univ-filters/UnivMenSportsFiltersSelect';
 import UnivWomensSportsFiltersSelect from './_modules/univ-filters/UnivWomenSportsFiltersSelect';
 
+import UnivLoadMore from './_modules/load-more/UnivLoadMore';
+
 class App {
   constructor() {
     console.info('ES6 App Initialized!');
@@ -46,6 +48,9 @@ class App {
     new UnivMensSportsFiltersSelect();
     // UNIVERSITY WOMEN'S SPORTS FILTER SELECT
     new UnivWomensSportsFiltersSelect();
+
+    // UNIVERSITY LOAD MORE
+    new UnivLoadMore();
   }
 }
 

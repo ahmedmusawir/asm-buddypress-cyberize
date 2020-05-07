@@ -12,7 +12,7 @@ class UnivDivisionFiltersSelect extends UnivFilterParent {
   }
 
   init = () => {
-    console.log('Univ Division Filter Init');
+    // console.log('Univ Division Filter Init');
   };
 
   setEvents = () => {

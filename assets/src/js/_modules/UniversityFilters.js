@@ -11,7 +11,7 @@ class UniversityFilters {
   }
 
   init = () => {
-    console.log('University Filter Init');
+    // console.log('University Filter Init');
   };
 
   setEvents() {
@@ -27,12 +27,12 @@ class UniversityFilters {
 
     if ($sport == 'all') {
       $theItem.addClass('d-none');
-      setTimeout(function() {
+      setTimeout(function () {
         $theItem.removeClass('d-none');
       });
     } else {
       $theItem.addClass('d-none');
-      setTimeout(function() {
+      setTimeout(function () {
         $(`.${$sport}`).removeClass('d-none');
       });
     }

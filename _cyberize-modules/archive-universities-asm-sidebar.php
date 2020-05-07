@@ -126,7 +126,8 @@
               <?php	if ( have_posts() ) :	?>
 
               <div class="row">
-                <?php
+                <section class="univ-post-container">
+                  <?php
 									/* Start the Loop */
                   while ( have_posts() ) : the_post();
                   
@@ -139,9 +140,20 @@
 
 									endwhile;
 
-									?>
+                  ?>
+                </section>
               </div>
-              <div class="post-nav-holder col-12"><?php the_posts_navigation(); ?></div>
+              <!-- <div class="post-nav-holder col-12"><?php //the_posts_navigation(); ?></div> -->
+              <!-- THE LOAD MORE STARTS -->
+
+              <div class="text-center">
+                <a id="univ-load-more-btn" class="btn btn-light btn-lg" data-page="1"
+                  data-url="<?php echo admin_url('admin-ajax.php'); ?>" data-univ="index">
+                  <span class="asm-loading"></span>Load More
+                </a>
+              </div>
+
+              <!-- THE LOAD MORE ENDS -->
               <?php
 
 								else :

@@ -12,7 +12,7 @@ class UnivWomensSportsFiltersSelect extends UnivFilterParent {
   }
 
   init = () => {
-    console.log('Univ Women Filter Init');
+    // console.log('Univ Women Filter Init');
   };
 
   setEvents = () => {

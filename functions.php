@@ -92,6 +92,12 @@ return $arg;
 }
 add_filter('comment_form_defaults','freeman_comment_reform');
 
+/**
+ * University Load More Ajax Function
+ */
+require get_template_directory() . '/_functions/univ-loadmore-function.php';
+require get_template_directory() . '/_functions/univ-location-loadmore-function.php';
+
 
 
 /**
