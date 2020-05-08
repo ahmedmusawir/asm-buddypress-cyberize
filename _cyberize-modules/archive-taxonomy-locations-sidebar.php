@@ -92,7 +92,7 @@
               </select>
             </li>
 
-            <a class="moose-item" href="#" id="univ-filter-reset">
+            <a class="moose-item" id="univ-filter-reset">
               <li class="list-inline-item">
                 <span class="btn-text">RESET FILTERS</span>
               </li>

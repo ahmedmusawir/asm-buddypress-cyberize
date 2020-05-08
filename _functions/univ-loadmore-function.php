@@ -33,7 +33,7 @@ add_action('wp_ajax_univ_load_more', 'univ_load_more');
 
    else :
 
-    get_template_part( 'template-parts/content', 'none' );
+    get_template_part( 'template-parts/content', 'load-no-more' );
 
   endif;
 

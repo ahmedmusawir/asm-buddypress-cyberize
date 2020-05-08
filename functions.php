@@ -97,6 +97,7 @@ add_filter('comment_form_defaults','freeman_comment_reform');
  */
 require get_template_directory() . '/_functions/univ-loadmore-function.php';
 require get_template_directory() . '/_functions/univ-location-loadmore-function.php';
+require get_template_directory() . '/_functions/athlete-loadmore-function.php';
 
 
 

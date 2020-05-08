@@ -143,9 +143,6 @@ else :
 endif;
 ?>
 
-
-
-
 </section>
 
 

@@ -1,15 +1,15 @@
 import $ from 'jquery';
 
-class UnivLoadMore {
+class AthleteLoadMore {
   constructor() {
     this.init();
     // COLLECTING BUTTON
-    this.button = $('#univ-load-more-btn');
+    this.button = $('#ath-load-more-btn');
     this.setEvents();
   }
 
   init = () => {
-    console.log('Univ Load More ...');
+    // console.log('Athlete Load More ...');
   };
 
   setEvents = () => {
@@ -24,23 +24,22 @@ class UnivLoadMore {
     const ajaxUrl = loadMoreBtn.data('url');
     // console.log(page);
 
-    const locationState = $('.location-state')[0].innerText;
-    // console.log(locationState);
+    const ajaxFunction = 'athlete_load_more';
+    // console.log(ajaxFunction);
 
     $.ajax({
       url: ajaxUrl,
       type: 'post',
       data: {
         page: page,
-        locationState: locationState,
-        action: 'univ_load_more',
+        action: ajaxFunction,
       },
     })
       .done(function (res) {
         // console.log(res);
         // UPDATING THE page NUMBER TO THE NEW VALUE AFTER ADDING +1 EVERYTIME
         loadMoreBtn.data('page', newPage);
-        $('.univ-post-container').append(res);
+        $('#athlete-index-container').append(res);
       })
       .fail(function () {
         console.log('Ajax Failed!');
@@ -51,4 +50,4 @@ class UnivLoadMore {
   }
 }
 
-export default UnivLoadMore;
+export default AthleteLoadMore;

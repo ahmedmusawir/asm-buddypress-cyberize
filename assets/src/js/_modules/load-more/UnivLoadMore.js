@@ -9,7 +9,7 @@ class UnivLoadMore {
   }
 
   init = () => {
-    console.log('Univ Load More ...');
+    // console.log('Univ Load More ...');
   };
 
   setEvents = () => {
@@ -22,13 +22,13 @@ class UnivLoadMore {
     let page = loadMoreBtn.data('page');
     let newPage = page + 1;
     const ajaxUrl = loadMoreBtn.data('url');
-    console.log(page);
+    // console.log(page);
 
     const templateType = loadMoreBtn.data('univ');
 
-    let locationState = $('#location-state')[0].innerText;
+    let locationState = $('.location-state')[0].innerText;
     // let locationState = $('#location-state');
-    console.log(locationState);
+    // console.log(locationState);
 
     let ajaxFunction;
 
@@ -40,8 +40,8 @@ class UnivLoadMore {
       ajaxFunction = 'univ_location_load_more';
     }
 
-    console.log(locationState);
-    console.log(ajaxFunction);
+    // console.log(locationState);
+    // console.log(ajaxFunction);
 
     $.ajax({
       url: ajaxUrl,
@@ -62,7 +62,7 @@ class UnivLoadMore {
         console.log('Ajax Failed!');
       })
       .always(function () {
-        console.log('Ajax Complete');
+        // console.log('Ajax Complete');
       });
   }
 }

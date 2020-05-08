@@ -15,6 +15,7 @@ import UnivMensSportsFiltersSelect from './_modules/univ-filters/UnivMenSportsFi
 import UnivWomensSportsFiltersSelect from './_modules/univ-filters/UnivWomenSportsFiltersSelect';
 
 import UnivLoadMore from './_modules/load-more/UnivLoadMore';
+import AthleteLoadMore from './_modules/load-more/AthleteLoadMore';
 
 class App {
   constructor() {
@@ -51,6 +52,8 @@ class App {
 
     // UNIVERSITY LOAD MORE
     new UnivLoadMore();
+    // ATHLETE LOAD MORE
+    new AthleteLoadMore();
   }
 }
 

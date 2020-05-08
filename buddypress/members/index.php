@@ -117,6 +117,18 @@
         <div id="members-dir-list" class="members dir-list" data-bp-list="members">
 
         </div><!-- #members-dir-list -->
+
+        <!-- THE LOAD MORE STARTS -->
+
+        <div class="text-center">
+          <a id="ath-load-more-btn" class="btn btn-light btn-lg mb-5" data-page="2"
+            data-url="<?php echo admin_url('admin-ajax.php'); ?>" data-univ="index">
+            <span class="asm-loading pr-3"><i class="fas fa-spinner"></i></span>Load More
+          </a>
+        </div>
+
+        <!-- THE LOAD MORE ENDS -->
+
       </div> <!-- end col-md-8 -->
 
       <div class="col-3">

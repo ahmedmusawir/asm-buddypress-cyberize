@@ -8,14 +8,14 @@
  */
 
 ?>
-<!-- DATA TESTING START - REMOVE LATER   -->
+<!-- DON'T REMOVE : IMPORTANT   -->
 <?php 
 
 $location_list = get_the_terms(get_the_ID(), 'locations'); 
 $location_class = $location_list[0]->slug;
 
 ?>
-<!-- DATA TESTING START - REMOVE LATER   -->
+<!-- DON'T REMOVE : IMPORTANT   -->
 
 <article id="post-<?php the_ID(); ?>" <?php post_class("col-md-12 univ-post-item item animated bounceIn"); ?>>
 
@@ -32,7 +32,7 @@ $location_class = $location_list[0]->slug;
       </figure>
 
       <!-- DON'T REMOVE : IMPORTANT   -->
-      <h4 id="location-state"><?php echo $location_class; ?></h4>
+      <h4 class="location-state"><?php echo $location_class; ?></h4>
       <!-- DON'T REMOVE : IMPORTANT   -->
 
       <?php else : ?>
@@ -44,9 +44,9 @@ $location_class = $location_list[0]->slug;
         </a>
       </figure>
 
-      <!-- REMOVE : LATER   -->
-      <h4><?php echo $location_class; ?></h4>
-      <!-- REMOVE : LATER   -->
+      <!-- DON'T REMOVE : IMPORTANT   -->
+      <h4 class="location-state"><?php echo $location_class; ?></h4>
+      <!-- DON'T REMOVE : IMPORTANT   -->
 
 
       <?php endif; ?>
