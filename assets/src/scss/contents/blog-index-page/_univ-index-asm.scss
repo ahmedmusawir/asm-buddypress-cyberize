@@ -158,6 +158,24 @@
         left: 50px;
         // border: 3px dotted pink;
       }
+
+      #univ-load-more-btn {
+        // border: 3px dotted red;
+        cursor: pointer;
+
+        &.loading {
+          cursor: default;
+
+          .asm-loading {
+            i {
+              animation-name: spin;
+              animation-duration: 320ms;
+              animation-iteration-count: infinite;
+              animation-timing-function: linear;
+            }
+          }
+        }
+      }
     }
   }
 

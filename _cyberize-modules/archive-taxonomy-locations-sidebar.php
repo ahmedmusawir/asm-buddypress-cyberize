@@ -158,7 +158,7 @@
               <div class="text-center">
                 <a id="univ-load-more-btn" class="btn btn-light btn-lg" data-page="1"
                   data-url="<?php echo admin_url('admin-ajax.php'); ?>" data-univ="location">
-                  <span class="asm-loading"></span>Load More
+                  <span class="asm-loading pr-3"><i class="fas fa-spinner"></i></span>Load More
                 </a>
               </div>
 

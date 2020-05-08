@@ -541,6 +541,31 @@ body.buddypress {
   // border: 4px dotted pink;
   position: relative;
 
+  // ANIMATION SPIN
+  // .spin {
+  //   animation-name: spin;
+  //   animation-duration: 320ms;
+  //   animation-iteration-count: infinite;
+  //   animation-timing-function: linear;
+  // }
+  #ath-load-more-btn {
+    // border: 3px dotted red;
+    cursor: pointer;
+
+    &.loading {
+      cursor: default;
+
+      .asm-loading {
+        i {
+          animation-name: spin;
+          animation-duration: 320ms;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+      }
+    }
+  }
+
   .search-menu-container {
     // border: 4px dotted pink;
     position: fixed;

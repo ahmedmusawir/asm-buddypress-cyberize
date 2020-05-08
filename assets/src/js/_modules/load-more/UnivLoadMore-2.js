@@ -1,21 +1,19 @@
 import $ from 'jquery';
 
-class AthleteLoadMore {
+class UnivLoadMore {
   constructor() {
     this.init();
-    // COLLECTING DOCUMENT
-    this.doc = $(document);
-
+    // COLLECTING BUTTON
+    this.button = $('#univ-load-more-btn');
     this.setEvents();
   }
 
   init = () => {
-    // console.log('Athlete Load More ...');
+    // console.log('Univ Load More ...');
   };
 
   setEvents = () => {
-    // this.button.on('click', this.clickHandler);
-    this.doc.on('click', '#ath-load-more-btn:not(.loading)', this.clickHandler);
+    this.button.on('click', this.clickHandler);
   };
 
   clickHandler() {
@@ -26,10 +24,23 @@ class AthleteLoadMore {
     const ajaxUrl = loadMoreBtn.data('url');
     // console.log(page);
 
-    // LOAD MORE SPINNER
-    loadMoreBtn.addClass('loading');
+    const templateType = loadMoreBtn.data('univ');
 
-    const ajaxFunction = 'athlete_load_more';
+    let locationState = $('.location-state')[0].innerText;
+    // let locationState = $('#location-state');
+    // console.log(locationState);
+
+    let ajaxFunction;
+
+    if (templateType == 'index') {
+      ajaxFunction = 'univ_load_more';
+    }
+
+    if (templateType == 'location') {
+      ajaxFunction = 'univ_location_load_more';
+    }
+
+    // console.log(locationState);
     // console.log(ajaxFunction);
 
     $.ajax({
@@ -37,6 +48,7 @@ class AthleteLoadMore {
       type: 'post',
       data: {
         page: page,
+        locationState: locationState,
         action: ajaxFunction,
       },
     })
@@ -44,8 +56,7 @@ class AthleteLoadMore {
         // console.log(res);
         // UPDATING THE page NUMBER TO THE NEW VALUE AFTER ADDING +1 EVERYTIME
         loadMoreBtn.data('page', newPage);
-        $('#athlete-index-container').append(res);
-        loadMoreBtn.removeClass('loading');
+        $('.univ-post-container').append(res);
       })
       .fail(function () {
         console.log('Ajax Failed!');
@@ -56,4 +67,4 @@ class AthleteLoadMore {
   }
 }
 
-export default AthleteLoadMore;
+export default UnivLoadMore;

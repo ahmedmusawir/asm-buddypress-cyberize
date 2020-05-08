@@ -4,8 +4,8 @@ class AthleteLoadMore {
   constructor() {
     this.init();
     // COLLECTING DOCUMENT
+    // this.button = $('#ath-load-more-btn:not(.loading)');
     this.doc = $(document);
-
     this.setEvents();
   }
 
@@ -14,7 +14,6 @@ class AthleteLoadMore {
   };
 
   setEvents = () => {
-    // this.button.on('click', this.clickHandler);
     this.doc.on('click', '#ath-load-more-btn:not(.loading)', this.clickHandler);
   };
 
@@ -26,7 +25,7 @@ class AthleteLoadMore {
     const ajaxUrl = loadMoreBtn.data('url');
     // console.log(page);
 
-    // LOAD MORE SPINNER
+    // LOAD MORE
     loadMoreBtn.addClass('loading');
 
     const ajaxFunction = 'athlete_load_more';
@@ -45,7 +44,6 @@ class AthleteLoadMore {
         // UPDATING THE page NUMBER TO THE NEW VALUE AFTER ADDING +1 EVERYTIME
         loadMoreBtn.data('page', newPage);
         $('#athlete-index-container').append(res);
-        loadMoreBtn.removeClass('loading');
       })
       .fail(function () {
         console.log('Ajax Failed!');

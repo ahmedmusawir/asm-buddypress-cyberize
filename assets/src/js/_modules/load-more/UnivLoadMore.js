@@ -3,8 +3,9 @@ import $ from 'jquery';
 class UnivLoadMore {
   constructor() {
     this.init();
-    // COLLECTING BUTTON
-    this.button = $('#univ-load-more-btn');
+    // COLLECTING DOCUMENT
+    this.doc = $(document);
+
     this.setEvents();
   }
 
@@ -13,7 +14,12 @@ class UnivLoadMore {
   };
 
   setEvents = () => {
-    this.button.on('click', this.clickHandler);
+    // this.button.on('click', this.clickHandler);
+    this.doc.on(
+      'click',
+      '#univ-load-more-btn:not(.loading)',
+      this.clickHandler
+    );
   };
 
   clickHandler() {
@@ -23,6 +29,9 @@ class UnivLoadMore {
     let newPage = page + 1;
     const ajaxUrl = loadMoreBtn.data('url');
     // console.log(page);
+
+    // LOAD MORE SPINNER
+    loadMoreBtn.addClass('loading');
 
     const templateType = loadMoreBtn.data('univ');
 
@@ -57,6 +66,7 @@ class UnivLoadMore {
         // UPDATING THE page NUMBER TO THE NEW VALUE AFTER ADDING +1 EVERYTIME
         loadMoreBtn.data('page', newPage);
         $('.univ-post-container').append(res);
+        loadMoreBtn.removeClass('loading');
       })
       .fail(function () {
         console.log('Ajax Failed!');
