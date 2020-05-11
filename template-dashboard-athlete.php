@@ -119,7 +119,10 @@ get_header(); ?>
         <div class="row task-item mt-4">
 
           <div class="col-sm-3 text-center video-box">
-            <a type="button" class="asm-task-button" data-toggle="modal"
+
+            <span><?php the_sub_field('task_id'); ?></span>
+
+            <a type="button" class="asm-task-button" data-toggle="modal" data-task="<?php the_sub_field('task_id'); ?>"
               data-target="#<?php the_sub_field('left_box_youtube_video_id'); ?>">
 
               <img src="<?php the_sub_field('left_box_image'); ?>" alt="" class=" w-100">
@@ -132,13 +135,13 @@ get_header(); ?>
               <?php the_sub_field('middle_box_subtitle'); ?>
             </p>
           </div>
-          <div class="col-sm-3 text-center icon-box">
-            <h4 class="status-text">
+          <div id="<?php the_sub_field('task_id'); ?>" class="col-sm-3 text-center icon-box">
+            <h4 class="status-text-<?php the_sub_field('task_id'); ?>">
               To Do
             </h4>
-            <i class="fas fa-exclamation-circle text-danger"></i>
-            <i class="far fa-clock d-none text-info"></i>
-            <i class="fas fa-check-circle d-none text-success"></i>
+            <i class="fas fa-exclamation-circle text-danger <?php the_sub_field('task_id'); ?>"></i>
+            <i class="far fa-clock d-none text-info <?php the_sub_field('task_id'); ?>"></i>
+            <i class="fas fa-check-circle d-none text-success <?php the_sub_field('task_id'); ?>"></i>
           </div>
 
         </div>
