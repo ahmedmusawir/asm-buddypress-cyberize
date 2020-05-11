@@ -42,7 +42,7 @@ class ASMAthleteDashTasks {
     if (taskId == 'task-2') {
       todoIcon2.addClass('d-none');
       startIcon2.removeClass('d-none');
-      todoText3.text('Started');
+      todoText2.text('Started');
     }
     if (taskId == 'task-3') {
       todoIcon3.addClass('d-none');
