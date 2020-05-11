@@ -113,10 +113,21 @@
     <div class="row asm-index-page-content">
 
       <div class="col-md-9">
+
+        <!-- NO DATA FOUND START -->
+
+        <div class="no-data-found text-center d-none">
+          <h3 class="no-data-title">NO MATCHED DATA FOUND! ... PLEASE CLICK RESET FILTERS & TRY AGAIN</h3>
+        </div>
+
+        <!-- NO DATA FOUND END -->
+
         <!-- THE FOLLOWING IS LOADING THE MEMEBERS LIST WITH JS [data-bp-list="members"]... DO NOT REMOVE -->
         <div id="members-dir-list" class="members dir-list" data-bp-list="members">
 
         </div><!-- #members-dir-list -->
+
+
 
         <!-- THE LOAD MORE STARTS -->
 

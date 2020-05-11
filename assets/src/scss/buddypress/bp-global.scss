@@ -660,6 +660,23 @@ body.buddypress {
   .asm-index-page-content {
     // border: 1rem dotted red;
     margin-top: 65px;
+    position: relative;
+
+    .no-data-found {
+      position: absolute;
+      // border: 3px dotted pink;
+      left: 20%;
+      top: 90px;
+
+      .no-data-title {
+        font-size: 1.2rem;
+        padding-top: 2rem;
+      }
+    }
+
+    .bp-feedback.bp-messages.info {
+      margin-bottom: 1rem;
+    }
   }
 
   #athlete-index-container {
@@ -675,6 +692,7 @@ body.buddypress {
 
     .item-entry-asm {
       // border: 4px solid red;
+      background-color: white;
       margin-bottom: 2rem;
       box-shadow: 2px 2px 12px lighten($color: gray, $amount: 15%);
 
@@ -687,6 +705,10 @@ body.buddypress {
     .bp-pagination {
       // border: 1rem dotted red;
       padding-left: 1rem;
+
+      .bp-pagination-links.top {
+        display: none;
+      }
     }
 
     .item-asm {

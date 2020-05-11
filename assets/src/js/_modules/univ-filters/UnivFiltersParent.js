@@ -44,7 +44,7 @@ class UniversityFiltersParent {
     this.dropDownBox.addClass('d-none');
   };
 
-  resetFilters = () => {
+  resetFilters() {
     const theItem = $('.univ-post-item');
     console.log('Univ Reset btn clicked');
 
@@ -57,26 +57,11 @@ class UniversityFiltersParent {
     const women = $('#women-select');
     women.val('all');
 
-    const locationState = $('#location-state-select');
-    locationState.val('all');
-
     theItem.addClass('d-none');
     setTimeout(function () {
       theItem.removeClass('d-none');
     });
-  };
-
-  // noDataFound() {
-  //   // ITEMS WITH d-none CLASS
-  //   const dNoneItem = $('.univ-post-item.d-none');
-  //   const dNoneItemCount = dNoneItem.length;
-  //   console.log(`Total d-none item count: ${dNoneItemCount}`);
-
-  //   // ITEMS
-  //   const listItem = $('.univ-post-item');
-  //   const itemCount = listItem.length;
-  //   console.log(`Total item count: ${itemCount}`);
-  // }
+  }
 }
 
 export default UniversityFiltersParent;

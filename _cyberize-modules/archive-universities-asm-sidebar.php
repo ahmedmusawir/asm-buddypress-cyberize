@@ -116,10 +116,9 @@
 
               <!-- NO DATA FOUND START -->
 
-              <div class="no-data-found">
-                <h3 class="no-data-title">NO DATA FOUND ... SORRY!</h3>
+              <div class="no-data-found text-center d-none">
+                <h3 class="no-data-title">NO MATCHED DATA FOUND! ... PLEASE CLICK RESET FILTERS & TRY AGAIN</h3>
               </div>
-
 
               <!-- NO DATA FOUND END -->
 

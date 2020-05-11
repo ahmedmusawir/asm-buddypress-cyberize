@@ -134,11 +134,13 @@ get_header(); ?>
           </div>
           <div class="col-sm-3 text-center icon-box">
             <h4 class="status-text">
-              To Do
+              <?php 
+                echo 'To Do';
+              ?>
             </h4>
-            <i class="fas fa-exclamation-circle text-danger"></i>
-            <i class="far fa-clock d-none text-info"></i>
-            <i class="fas fa-check-circle d-none text-success"></i>
+            <!-- <h4 class="status-text"><?php //the_sub_field('task_status_text'); ?></h4> -->
+            <i class="fas fa-exclamation-circle"></i>
+            <!-- <i class="fas <?php //the_sub_field('task_status_icon'); ?>"></i> -->
           </div>
 
         </div>

@@ -133,7 +133,7 @@ bp_nouveau_before_loop(); ?>
 
   </ul>
 
-  <?php bp_nouveau_pagination( 'bottom' ); ?>
+  <?php // bp_nouveau_pagination( 'bottom' ); ?>
 
   <?php
 else :

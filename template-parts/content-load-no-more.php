@@ -9,11 +9,11 @@
 
 ?>
 
-<section class="no-results not-found">
+<section class="no-results not-found" style="width: 100%">
 
-  <header class="page-header">
-    <h3 class="page-title" style="margin-top: 6rem; text-align: center !important; display: block;">
-      <?php esc_html_e( 'No More Item Found ...', 'moose-framework-2' ); ?></h3>
+  <header id="load-no-more" class="page-header text-center">
+    <h5 class="page-title mx-auto" style="margin-top: 8rem; text-align: center !important; display: block;">
+      <?php esc_html_e( 'No More Items To Load ...', 'moose-framework-2' ); ?></h5>
   </header><!-- .page-header -->
 
 </section><!-- .no-results -->

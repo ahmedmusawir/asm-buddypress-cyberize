@@ -1,5 +1,6 @@
 import ASMDropdownMenu from './_modules/ASMDropdownMenu';
 import ASMProfileEditMenu from './_modules/ASMProfileEditMenu';
+import ASMAthleteDashTasks from './_modules/ASMAthleteDashTasks';
 
 import AthleteFiltersParent from './_modules/athlete-filters/AthleteFiltersParent';
 import AthleteSportsFiltersSelect from './_modules/athlete-filters/AthleteSportsFiltersSelect';
@@ -26,6 +27,15 @@ class App {
     // ASM Athlete Profile Edit Menu Toggle
     new ASMProfileEditMenu();
 
+    /**
+    ATHLETE DASHBOARD TASKS
+    */
+    new ASMAthleteDashTasks();
+
+    /**
+    ATHLETE INDEX PAGE FILTERS
+    */
+
     // ATHLETE FILTER PARENT
     new AthleteFiltersParent();
     // ATHLETE SPORTS SELECT
@@ -40,6 +50,10 @@ class App {
     new AthleteLocationFiltersSelect();
     // ATHLETE VERIFY SELECT
     new AthleteVerificationFiltersSelect();
+
+    /**
+    UNIVERSITY INDEX PAGE FILTERS
+    */
 
     // UNIVERSITY FILTER PARENT
     new UniversityFiltersParent();

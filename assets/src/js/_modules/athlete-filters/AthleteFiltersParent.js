@@ -4,17 +4,10 @@ class AthleteFiltersParent {
   constructor() {
     // this.init();
 
-    // COLLECTING SELECT
-    // this.selectSport = $('#sports-select');
-    // this.selectGender = $('#gender-select');
-    // this.selectAvail = $('#avail-select');
-    // this.selectClassYr = $('#class-year-select');
-    // this.selectLocation = $('#location-select');
-    // this.selectVerify = $('#verify-select');
-
     // COLLECTING RESET BUTTON
     this.button = $('#ath-filter-reset');
-    // console.log(this.button);
+
+    this.showNoDataFound();
     this.setEvents();
   }
 
@@ -24,6 +17,13 @@ class AthleteFiltersParent {
 
   setEvents() {
     this.button.on('click', this.resetFilters);
+  }
+
+  showNoDataFound() {
+    const noDataItem = $('.no-data-found');
+    setTimeout(function () {
+      noDataItem.removeClass('d-none');
+    }, 2000);
   }
 
   resetFilters() {

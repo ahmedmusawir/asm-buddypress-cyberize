@@ -1,10 +1,10 @@
 import $ from 'jquery';
-import UnivFilterParent from './UnivFiltersParent';
+import UniversityFiltersParent from './UnivFiltersParent';
 
-class UnivDivisionFiltersSelect extends UnivFilterParent {
+class UnivDivisionFiltersSelect extends UniversityFiltersParent {
   constructor() {
     super();
-    this.init();
+    // this.init();
 
     // COLLECTING SELECT
     this.selectDivision = $('#division-select');
@@ -12,7 +12,7 @@ class UnivDivisionFiltersSelect extends UnivFilterParent {
   }
 
   init = () => {
-    // console.log('Univ Division Filter Init');
+    console.log('Univ Division Filter Init');
   };
 
   setEvents = () => {
