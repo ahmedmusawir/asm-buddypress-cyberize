@@ -136,12 +136,12 @@ get_header(); ?>
             </p>
           </div>
           <div id="<?php the_sub_field('task_id'); ?>" class="col-sm-3 text-center icon-box">
-            <h4 class="status-text-<?php the_sub_field('task_id'); ?>">
-              To Do
+            <h4 class="status-text <?php the_sub_field('task_id'); ?>">
+
             </h4>
-            <i class="fas fa-exclamation-circle text-danger <?php the_sub_field('task_id'); ?>"></i>
-            <i class="far fa-clock d-none text-info <?php the_sub_field('task_id'); ?>"></i>
-            <i class="fas fa-check-circle d-none text-success <?php the_sub_field('task_id'); ?>"></i>
+            <i class="d-none fas fa-exclamation-circle text-danger <?php the_sub_field('task_id'); ?>"></i>
+            <i class="d-none far fa-clock text-info <?php the_sub_field('task_id'); ?>"></i>
+            <i class="d-none fas fa-check-circle text-success <?php the_sub_field('task_id'); ?>"></i>
           </div>
 
         </div>
