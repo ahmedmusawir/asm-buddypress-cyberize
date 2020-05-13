@@ -61,7 +61,12 @@ get_header(); ?>
       <div class="task-box task-box-sm text-center">
         <i class="fas fa-tasks"></i>
         <h6 class="text-only">TASKS COMPLETED</h6>
-        <h1 class="text-number">2/12</h1>
+        <h1 class="text-number">
+          <span id="total-complete-count">
+            <!-- COMPLETED COUNT -->
+          </span>
+          /12
+        </h1>
         <a href="#" class="btn btn-info">View Tasks</a>
       </div>
 

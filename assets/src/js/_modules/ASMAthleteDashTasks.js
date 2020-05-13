@@ -10,15 +10,16 @@ class ASMAthleteDashTasks {
     this.taskStartButton = $('.asm-task-button');
     this.markCompleteButton = $('.modal-mark-complete-btn');
     this.taskResetButton = $('.modal-task-reset-btn');
-    // console.log(this.$button);
+    // COLLECTING TOTAL COMPLETE COUNT SPAN
+    this.totalCompleteCountSpan = $('#total-complete-count');
 
     this.setEvents();
+    this.taskTotalCount();
   }
 
   init = (taskItems) => {
     // console.log(taskItems);
     let count = 1;
-    let completeCount = 0;
 
     for (const item of taskItems) {
       // console.log($(item));
@@ -26,9 +27,6 @@ class ASMAthleteDashTasks {
 
       if (taskStatus == null) {
         localStorage.setItem(`task-status-${count}`, 'todo');
-      }
-      if (taskStatus == 'completed') {
-        completeCount++;
       }
 
       const statusText = $(item).find('.status-text');
@@ -45,7 +43,26 @@ class ASMAthleteDashTasks {
       );
 
       count++;
-      console.log(`Complete Count: ${completeCount}`);
+    }
+  };
+
+  taskTotalCount = () => {
+    const taskItems = $('.task-item');
+
+    let completeCount = 0;
+    let count = 1;
+
+    for (const item of taskItems) {
+      console.log($(item));
+      let taskStatus = localStorage.getItem(`task-status-${count}`);
+
+      if (taskStatus == 'completed') {
+        completeCount++;
+      }
+
+      // console.log(`Complete Count: ${completeCount}`);
+      count++;
+      this.totalCompleteCountSpan.text(completeCount);
     }
   };
 
@@ -92,14 +109,11 @@ class ASMAthleteDashTasks {
       localStorage.setItem(storageId, taskStatus);
     }
     if (taskStatus == 'completed') {
-      // console.log(`Storage Id: ${storageId}`);
-
       iconOld.addClass('d-none');
       iconNew.removeClass('d-none');
       textNew.text('COMPLETED');
 
       localStorage.setItem(storageId, taskStatus);
-      // console.log(`Task Status ${taskStatus}`);
     }
   }
 
@@ -128,9 +142,6 @@ class ASMAthleteDashTasks {
     const startIcon = taskItem.find('.fa-clock');
     const completeIcon = taskItem.find('.fa-check-circle');
 
-    // console.log(`Storage Id in handler: ${storageId}`);
-    // console.log(`Task Item Id in handler: ${taskItem}`);
-
     this.setCurrentTask(
       startText,
       startIcon,
@@ -138,6 +149,8 @@ class ASMAthleteDashTasks {
       storageId,
       taskStatus
     );
+
+    this.taskTotalCount();
   }
 
   taskResetHandler(e) {
@@ -156,6 +169,8 @@ class ASMAthleteDashTasks {
       storageId,
       taskStatus
     );
+
+    this.taskTotalCount();
   }
 }
 
