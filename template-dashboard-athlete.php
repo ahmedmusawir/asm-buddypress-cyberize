@@ -116,13 +116,15 @@ get_header(); ?>
           while ( have_rows('bottom_task_video_box') ) : the_row();
         ?>
 
-        <div class="row task-item mt-4">
+        <!-- TASK ITEM START -->
+        <div id="item-<?php the_sub_field('task_id'); ?>" class="row task-item mt-4"
+          data-task="<?php the_sub_field('task_id'); ?>">
 
           <div class="col-sm-3 text-center video-box">
 
-            <span><?php the_sub_field('task_id'); ?></span>
+            <!-- <span><?php // the_sub_field('task_id'); ?></span> -->
 
-            <a type="button" class="asm-task-button" data-toggle="modal" data-task="<?php the_sub_field('task_id'); ?>"
+            <a type="button" class="asm-task-button" data-toggle="modal"
               data-target="#<?php the_sub_field('left_box_youtube_video_id'); ?>">
 
               <img src="<?php the_sub_field('left_box_image'); ?>" alt="" class=" w-100">
@@ -137,47 +139,50 @@ get_header(); ?>
           </div>
           <div id="<?php the_sub_field('task_id'); ?>" class="col-sm-3 text-center icon-box">
             <h4 class="status-text <?php the_sub_field('task_id'); ?>">
-
+              <!-- CONTENT COMES FROM JS -->
             </h4>
             <i class="d-none fas fa-exclamation-circle text-danger <?php the_sub_field('task_id'); ?>"></i>
             <i class="d-none far fa-clock text-info <?php the_sub_field('task_id'); ?>"></i>
             <i class="d-none fas fa-check-circle text-success <?php the_sub_field('task_id'); ?>"></i>
           </div>
 
-        </div>
+          <!-- YOUTUBE VIDEO MODAL -->
 
-        <!-- YOUTUBE VIDEO MODAL -->
-
-        <!-- Modal -->
-        <div class="modal fade bd-example-modal-lg" id="<?php the_sub_field('left_box_youtube_video_id'); ?>"
-          tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item mt-2"
-                    src="https://www.youtube.com/embed/<?php the_sub_field('left_box_youtube_video_id'); ?>?autoplay=0&loop=0&controls=1&showinfo=0&rel=0"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                    <!-- THE YOUTUBE VIDEO EMBED - RESPONSIVE - VIDEO ID INPUT ONLY -->
-                  </iframe>
+          <!-- Modal -->
+          <div class="modal fade bd-example-modal-lg" id="<?php the_sub_field('left_box_youtube_video_id'); ?>"
+            tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item mt-2"
+                      src="https://www.youtube.com/embed/<?php the_sub_field('left_box_youtube_video_id'); ?>?autoplay=0&loop=0&controls=1&showinfo=0&rel=0"
+                      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                      <!-- THE YOUTUBE VIDEO EMBED - RESPONSIVE - VIDEO ID INPUT ONLY -->
+                    </iframe>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary modal-mark-complete-btn">Mark Complete</button>
+                  <button type="button" class="btn btn-danger modal-task-reset-btn">Reset</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- YOUTUBE VIDEO MODAL END -->
+          <!-- YOUTUBE VIDEO MODAL END -->
+
+        </div> <!-- TASK ITEM END -->
+
+
         <?php 
         endwhile;
 
@@ -188,6 +193,128 @@ get_header(); ?>
         
         endif;
         ?>
+
+        <!-- PROFILE VERIFICATION FORM START -->
+
+        <div class="row task-item mt-4" data-task="task-status-11">
+
+          <div class="col-sm-3 text-center video-box">
+
+            <a type="button" class="asm-task-button" data-toggle="modal" data-target="#profile-verification-modal">
+
+              <img src="/wp-content/uploads/Screen-Shot-2019-09-25-at-4.51.48-AM@2x.png" alt="" class=" w-100">
+
+            </a>
+          </div>
+          <div class="col-sm-6 text-center text-box">
+            <h3 class="title">11. Profile Verification</h3>
+            <p class="sub-title">
+              Request your profile to be verified
+            </p>
+          </div>
+          <div id="<?php //the_field('task_id'); ?>" class="col-sm-3 text-center icon-box">
+            <h4 class="status-text">
+
+            </h4>
+            <i class="d-none fas fa-exclamation-circle text-danger"></i>
+            <i class="d-none far fa-clock text-info"></i>
+            <i class="d-none fas fa-check-circle text-success"></i>
+          </div>
+
+          <!-- YOUTUBE VIDEO MODAL -->
+
+          <!-- Modal -->
+          <div class="modal fade bd-example-modal-lg" id="profile-verification-modal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="gravity-form-shortcode">
+                    <?php echo do_shortcode('[gravityform id="2" title="true" description="false"]'); ?>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary modal-mark-complete-btn">Mark Complete</button>
+                  <button type="button" class="btn btn-danger modal-task-reset-btn">Reset</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- YOUTUBE VIDEO MODAL END -->
+
+        </div>
+
+        <!-- PROFILE VERIFICATION FORM END -->
+
+
+        <!-- COMMITMENT FORM START -->
+
+        <div class="row task-item mt-4" data-task="task-status-12">
+
+          <div class="col-sm-3 text-center video-box">
+
+            <a type="button" class="asm-task-button" data-toggle="modal" data-target="#commitment-modal">
+
+              <img src="/wp-content/uploads/Screen-Shot-2019-09-25-at-4.51.48-AM@2x.png" alt="" class=" w-100">
+
+            </a>
+          </div>
+          <div class="col-sm-6 text-center text-box">
+            <h3 class="title">12. Scholarship Commitment</h3>
+            <p class="sub-title">
+              Scholarship Commitment form to fill out
+            </p>
+          </div>
+          <div id="<?php //the_field('task_id'); ?>" class="col-sm-3 text-center icon-box">
+            <h4 class="status-text">
+
+            </h4>
+            <i class="d-none fas fa-exclamation-circle text-danger"></i>
+            <i class="d-none far fa-clock text-info"></i>
+            <i class="d-none fas fa-check-circle text-success"></i>
+          </div>
+
+          <!-- YOUTUBE VIDEO MODAL -->
+
+          <!-- Modal -->
+          <div class="modal fade bd-example-modal-lg" id="commitment-modal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="gravity-form-shortcode">
+                    <?php echo do_shortcode('[gravityform id="2" title="true" description="false"]'); ?>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary modal-mark-complete-btn">Mark Complete</button>
+                  <button type="button" class="btn btn-danger modal-task-reset-btn">Reset</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- YOUTUBE VIDEO MODAL END -->
+
+        </div>
+
+        <!-- COMMITMENT FORM END -->
+
 
       </main><!-- #main -->
 
@@ -203,6 +330,7 @@ get_header(); ?>
   </div><!-- #primary -->
 
 </div> <!-- #page-asm-dashboard end  -->
+
 
 
 <?php
