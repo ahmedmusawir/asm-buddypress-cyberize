@@ -18,11 +18,9 @@ class ASMAthleteDashTasks {
   }
 
   init = (taskItems) => {
-    // console.log(taskItems);
     let count = 1;
 
     for (const item of taskItems) {
-      // console.log($(item));
       let taskStatus = localStorage.getItem(`task-status-${count}`);
 
       if (taskStatus == null) {
@@ -53,22 +51,18 @@ class ASMAthleteDashTasks {
     let count = 1;
 
     for (const item of taskItems) {
-      console.log($(item));
       let taskStatus = localStorage.getItem(`task-status-${count}`);
 
       if (taskStatus == 'completed') {
         completeCount++;
       }
 
-      // console.log(`Complete Count: ${completeCount}`);
       count++;
       this.totalCompleteCountSpan.text(completeCount);
     }
   };
 
   setTaskStatus = (status, statusText, todoIcon, startIcon, completeIcon) => {
-    console.log(status);
-
     if (status == null || status == 'todo') {
       statusText.text('TO DO');
       todoIcon.removeClass('d-none');
@@ -100,7 +94,6 @@ class ASMAthleteDashTasks {
   }
 
   setCurrentTask(textNew, iconOld, iconNew, storageId, taskStatus) {
-    // console.log('setCurrentTask Method runs!');
     if (taskStatus == 'started') {
       iconOld.addClass('d-none');
       iconNew.removeClass('d-none');
@@ -125,8 +118,6 @@ class ASMAthleteDashTasks {
     const startIcon = taskItem.find('.fa-clock');
     let taskStatus = localStorage.getItem(storageId);
 
-    console.log(`Status in taskStartHandler: ${taskStatus}`);
-
     if (taskStatus !== 'completed') {
       taskStatus = 'started';
       this.setCurrentTask(todoText, todoIcon, startIcon, storageId, taskStatus);
@@ -134,7 +125,6 @@ class ASMAthleteDashTasks {
   }
 
   markCompleteHandler(e) {
-    // console.log('mark complete clicked');
     const taskStatus = 'completed';
     const taskItem = $(e.target).parents('.task-item');
     const storageId = taskItem.data('task');

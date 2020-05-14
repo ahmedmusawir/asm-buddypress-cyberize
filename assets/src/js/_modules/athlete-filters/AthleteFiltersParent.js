@@ -12,7 +12,7 @@ class AthleteFiltersParent {
   }
 
   init = () => {
-    console.log('ASM Parent Filter Reset');
+    // console.log('ASM Parent Filter Reset');
   };
 
   setEvents() {

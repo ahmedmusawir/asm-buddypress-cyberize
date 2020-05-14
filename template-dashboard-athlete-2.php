@@ -28,7 +28,7 @@ get_header(); ?>
   <section id="dashboard-task-board">
 
     <div id="top-task-block" class="row">
-      <article class="col-md-12">
+      <article class="col-md-6">
         <?php 
           $logged_in_user_obj = wp_get_current_user();
           echo '<pre>';
@@ -38,17 +38,7 @@ get_header(); ?>
         ?>
         <h4 class="block-title"><?php the_field('top_left_title'); ?> <?php echo $athlete_name; ?>?</h4>
       </article>
-      <article class="col-md-6 d-none">
-        <?php 
-          $logged_in_user_obj = wp_get_current_user();
-          // echo '<pre>';
-          // print_r($logged_in_user_obj);
-          // echo '</pre>';
-          $athlete_name = $logged_in_user_obj->display_name;
-        ?>
-        <h4 class="block-title"><?php the_field('top_left_title'); ?> <?php echo $athlete_name; ?>?</h4>
-      </article>
-      <article class="col-md-6 d-none">
+      <article class="col-md-6">
         <div class="membership-box">
           <h4 class="text">
             <?php the_field('top_right_title'); ?>
@@ -109,20 +99,7 @@ get_header(); ?>
       </div>
 
       <div class="task-box task-box-lg text-center">
-        <!-- <img class="img-fluid" src="/wp-content/uploads/Screen-Shot-2020-03-03-at-7.11.26-PM.png" alt=""> -->
-
-        <i class="fas fa-users pt-5"></i>
-        <h1 class="text-only">
-
-          <?php the_field('top_right_title'); ?>
-
-        </h1>
-
-        <a href="<?php the_field('top_right_button_url'); ?>" target="_blank" class="btn btn-primary btn-lg"
-          style="width: 80%; background: crimson; border: red;">
-          <?php the_field('top_right_button_text'); ?>
-        </a>
-
+        <img class="img-fluid" src="/wp-content/uploads/Screen-Shot-2020-03-03-at-7.11.26-PM.png" alt="">
       </div>
 
     </div> <!-- #bottom-task-block end -->
@@ -132,9 +109,6 @@ get_header(); ?>
 
 
   <div id="asm-dashboard-content" class="content-area container-fluid">
-
-    <h2 class="main-task-title pl-5 pt-5 font-weight-bold">Your College Recruitment To-Do List</h2>
-
     <div class="row">
 
       <main id="main" class="site-main col-sm-12 col-md-12 col-lg-8">
@@ -233,14 +207,14 @@ get_header(); ?>
 
             <a type="button" class="asm-task-button" data-toggle="modal" data-target="#profile-verification-modal">
 
-              <img src="<?php the_field('profile_verification_image'); ?>" alt="" class=" w-100">
+              <img src="/wp-content/uploads/Screen-Shot-2019-09-25-at-4.51.48-AM@2x.png" alt="" class=" w-100">
 
             </a>
           </div>
           <div class="col-sm-6 text-center text-box">
-            <h3 class="title"><?php the_field('profile_verification_title'); ?></h3>
+            <h3 class="title">11. Profile Verification</h3>
             <p class="sub-title">
-              <?php the_field('profile_verification_sub_title'); ?>
+              Request your profile to be verified
             </p>
           </div>
           <div id="<?php //the_field('task_id'); ?>" class="col-sm-3 text-center icon-box">
@@ -267,10 +241,7 @@ get_header(); ?>
                 </div>
                 <div class="modal-body">
                   <div class="gravity-form-shortcode">
-                    <?php 
-                      $gravity_form = get_field('profile_verification_gravity_form');
-                      echo do_shortcode( $gravity_form ); 
-                    ?>
+                    <?php echo do_shortcode('[gravityform id="2" title="true" description="false"]'); ?>
                   </div>
                 </div>
                 <div class="modal-footer">
@@ -288,6 +259,7 @@ get_header(); ?>
 
         <!-- PROFILE VERIFICATION FORM END -->
 
+
         <!-- COMMITMENT FORM START -->
 
         <div class="row task-item mt-4" data-task="task-status-12">
@@ -296,14 +268,14 @@ get_header(); ?>
 
             <a type="button" class="asm-task-button" data-toggle="modal" data-target="#commitment-modal">
 
-              <img src="<?php the_field('commitment_image'); ?>" alt="" class=" w-100">
+              <img src="/wp-content/uploads/Screen-Shot-2019-09-25-at-4.51.48-AM@2x.png" alt="" class=" w-100">
 
             </a>
           </div>
           <div class="col-sm-6 text-center text-box">
-            <h3 class="title"><?php the_field('commitment_title'); ?></h3>
+            <h3 class="title">12. Scholarship Commitment</h3>
             <p class="sub-title">
-              <?php the_field('commitment_sub_title'); ?>
+              Scholarship Commitment form to fill out
             </p>
           </div>
           <div id="<?php //the_field('task_id'); ?>" class="col-sm-3 text-center icon-box">
@@ -330,10 +302,7 @@ get_header(); ?>
                 </div>
                 <div class="modal-body">
                   <div class="gravity-form-shortcode">
-                    <?php 
-                      $gravity_form = get_field('commitment_gravity_form');
-                      echo do_shortcode( $gravity_form ); 
-                    ?>
+                    <?php echo do_shortcode('[gravityform id="2" title="true" description="false"]'); ?>
                   </div>
                 </div>
                 <div class="modal-footer">
