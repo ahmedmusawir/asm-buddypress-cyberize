@@ -76,14 +76,14 @@
           </li>
 
           <li class="list-inline-item">
-            <select class="select-filter" id="location-select" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
+            <select class="select-filter" id="location-select">
 
               <option value="all">Location</option>
-              <!-- <option value="USA">USA</option>
+              <option value="USA">USA</option>
               <option value="UK">UK</option>
               <option value="Canada">Canada</option>
               <option value="Domenican-Republic">Domenican Republic</option>
-              <option value="Mexico">Mexico</option> -->
+              <option value="Mexico">Mexico</option>
 
             </select>
           </li>
