@@ -17,7 +17,7 @@ jQuery(document).ready(function ($) {
       .done(function (res) {
         $('#location-select').append(res);
         var locationArray = res;
-        console.log(locationArray);
+        // console.log(locationArray);
 
         localStorage.setItem('localLocations', JSON.stringify(locationArray));
       })
@@ -25,7 +25,7 @@ jQuery(document).ready(function ($) {
         console.log('Ajax Failed! In ' + ajaxFunction);
       })
       .always(function () {
-        console.log('Ajax Dynamic Loaction Filter Complete');
+        // console.log('Ajax Dynamic Loaction Filter Complete');
       });
   }
 

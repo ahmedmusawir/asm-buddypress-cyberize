@@ -27,15 +27,15 @@
 
           <li class="list-inline-item">
 
-            <select class="select-filter" id="sports-select">
+            <select class="select-filter" id="sports-select" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
 
               <option value="all">All Sports</option>
-              <option value="FOOTBALL">FootBall</option>
+              <!-- <option value="FOOTBALL">FootBall</option>
               <option value="GOLF">Golf</option>
               <option value="BASEBALL">Baseball</option>
               <option value="BASKETBALL">Basketball</option>
               <option value="SOCCER">Soccer</option>
-              <option value="CHEERLEADING">Cheerleading</option>
+              <option value="CHEERLEADING">Cheerleading</option> -->
 
             </select>
 
@@ -68,9 +68,16 @@
             <select class="select-filter" id="class-year-select">
 
               <option value="all">Class Year</option>
-              <option value="2018">2018</option>
-              <option value="2019">2019</option>
-              <option value="2020">2020</option>
+              <option value="2018">2020</option>
+              <option value="2019">2021</option>
+              <option value="2020">2022</option>
+              <option value="2020">2023</option>
+              <option value="2020">2024</option>
+              <option value="2020">2025</option>
+              <option value="2020">2026</option>
+              <option value="2020">2027</option>
+              <option value="2020">2028</option>
+              <option value="2020">2029</option>
 
             </select>
           </li>

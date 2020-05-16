@@ -10,18 +10,7 @@ require get_template_directory() . '/_functions/univ-loadmore-function.php';
 require get_template_directory() . '/_functions/univ-location-loadmore-function.php';
 require get_template_directory() . '/_functions/athlete-loadmore-function.php';
 require get_template_directory() . '/_functions/athlete-dynamic-location-ajax-function.php';
-
-// ASM DYNAMIC FILTER LOADER
-function load_asm_dynamic_filter_scripts() {
-	wp_enqueue_script( 
-		'asm-locations-filter-script', 
-		get_template_directory_uri() . '/assets/dist/js/loadASMLocationFiltersWithLocalStorage.js', 
-		array('jquery'), 
-		'2015121X', 
-		true 
-	);
-}
-add_action('wp_head', 'load_asm_dynamic_filter_scripts');
+require get_template_directory() . '/_functions/athlete-dynamic-sports-ajax-function.php';
 
 /**
  * LOCALIZE GLOBAL VARIABLE FOR AJAX
@@ -45,3 +34,25 @@ function load_asm_globals() {
   ));  
 }
 add_action('wp_enqueue_scripts', 'load_asm_globals');
+
+// ASM DYNAMIC FILTER LOADER
+function load_asm_dynamic_filter_scripts() {
+  // LOCATION FILTER SCRIPT
+	wp_enqueue_script( 
+		'asm-locations-filter-script', 
+		get_template_directory_uri() . '/assets/dist/js/loadASMLocationFiltersWithLocalStorage.js', 
+		array('jquery'), 
+		'2015121X', 
+		true 
+  );
+  
+  // SPORTS FILTER SCRIPT
+  wp_enqueue_script( 
+		'asm-sports-filter-script', 
+		get_template_directory_uri() . '/assets/dist/js/loadASMSportsFiltersWithLocalStorage.js', 
+		array('jquery'), 
+		'2015121Y', 
+		true 
+	);
+}
+add_action('wp_head', 'load_asm_dynamic_filter_scripts');
