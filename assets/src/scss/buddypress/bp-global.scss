@@ -656,6 +656,65 @@ body.buddypress {
     }
   }
 
+  //TOP ADVABCED FILTER BAR
+  #top-advanced-filter {
+    // border: 1rem dotted red;
+    position: fixed;
+    top: 75px;
+    width: 100%;
+    height: 140px;
+    z-index: 100;
+    background-color: white;
+    //TOP MENU PROFILE EDIT
+    .top-page-menu {
+      // border: 1rem solid red;
+      width: 100%;
+      margin-bottom: -1rem;
+      // border-bottom: 2px solid lighten($color: gray, $amount: 35%);
+
+      .menu-title {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $cg-primary;
+      }
+
+      .menu-box {
+        margin-top: 1.3rem;
+        margin-left: 1rem;
+        // border: 4px dotted blue;
+
+        .select-filter {
+          background-color: white;
+          border: 1px solid gray;
+          border-radius: 6px;
+          padding: 0.5rem;
+          color: lighten($color: $cg-primary, $amount: 10%);
+          font-size: 0.8rem;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+
+        a {
+          padding: 0.5rem 2rem;
+          margin-left: 1rem;
+          border: 1px solid gray;
+          border-radius: 6px;
+          color: lighten($color: $cg-primary, $amount: 10%);
+          font-size: 0.8rem;
+          font-weight: 600;
+
+          i {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
   // MAIN PAGE CONTENT
   .asm-index-page-content {
     // border: 1rem dotted red;

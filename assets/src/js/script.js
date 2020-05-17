@@ -18,9 +18,11 @@ import UnivWomensSportsFiltersSelect from './_modules/univ-filters/UnivWomenSpor
 import UnivLoadMore from './_modules/load-more/UnivLoadMore';
 import AthleteLoadMore from './_modules/load-more/AthleteLoadMore';
 
+import AdvanceFiltersParent from './_modules/athlete-adv-filters/AdvanceFiltersParent';
+
 class App {
   constructor() {
-    console.info('ES6 App Initialized!');
+    console.info('ES6 Script Initialized!');
 
     // ASM Global Dropdown Navigation
     new ASMDropdownMenu();
@@ -68,6 +70,11 @@ class App {
     new UnivLoadMore();
     // ATHLETE LOAD MORE
     new AthleteLoadMore();
+
+    /**
+    ATHLETE ADVANCE FILTER
+    */
+    new AdvanceFiltersParent();
   }
 }
 

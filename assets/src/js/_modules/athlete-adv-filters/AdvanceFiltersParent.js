@@ -1,19 +1,19 @@
 import $ from 'jquery';
 
-class AthleteFiltersParent {
+class AdvanceFiltersParent {
   constructor() {
-    // this.init();
+    this.init();
 
     // COLLECTING RESET BUTTON
-    this.buttonReset = $('#ath-filter-reset');
-    this.buttonAdvFilter = $('#ath-advance-filter');
+    this.buttonReset = $('#ath-adv-filter-reset');
+    this.buttonBack = $('#back-to-filters');
 
     this.showNoDataFound();
     this.setEvents();
   }
 
   init = () => {
-    // console.log('ASM Parent Filter Reset');
+    console.log('ASM Parent AdvanceFilter');
   };
 
   showNoDataFound() {
@@ -27,17 +27,17 @@ class AthleteFiltersParent {
     if (this.buttonReset) {
       this.buttonReset.on('click', this.resetFilters);
     }
-    if (this.buttonAdvFilter) {
-      this.buttonAdvFilter.on('click', this.openAdvanceFilter);
+    if (this.buttonBack) {
+      this.buttonBack.on('click', this.removeAdvFilters);
     }
   }
 
-  openAdvanceFilter(e) {
-    // console.log('adv fltr clicked');
-    e.stopImmediatePropagation();
+  removeAdvFilters() {
+    // console.log('Remove Adv Filters');
+    // e.stopImmediatePropagation();
 
     const athAdvfilter = $('#top-advanced-filter');
-    athAdvfilter.removeClass('d-none');
+    athAdvfilter.addClass('d-none');
   }
 
   resetFilters() {
@@ -68,4 +68,4 @@ class AthleteFiltersParent {
   }
 }
 
-export default AthleteFiltersParent;
+export default AdvanceFiltersParent;
