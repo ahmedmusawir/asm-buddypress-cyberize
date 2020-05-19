@@ -113,7 +113,13 @@
             </li>
           </a>
 
-          <a class="moose-item" href="#" id="ath-advance-filter">
+          <!-- <a class="moose-item" href="#" id="athAdvancFilter" data-toggle="modal" data-target="#filterSwitchModal">
+            <li class="list-inline-item">
+              <span class="btn-text">ADVANCE FILTERS</span>
+            </li>
+          </a> -->
+
+          <a class="moose-item" href="#" id="athAdvanceFilter" data-toggle="modal">
             <li class="list-inline-item">
               <span class="btn-text">ADVANCE FILTERS</span>
             </li>
@@ -122,6 +128,8 @@
         </ul>
 
       </section>
+
+
 
     </div>
     <!-- TOP FILTER BAR ENDS -->
@@ -226,15 +234,110 @@
           </a>
 
         </ul>
+        <ul class="list-inline menu-box">
 
-        <div class="notice text-center">
+          <li class="list-inline-item">
+
+            <select class="select-filter" id="sports-select" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
+
+              <option value="all">All Sports</option>
+              <option value="FOOTBALL">FootBall</option>
+              <option value="GOLF">Golf</option>
+              <option value="BASEBALL">Baseball</option>
+              <option value="BASKETBALL">Basketball</option>
+              <option value="SOCCER">Soccer</option>
+              <option value="CHEERLEADING">Cheerleading</option>
+
+            </select>
+
+          </li>
+
+          <li class="list-inline-item">
+
+            <select class="select-filter" id="">
+
+              <option value="all">All Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+
+            </select>
+
+          </li>
+
+          <li class="list-inline-item">
+            <select class="select-filter" id="">
+
+              <option value="all">Availablility</option>
+              <option value="available">Available</option>
+              <option value="committed">Committed</option>
+
+            </select>
+          </li>
+
+          <li class="list-inline-item">
+            <select class="select-filter" id="">
+
+              <option value="all">Class Year</option>
+              <option value="2018">2020</option>
+              <option value="2019">2021</option>
+              <option value="2020">2022</option>
+              <option value="2020">2023</option>
+              <option value="2020">2024</option>
+              <option value="2020">2025</option>
+              <option value="2020">2026</option>
+              <option value="2020">2027</option>
+              <option value="2020">2028</option>
+              <option value="2020">2029</option>
+
+            </select>
+          </li>
+
+          <li class="list-inline-item">
+            <select class="select-filter" id="" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
+
+              <option value="all">Location</option>
+              <!-- <option value="USA">USA</option>
+              <option value="UK">UK</option>
+              <option value="Canada">Canada</option>
+              <option value="Domenican-Republic">Domenican Republic</option>
+              <option value="Mexico">Mexico</option> -->
+
+            </select>
+          </li>
+
+          <li class="list-inline-item">
+            <select class="select-filter" id="">
+
+              <option value="all">Verification</option>
+              <option value="verified">Verified</option>
+              <option value="unverified">Not Verified</option>
+
+            </select>
+          </li>
+
+
+          <a class="moose-item" href="#" id="ath-adv-filter-reset">
+            <li class="list-inline-item">
+              <span class="btn-text">RESET FILTERS</span>
+            </li>
+          </a>
+
+          <a class="moose-item" href="#" id="back-to-filters">
+            <li class="list-inline-item">
+              <span class="btn-text">BACK TO BASE FILTERS</span>
+            </li>
+          </a>
+
+        </ul>
+
+        <!-- <div class="notice text-center">
           <h4 class="notice-text">Please choose a sport ...</h4>
-        </div>
+        </div> -->
 
       </section>
     </div>
 
-    <!-- TOP ADVANCED FILTER BAR ENDSS -->
+    <!-- TOP ADVANCED FILTER BAR ENDS -->
 
     <div class="row asm-index-page-content">
 
@@ -283,4 +386,31 @@
 
   </div><!-- // .screen-content -->
 
+
 </section>
+
+<!-- SPORTS CHOICE MODAL FOR ADVANCE FILER START -->
+
+<!-- Modal -->
+<div class="modal fade" id="filterSwitchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Choose a Sport ...</h5>
+      </div>
+      <div class="modal-body">
+        <div>
+
+          <div id="modalSportsChoiceBox"></div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SPORTS CHOICE MODAL FOR ADVANCE FILER END -->

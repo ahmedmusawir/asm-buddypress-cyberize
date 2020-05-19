@@ -19,6 +19,7 @@ import UnivLoadMore from './_modules/load-more/UnivLoadMore';
 import AthleteLoadMore from './_modules/load-more/AthleteLoadMore';
 
 import AdvanceFiltersParent from './_modules/athlete-adv-filters/AdvanceFiltersParent';
+import FilterSwitchModal from './_modules/athlete-filter-switch-modal/FilterSwitchModal';
 
 class App {
   constructor() {
@@ -70,6 +71,11 @@ class App {
     new UnivLoadMore();
     // ATHLETE LOAD MORE
     new AthleteLoadMore();
+
+    /**
+    FILTER SWITCHING MODAL
+    */
+    new FilterSwitchModal();
 
     /**
     ATHLETE ADVANCE FILTER

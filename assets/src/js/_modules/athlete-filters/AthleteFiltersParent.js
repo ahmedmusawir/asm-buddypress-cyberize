@@ -27,9 +27,9 @@ class AthleteFiltersParent {
     if (this.buttonReset) {
       this.buttonReset.on('click', this.resetFilters);
     }
-    if (this.buttonAdvFilter) {
-      this.buttonAdvFilter.on('click', this.openAdvanceFilter);
-    }
+    // if (this.buttonAdvFilter) {
+    //   this.buttonAdvFilter.on('click', this.openAdvanceFilter);
+    // }
   }
 
   openAdvanceFilter(e) {
