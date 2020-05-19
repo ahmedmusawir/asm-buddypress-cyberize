@@ -138,197 +138,139 @@
 
     <div id="top-advanced-filter" class="d-none">
       <section class="top-page-menu clearfix">
-        <h3 class="menu-title float-left pt-2">Advance Filters</h3>
-        <ul class="list-inline menu-box">
+        <div class="row top-row">
+          <div class="col-md-2">
 
-          <li class="list-inline-item">
+            <h3 class="menu-title float-left pt-2 text-light">Advance Filters</h3>
 
-            <select class="select-filter" id="sports-select" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
+          </div>
+          <div class="col-md-8">
+            <ul class="list-inline menu-box">
 
-              <option value="all">All Sports</option>
-              <option value="FOOTBALL">FootBall</option>
-              <option value="GOLF">Golf</option>
-              <option value="BASEBALL">Baseball</option>
-              <option value="BASKETBALL">Basketball</option>
-              <option value="SOCCER">Soccer</option>
-              <option value="CHEERLEADING">Cheerleading</option>
+              <li class="list-inline-item">
 
-            </select>
+                <select class="select-filter" id="">
 
-          </li>
+                  <option value="all">All Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
 
-          <li class="list-inline-item">
+                </select>
 
-            <select class="select-filter" id="">
+              </li>
 
-              <option value="all">All Gender</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
+              <li class="list-inline-item">
+                <select class="select-filter" id="">
 
-            </select>
+                  <option value="all">Availablility</option>
+                  <option value="available">Available</option>
+                  <option value="committed">Committed</option>
 
-          </li>
+                </select>
+              </li>
 
-          <li class="list-inline-item">
-            <select class="select-filter" id="">
+              <li class="list-inline-item">
+                <select class="select-filter" id="">
 
-              <option value="all">Availablility</option>
-              <option value="available">Available</option>
-              <option value="committed">Committed</option>
+                  <option value="all">Class Year</option>
+                  <option value="2018">2020</option>
+                  <option value="2019">2021</option>
+                  <option value="2020">2022</option>
+                  <option value="2020">2023</option>
+                  <option value="2020">2024</option>
+                  <option value="2020">2025</option>
+                  <option value="2020">2026</option>
+                  <option value="2020">2027</option>
+                  <option value="2020">2028</option>
+                  <option value="2020">2029</option>
 
-            </select>
-          </li>
+                </select>
+              </li>
 
-          <li class="list-inline-item">
-            <select class="select-filter" id="">
+              <li class="list-inline-item">
+                <select class="select-filter" id="" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
 
-              <option value="all">Class Year</option>
-              <option value="2018">2020</option>
-              <option value="2019">2021</option>
-              <option value="2020">2022</option>
-              <option value="2020">2023</option>
-              <option value="2020">2024</option>
-              <option value="2020">2025</option>
-              <option value="2020">2026</option>
-              <option value="2020">2027</option>
-              <option value="2020">2028</option>
-              <option value="2020">2029</option>
+                  <option value="all">Location</option>
 
-            </select>
-          </li>
+                </select>
+              </li>
 
-          <li class="list-inline-item">
-            <select class="select-filter" id="" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
+              <li class="list-inline-item">
+                <select class="select-filter" id="">
 
-              <option value="all">Location</option>
-              <!-- <option value="USA">USA</option>
-              <option value="UK">UK</option>
-              <option value="Canada">Canada</option>
-              <option value="Domenican-Republic">Domenican Republic</option>
-              <option value="Mexico">Mexico</option> -->
+                  <option value="all">Verification</option>
+                  <option value="verified">Verified</option>
+                  <option value="unverified">Not Verified</option>
 
-            </select>
-          </li>
+                </select>
+              </li>
 
-          <li class="list-inline-item">
-            <select class="select-filter" id="">
+            </ul>
+          </div>
+        </div>
 
-              <option value="all">Verification</option>
-              <option value="verified">Verified</option>
-              <option value="unverified">Not Verified</option>
+        <div class="row">
+          <div class="col-md-2">
 
-            </select>
-          </li>
+            <h3 class="menu-title sport-title float-left pt-2">Sports Name</h3>
 
+          </div>
+          <div class="col-md-8">
+            <ul class="list-inline menu-box">
 
-          <a class="moose-item" href="#" id="ath-adv-filter-reset">
-            <li class="list-inline-item">
-              <span class="btn-text">RESET FILTERS</span>
-            </li>
-          </a>
+              <li class="list-inline-item">
 
-          <a class="moose-item" href="#" id="back-to-filters">
-            <li class="list-inline-item">
-              <span class="btn-text">BACK TO BASE FILTERS</span>
-            </li>
-          </a>
+                <select class="select-filter" id="">
 
-        </ul>
-        <ul class="list-inline menu-box">
+                  <option value="all">All Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
 
-          <li class="list-inline-item">
+                </select>
 
-            <select class="select-filter" id="sports-select" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
+              </li>
 
-              <option value="all">All Sports</option>
-              <option value="FOOTBALL">FootBall</option>
-              <option value="GOLF">Golf</option>
-              <option value="BASEBALL">Baseball</option>
-              <option value="BASKETBALL">Basketball</option>
-              <option value="SOCCER">Soccer</option>
-              <option value="CHEERLEADING">Cheerleading</option>
+              <li class="list-inline-item">
+                <select class="select-filter" id="">
 
-            </select>
+                  <option value="all">Availablility</option>
+                  <option value="available">Available</option>
+                  <option value="committed">Committed</option>
 
-          </li>
+                </select>
+              </li>
 
-          <li class="list-inline-item">
+              <li class="list-inline-item">
+                <select class="select-filter" id="">
 
-            <select class="select-filter" id="">
+                  <option value="all">Verification</option>
+                  <option value="verified">Verified</option>
+                  <option value="unverified">Not Verified</option>
 
-              <option value="all">All Gender</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
+                </select>
+              </li>
 
-            </select>
+              <a class="moose-item select-filter" href="#" id="ath-adv-filter-reset">
+                <li class="list-inline-item">
+                  <span class="btn-text">RESET FILTERS</span>
+                </li>
+              </a>
 
-          </li>
-
-          <li class="list-inline-item">
-            <select class="select-filter" id="">
-
-              <option value="all">Availablility</option>
-              <option value="available">Available</option>
-              <option value="committed">Committed</option>
-
-            </select>
-          </li>
-
-          <li class="list-inline-item">
-            <select class="select-filter" id="">
-
-              <option value="all">Class Year</option>
-              <option value="2018">2020</option>
-              <option value="2019">2021</option>
-              <option value="2020">2022</option>
-              <option value="2020">2023</option>
-              <option value="2020">2024</option>
-              <option value="2020">2025</option>
-              <option value="2020">2026</option>
-              <option value="2020">2027</option>
-              <option value="2020">2028</option>
-              <option value="2020">2029</option>
-
-            </select>
-          </li>
-
-          <li class="list-inline-item">
-            <select class="select-filter" id="" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
-
-              <option value="all">Location</option>
-              <!-- <option value="USA">USA</option>
-              <option value="UK">UK</option>
-              <option value="Canada">Canada</option>
-              <option value="Domenican-Republic">Domenican Republic</option>
-              <option value="Mexico">Mexico</option> -->
-
-            </select>
-          </li>
-
-          <li class="list-inline-item">
-            <select class="select-filter" id="">
-
-              <option value="all">Verification</option>
-              <option value="verified">Verified</option>
-              <option value="unverified">Not Verified</option>
-
-            </select>
-          </li>
+              <a class="moose-item select-filter" href="#" id="back-to-filters">
+                <li class="list-inline-item">
+                  <span class="btn-text">BACK TO BASE FILTERS</span>
+                </li>
+              </a>
 
 
-          <a class="moose-item" href="#" id="ath-adv-filter-reset">
-            <li class="list-inline-item">
-              <span class="btn-text">RESET FILTERS</span>
-            </li>
-          </a>
 
-          <a class="moose-item" href="#" id="back-to-filters">
-            <li class="list-inline-item">
-              <span class="btn-text">BACK TO BASE FILTERS</span>
-            </li>
-          </a>
 
-        </ul>
+            </ul>
+          </div>
+
+        </div>
+
+
 
         <!-- <div class="notice text-center">
           <h4 class="notice-text">Please choose a sport ...</h4>

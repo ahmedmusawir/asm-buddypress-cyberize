@@ -64,10 +64,9 @@ class FilterSwitchModal {
     e.stopImmediatePropagation();
     console.log(e.target.value);
     const sportChoice = e.target.value;
-    const advFilterTitle = this.athAdvfilter.find('.menu-title');
+    const advFilterTitle = this.athAdvfilter.find('.sport-title');
 
-    console.log(advFilterTitle.text());
-
+    // ADDING SPORT NAME TO TITLE
     advFilterTitle.text(sportChoice);
 
     // SHOWING THE ADVANCED FILTER BOX

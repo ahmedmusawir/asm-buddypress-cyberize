@@ -426,8 +426,16 @@ body.buddypress {
   #athlete-right-email-button {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf0404+0,ff3019+100 */
     background: #cf0404; /* Old browsers */
-    background: -moz-linear-gradient(left, #cf0404 0%, #ff3019 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #cf0404 0%, #ff3019 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(
+      left,
+      #cf0404 0%,
+      #ff3019 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      #cf0404 0%,
+      #ff3019 100%
+    ); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
       to right,
       #cf0404 0%,
@@ -456,8 +464,16 @@ body.buddypress {
     margin-bottom: 1rem;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf0404+0,ff3019+100 */
     background: $cg-primary; /* Old browsers */
-    background: -moz-linear-gradient(left, #035083 0%, #0574b8 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #035083 0%, #0574b8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(
+      left,
+      #035083 0%,
+      #0574b8 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      #035083 0%,
+      #0574b8 100%
+    ); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
       to right,
       #035083 0%,
@@ -665,6 +681,7 @@ body.buddypress {
     height: 140px;
     z-index: 100;
     background-color: white;
+    // background-color: $cg-secondary;
     //TOP MENU PROFILE EDIT
     .top-page-menu {
       // border: 1rem solid red;
@@ -672,12 +689,17 @@ body.buddypress {
       margin-bottom: -1rem;
       // border-bottom: 2px solid lighten($color: gray, $amount: 35%);
 
+      .top-row {
+        background-color: $cg-secondary;
+        border-bottom: $cg-secondary;
+      }
+
       .menu-title {
         padding-right: 2rem;
         padding-left: 2rem;
         font-size: 1.3rem;
         font-weight: 600;
-        color: $cg-primary;
+        // color: $cg-primary;
       }
 
       .menu-box {
@@ -1015,7 +1037,7 @@ body.buddypress {
   // border: 1rem dotted red;
   margin-top: -4.2rem;
   padding: 5rem;
-  background: url("/wp-content/uploads/Group-236.png");
+  background: url('/wp-content/uploads/Group-236.png');
 
   #register-page {
     // border: 1rem dotted dodgerblue;
