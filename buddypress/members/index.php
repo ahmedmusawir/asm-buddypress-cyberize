@@ -221,42 +221,62 @@
 
                 <select class="select-filter" id="">
 
-                  <option value="all">All Handicap</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
+                  <option value="all">Handicap</option>
+                  <option value="+7-0">+7-0</option>
+                  <option value="0-5">0-5</option>
+                  <option value="6-and-up">6 and Up</option>
 
                 </select>
 
               </li>
 
               <li class="list-inline-item">
+
                 <select class="select-filter" id="">
 
-                  <option value="all">All WAGR</option>
-                  <option value="available">Available</option>
-                  <option value="committed">Committed</option>
+                  <option value="all">WAGR</option>
+                  <option value="1-1000">1-1000</option>
+                  <option value="1000-2000">1000-2000</option>
+                  <option value="2000-3000">2000-3000</option>
+                  <option value="3000-4000">3000-4000</option>
+                  <option value="4000-5000">4000-5000</option>
+                  <option value="5000-6000">5000-6000</option>
+                  <option value="6000-7000">6000-7000</option>
 
                 </select>
+
               </li>
 
               <li class="list-inline-item">
+
                 <select class="select-filter" id="">
 
-                  <option value="all">All National Ranking</option>
-                  <option value="verified">Verified</option>
-                  <option value="unverified">Not Verified</option>
+                  <option value="all">National Ranking</option>
+                  <option value="1-1000">1-1000</option>
+                  <option value="1000-2000">1000-2000</option>
+                  <option value="2000-3000">2000-3000</option>
+                  <option value="3000-4000">3000-4000</option>
+                  <option value="4000-5000">4000-5000</option>
+                  <option value="5000-6000">5000-6000</option>
+                  <option value="6000-7000">6000-7000</option>
+                  <option value="7000-8000">7000-8000</option>
+                  <option value="7000-9000">7000-9000</option>
+                  <option value="9000-10000">9000-10000</option>
 
                 </select>
+
               </li>
 
               <li class="list-inline-item">
+
                 <select class="select-filter" id="">
 
-                  <option value="all">All Swing Hand</option>
-                  <option value="verified">Verified</option>
-                  <option value="unverified">Not Verified</option>
+                  <option value="all">Swing Hand</option>
+                  <option value="Left">Left</option>
+                  <option value="Right">Right</option>
 
                 </select>
+
               </li>
 
               <a class="moose-item select-filter back-to-filters" href="#" id="">
@@ -275,9 +295,20 @@
                 <select class="select-filter" id="">
 
                   <option value="all">Positions</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-
+                  <option value="Center">Center</option>
+                  <option value="Offensive-guard">Offensive guard</option>
+                  <option value="Offensive-tackle">Offensive tackle</option>
+                  <option value="Quarterback">Quarterback</option>
+                  <option value="Running-back">Running back</option>
+                  <option value="Wide-receiver">Wide receiver</option>
+                  <option value="Tight-end">Tight end</option>
+                  <option value="Nose-Guard">Nose Guard</option>
+                  <option value="Defensive-tackle">Defensive tackle</option>
+                  <option value="Defensive-end">Defensive end</option>
+                  <option value="Middle-linebacker">Middle linebacker</option>
+                  <option value="Outside-linebacker">Outside linebacker</option>
+                  <option value="Cornerback">Cornerback</option>
+                  <option value="Safety">Safety</option>
                 </select>
 
               </li>
@@ -298,8 +329,17 @@
                 <select class="select-filter" id="">
 
                   <option value="all">Primary Positions</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
+                  <option value="Catcher-p">Catcher</option>
+                  <option value="1st-Base-p">1st Base</option>
+                  <option value="2nd-Base-p">2nd Base</option>
+                  <option value="3rd-Base-p">3rd Base</option>
+                  <option value="Short-Stop-p">Short Stop</option>
+                  <option value="Out-Field-p">Out Field</option>
+                  <option value="Left-Field-p">Left Field</option>
+                  <option value="Pitcher-p">Pitcher</option>
+                  <option value="Relief-Closer-p">Relief Closer</option>
+
+
 
                 </select>
 
@@ -309,8 +349,16 @@
                 <select class="select-filter" id="">
 
                   <option value="all">Secondary Positions</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
+                  <option value="Catcher-s">Catcher</option>
+                  <option value="1st-Base-s">1st Base</option>
+                  <option value="2nd-Base-s">2nd Base</option>
+                  <option value="3rd-Base-s">3rd Base</option>
+                  <option value="Short-Stop-s">Short Stop</option>
+                  <option value="Out-Field-s">Out Field</option>
+                  <option value="Left-Field-s">Left Field</option>
+                  <option value="Pitcher-s">Pitcher</option>
+                  <option value="Relief-Closer-s">Relief Closer</option>
+
 
                 </select>
 
@@ -332,8 +380,11 @@
                 <select class="select-filter" id="">
 
                   <option value="all">Primary Positions</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
+                  <option value="Center-p">Center</option>
+                  <option value="Power-Forward-p">Power Forward</option>
+                  <option value="Small-Forward-p">Small Forward</option>
+                  <option value="Point-Guard-p">Point Guard</option>
+                  <option value="Shooting-Guard-p">Shooting Guard</option>
 
                 </select>
 
@@ -343,8 +394,11 @@
                 <select class="select-filter" id="">
 
                   <option value="all">Secondary Positions</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
+                  <option value="Center-s">Center</option>
+                  <option value="Power-Forward-s">Power Forward</option>
+                  <option value="Small-Forward-s">Small Forward</option>
+                  <option value="Point-Guard-s">Point Guard</option>
+                  <option value="Shooting-Guard-s">Shooting Guard</option>
 
                 </select>
 
@@ -354,8 +408,8 @@
                 <select class="select-filter" id="">
 
                   <option value="all">Preferred Hands</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
+                  <option value="Left">Left</option>
+                  <option value="Right">Right</option>
 
                 </select>
 
@@ -377,8 +431,11 @@
                 <select class="select-filter" id="">
 
                   <option value="all">Positions</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
+                  <option value="Main-base">Main base</option>
+                  <option value="Secondary-base">Secondary base</option>
+                  <option value="Back-spot">Back spot</option>
+                  <option value="Front-spot">Front spot</option>
+                  <option value="Additional-spot">Additional spot</option>
 
                 </select>
 

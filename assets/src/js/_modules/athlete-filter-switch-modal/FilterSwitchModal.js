@@ -92,27 +92,27 @@ class FilterSwitchModal {
 
     switch (sport) {
       case 'US-FOOTBALL':
-        console.log(`Sport Filters for ${sport}`);
+        // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
         // code block
         break;
       case 'BASEBALL':
-        console.log(`Sport Filters for ${sport}`);
+        // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
         // code block
         break;
       case 'BASKETBALL':
-        console.log(`Sport Filters for ${sport}`);
+        // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
         // code block
         break;
       case 'CHEERLEADING':
-        console.log(`Sport Filters for ${sport}`);
+        // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
         // code block
         break;
       case 'GOLF':
-        console.log(`Sport Filters for ${sport}`);
+        // console.log(`Sport Filters for ${sport}`);
         $(`.menu-box-${sport}`).removeClass('d-none');
         // code block
         break;
