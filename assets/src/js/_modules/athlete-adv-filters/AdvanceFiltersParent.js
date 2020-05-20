@@ -6,7 +6,7 @@ class AdvanceFiltersParent {
 
     // COLLECTING RESET BUTTON
     this.buttonReset = $('#ath-adv-filter-reset');
-    this.buttonBack = $('#back-to-filters');
+    this.buttonBack = $('.back-to-filters');
 
     this.showNoDataFound();
     this.setEvents();
@@ -20,27 +20,31 @@ class AdvanceFiltersParent {
     const noDataItem = $('.no-data-found');
     setTimeout(function () {
       noDataItem.removeClass('d-none');
-    }, 2000);
+    }, 4000);
   }
 
   setEvents() {
     if (this.buttonReset) {
-      this.buttonReset.on('click', this.resetFilters);
+      this.buttonReset.on('click', this.resetFilters.bind(this));
     }
     if (this.buttonBack) {
-      this.buttonBack.on('click', this.removeAdvFilters);
+      this.buttonBack.on('click', this.removeAdvFilters.bind(this));
     }
   }
 
   removeAdvFilters() {
-    // console.log('Remove Adv Filters');
+    console.log('Remove Adv Filters');
     // e.stopImmediatePropagation();
 
+    // GOING BACK TO BASE FILTERS MENU
     const athAdvfilter = $('#top-advanced-filter');
     athAdvfilter.addClass('d-none');
+    // RESETTING TO ALL SPORTS
+    this.resetFilters();
   }
 
   resetFilters() {
+    // console.log('reset - coming from Adv Filter Parent ... ');
     const theItem = $('.item-entry-asm');
 
     const sport = $('#sports-select');

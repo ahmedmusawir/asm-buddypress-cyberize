@@ -215,7 +215,7 @@
 
           </div>
           <div class="col-md-8">
-            <ul class="list-inline menu-box menu-box-sports menu-box-GOLF">
+            <ul class="list-inline menu-box menu-box-golf">
 
               <li class="list-inline-item">
 
@@ -259,151 +259,34 @@
                 </select>
               </li>
 
-              <a class="moose-item select-filter back-to-filters" href="#" id="">
+              <!-- <a class="moose-item select-filter" href="#" id="ath-adv-filter-reset">
+                <li class="list-inline-item">
+                  <span class="btn-text">RESET FILTERS</span>
+                </li>
+              </a> -->
+
+              <a class="moose-item select-filter" href="#" id="back-to-filters">
                 <li class="list-inline-item">
                   <span class="btn-text">BACK TO BASE FILTERS</span>
                 </li>
               </a>
 
-            </ul>
-            <!-- END menu-box-golf -->
 
-            <ul class="list-inline menu-box menu-box-sports menu-box-US-FOOTBALL">
 
-              <li class="list-inline-item">
-
-                <select class="select-filter" id="">
-
-                  <option value="all">Positions</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-
-                </select>
-
-              </li>
-
-              <a class="moose-item select-filter back-to-filters" href="#" id="">
-                <li class="list-inline-item">
-                  <span class="btn-text">BACK TO BASE FILTERS</span>
-                </li>
-              </a>
 
             </ul>
-            <!-- END menu-box-us-football -->
-
-            <ul class="list-inline menu-box menu-box-sports menu-box-BASEBALL">
-
-              <li class="list-inline-item">
-
-                <select class="select-filter" id="">
-
-                  <option value="all">Primary Positions</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-
-                </select>
-
-              </li>
-              <li class="list-inline-item">
-
-                <select class="select-filter" id="">
-
-                  <option value="all">Secondary Positions</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-
-                </select>
-
-              </li>
-
-              <a class="moose-item select-filter back-to-filters" href="#" id="">
-                <li class="list-inline-item">
-                  <span class="btn-text">BACK TO BASE FILTERS</span>
-                </li>
-              </a>
-
-            </ul>
-            <!-- END menu-box-baseball -->
-
-            <ul class="list-inline menu-box menu-box-sports menu-box-BASKETBALL">
-
-              <li class="list-inline-item">
-
-                <select class="select-filter" id="">
-
-                  <option value="all">Primary Positions</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-
-                </select>
-
-              </li>
-              <li class="list-inline-item">
-
-                <select class="select-filter" id="">
-
-                  <option value="all">Secondary Positions</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-
-                </select>
-
-              </li>
-              <li class="list-inline-item">
-
-                <select class="select-filter" id="">
-
-                  <option value="all">Preferred Hands</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-
-                </select>
-
-              </li>
-
-              <a class="moose-item select-filter back-to-filters" href="#" id="">
-                <li class="list-inline-item">
-                  <span class="btn-text">BACK TO BASE FILTERS</span>
-                </li>
-              </a>
-
-            </ul>
-            <!-- END menu-box-basketball -->
-
-            <ul class="list-inline menu-box menu-box-sports menu-box-CHEERLEADING">
-
-              <li class="list-inline-item">
-
-                <select class="select-filter" id="">
-
-                  <option value="all">Positions</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-
-                </select>
-
-              </li>
-
-              <a class="moose-item select-filter back-to-filters" href="#" id="">
-                <li class="list-inline-item">
-                  <span class="btn-text">BACK TO BASE FILTERS</span>
-                </li>
-              </a>
-
-            </ul>
-            <!-- END menu-box-cheerleading -->
-
           </div>
-          <!-- END "col-md-8" -->
 
         </div>
-        <!-- END row bottom-row -->
+
+
+
+        <!-- <div class="notice text-center">
+          <h4 class="notice-text">Please choose a sport ...</h4>
+        </div> -->
 
       </section>
-      <!-- END top-page-menu  -->
-
     </div>
-    <!-- END "top-advanced-filter" -->
 
     <!-- TOP ADVANCED FILTER BAR ENDS -->
 

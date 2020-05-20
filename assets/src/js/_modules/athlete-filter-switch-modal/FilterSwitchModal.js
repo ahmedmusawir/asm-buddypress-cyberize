@@ -62,7 +62,7 @@ class FilterSwitchModal {
 
   sportsRadioItemHandler(e) {
     e.stopImmediatePropagation();
-    console.log(e.target.value);
+    // console.log(e.target.value);
     const sportChoice = e.target.value;
     const advFilterTitle = this.athAdvfilter.find('.sport-title');
 
@@ -74,6 +74,56 @@ class FilterSwitchModal {
 
     // HIDING THE MODAL
     this.filterSwitchModal.modal('hide');
+
+    // LOAD SPORTS BASED FILTERS
+    this.loadSportsBasedFilters(sportChoice);
+
+    // LOAD DATA ACCORDING TO SPORT CHOSEN
+    const theItem = $('.item-entry-asm');
+    theItem.addClass('d-none');
+
+    setTimeout(function () {
+      $(`.${sportChoice}`).removeClass('d-none');
+    });
+  }
+
+  loadSportsBasedFilters(sport) {
+    $('.menu-box-sports').addClass('d-none');
+
+    switch (sport) {
+      case 'US-FOOTBALL':
+        console.log(`Sport Filters for ${sport}`);
+        $(`.menu-box-${sport}`).removeClass('d-none');
+        // code block
+        break;
+      case 'BASEBALL':
+        console.log(`Sport Filters for ${sport}`);
+        $(`.menu-box-${sport}`).removeClass('d-none');
+        // code block
+        break;
+      case 'BASKETBALL':
+        console.log(`Sport Filters for ${sport}`);
+        $(`.menu-box-${sport}`).removeClass('d-none');
+        // code block
+        break;
+      case 'CHEERLEADING':
+        console.log(`Sport Filters for ${sport}`);
+        $(`.menu-box-${sport}`).removeClass('d-none');
+        // code block
+        break;
+      case 'GOLF':
+        console.log(`Sport Filters for ${sport}`);
+        $(`.menu-box-${sport}`).removeClass('d-none');
+        // code block
+        break;
+      case 'LATER':
+        // console.log(`Sport Filters for ${sport}`);
+        $(`.menu-box-${sport}`).removeClass('d-none');
+        // code block
+        break;
+      default:
+      // code block
+    }
   }
 }
 

@@ -145,9 +145,6 @@ else :
 
 endif;
 
+die();
 
-
-
-  
-  die();
- }
+}
