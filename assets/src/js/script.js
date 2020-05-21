@@ -20,6 +20,7 @@ import AthleteLoadMore from './_modules/load-more/AthleteLoadMore';
 
 import AdvanceFiltersParent from './_modules/athlete-adv-filters/AdvanceFiltersParent';
 import FilterSwitchModal from './_modules/athlete-filter-switch-modal/FilterSwitchModal';
+import AdvGenderFiltersSelect from './_modules/athlete-adv-filters/AdvGenderFiltersSelect';
 
 class App {
   constructor() {
@@ -81,6 +82,7 @@ class App {
     ATHLETE ADVANCE FILTER
     */
     new AdvanceFiltersParent();
+    new AdvGenderFiltersSelect();
   }
 }
 

@@ -148,7 +148,7 @@
             <ul class="list-inline menu-box">
 
               <li class="list-inline-item">
-                <select class="select-filter" id="">
+                <select class="select-filter" id="gender-select-adv">
 
                   <option value="all">All Gender</option>
                   <option value="Male">Male</option>
@@ -159,7 +159,7 @@
               </li>
 
               <li class="list-inline-item">
-                <select class="select-filter" id="">
+                <select class="select-filter" id="avail-select-adv">
 
                   <option value="all">Availablility</option>
                   <option value="available">Available</option>
@@ -169,25 +169,26 @@
               </li>
 
               <li class="list-inline-item">
-                <select class="select-filter" id="">
+                <select class="select-filter" id="class-year-select-adv">
 
                   <option value="all">Class Year</option>
-                  <option value="2018">2020</option>
-                  <option value="2019">2021</option>
-                  <option value="2020">2022</option>
-                  <option value="2020">2023</option>
-                  <option value="2020">2024</option>
-                  <option value="2020">2025</option>
-                  <option value="2020">2026</option>
-                  <option value="2020">2027</option>
-                  <option value="2020">2028</option>
-                  <option value="2020">2029</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
 
                 </select>
               </li>
 
               <li class="list-inline-item">
-                <select class="select-filter" id="" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
+                <select class="select-filter" id="location-select-adv"
+                  data-url="<?php echo admin_url('admin-ajax.php'); ?>">
 
                   <option value="all">Location</option>
 
@@ -195,7 +196,7 @@
               </li>
 
               <li class="list-inline-item">
-                <select class="select-filter" id="">
+                <select class="select-filter" id="verify-select-adv">
 
                   <option value="all">Verification</option>
                   <option value="verified">Verified</option>
