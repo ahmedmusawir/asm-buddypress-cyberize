@@ -36,7 +36,17 @@ class AdvGenderFiltersSelect extends AdvanceFiltersParent {
     // PARENT FUNCTION BUT IT'S AN ARROW FUNC SO MUST BE CALLED WITH this.ParentFunc
     // NORMAL FUNCTION NEEDS BE CALLED WITH super.ParentFunc
     // this.applyAdvFilters(sport, gender, avail, classYr, theItem);
-    this.applyAdvFilters(theItem, sport, gender, avail, classYr);
+    // this.applyAdvFilters(theItem, sport, gender, avail, classYr);
+    // this.applyAdvFilters(theItem, sport, gender, avail, classYr, location);
+    this.applyAdvFilters(
+      theItem,
+      sport,
+      gender,
+      avail,
+      classYr,
+      location,
+      verify
+    );
   }
 }
 

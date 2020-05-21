@@ -64,41 +64,10 @@ class AdvanceFiltersParent {
       setTimeout(function () {
         $(`.${sport}`).removeClass('d-none');
       });
-    } else if (
-      A != 'all' &&
-      B != 'all' &&
-      C != 'all' &&
-      D != 'all' &&
-      E != 'all'
-    ) {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${sport}.${A}.${B}.${C}.${D}.${E}`).removeClass('d-none');
-      });
     } else if (A != 'all' && B != 'all' && C != 'all' && D != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${sport}.${A}.${B}.${C}.${D}`).removeClass('d-none');
-      });
-    } else if (A != 'all' && B != 'all' && C != 'all' && E != 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${sport}.${A}.${B}.${C}.${E}`).removeClass('d-none');
-      });
-    } else if (A != 'all' && B != 'all' && D != 'all' && E != 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${sport}.${A}.${B}.${D}.${E}`).removeClass('d-none');
-      });
-    } else if (A != 'all' && C != 'all' && D != 'all' && E != 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${sport}.${A}.${C}.${D}.${E}`).removeClass('d-none');
-      });
-    } else if (B != 'all' && C != 'all' && D != 'all' && E != 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${sport}.${B}.${C}.${D}.${E}`).removeClass('d-none');
       });
     } else if (A != 'all' && B != 'all' && C != 'all') {
       theItem.addClass('d-none');
@@ -165,11 +134,6 @@ class AdvanceFiltersParent {
       setTimeout(function () {
         $(`.${sport}.${A}.${D}`).removeClass('d-none');
       });
-    } else if (A != 'all' && E != 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${sport}.${A}.${E}`).removeClass('d-none');
-      });
     } else if (B != 'all' && C != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
@@ -180,25 +144,10 @@ class AdvanceFiltersParent {
       setTimeout(function () {
         $(`.${sport}.${B}.${D}`).removeClass('d-none');
       });
-    } else if (B != 'all' && E != 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${sport}.${B}.${E}`).removeClass('d-none');
-      });
     } else if (C != 'all' && D != 'all') {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${sport}.${C}.${D}`).removeClass('d-none');
-      });
-    } else if (C != 'all' && E != 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${sport}.${C}.${E}`).removeClass('d-none');
-      });
-    } else if (D != 'all' && E != 'all') {
-      theItem.addClass('d-none');
-      setTimeout(function () {
-        $(`.${sport}.${D}.${E}`).removeClass('d-none');
       });
     } else {
       theItem.addClass('d-none');

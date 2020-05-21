@@ -1,6 +1,7 @@
 jQuery(document).ready(function ($) {
   // console.log('Location Select Clicked');
   var selectBtn = $('#location-select');
+  var selectAdvBtn = $('#location-select-adv');
   var ajaxUrl = selectBtn.data('url');
   var ajaxFunction = 'athlete_dynamic_location_ajax_function';
 
@@ -30,4 +31,5 @@ jQuery(document).ready(function ($) {
   }
 
   selectBtn.append(localLocations);
+  selectAdvBtn.append(localLocations);
 });

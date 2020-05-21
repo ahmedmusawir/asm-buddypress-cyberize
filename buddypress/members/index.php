@@ -205,6 +205,12 @@
                 </select>
               </li>
 
+              <a class="moose-item" href="#" id="ath-adv-filter-reset">
+                <li class="list-inline-item">
+                  <span class="btn-text">RESET FILTERS</span>
+                </li>
+              </a>
+
             </ul>
           </div>
         </div>
