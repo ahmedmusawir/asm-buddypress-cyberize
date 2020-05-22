@@ -299,7 +299,7 @@
 
               <li class="list-inline-item">
 
-                <select class="select-filter" id="">
+                <select class="select-filter" id="position-us-football">
 
                   <option value="all">Positions</option>
                   <option value="Center">Center</option>

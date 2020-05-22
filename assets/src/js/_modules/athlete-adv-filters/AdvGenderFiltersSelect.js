@@ -21,23 +21,22 @@ class AdvGenderFiltersSelect extends AdvanceFiltersParent {
   };
 
   changeHandler() {
-    // console.log($(this).val());
+    // BASE FILTERS
     const sport = $('.menu-title.sport-title').text();
     const avail = $('#avail-select-adv').val();
     const classYr = $('#class-year-select-adv').val();
     const location = $('#location-select-adv').val();
     const verify = $('#verify-select-adv').val();
 
-    // const gender = $(this).val();
+    // US FOOTBALL FILTER
+    const positionUsFootball = $('#position-us-football').val();
+
     // CLICKED CURRENT SELECT FILTER
     const gender = $('#gender-select-adv').val();
     const theItem = $('.item-entry-asm');
 
     // PARENT FUNCTION BUT IT'S AN ARROW FUNC SO MUST BE CALLED WITH this.ParentFunc
     // NORMAL FUNCTION NEEDS BE CALLED WITH super.ParentFunc
-    // this.applyAdvFilters(sport, gender, avail, classYr, theItem);
-    // this.applyAdvFilters(theItem, sport, gender, avail, classYr);
-    // this.applyAdvFilters(theItem, sport, gender, avail, classYr, location);
     this.applyAdvFilters(
       theItem,
       sport,
@@ -45,7 +44,8 @@ class AdvGenderFiltersSelect extends AdvanceFiltersParent {
       avail,
       classYr,
       location,
-      verify
+      verify,
+      positionUsFootball
     );
   }
 }

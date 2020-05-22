@@ -48,7 +48,7 @@ class AdvanceFiltersParent {
   sport = ALWAYS STATIC IN THIS CASE. COMMON IN EVERY FILTER CUZ SPORTS IS THE BASE FILTER
   */
 
-  applyAdvFilters = (theItem, sport, A, B, C, D, E) => {
+  applyAdvFilters = (theItem, sport, A, B, C, D, E, F) => {
     // console.log('Adv filter theItem: ' + theItem);
     console.log(sport);
     console.log(A);
@@ -56,6 +56,7 @@ class AdvanceFiltersParent {
     console.log(C);
     console.log(D);
     console.log(E);
+    console.log(F);
 
     if (A == 'all') {
       theItem.addClass('d-none');
@@ -213,8 +214,7 @@ class AdvanceFiltersParent {
     // console.log('reset - coming from Adv Filter Parent ... ');
     const theItem = $('.item-entry-asm');
 
-    const sport = $('#sports-select-adv');
-    sport.val('all');
+    const sport = $('.menu-title.sport-title').text();
 
     const gender = $('#gender-select-adv');
     gender.val('all');
@@ -233,7 +233,7 @@ class AdvanceFiltersParent {
 
     theItem.addClass('d-none');
     setTimeout(function () {
-      theItem.removeClass('d-none');
+      $(`.${sport}`).removeClass('d-none');
     });
   }
 }
