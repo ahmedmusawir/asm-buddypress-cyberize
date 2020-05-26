@@ -40,7 +40,7 @@ class AdvanceFiltersParent {
     const athAdvfilter = $('#top-advanced-filter');
     athAdvfilter.addClass('d-none');
     // RESETTING TO ALL SPORTS
-    this.resetFilters();
+    this.resetBaseFilters();
   }
 
   /**
@@ -422,6 +422,16 @@ class AdvanceFiltersParent {
     theItem.addClass('d-none');
     setTimeout(function () {
       $(`.${sport}`).removeClass('d-none');
+    });
+  }
+
+  resetBaseFilters() {
+    // console.log('reset - coming from Adv Filter Parent ... ');
+    const theItem = $('.item-entry-asm');
+
+    theItem.addClass('d-none');
+    setTimeout(function () {
+      theItem.removeClass('d-none');
     });
   }
 }

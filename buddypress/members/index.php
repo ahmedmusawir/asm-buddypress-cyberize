@@ -226,10 +226,10 @@
 
               <li class="list-inline-item">
 
-                <select class="select-filter" id="">
+                <select class="select-filter" id="position-golf">
 
                   <option value="all">Handicap</option>
-                  <option value="+7-0">+7-0</option>
+                  <option value="Plus7-0">+7-0</option>
                   <option value="0-5">0-5</option>
                   <option value="6-and-up">6 and Up</option>
 
@@ -333,7 +333,7 @@
 
               <li class="list-inline-item">
 
-                <select class="select-filter" id="">
+                <select class="select-filter" id="position-primary-baseball">
 
                   <option value="all">Primary Positions</option>
                   <option value="Catcher-p">Catcher</option>
@@ -384,7 +384,7 @@
 
               <li class="list-inline-item">
 
-                <select class="select-filter" id="">
+                <select class="select-filter" id="position-primary-basketball">
 
                   <option value="all">Primary Positions</option>
                   <option value="Center-p">Center</option>
@@ -398,7 +398,7 @@
               </li>
               <li class="list-inline-item">
 
-                <select class="select-filter" id="">
+                <select class="select-filter" id="position-secondary-basketball">
 
                   <option value="all">Secondary Positions</option>
                   <option value="Center-s">Center</option>
@@ -412,9 +412,9 @@
               </li>
               <li class="list-inline-item">
 
-                <select class="select-filter" id="">
+                <select class="select-filter" id="preferred-hand-basketball">
 
-                  <option value="all">Preferred Hands</option>
+                  <option value="all">Preferred Hand</option>
                   <option value="Left">Left</option>
                   <option value="Right">Right</option>
 
@@ -435,7 +435,7 @@
 
               <li class="list-inline-item">
 
-                <select class="select-filter" id="">
+                <select class="select-filter" id="position-cheerleading">
 
                   <option value="all">Positions</option>
                   <option value="Main-base">Main base</option>
