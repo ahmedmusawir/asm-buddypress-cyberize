@@ -70,11 +70,78 @@ class AdvanceFiltersParent {
       B != 'all' &&
       C != 'all' &&
       D != 'all' &&
+      E != 'all' &&
+      F != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${B}.${C}.${D}.${E}.${F}`).removeClass('d-none');
+      });
+    } else if (
+      A != 'all' &&
+      B != 'all' &&
+      C != 'all' &&
+      D != 'all' &&
       E != 'all'
     ) {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${sport}.${A}.${B}.${C}.${D}.${E}`).removeClass('d-none');
+      });
+    } else if (
+      A != 'all' &&
+      B != 'all' &&
+      C != 'all' &&
+      D != 'all' &&
+      F != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${B}.${C}.${D}.${F}`).removeClass('d-none');
+      });
+    } else if (
+      A != 'all' &&
+      B != 'all' &&
+      C != 'all' &&
+      E != 'all' &&
+      F != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${B}.${C}.${E}.${F}`).removeClass('d-none');
+      });
+    } else if (
+      A != 'all' &&
+      B != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      F != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${B}.${D}.${E}.${F}`).removeClass('d-none');
+      });
+    } else if (
+      A != 'all' &&
+      C != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      F != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${C}.${D}.${E}.${F}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      C != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      F != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${D}.${E}.${F}`).removeClass('d-none');
       });
     } else if (A != 'all' && B != 'all' && C != 'all' && D != 'all') {
       theItem.addClass('d-none');
@@ -101,7 +168,58 @@ class AdvanceFiltersParent {
       setTimeout(function () {
         $(`.${sport}.${B}.${C}.${D}.${E}`).removeClass('d-none');
       });
+    } else if (A != 'all' && B != 'all' && C != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${B}.${C}.${F}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && B != 'all' && D != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${B}.${D}.${F}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && B != 'all' && E != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${B}.${E}.${F}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && C != 'all' && D != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${C}.${D}.${F}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && C != 'all' && E != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${C}.${E}.${F}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && D != 'all' && E != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${D}.${E}.${F}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && C != 'all' && D != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${D}.${F}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && C != 'all' && E != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${E}.${F}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && D != 'all' && E != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${D}.${E}.${F}`).removeClass('d-none');
+      });
+    } else if (C != 'all' && D != 'all' && E != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${D}.${E}.${F}`).removeClass('d-none');
+      });
     } else if (A != 'all' && B != 'all' && C != 'all') {
+      // SET OF 3 STARTS HERE ABC
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${sport}.${A}.${B}.${C}`).removeClass('d-none');
@@ -150,6 +268,51 @@ class AdvanceFiltersParent {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${sport}.${C}.${D}.${E}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && B != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${B}.${F}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && C != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${C}.${F}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && D != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${D}.${F}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && E != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${E}.${F}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && C != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${F}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && D != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${D}.${F}`).removeClass('d-none');
+      });
+    } else if (C != 'all' && D != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${D}.${F}`).removeClass('d-none');
+      });
+    } else if (C != 'all' && E != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${E}.${F}`).removeClass('d-none');
+      });
+    } else if (D != 'all' && E != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${D}.${E}.${F}`).removeClass('d-none');
       });
     } else if (A != 'all' && B != 'all') {
       theItem.addClass('d-none');
@@ -200,6 +363,31 @@ class AdvanceFiltersParent {
       theItem.addClass('d-none');
       setTimeout(function () {
         $(`.${sport}.${D}.${E}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${F}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${F}`).removeClass('d-none');
+      });
+    } else if (C != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${F}`).removeClass('d-none');
+      });
+    } else if (D != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${D}.${F}`).removeClass('d-none');
+      });
+    } else if (E != 'all' && F != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${E}.${F}`).removeClass('d-none');
       });
     } else {
       theItem.addClass('d-none');
