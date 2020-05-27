@@ -242,13 +242,13 @@
                 <select class="select-filter" id="wagr-golf">
 
                   <option value="all">WAGR</option>
-                  <option value="1-1000">1-1000</option>
-                  <option value="1000-2000">1000-2000</option>
-                  <option value="2000-3000">2000-3000</option>
-                  <option value="3000-4000">3000-4000</option>
-                  <option value="4000-5000">4000-5000</option>
-                  <option value="5000-6000">5000-6000</option>
-                  <option value="6000-7000">6000-7000</option>
+                  <option value="1-1000wagr">1-1000</option>
+                  <option value="1000-2000wagr">1000-2000</option>
+                  <option value="2000-3000wagr">2000-3000</option>
+                  <option value="3000-4000wagr">3000-4000</option>
+                  <option value="4000-5000wagr">4000-5000</option>
+                  <option value="5000-6000wagr">5000-6000</option>
+                  <option value="6000-7000wagr">6000-7000</option>
 
                 </select>
 
@@ -256,7 +256,7 @@
 
               <li class="list-inline-item">
 
-                <select class="select-filter" id="">
+                <select class="select-filter" id="national-ranking-golf">
 
                   <option value="all">National Ranking</option>
                   <option value="1-1000">1-1000</option>

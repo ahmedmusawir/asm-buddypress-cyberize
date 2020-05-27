@@ -49,7 +49,7 @@ class AdvanceFiltersParent {
   theItem = THE ATHLETE MEMBER BLOCK THAT COMES AND GOES WITH .d-none CLASS
   */
 
-  applyAdvFilters = (theItem, sport, A, B, C, D, E, F, G) => {
+  applyAdvFilters = (theItem, sport, A, B, C, D, E, F, G, H) => {
     // applyAdvFilters = (...arguments) => { //DOESN'T WORK
     // console.log('Adv filter theItem: ' + theItem);
     console.log(sport);
@@ -60,6 +60,7 @@ class AdvanceFiltersParent {
     console.log(E);
     console.log(F);
     console.log(G);
+    console.log(H);
 
     // console.log(...arguments); //SHOWS NOTHING
 
