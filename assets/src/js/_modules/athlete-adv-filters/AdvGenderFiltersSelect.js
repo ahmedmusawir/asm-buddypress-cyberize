@@ -34,10 +34,15 @@ class AdvGenderFiltersSelect extends AdvanceFiltersParent {
     const positionCheerleading = $('#position-cheerleading').val();
     // GOLF FILTERS
     const positionGolf = $('#position-golf').val();
+    const wagrGolf = $('#wagr-golf').val();
     // BASKETBALL FILTERS
     const positionPrimaryBasketball = $('#position-primary-basketball').val();
+    const positionSecondaryBasketball = $(
+      '#position-secondary-basketball'
+    ).val();
     // BASEBALL FILTERS
     const positionPrimaryBaseball = $('#position-primary-baseball').val();
+    const positionSecondaryBaseball = $('#position-secondary-baseball').val();
 
     // CLICKED CURRENT SELECT FILTER
     const gender = $('#gender-select-adv').val();
@@ -71,7 +76,8 @@ class AdvGenderFiltersSelect extends AdvanceFiltersParent {
           classYr,
           location,
           verify,
-          positionPrimaryBaseball
+          positionPrimaryBaseball,
+          positionSecondaryBaseball
         );
         // code block
         break;
@@ -85,7 +91,8 @@ class AdvGenderFiltersSelect extends AdvanceFiltersParent {
           classYr,
           location,
           verify,
-          positionPrimaryBasketball
+          positionPrimaryBasketball,
+          positionSecondaryBasketball
         );
         // code block
         break;
@@ -113,7 +120,8 @@ class AdvGenderFiltersSelect extends AdvanceFiltersParent {
           classYr,
           location,
           verify,
-          positionGolf
+          positionGolf,
+          wagrGolf
         );
         // code block
         break;

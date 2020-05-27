@@ -239,7 +239,7 @@
 
               <li class="list-inline-item">
 
-                <select class="select-filter" id="">
+                <select class="select-filter" id="wagr-golf">
 
                   <option value="all">WAGR</option>
                   <option value="1-1000">1-1000</option>
@@ -346,14 +346,12 @@
                   <option value="Pitcher-p">Pitcher</option>
                   <option value="Relief-Closer-p">Relief Closer</option>
 
-
-
                 </select>
 
               </li>
               <li class="list-inline-item">
 
-                <select class="select-filter" id="">
+                <select class="select-filter" id="position-secondary-baseball">
 
                   <option value="all">Secondary Positions</option>
                   <option value="Catcher-s">Catcher</option>
@@ -365,7 +363,6 @@
                   <option value="Left-Field-s">Left Field</option>
                   <option value="Pitcher-s">Pitcher</option>
                   <option value="Relief-Closer-s">Relief Closer</option>
-
 
                 </select>
 
