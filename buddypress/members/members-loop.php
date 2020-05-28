@@ -203,6 +203,25 @@ bp_nouveau_before_loop(); ?>
                   <?php echo $enrollment_year; ?> </li>
               </ul>
 
+              <!-- UNIT TEST DATA START -->
+
+              <ul>
+                <li class="d-inline-block pr-2">
+                  Handicap: <?php echo $golf_handicap; ?>
+                </li> |
+                <li class="d-inline-block pr-2">
+                  WAGR: <?php echo $golf_wagr; ?>
+                </li> |
+                <li class="d-inline-block pr-2">
+                  National Ranking: <?php echo $golf_national_ranking; ?>
+                </li> |
+                <li class="d-inline-block pr-2">
+                  Hand: <?php echo $golf_preferred_hand; ?>
+                </li>
+              </ul>
+
+              <!-- UNIT TEST DATA END -->
+
               <div class="text-content">
                 <?php echo $excerpt; ?>
                 <h5 class="readmore"><a href="<?php bp_member_permalink(); ?>">[View Athlete...]</a></h5>
