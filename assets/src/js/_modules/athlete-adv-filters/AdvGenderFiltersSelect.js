@@ -36,6 +36,7 @@ class AdvGenderFiltersSelect extends AdvanceFiltersParent {
     const positionGolf = $('#position-golf').val();
     const wagrGolf = $('#wagr-golf').val();
     const nationalRankingGolf = $('#national-ranking-golf').val();
+    const swingHandGolf = $('#swing-hand-golf').val();
     // BASKETBALL FILTERS
     const positionPrimaryBasketball = $('#position-primary-basketball').val();
     const positionSecondaryBasketball = $(
@@ -123,7 +124,8 @@ class AdvGenderFiltersSelect extends AdvanceFiltersParent {
           verify,
           positionGolf,
           wagrGolf,
-          nationalRankingGolf
+          nationalRankingGolf,
+          swingHandGolf
         );
         // code block
         break;

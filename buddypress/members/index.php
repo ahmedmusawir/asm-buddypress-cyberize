@@ -276,7 +276,7 @@
 
               <li class="list-inline-item">
 
-                <select class="select-filter" id="">
+                <select class="select-filter" id="swing-hand-golf">
 
                   <option value="all">Swing Hand</option>
                   <option value="Left">Left</option>
