@@ -90,6 +90,7 @@ class AdvanceFiltersParent {
           'd-none'
         );
       });
+      // ----------------------------------------------------------------------------------------
     } else if (
       // SET OF 8 STARTS HERE ABCDEFGH
       A != 'all' &&
@@ -235,6 +236,7 @@ class AdvanceFiltersParent {
           'd-none'
         );
       });
+      // ----------------------------------------------------------------------------------------
     } else if (
       // SET OF 7 STARTS HERE ABCDEFGH
       A != 'all' &&
@@ -691,6 +693,7 @@ class AdvanceFiltersParent {
       setTimeout(function () {
         $(`.${sport}.${A}.${D}.${E}.${F}.${G}.${H}.${I}`).removeClass('d-none');
       });
+      // ----------------------------------------------------------------------------------------
     } else if (
       // SET OF 6 STARTS HERE ABCDEF
       A != 'all' &&
@@ -1365,6 +1368,319 @@ class AdvanceFiltersParent {
         $(`.${sport}.${A}.${C}.${E}.${F}.${H}.${I}`).removeClass('d-none');
       });
     } else if (
+      A != 'all' &&
+      C != 'all' &&
+      F != 'all' &&
+      G != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${C}.${F}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      A != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      F != 'all' &&
+      G != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${D}.${E}.${F}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      A != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      F != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${D}.${E}.${F}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      A != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      G != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${D}.${E}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      A != 'all' &&
+      D != 'all' &&
+      F != 'all' &&
+      G != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${D}.${F}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      A != 'all' &&
+      E != 'all' &&
+      F != 'all' &&
+      G != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${E}.${F}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      C != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      F != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${D}.${E}.${F}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      C != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      G != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${D}.${E}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      C != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${D}.${E}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      C != 'all' &&
+      D != 'all' &&
+      F != 'all' &&
+      G != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${D}.${F}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      C != 'all' &&
+      D != 'all' &&
+      F != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${D}.${F}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      C != 'all' &&
+      E != 'all' &&
+      F != 'all' &&
+      G != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${E}.${F}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      C != 'all' &&
+      E != 'all' &&
+      F != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${E}.${F}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      C != 'all' &&
+      E != 'all' &&
+      G != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${E}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      C != 'all' &&
+      F != 'all' &&
+      G != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${F}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      F != 'all' &&
+      G != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${D}.${E}.${F}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      F != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${D}.${E}.${F}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      G != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${D}.${E}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      D != 'all' &&
+      F != 'all' &&
+      G != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${D}.${F}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      B != 'all' &&
+      E != 'all' &&
+      F != 'all' &&
+      G != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${E}.${F}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      C != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      F != 'all' &&
+      G != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${D}.${E}.${F}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      C != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      F != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${D}.${E}.${F}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      C != 'all' &&
+      D != 'all' &&
+      E != 'all' &&
+      G != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${D}.${E}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      C != 'all' &&
+      D != 'all' &&
+      F != 'all' &&
+      G != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${D}.${F}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      C != 'all' &&
+      E != 'all' &&
+      F != 'all' &&
+      G != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${E}.${F}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (
+      D != 'all' &&
+      E != 'all' &&
+      F != 'all' &&
+      G != 'all' &&
+      H != 'all' &&
+      I != 'all'
+    ) {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${D}.${E}.${F}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+      // ----------------------------------------------------------------------------------------
+    } else if (
       // SET OF 5 STARTS HERE ABCDE
       A != 'all' &&
       B != 'all' &&
@@ -1959,6 +2275,7 @@ class AdvanceFiltersParent {
       setTimeout(function () {
         $(`.${sport}.${D}.${E}.${F}.${G}.${H}`).removeClass('d-none');
       });
+      // ----------------------------------------------------------------------------------------
     } else if (A != 'all' && B != 'all' && C != 'all' && D != 'all') {
       // SET OF 4 STARTS HERE ABCD
       theItem.addClass('d-none');
@@ -2300,7 +2617,278 @@ class AdvanceFiltersParent {
       setTimeout(function () {
         $(`.${sport}.${E}.${F}.${G}.${H}`).removeClass('d-none');
       });
+    } else if (A != 'all' && B != 'all' && C != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${B}.${C}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && B != 'all' && D != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${B}.${D}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && B != 'all' && E != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${B}.${E}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && B != 'all' && F != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${B}.${F}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && B != 'all' && G != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${B}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && B != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${B}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && C != 'all' && D != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${C}.${D}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && C != 'all' && E != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${C}.${E}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && C != 'all' && F != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${C}.${F}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && C != 'all' && G != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${C}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && C != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${C}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && D != 'all' && E != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${D}.${E}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && D != 'all' && G != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${D}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && D != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${D}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && E != 'all' && F != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${E}.${F}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && E != 'all' && G != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${E}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && E != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${E}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && F != 'all' && G != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${F}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && F != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${F}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (A != 'all' && G != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${A}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && C != 'all' && D != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${D}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && C != 'all' && E != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${E}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && C != 'all' && F != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${F}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && C != 'all' && G != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && C != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${C}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && D != 'all' && E != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${D}.${E}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && D != 'all' && F != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${D}.${F}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && D != 'all' && G != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${D}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && D != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${D}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && E != 'all' && F != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${E}.${F}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && E != 'all' && G != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${E}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && E != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${E}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && F != 'all' && G != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${F}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && F != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${F}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (B != 'all' && G != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${B}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (C != 'all' && D != 'all' && E != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${D}.${E}.${I}`).removeClass('d-none');
+      });
+    } else if (C != 'all' && D != 'all' && F != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${D}.${F}.${I}`).removeClass('d-none');
+      });
+    } else if (C != 'all' && D != 'all' && G != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${D}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (C != 'all' && D != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${D}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (C != 'all' && E != 'all' && F != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${E}.${F}.${I}`).removeClass('d-none');
+      });
+    } else if (C != 'all' && E != 'all' && G != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${E}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (C != 'all' && E != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${E}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (C != 'all' && F != 'all' && G != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${F}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (C != 'all' && F != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${F}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (C != 'all' && G != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${C}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (D != 'all' && E != 'all' && F != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${D}.${E}.${F}.${I}`).removeClass('d-none');
+      });
+    } else if (D != 'all' && E != 'all' && G != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${D}.${E}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (D != 'all' && E != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${D}.${E}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (D != 'all' && F != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${D}.${F}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (D != 'all' && G != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${D}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (E != 'all' && F != 'all' && G != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${E}.${F}.${G}.${I}`).removeClass('d-none');
+      });
+    } else if (E != 'all' && F != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${E}.${F}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (E != 'all' && G != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${E}.${G}.${H}.${I}`).removeClass('d-none');
+      });
+    } else if (F != 'all' && G != 'all' && H != 'all' && I != 'all') {
+      theItem.addClass('d-none');
+      setTimeout(function () {
+        $(`.${sport}.${F}.${G}.${H}.${I}`).removeClass('d-none');
+      });
     } else if (A != 'all' && B != 'all' && C != 'all') {
+      // ----------------------------------------------------------------------------------------
       // SET OF 3 STARTS HERE ABC
       theItem.addClass('d-none');
       setTimeout(function () {
@@ -2716,6 +3304,7 @@ class AdvanceFiltersParent {
       setTimeout(function () {
         $(`.${sport}.${G}.${H}.${I}`).removeClass('d-none');
       });
+      // ----------------------------------------------------------------------------------------
     } else if (A != 'all' && B != 'all') {
       // SET OF 2 STARTS HERE AB
       theItem.addClass('d-none');
