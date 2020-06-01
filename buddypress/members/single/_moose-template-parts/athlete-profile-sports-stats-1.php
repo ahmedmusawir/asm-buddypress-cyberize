@@ -11,6 +11,127 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
  $award_press = xprofile_get_field_data( 335, $user_id, $multi_format = 'array' );
  $reference = xprofile_get_field_data( 336, $user_id, $multi_format = 'array' );
 
+
+
+// BASKETBALL
+$basketball_team_name = xprofile_get_field_data( 201, $user_id, $multi_format = 'array' );
+$basketball_league_name = xprofile_get_field_data( 202, $user_id, $multi_format = 'array' );
+$basketball_preferred_hand = xprofile_get_field_data( 203, $user_id, $multi_format = 'array' );
+$basketball_primary_position = xprofile_get_field_data( 206, $user_id, $multi_format = 'array' );
+$basketball_secondary_position = xprofile_get_field_data( 207, $user_id, $multi_format = 'array' );
+
+// BOWLING
+$bowling_team_name = xprofile_get_field_data( 194, $user_id, $multi_format = 'array' );
+$bowling_league_name = xprofile_get_field_data( 195, $user_id, $multi_format = 'array' );
+$bowling_preferred_hand = xprofile_get_field_data( 196, $user_id, $multi_format = 'array' );
+
+// CHEERLEADING
+$cheerleading_team_name = xprofile_get_field_data( 179, $user_id, $multi_format = 'array' );
+$cheerleading_league_name = xprofile_get_field_data( 180, $user_id, $multi_format = 'array' );
+$cheerleading_position = xprofile_get_field_data( 181, $user_id, $multi_format = 'array' );
+
+// CROSS COUNTRY
+$cross_country_team_name = xprofile_get_field_data( 189, $user_id, $multi_format = 'array' );
+
+// CYCLING
+$cycling_team_name = xprofile_get_field_data( 187, $user_id, $multi_format = 'array' );
+
+// E-SPORTS 
+$e_sports_league_name = xprofile_get_field_data( 317, $user_id, $multi_format = 'array' );
+$e_sports_preferred_game = xprofile_get_field_data( 318, $user_id, $multi_format = 'array' );
+$e_sports_global_rankings = xprofile_get_field_data( 319, $user_id, $multi_format = 'array' );
+$e_sports_national_rankings = xprofile_get_field_data( 320, $user_id, $multi_format = 'array' );
+
+// EQUESTRIAN
+$equestrian_team_name = xprofile_get_field_data( 188, $user_id, $multi_format = 'array' );
+
+// FENCING
+$fencing_team_name = xprofile_get_field_data( 182, $user_id, $multi_format = 'array' );
+
+// FIELD HOCKY
+$field_hockey_team_name = xprofile_get_field_data( 185, $user_id, $multi_format = 'array' );
+
+// GOLF
+$golf_handicap = xprofile_get_field_data( 301, $user_id, $multi_format = 'array' );
+$golf_wagr = xprofile_get_field_data( 302, $user_id, $multi_format = 'array' );
+$golf_national_ranking = xprofile_get_field_data( 303, $user_id, $multi_format = 'array' );
+$golf_lowest_competitive_round = xprofile_get_field_data( 304, $user_id, $multi_format = 'array' );
+$golf_club_distances = xprofile_get_field_data( 305, $user_id, $multi_format = 'array' );
+$golf_preferred_hand = xprofile_get_field_data( 306, $user_id, $multi_format = 'array' );
+
+// GYMNASTICS 
+$gymnastics_team_name = xprofile_get_field_data( 199, $user_id, $multi_format = 'array' );
+$gymnastics_disciplines = xprofile_get_field_data( 200, $user_id, $multi_format = 'array' );
+
+// ICE HOCKEY
+$ice_hockey_team_name = xprofile_get_field_data( 149, $user_id, $multi_format = 'array' );
+$ice_hockey_league_name = xprofile_get_field_data( 150, $user_id, $multi_format = 'array' );
+$ice_hockey_position = xprofile_get_field_data( 151, $user_id, $multi_format = 'array' );
+
+// LACROSSE  
+$lacrosse_team_name = xprofile_get_field_data( 143, $user_id, $multi_format = 'array' );
+$lacrosse_league_name = xprofile_get_field_data( 144, $user_id, $multi_format = 'array' );
+$lacrosse_position = xprofile_get_field_data( 145, $user_id, $multi_format = 'array' );
+
+// RIFLE 
+$rifle_team_name = xprofile_get_field_data( 183, $user_id, $multi_format = 'array' );
+
+// ROWING 
+$rowing_team_name = xprofile_get_field_data( 140, $user_id, $multi_format = 'array' );
+$rowing_league_name = xprofile_get_field_data( 141, $user_id, $multi_format = 'array' );
+$rowing_position = xprofile_get_field_data( 142, $user_id, $multi_format = 'array' );
+
+// RUGBY 
+$rugby_team_name = xprofile_get_field_data( 192, $user_id, $multi_format = 'array' );
+$rugby_position = xprofile_get_field_data( 193, $user_id, $multi_format = 'array' );
+
+// SAILING 
+$sailing_team_name = xprofile_get_field_data( 184, $user_id, $multi_format = 'array' );
+
+// SOCCER 
+$soccer_team_name = xprofile_get_field_data( 137, $user_id, $multi_format = 'array' );
+$soccer_league_name = xprofile_get_field_data( 138, $user_id, $multi_format = 'array' );
+$soccer_position = xprofile_get_field_data( 139, $user_id, $multi_format = 'array' );
+
+// SOFTBALL 
+$softball_team_name = xprofile_get_field_data( 212, $user_id, $multi_format = 'array' );
+$softball_league_name = xprofile_get_field_data( 213, $user_id, $multi_format = 'array' );
+$softball_primary_position = xprofile_get_field_data( 214, $user_id, $multi_format = 'array' );
+$softball_secondary_position = xprofile_get_field_data( 215, $user_id, $multi_format = 'array' );
+
+// SWIMMING & DIVING  
+$swimming_main_event_style = xprofile_get_field_data( 309, $user_id, $multi_format = 'array' );
+$swimming_secondary_event_style = xprofile_get_field_data( 310, $user_id, $multi_format = 'array' );
+
+// TENNIS 
+$tennis_utr = xprofile_get_field_data( 311, $user_id, $multi_format = 'array' );
+$tennis_itf = xprofile_get_field_data( 312, $user_id, $multi_format = 'array' );
+$tennis_preferred_hand = xprofile_get_field_data( 313, $user_id, $multi_format = 'array' );
+$tennis_national_ranking = xprofile_get_field_data( 316, $user_id, $multi_format = 'array' );
+
+// TRACK & FILED 
+$track_field_iaaf_ranking = xprofile_get_field_data( 321, $user_id, $multi_format = 'array' );
+$track_field_national_ranking = xprofile_get_field_data( 322, $user_id, $multi_format = 'array' );
+$track_field_discipline = xprofile_get_field_data( 323, $user_id, $multi_format = 'array' );
+
+// US FOOTBALL 
+$us_football_team_name = xprofile_get_field_data( 134, $user_id, $multi_format = 'array' );
+$us_football_league_name = xprofile_get_field_data( 135, $user_id, $multi_format = 'array' );
+$us_football_position = xprofile_get_field_data( 136, $user_id, $multi_format = 'array' );
+$us_football_40_yard_dash = xprofile_get_field_data( 46, $user_id, $multi_format = 'array' );
+
+// VOLLEYBALL 
+$volleyball_team_name = xprofile_get_field_data( 146, $user_id, $multi_format = 'array' );
+$volleyball_league_name = xprofile_get_field_data( 147, $user_id, $multi_format = 'array' );
+$volleyball_position = xprofile_get_field_data( 148, $user_id, $multi_format = 'array' );
+
+// WATER POLO 
+$water_polo_team_name = xprofile_get_field_data( 190, $user_id, $multi_format = 'array' );
+$water_polo_position = xprofile_get_field_data( 191, $user_id, $multi_format = 'array' );
+
+// WRESTLING
+$wrestling_team_name = xprofile_get_field_data( 186, $user_id, $multi_format = 'array' );
+ 
 ?>
 
 <section id="sports-stats-section">
@@ -65,16 +186,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
 
         <!-- BASKETBALL -->
         <?php if ($sport == 'BASKETBALL') : ?>
-
-        <?php 
-        // BASKETBALL
-        $basketball_team_name = xprofile_get_field_data( 201, $user_id, $multi_format = 'array' );
-        $basketball_league_name = xprofile_get_field_data( 202, $user_id, $multi_format = 'array' );
-        $basketball_preferred_hand = xprofile_get_field_data( 203, $user_id, $multi_format = 'array' );
-        $basketball_primary_position = xprofile_get_field_data( 206, $user_id, $multi_format = 'array' );
-        $basketball_secondary_position = xprofile_get_field_data( 207, $user_id, $multi_format = 'array' );
-       
-       ?>
 
         <tr>
           <th scope="row">Team Name:</th>
@@ -152,12 +263,7 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <?php endif; ?>
 
         <!-- CROSS COUNTRY -->
-        <?php if ($sport == 'CROSS-COUNTRY') : ?>
-
-        <?php 
-        // CROSS COUNTRY
-        $cross_country_team_name = xprofile_get_field_data( 189, $user_id, $multi_format = 'array' );
-        ?>
+        <?php if ($sport == 'CROSS COUNTRY') : ?>
 
         <tr>
           <th scope="row">Team Name:</th>
@@ -169,11 +275,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <!-- CYCLING -->
         <?php if ($sport == 'CYCLING') : ?>
 
-        <?php 
-          // CYCLING
-          $cycling_team_name = xprofile_get_field_data( 187, $user_id, $multi_format = 'array' );
-        ?>
-
         <tr>
           <th scope="row">Team Name:</th>
           <td><?php echo $cycling_team_name; ?></td>
@@ -184,14 +285,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
 
         <!-- E-SPORTS -->
         <?php if ($sport == 'E-SPORTS') : ?>
-
-        <?php 
-        // E-SPORTS
-        $e_sports_league_name = xprofile_get_field_data( 317, $user_id, $multi_format = 'array' );
-        $e_sports_preferred_game = xprofile_get_field_data( 318, $user_id, $multi_format = 'array' );
-        $e_sports_global_rankings = xprofile_get_field_data( 319, $user_id, $multi_format = 'array' );
-        $e_sports_national_rankings = xprofile_get_field_data( 320, $user_id, $multi_format = 'array' );
-        ?>
 
         <tr>
           <th scope="row">League Name:</th>
@@ -215,13 +308,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <!-- EQUESTRAINS -->
         <?php if ($sport == 'EQUESTRAIN') : ?>
 
-
-        <?php 
-        // EQUESTRIAN
-        $equestrian_team_name = xprofile_get_field_data( 188, $user_id, $multi_format = 'array' );
-
-        ?>
-
         <tr>
           <th scope="row">Team Name:</th>
           <td><?php echo $equestrian_team_name; ?></td>
@@ -232,11 +318,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <!-- FENCING -->
         <?php if ($sport == 'FENCING') : ?>
 
-        <?php 
-        // FENCING
-        $fencing_team_name = xprofile_get_field_data( 182, $user_id, $multi_format = 'array' );
-        ?>
-
         <tr>
           <th scope="row">Team Name:</th>
           <td><?php echo $fencing_team_name; ?></td>
@@ -245,12 +326,7 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <?php endif; ?>
 
         <!-- FIELD HOCKEY -->
-        <?php if ($sport == 'FIELD-HOCKEY') : ?>
-
-        <?php 
-        // FIELD HOCKY
-        $field_hockey_team_name = xprofile_get_field_data( 185, $user_id, $multi_format = 'array' );
-        ?>
+        <?php if ($sport == 'FIELD HOCKEY') : ?>
 
         <tr>
           <th scope="row">Team Name:</th>
@@ -261,16 +337,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
 
         <!-- GOLF -->
         <?php if ($sport == 'GOLF') : ?>
-
-        <?php 
-        // GOLF
-        $golf_handicap = xprofile_get_field_data( 301, $user_id, $multi_format = 'array' );
-        $golf_wagr = xprofile_get_field_data( 302, $user_id, $multi_format = 'array' );
-        $golf_national_ranking = xprofile_get_field_data( 303, $user_id, $multi_format = 'array' );
-        $golf_lowest_competitive_round = xprofile_get_field_data( 304, $user_id, $multi_format = 'array' );
-        $golf_club_distances = xprofile_get_field_data( 305, $user_id, $multi_format = 'array' );
-        $golf_preferred_hand = xprofile_get_field_data( 306, $user_id, $multi_format = 'array' );
-        ?>
 
         <tr>
           <th scope="row">Handicap:</th>
@@ -302,14 +368,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <!-- GYMNASTICS -->
         <?php if ($sport == 'GYMNASTICS') : ?>
 
-        <?php  
-        
-        // GYMNASTICS
-        $gymnastics_team_name = xprofile_get_field_data( 199, $user_id, $multi_format = 'array' );
-        $gymnastics_disciplines = xprofile_get_field_data( 200, $user_id, $multi_format = 'array' );
-
-        ?>
-
         <tr>
           <th scope="row">Team Name:</th>
           <td><?php echo $gymnastics_team_name; ?></td>
@@ -322,14 +380,7 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <?php endif; ?>
 
         <!-- ICE HOCKEY -->
-        <?php if ($sport == 'ICE-HOCKEY') : ?>
-
-        <?php 
-        // ICE HOCKEY
-        $ice_hockey_team_name = xprofile_get_field_data( 149, $user_id, $multi_format = 'array' );
-        $ice_hockey_league_name = xprofile_get_field_data( 150, $user_id, $multi_format = 'array' );
-        $ice_hockey_position = xprofile_get_field_data( 151, $user_id, $multi_format = 'array' );
-        ?>
+        <?php if ($sport == 'ICE HOCKEY') : ?>
 
         <tr>
           <th scope="row">Team Name:</th>
@@ -349,14 +400,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <!-- LACROSSE -->
         <?php if ($sport == 'LACROSSE') : ?>
 
-        <?php 
-        // LACROSSE
-        $lacrosse_team_name = xprofile_get_field_data( 143, $user_id, $multi_format = 'array' );
-        $lacrosse_league_name = xprofile_get_field_data( 144, $user_id, $multi_format = 'array' );
-        $lacrosse_position = xprofile_get_field_data( 145, $user_id, $multi_format = 'array' );
-
-        ?>
-
         <tr>
           <th scope="row">Team Name:</th>
           <td><?php echo $lacrosse_team_name; ?></td>
@@ -375,12 +418,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <!-- RIFLE -->
         <?php if ($sport == 'RIFLE') : ?>
 
-        <?php 
-        // RIFLE
-        $rifle_team_name = xprofile_get_field_data( 183, $user_id, $multi_format = 'array' );
-
-        ?>
-
         <tr>
           <th scope="row">Team Name:</th>
           <td><?php echo $rifle_team_name; ?></td>
@@ -390,14 +427,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
 
         <!-- ROWING -->
         <?php if ($sport == 'ROWING') : ?>
-
-        <?php 
-        // ROWING
-        $rowing_team_name = xprofile_get_field_data( 140, $user_id, $multi_format = 'array' );
-        $rowing_league_name = xprofile_get_field_data( 141, $user_id, $multi_format = 'array' );
-        $rowing_position = xprofile_get_field_data( 142, $user_id, $multi_format = 'array' );
-        ?>
-
 
         <tr>
           <th scope="row">Team Name:</th>
@@ -417,13 +446,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <!-- RUGBY -->
         <?php if ($sport == 'RUGBY') : ?>
 
-        <?php 
-        // RUGBY
-        $rugby_team_name = xprofile_get_field_data( 192, $user_id, $multi_format = 'array' );
-        $rugby_position = xprofile_get_field_data( 193, $user_id, $multi_format = 'array' );
-
-        ?>
-
         <tr>
           <th scope="row">Team Name:</th>
           <td><?php echo $rugby_team_name; ?></td>
@@ -438,11 +460,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <!-- SAILING -->
         <?php if ($sport == 'SAILING') : ?>
 
-        <?php 
-        // SAILING
-        $sailing_team_name = xprofile_get_field_data( 184, $user_id, $multi_format = 'array' );
-        ?>
-
         <tr>
           <th scope="row">Team Name:</th>
           <td><?php echo $sailing_team_name; ?></td>
@@ -452,14 +469,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
 
         <!-- SOCCER -->
         <?php if ($sport == 'SOCCER') : ?>
-
-        <?php 
-        // SOCCER
-        $soccer_team_name = xprofile_get_field_data( 137, $user_id, $multi_format = 'array' );
-        $soccer_league_name = xprofile_get_field_data( 138, $user_id, $multi_format = 'array' );
-        $soccer_position = xprofile_get_field_data( 139, $user_id, $multi_format = 'array' );
-
-        ?>
 
         <tr>
           <th scope="row">Team Name:</th>
@@ -478,14 +487,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
 
         <!-- SOFTBALL -->
         <?php if ($sport == 'SOFTBALL') : ?>
-
-        <?php 
-        // SOFTBALL
-        $softball_team_name = xprofile_get_field_data( 212, $user_id, $multi_format = 'array' );
-        $softball_league_name = xprofile_get_field_data( 213, $user_id, $multi_format = 'array' );
-        $softball_primary_position = xprofile_get_field_data( 214, $user_id, $multi_format = 'array' );
-        $softball_secondary_position = xprofile_get_field_data( 215, $user_id, $multi_format = 'array' );
-        ?>
 
         <tr>
           <th scope="row">Team Name:</th>
@@ -507,13 +508,7 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <?php endif; ?>
 
         <!-- SWIMMING & DIVING -->
-        <?php if ($sport == 'SWIMMING-AND-DIVING') : ?>
-
-        <?php 
-        // SWIMMING & DIVING
-        $swimming_main_event_style = xprofile_get_field_data( 309, $user_id, $multi_format = 'array' );
-        $swimming_secondary_event_style = xprofile_get_field_data( 310, $user_id, $multi_format = 'array' );
-        ?>
+        <?php if ($sport == 'SWIMMING AND DIVING') : ?>
 
         <tr>
           <th scope="row">Main Event Style:</th>
@@ -528,14 +523,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
 
         <!-- TENNIS -->
         <?php if ($sport == 'TENNIS') : ?>
-
-        <?php 
-        // TENNIS
-        $tennis_utr = xprofile_get_field_data( 311, $user_id, $multi_format = 'array' );
-        $tennis_itf = xprofile_get_field_data( 312, $user_id, $multi_format = 'array' );
-        $tennis_preferred_hand = xprofile_get_field_data( 313, $user_id, $multi_format = 'array' );
-        $tennis_national_ranking = xprofile_get_field_data( 316, $user_id, $multi_format = 'array' );
-        ?>
 
         <tr>
           <th scope="row">UTR:</th>
@@ -557,14 +544,7 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <?php endif; ?>
 
         <!-- TRACK & FIELD -->
-        <?php if ($sport == 'TRACK-AND-FIELD') : ?>
-
-        <?php 
-        // TRACK & FILED
-        $track_field_iaaf_ranking = xprofile_get_field_data( 321, $user_id, $multi_format = 'array' );
-        $track_field_national_ranking = xprofile_get_field_data( 322, $user_id, $multi_format = 'array' );
-        $track_field_discipline = xprofile_get_field_data( 323, $user_id, $multi_format = 'array' );
-        ?>
+        <?php if ($sport == 'TRACK AND FIELD') : ?>
 
         <tr>
           <th scope="row">IAAF:</th>
@@ -582,15 +562,7 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <?php endif; ?>
 
         <!-- US FOOTBALL -->
-        <?php if ($sport == 'US-FOOTBALL') : ?>
-
-        <?php 
-        // US FOOTBALL
-        $us_football_team_name = xprofile_get_field_data( 134, $user_id, $multi_format = 'array' );
-        $us_football_league_name = xprofile_get_field_data( 135, $user_id, $multi_format = 'array' );
-        $us_football_position = xprofile_get_field_data( 136, $user_id, $multi_format = 'array' );
-        $us_football_40_yard_dash = xprofile_get_field_data( 46, $user_id, $multi_format = 'array' );
-        ?>
+        <?php if ($sport == 'US FOOTBALL') : ?>
 
         <tr>
           <th scope="row">Team Name:</th>
@@ -614,14 +586,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <!-- VOLLEYBALL -->
         <?php if ($sport == 'VOLLEYBALL') : ?>
 
-        <?php 
-        // VOLLEYBALL
-        $volleyball_team_name = xprofile_get_field_data( 146, $user_id, $multi_format = 'array' );
-        $volleyball_league_name = xprofile_get_field_data( 147, $user_id, $multi_format = 'array' );
-        $volleyball_position = xprofile_get_field_data( 148, $user_id, $multi_format = 'array' );
-
-        ?>
-
         <tr>
           <th scope="row">Team Name:</th>
           <td><?php echo $volleyball_team_name; ?></td>
@@ -638,14 +602,7 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
         <?php endif; ?>
 
         <!-- WATER POLO -->
-        <?php if ($sport == 'WATER-POLO') : ?>
-
-        <?php 
-        // WATER POLO
-        $water_polo_team_name = xprofile_get_field_data( 190, $user_id, $multi_format = 'array' );
-        $water_polo_position = xprofile_get_field_data( 191, $user_id, $multi_format = 'array' );
-
-        ?>
+        <?php if ($sport == 'WATER POLO') : ?>
 
         <tr>
           <th scope="row">Team Name:</th>
@@ -660,11 +617,6 @@ $sport = xprofile_get_field_data( 49, $user_id, $multi_format = 'array' );
 
         <!-- WRESTLING -->
         <?php if ($sport == 'WRESTLING') : ?>
-
-        <?php 
-        // WRESTLING
-        $wrestling_team_name = xprofile_get_field_data( 186, $user_id, $multi_format = 'array' );
-        ?>
 
         <tr>
           <th scope="row">Team Name:</th>

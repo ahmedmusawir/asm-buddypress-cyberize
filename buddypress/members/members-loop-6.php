@@ -68,103 +68,14 @@ bp_nouveau_before_loop(); ?>
           $availability = 'committed';
           
         }
-
-        /**
-         * ADVANCE FILTER CLASSES FOR FILTER ALOGORITHM
-         */
        
-    ?>
-    <?php 
-    
-    if ($sport == 'US-FOOTBALL') : 
+        ?>
 
-      $us_football_position = xprofile_get_field_data( 136, $user_id, $multi_format = 'array' );
-
-    else :
-      
-      $us_football_position = '';
-
-    endif; 
-
-    if ($sport == 'BASEBALL') : 
-
-      $baseball_primary_position = xprofile_get_field_data( 210, $user_id, $multi_format = 'array' );
-      $baseball_secondary_position = xprofile_get_field_data( 211, $user_id, $multi_format = 'array' );
-
-    else :
-
-      $baseball_primary_position = '';
-      $baseball_secondary_position = '';
-      
-    endif; 
-
-    if ($sport == 'SOFTBALL') : 
-
-      $softball_primary_position = xprofile_get_field_data( 214, $user_id, $multi_format = 'array' );
-      $softball_secondary_position = xprofile_get_field_data( 215, $user_id, $multi_format = 'array' );
-
-    else :
-
-      $softball_primary_position = '';
-      $softball_secondary_position = '';
-
-    endif; 
-
-    if ($sport == 'BASKETBALL') : 
-
-      $basketball_preferred_hand = xprofile_get_field_data( 203, $user_id, $multi_format = 'array' );
-      $basketball_primary_position = xprofile_get_field_data( 206, $user_id, $multi_format = 'array' );
-      $basketball_secondary_position = xprofile_get_field_data( 207, $user_id, $multi_format = 'array' );
-
-    else :
-
-      $basketball_preferred_hand = '';
-      $basketball_primary_position = '';
-      $basketball_secondary_position = '';
-
-    endif; 
-
-    if ($sport == 'CHEERLEADING') : 
-
-      $cheerleading_position = xprofile_get_field_data( 181, $user_id, $multi_format = 'array' );
-
-    else :
-
-      $cheerleading_position = '';
-
-    endif; 
-
-    if ($sport == 'GOLF') : 
-
-      $golf_handicap = xprofile_get_field_data( 301, $user_id, $multi_format = 'array' );
-      $golf_wagr = xprofile_get_field_data( 302, $user_id, $multi_format = 'array' );
-      $golf_national_ranking = xprofile_get_field_data( 303, $user_id, $multi_format = 'array' );
-      $golf_preferred_hand = xprofile_get_field_data( 306, $user_id, $multi_format = 'array' );
-
-    else :
-
-      $golf_handicap = '';
-      $golf_wagr = '';
-      $golf_national_ranking = '';
-      $golf_preferred_hand = '';
-
-    endif; 
-
-    
-    
-    ?>
-
-    <li <?php bp_member_class( 
-        array( 'item-entry-asm', "$sport", "$gender", "$availability", "$verify_filter", "$enrollment_year", "$nationality",
-        "$us_football_position",
-        "$cheerleading_position",
-        "$baseball_primary_position", "$baseball_secondary_position",
-        "$softball_primary_position", "$softball_secondary_position",
-        "$basketball_preferred_hand", "$basketball_primary_position", "$basketball_secondary_position",
-        "$golf_handicap", "$golf_wagr", "$golf_national_ranking", "$golf_preferred_hand", 'animated', 'bounceIn' ) 
-        ); 
-      ?> data-bp-item-id="<?php bp_member_user_id(); ?>" data-bp-item-component="members">
+    <li
+      <?php bp_member_class( array( 'item-entry-asm', "$sport", "$gender", "$availability", "$verify_filter", "$enrollment_year", "$nationality",'animated', 'bounceIn' ) ); ?>
+      data-bp-item-id="<?php bp_member_user_id(); ?>" data-bp-item-component="members">
       <div class="list-wrap-asm row">
+
         <article class="col-md-3">
           <div class="item-avatar-asm">
             <a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar( bp_nouveau_avatar_args() ); ?></a>
@@ -202,25 +113,6 @@ bp_nouveau_before_loop(); ?>
                 <li class="list-inline-item"><i class="fas fa-users-class"></i>&nbsp;Class:
                   <?php echo $enrollment_year; ?> </li>
               </ul>
-
-              <!-- UNIT TEST DATA START -->
-
-              <ul>
-                <li class="d-inline-block pr-2">
-                  Handicap: <?php echo $golf_handicap; ?>
-                </li> |
-                <li class="d-inline-block pr-2">
-                  WAGR: <?php echo $golf_wagr; ?>
-                </li> |
-                <li class="d-inline-block pr-2">
-                  National Ranking: <?php echo $golf_national_ranking; ?>
-                </li> |
-                <li class="d-inline-block pr-2">
-                  Hand: <?php echo $golf_preferred_hand; ?>
-                </li>
-              </ul>
-
-              <!-- UNIT TEST DATA END -->
 
               <div class="text-content">
                 <?php echo $excerpt; ?>

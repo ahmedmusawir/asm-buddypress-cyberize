@@ -6,6 +6,7 @@ class AthleteFiltersParent {
 
     // COLLECTING RESET BUTTON
     this.buttonReset = $('#ath-filter-reset');
+    this.buttonAdvFilter = $('#ath-advance-filter');
 
     this.showNoDataFound();
     this.setEvents();
@@ -15,17 +16,28 @@ class AthleteFiltersParent {
     // console.log('ASM Parent Filter Reset');
   };
 
-  setEvents() {
-    if (this.buttonReset) {
-      this.buttonReset.on('click', this.resetFilters);
-    }
-  }
-
   showNoDataFound() {
     const noDataItem = $('.no-data-found');
     setTimeout(function () {
       noDataItem.removeClass('d-none');
     }, 2000);
+  }
+
+  setEvents() {
+    if (this.buttonReset) {
+      this.buttonReset.on('click', this.resetFilters);
+    }
+    // if (this.buttonAdvFilter) {
+    //   this.buttonAdvFilter.on('click', this.openAdvanceFilter);
+    // }
+  }
+
+  openAdvanceFilter(e) {
+    // console.log('adv fltr clicked');
+    e.stopImmediatePropagation();
+
+    const athAdvfilter = $('#top-advanced-filter');
+    athAdvfilter.removeClass('d-none');
   }
 
   resetFilters() {

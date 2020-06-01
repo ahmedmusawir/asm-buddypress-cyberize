@@ -1,6 +1,7 @@
 import ASMDropdownMenu from './_modules/ASMDropdownMenu';
 import ASMProfileEditMenu from './_modules/ASMProfileEditMenu';
 import ASMAthleteDashTasks from './_modules/ASMAthleteDashTasks';
+import ASMCoachDashboardSearch from './_modules/ASMCoachDashboardSearch';
 
 import AthleteFiltersParent from './_modules/athlete-filters/AthleteFiltersParent';
 import AthleteSportsFiltersSelect from './_modules/athlete-filters/AthleteSportsFiltersSelect';
@@ -18,9 +19,13 @@ import UnivWomensSportsFiltersSelect from './_modules/univ-filters/UnivWomenSpor
 import UnivLoadMore from './_modules/load-more/UnivLoadMore';
 import AthleteLoadMore from './_modules/load-more/AthleteLoadMore';
 
+import AdvanceFiltersParent from './_modules/athlete-adv-filters/AdvanceFiltersParent';
+import FilterSwitchModal from './_modules/athlete-filter-switch-modal/FilterSwitchModal';
+import AdvGenderFiltersSelect from './_modules/athlete-adv-filters/AdvGenderFiltersSelect';
+
 class App {
   constructor() {
-    console.info('ES6 App Initialized!');
+    console.info('ES6 Script Initialized!');
 
     // ASM Global Dropdown Navigation
     new ASMDropdownMenu();
@@ -31,6 +36,11 @@ class App {
     ATHLETE DASHBOARD TASKS
     */
     new ASMAthleteDashTasks();
+
+    /**
+    COACH'S DASHBOARD SEARCH
+    */
+    new ASMCoachDashboardSearch();
 
     /**
     ATHLETE INDEX PAGE FILTERS
@@ -68,6 +78,17 @@ class App {
     new UnivLoadMore();
     // ATHLETE LOAD MORE
     new AthleteLoadMore();
+
+    /**
+    FILTER SWITCHING MODAL
+    */
+    new FilterSwitchModal();
+
+    /**
+    ATHLETE ADVANCE FILTER
+    */
+    new AdvanceFiltersParent();
+    new AdvGenderFiltersSelect();
   }
 }
 
