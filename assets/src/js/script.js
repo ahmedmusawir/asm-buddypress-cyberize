@@ -1,6 +1,7 @@
 import ASMDropdownMenu from './_modules/ASMDropdownMenu';
 import ASMProfileEditMenu from './_modules/ASMProfileEditMenu';
 import ASMAthleteDashTasks from './_modules/ASMAthleteDashTasks';
+import ASMCoachDashboardSearch from './_modules/ASMCoachDashboardSearch';
 
 import AthleteFiltersParent from './_modules/athlete-filters/AthleteFiltersParent';
 import AthleteSportsFiltersSelect from './_modules/athlete-filters/AthleteSportsFiltersSelect';
@@ -35,6 +36,11 @@ class App {
     ATHLETE DASHBOARD TASKS
     */
     new ASMAthleteDashTasks();
+
+    /**
+    COACH'S DASHBOARD SEARCH
+    */
+    new ASMCoachDashboardSearch();
 
     /**
     ATHLETE INDEX PAGE FILTERS
